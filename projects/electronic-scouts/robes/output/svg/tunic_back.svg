@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="506.028mm" height="600.939mm" viewBox="0 0 506.028 600.939">
+<title>tunic_back - Inner tunic - full back</title>
+<desc>Millimeters. 1:1 when physical dimensions are preserved. Prototype. Black: cut; dashed blue: seam or finished boundary. Allowances already included.</desc>
+<rect width="100%" height="100%" fill="white"/>
+<text x="15" y="9" font-family="sans-serif" font-size="4">tunic_back | Inner tunic - full back | CUT 1 FULL PIECE; no fold</text>
+<text x="15" y="15" font-family="sans-serif" font-size="3">PROTOTYPE / mm / allowances included / confirm calibration before cutting</text>
+<g transform="translate(15,30)">
+<polygon points="18.514,19.039 180.742,1.000 181.848,10.939 238.514,33.039 295.181,10.939 296.286,1.000 458.514,19.039 458.514,192.722 476.028,520.939 475.228,535.939 475.762,545.939 1.267,545.939 1.800,535.939 1.000,520.939 18.514,192.722" fill="none" stroke="#24343b" stroke-width="0.3"/>
+<polygon points="28.514,27.989 181.848,10.939 238.514,33.039 295.181,10.939 448.514,27.989 448.514,192.989 466.014,520.939 11.014,520.939 28.514,192.989" fill="none" stroke="#3e728b" stroke-width="0.2" stroke-dasharray="2 1"/>
+<polyline points="238.514,53.039 238.514,490.939" fill="none" stroke="#ac744c" stroke-width="0.25"/>
+<polyline points="48.514,350.939 428.514,350.939" fill="none" stroke="#ac744c" stroke-width="0.25"/>
+<polyline points="28.514,192.989 36.514,192.989" fill="none" stroke="#ac744c" stroke-width="0.25"/>
+<polyline points="440.514,192.989 448.514,192.989" fill="none" stroke="#ac744c" stroke-width="0.25"/>
+<polyline points="465.214,535.939 11.815,535.939" fill="none" stroke="#ac744c" stroke-width="0.25" stroke-dasharray="2 1"/>
+<polyline points="466.014,520.939 465.214,535.939 465.747,545.939" fill="none" stroke="#ac744c" stroke-width="0.25"/>
+<polyline points="11.014,520.939 11.815,535.939 11.281,545.939" fill="none" stroke="#ac744c" stroke-width="0.25"/>
+<polyline points="154.514,214.939 154.514,367.939" fill="none" stroke="#61737a" stroke-width="0.3"/>
+<polyline points="152.514,218.939 154.514,214.939 156.514,218.939" fill="none" stroke="#61737a" stroke-width="0.3"/>
+<polyline points="152.514,363.939 154.514,367.939 156.514,363.939" fill="none" stroke="#61737a" stroke-width="0.3"/>
+<text x="81.014" y="153.739" font-family="sans-serif" font-size="3">FULL BACK / CUT 1</text>
+<text x="242.514" y="49.039" font-family="sans-serif" font-size="2.5" fill="#3e728b">M1</text>
+<text x="52.514" y="346.939" font-family="sans-serif" font-size="2.5" fill="#3e728b">M2</text>
+<text x="32.514" y="188.989" font-family="sans-serif" font-size="2.5" fill="#3e728b">M3</text>
+<text x="464.028" y="531.939" font-family="sans-serif" font-size="2.5" fill="#3e728b">M5</text>
+</g>
+<path d="M 15 593.939 h 100 m -100 -2 v 4 m 100 -4 v 4" fill="none" stroke="black" stroke-width="0.3"/>
+<text x="15" y="590.939" font-family="sans-serif" font-size="3">100 mm verification line</text>
+</svg>

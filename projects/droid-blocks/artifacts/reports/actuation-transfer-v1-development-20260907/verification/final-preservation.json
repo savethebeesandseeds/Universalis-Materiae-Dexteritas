@@ -1,0 +1,9 @@
+{
+  "schema": "actuation_transfer_final_preservation_v1",
+  "checked_at_utc": "2026-09-06T23:11:43.9871346Z",
+  "protected_files": 466,
+  "protected_changed": [],
+  "archived_runtime_files": 89,
+  "current_runtime_changed_since_lock": [],
+  "complete": true
+}

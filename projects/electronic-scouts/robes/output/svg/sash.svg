@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="801.000mm" height="126.000mm" viewBox="0 0 801.000 126.000">
+<title>sash - Short fastening sash</title>
+<desc>Millimeters. 1:1 when physical dimensions are preserved. Prototype. Black: cut; dashed blue: seam or finished boundary. Allowances already included.</desc>
+<rect width="100%" height="100%" fill="white"/>
+<text x="15" y="9" font-family="sans-serif" font-size="4">sash | Short fastening sash | CUT 2 = one sash with two fabric layers</text>
+<text x="15" y="15" font-family="sans-serif" font-size="3">PROTOTYPE / mm / allowances included / confirm calibration before cutting</text>
+<g transform="translate(15,30)">
+<polygon points="1.000,1.000 771.000,1.000 771.000,71.000 1.000,71.000" fill="none" stroke="#24343b" stroke-width="0.3"/>
+<polygon points="11.000,11.000 761.000,11.000 761.000,61.000 11.000,61.000" fill="none" stroke="#3e728b" stroke-width="0.2" stroke-dasharray="2 1"/>
+<polyline points="91.000,11.000 91.000,61.000" fill="none" stroke="#ac744c" stroke-width="0.25"/>
+<polyline points="681.000,11.000 681.000,61.000" fill="none" stroke="#ac744c" stroke-width="0.25"/>
+<polyline points="236.000,36.000 536.000,36.000" fill="none" stroke="#61737a" stroke-width="0.3"/>
+<polyline points="240.000,38.000 236.000,36.000 240.000,34.000" fill="none" stroke="#61737a" stroke-width="0.3"/>
+<polyline points="532.000,38.000 536.000,36.000 532.000,34.000" fill="none" stroke="#61737a" stroke-width="0.3"/>
+<text x="95.000" y="7.000" font-family="sans-serif" font-size="2.5" fill="#3e728b">M1</text>
+<text x="685.000" y="7.000" font-family="sans-serif" font-size="2.5" fill="#3e728b">M2</text>
+</g>
+<path d="M 15 119.000 h 100 m -100 -2 v 4 m 100 -4 v 4" fill="none" stroke="black" stroke-width="0.3"/>
+<text x="15" y="116.000" font-family="sans-serif" font-size="3">100 mm verification line</text>
+</svg>

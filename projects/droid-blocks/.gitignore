@@ -1,0 +1,7 @@
+__pycache__/
+*.py[cod]
+build/
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+compile_commands.json

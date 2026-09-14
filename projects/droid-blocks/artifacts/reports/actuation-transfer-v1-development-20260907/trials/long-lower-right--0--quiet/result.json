@@ -1,0 +1,92 @@
+{
+  "schema": "actuation_transfer_trial_v1",
+  "id": "long-lower-right--0--quiet",
+  "case_id": "long-lower-right",
+  "case": {
+    "assembly": {
+      "schema": "construction_kit_v2",
+      "name": "The same parts, rebuilt",
+      "segments": [
+        3,
+        4
+      ],
+      "powered_hinge": 1,
+      "blocks": [],
+      "sensor": {
+        "segment": 1,
+        "slot": 2,
+        "side": -1
+      },
+      "light": {
+        "segment": 1,
+        "slot": 2,
+        "side": 1,
+        "face": 1
+      }
+    },
+    "sun": {
+      "position_m": [
+        0.3,
+        0.0,
+        0.2
+      ],
+      "intensity_lux": 1000.0
+    }
+  },
+  "source_seed": 0,
+  "arm": "quiet",
+  "protocol_sha256": "82d83fe5004304bba9f8b17ac8710a8212fc9c5ec729908f05e14f98b08fcef1",
+  "source_policy_sha256": null,
+  "initial_parameter_sha256": null,
+  "final_parameter_sha256": null,
+  "optimization_epochs": 0,
+  "optimizer_steps": 0,
+  "wall_s": 2.07799999999952,
+  "error": null,
+  "native_failure": null,
+  "new_interaction_budget": 640,
+  "post_final_update_evaluation": false,
+  "metrics": {
+    "complete": true,
+    "decisions": 640,
+    "native_steps": 3200,
+    "duration_s": 64.0,
+    "native_reward": 56.28675020522846,
+    "light_reward": 56.290750205228456,
+    "imu_reward": -0.004,
+    "energy_j": 0.0,
+    "safety_stops": 0,
+    "max_speed_rad_s": 0.0,
+    "max_current_a": 0.0,
+    "max_temperature_c": 25.0,
+    "windows": [
+      {
+        "seconds": 6.4,
+        "native_reward": 5.594617858300272,
+        "available_decisions": 64
+      },
+      {
+        "seconds": 12.8,
+        "native_reward": 11.22707700795896,
+        "available_decisions": 128
+      },
+      {
+        "seconds": 32.0,
+        "native_reward": 28.12445445693502,
+        "available_decisions": 320
+      },
+      {
+        "seconds": 64.0,
+        "native_reward": 56.28675020522846,
+        "available_decisions": 640
+      }
+    ],
+    "physical_horizon_complete": true
+  },
+  "trace_sha256": "80109ae132348643d9dca0fc4dcb37586dac18d97c899d362f40117c281e300a",
+  "replay": {
+    "exact": true,
+    "decisions": 640,
+    "error": null
+  }
+}

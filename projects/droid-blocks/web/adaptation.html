@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#173e32">
+    <meta name="description" content="Compare measured light and sensor reward when a Droid Blocks creature keeps learning after the sunshine moves, or uses the values it already learned.">
+    <title>Droid Blocks — When the sun moves</title>
+    <link rel="icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/construction.css">
+    <link rel="stylesheet" href="/adaptation.css">
+    <script src="/adaptation.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#comparison-chart">Skip to the measured comparison</a>
+    <main class="workshop adaptation-workshop">
+      <header class="masthead"><a class="home-link" href="/light.html">← Back to the sunshine workshop</a><span class="record-label">A record of what happened</span></header>
+      <div class="introduction"><div><p class="eyebrow">Droid Blocks · A paired experiment</p><h1>Does learning help<br>when the sun moves?</h1><p>The same beginning, then two paths.<br>Keep learning, or use the values already learned.</p></div><div class="pair-emblem" aria-hidden="true"><span>☀</span><b>↙ &nbsp; ↘</b></div></div>
+      <div class="load-state" data-loading role="status"><span class="load-dot" aria-hidden="true"></span>Reading the completed experiment…</div>
+      <div class="load-error" data-error role="alert" hidden><h2>The experiment record is not available yet.</h2><p data-error-detail>This page waits for a completed, validated report. No provisional result is shown.</p><button type="button" data-retry>Try reading it again</button></div>
+
+      <div data-results hidden>
+        <div class="pair-picker"><div><label for="body-choice">Creature</label><select id="body-choice" data-body></select></div><div><label for="seed-choice">Starting seed</label><select id="seed-choice" data-seed></select></div><p data-pair-index>One of six paired comparisons</p></div>
+        <section class="comparison-panel" aria-labelledby="comparison-title">
+          <div class="comparison-heading"><div><p>Received light · lux</p><h2 id="comparison-title" data-pair-title>Measured brightness</h2></div><div class="curve-legend"><span><i class="legend-continued" aria-hidden="true"></i>Keep learning</span><span><i class="legend-frozen" aria-hidden="true"></i>Use learned values</span></div></div>
+          <svg id="comparison-chart" data-chart viewBox="0 0 1000 370" role="img" aria-labelledby="chart-title chart-description"><title id="chart-title">Two received-light curves</title><desc id="chart-description">The measured comparison will appear here.</desc></svg>
+          <p class="chart-note">The sun moves at 60 seconds. Both paths share the same first minute.</p>
+        </section>
+
+        <section class="reward-comparison" aria-labelledby="reward-title"><div class="metric-context"><p class="eyebrow">After the sun moves · 60–120 seconds</p><h2 id="reward-title">What the sensors rewarded</h2><p>Total sensor reward accumulated during the second minute.</p></div><div class="reward-values"><div><span>Keep learning</span><strong data-continued-reward>—</strong></div><div><span>Use learned values</span><strong data-frozen-reward>—</strong></div><div class="paired-difference"><span>Difference</span><strong data-reward-delta>—</strong><small>Keep learning − use learned values</small></div></div></section>
+
+        <section class="supporting-measures" aria-labelledby="measures-title"><h2 id="measures-title">A few other things to notice</h2><table><thead><tr><th scope="col">After the move</th><th scope="col">Keep learning</th><th scope="col">Use learned values</th></tr></thead><tbody><tr><th scope="row">Electrical energy <small>60–120 s</small></th><td data-continued-energy>—</td><td data-frozen-energy>—</td></tr><tr><th scope="row">Early received light <small>Mean · 60–80 s</small></th><td data-continued-early>—</td><td data-frozen-early>—</td></tr><tr><th scope="row">Late received light <small>Mean · 100–120 s</small></th><td data-continued-late>—</td><td data-frozen-late>—</td></tr></tbody></table></section>
+
+        <section class="evidence-summary" aria-label="Evidence validation"><span class="evidence-seal" aria-hidden="true">✓</span><div><strong data-validation-title>Completed native evidence</strong><p data-validation-detail></p></div></section>
+        <p class="development-note">These are six comparisons on two known development bodies and three seeds. A result here describes those trials; it does not establish how other creatures or unfamiliar worlds will behave.</p>
+        <details class="inside-notes"><summary>Look at the evidence behind this pair <span aria-hidden="true">+</span></summary><div><p>The solid curve keeps updating its action values after the sun moves. The dashed curve uses the values learned before the move. Both paths begin with matching recorded physical state and a complete learner-state fingerprint. Received-light curves show retained measurements; the primary comparison uses the native report’s integrated sensor reward.</p><ul class="evidence-checks" data-checks></ul><dl class="source-record"><div><dt>Native report</dt><dd data-source-path></dd></div><div><dt>Report SHA-256</dt><dd><code data-source-hash></code></dd></div><div><dt>Body SHA-256</dt><dd><code data-assembly-hash></code></dd></div><div><dt>Pair</dt><dd data-pair-id></dd></div></dl><p class="data-link"><a href="/adaptation-data.json" download>Download this compact record</a></p></div></details>
+      </div>
+      <p class="screen-reader-status" data-live aria-live="polite"></p>
+    </main>
+  </body>
+</html>

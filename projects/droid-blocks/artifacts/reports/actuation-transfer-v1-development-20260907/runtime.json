@@ -1,0 +1,8 @@
+{
+  "python": "3.12.14",
+  "torch": "2.8.0+cpu",
+  "sb3": "2.9.0",
+  "numpy": "2.2.6",
+  "threads": 1,
+  "device": "cpu"
+}

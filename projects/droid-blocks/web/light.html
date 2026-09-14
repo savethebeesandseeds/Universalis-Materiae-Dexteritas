@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#123b31">
+    <meta name="description" content="Give your swinging creature a light-sensitive face, move the sunshine, and watch it try and remember.">
+    <title>Droid Blocks — A little sunshine</title>
+    <link rel="icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/construction.css">
+    <link rel="stylesheet" href="/light.css">
+    <script src="/light.js" defer></script>
+  </head>
+  <body class="light-workshop">
+    <a class="skip-link" href="#sunshine-bench">Skip to the sunshine bench</a>
+    <main class="workshop">
+      <header class="masthead"><a class="home-link" href="/construction.html">← Back to the building bench</a><span class="connection" data-connection><i aria-hidden="true"></i>Connecting</span></header>
+      <div class="introduction">
+        <div><p class="eyebrow">The airship workshop · Experiment 04</p><h1>A little sunshine.</h1><p>Give your creature a light-sensitive face.<br>Move the sunshine. Watch it try, notice, and try again.</p></div>
+        <div class="sun-stamp" aria-hidden="true">☀</div>
+      </div>
+
+      <nav class="starter-strip" aria-label="Project evidence"><a href="/discoveries.html">The research notebook ↗</a><span>Our questions, findings, and open possibilities.</span></nav>
+
+      <div class="bench-layout">
+        <section class="building-bench" id="sunshine-bench" aria-labelledby="creature-name">
+          <div class="bench-heading"><div><span class="bench-dot" aria-hidden="true"></span><h2 id="creature-name" data-creature-name>Its place in the sunshine</h2></div><button type="button" class="view-button" data-focus aria-pressed="false" aria-controls="sunshine-bench">Expand view</button></div>
+          <div class="scene-readout"><span data-run-status>Waiting for a body</span><span data-motion-lux>Light · — lx</span></div>
+          <div class="light-scene-wrap">
+            <svg id="light-scene" viewBox="0 0 750 470" role="group" aria-labelledby="light-scene-title light-scene-desc"><title id="light-scene-title">A creature and the sunshine</title><desc id="light-scene-desc">The creature hangs from a powered hinge. Its attached light sensor has a visible receiving face. Move the sun with the sunshine buttons.</desc></svg>
+            <span class="time-chip" data-time>0 / 120 s</span><p class="light-scene-note">Drag the sunshine, or use the buttons below.</p><span class="preview-chip" data-scene-status>Waiting for the workshop</span>
+          </div>
+          <div class="sun-controls" role="group" aria-label="Move the sunshine without starting again"><span>Sunshine</span><button type="button" data-sun="left" disabled>← Left</button><button type="button" data-sun="above" disabled>↑ Above</button><button type="button" data-sun="right" disabled>Right →</button><button type="button" data-sun="below" disabled>↓ Below</button></div>
+          <p class="sun-note">Moving the sunshine continues the same try. Its memory stays with it.</p>
+          <div class="run-controls"><button type="button" class="quiet-button" data-reset disabled>Start again</button><button type="button" class="wake-button" data-start disabled>Let it try ↗</button><button type="button" class="quiet-button" data-pause disabled>Pause</button></div>
+          <p class="run-note" data-run-note>A new try begins with fresh memory. Move the sun to give it something new to notice.</p>
+        </section>
+
+        <aside class="parts-panel light-controls" aria-labelledby="try-title">
+          <h2 id="try-title">How shall it try?</h2>
+          <div class="mode-buttons" role="group" aria-label="Choose how the next try moves">
+            <button type="button" data-mode="learner" aria-pressed="true"><strong>Learn from light</strong><small>Use experience from this try</small></button>
+            <button type="button" data-mode="zero" aria-pressed="false"><strong>Leave the motor quiet</strong><small>A body can still swing</small></button>
+            <button type="button" data-mode="rhythm" aria-pressed="false"><strong>Follow a rhythm</strong><small>Repeat a set movement</small></button>
+            <button type="button" data-mode="random" aria-pressed="false"><strong>Try random moves</strong><small>Move without learning</small></button>
+          </div>
+          <p class="small-note" data-mode-note>Choose a kind of try, then wake it. Changing the kind starts again.</p>
+          <div class="body-import"><h3>Bring your own creature</h3><button type="button" data-import disabled>Use my workshop body ↗</button><p class="small-note">Bring a copy from the building bench and add a light sensor at an empty socket.</p></div>
+          <div class="light-mount"><h3>Place its little face</h3><div class="position-fields"><label>Beam<select data-segment><option value="0">Upper</option><option value="1">Lower</option></select></label><label>Stud<select data-slot><option value="2">3</option></select></label><label>Side<select data-side><option value="-1">Left</option><option value="1">Right</option></select></label></div><label class="face-field">Receiving face<select data-face><option value="1">Toward its hinge</option><option value="-1">Toward the beam tip</option></select></label><button type="button" data-attach disabled>Attach here</button><p class="small-note">Pause to move the sensor. Attaching starts a fresh body and clears this try’s memory. Left and right describe the body at rest.</p></div>
+        </aside>
+      </div>
+
+      <p class="message" data-message role="alert" hidden></p>
+      <section class="light-readings" aria-labelledby="reading-title">
+        <div class="light-reading"><span aria-hidden="true">◉</span><div><h2 id="reading-title">Light on its face</h2><p data-sample-note>Waiting for its first sample</p></div><strong data-lux>— <small>lx</small></strong></div>
+        <div class="light-history"><svg data-chart viewBox="0 0 750 115" role="img" aria-label="The received light history will appear after a try starts."></svg><div class="chart-labels"><span data-chart-start>This try</span><span>Measured brightness over time</span><span data-chart-end>0 s</span></div></div>
+      </section>
+      <section class="noticing-panel" aria-labelledby="noticing-title"><div><p class="eyebrow">A moment at a time</p><h2 id="noticing-title">What is it trying now?</h2><p data-decision>Its first move is still ahead.</p></div><div class="memory-counters"><div><strong data-decisions>—</strong><span>choices made</span></div><div><strong data-memory>—</strong><span>recent moments kept</span></div></div><p class="memory-note" data-memory-note>It remembers recent moments and uses them to choose what to try next.</p></section>
+
+      <details class="inside-notes"><summary>Peek inside this experiment <span aria-hidden="true">+</span></summary><div><p>The body has two beams, one powered hinge and a passive elbow. Native 3D physics moves the body in a plane; parts can pass through each other. The light sensor is a physical mounted part: both its position and the direction of its receiving face affect what it sees.</p><p data-algorithm>Controller details will appear when the engine connects.</p><p data-light-timing>The light sensor delivers sampled readings with a delay. Moving the source does not erase already sampled light or reset the body.</p><p>“Leave the motor quiet”, “Follow a rhythm”, and “Try random moves” are comparisons without learning. The chart reports what was measured in this try. It does not establish a general learning result.</p><dl class="light-details"><div><dt>Active controller</dt><dd data-controller-id>—</dd></div><div><dt>Requested effort</dt><dd data-effort>—</dd></div><div><dt>Sun x, z · m</dt><dd data-sun-position>—</dd></div><div><dt>Receiving direction · x, y, z</dt><dd data-face-direction>—</dd></div><div><dt>Learning updates</dt><dd data-updates>—</dd></div></dl></div></details>
+    </main><p class="screen-reader-status" data-live aria-live="polite"></p>
+  </body>
+</html>

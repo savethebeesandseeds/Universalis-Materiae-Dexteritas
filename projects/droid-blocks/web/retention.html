@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#173e32">
+    <meta name="description" content="Compare three measured Droid Blocks runs when the sunshine returns: continued learning, current action values, and action values saved on the first visit.">
+    <title>Droid Blocks — When the sunshine returns</title>
+    <link rel="icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/construction.css">
+    <link rel="stylesheet" href="/retention.css">
+    <script src="/retention.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#comparison-chart">Skip to the measured comparison</a>
+    <main class="workshop retention-workshop">
+      <header class="masthead"><a class="home-link" href="/light.html">← Back to the sunshine workshop</a><span class="record-label">A record of what happened</span></header>
+      <div class="introduction"><div><p class="eyebrow">Droid Blocks · A return experiment</p><h1>When the sunshine returns,<br>can old learning help?</h1><p>The sun visits A, moves to B, then returns to A.<br>One shared beginning. Three ways to meet the return.</p></div><div class="journey-emblem" aria-hidden="true"><span>☀</span><b>A → B → A</b></div></div>
+      <div class="load-state" data-loading role="status"><span class="load-dot" aria-hidden="true"></span>Reading the completed experiment…</div>
+      <div class="load-error" data-error role="alert" hidden><h2>The experiment record is not available yet.</h2><p data-error-detail>This page waits for a completed, validated report. No provisional result is shown.</p><button type="button" data-retry>Try reading it again</button></div>
+
+      <div data-results hidden>
+        <div class="case-picker"><div><label for="body-choice">Creature</label><select id="body-choice" data-body></select></div><div><label for="seed-choice">Starting seed</label><select id="seed-choice" data-seed></select></div><p data-case-index>One of six comparisons</p></div>
+        <section class="comparison-panel" aria-labelledby="comparison-title">
+          <div class="comparison-heading"><div><p>Received light · lux</p><h2 id="comparison-title" data-case-title>Measured brightness</h2></div><div class="curve-legend"><span><i class="legend-continued" aria-hidden="true"></i>Keep learning</span><span><i class="legend-current" aria-hidden="true"></i>Current values</span><span><i class="legend-recalled" aria-hidden="true"></i>First-visit values</span></div></div>
+          <div class="chart-range" role="group" aria-label="Chart time range"><button type="button" data-range="all" aria-pressed="true">Whole journey</button><button type="button" data-range="return" aria-pressed="false">Return to A</button></div>
+          <svg id="comparison-chart" data-chart viewBox="0 0 1000 370" role="img" tabindex="-1" aria-labelledby="chart-title chart-description"><title id="chart-title">Three received-light curves</title><desc id="chart-description">The measured comparison will appear here.</desc></svg>
+          <p class="chart-note" data-chart-note>The sun moves at 60 seconds and returns at 120. All three paths share the first two minutes.</p>
+        </section>
+
+        <section class="reward-comparison" aria-labelledby="reward-title">
+          <div class="metric-context"><p class="eyebrow">First moments back · 120–140 seconds</p><h2 id="reward-title">Did first-visit values help?</h2><p>Total sensor reward during the first 20 seconds after the return.</p></div>
+          <div class="reward-values"><div class="recalled-value"><span>First-visit values</span><strong data-recalled-reward>—</strong></div><div class="current-value"><span>Current values</span><strong data-current-reward>—</strong></div><div class="paired-difference"><span>Early difference</span><strong data-reward-delta>—</strong><small>First-visit − current values<br>Positive means first-visit values earned more.</small></div></div>
+          <p class="contrast-note">At the return, the experiment selects values saved before the first move. Comparing them with current values asks whether that earlier learning still helps in the familiar light.</p>
+          <p class="all-case-note" data-all-case-note></p>
+        </section>
+
+        <section class="supporting-measures" aria-labelledby="measures-title"><h2 id="measures-title">All three ways through the return</h2><p>Each path still reads its sensors and moves. Only “Keep learning” continues changing its action values after the return.</p>
+          <table><caption class="screen-reader-status">Measured reward, received light and electrical energy in the return to condition A.</caption><thead><tr><th scope="col">Measured after return</th><th scope="col">Keep learning</th><th scope="col">Current values</th><th scope="col">First-visit values</th></tr></thead><tbody data-measures></tbody></table>
+          <p class="full-return-difference" data-full-return-difference></p>
+        </section>
+
+        <section class="evidence-summary" aria-label="Evidence validation"><span class="evidence-seal" aria-hidden="true">✓</span><div><strong data-validation-title>Completed native evidence</strong><p data-validation-detail></p></div></section>
+        <p class="development-note">These are six comparisons on two known development bodies and three seeds. The experiment chooses the first-visit checkpoint; this is not automatic memory retrieval. These trials do not establish how other creatures or unfamiliar worlds will behave.</p>
+        <details class="inside-notes"><summary>Look at the evidence behind this case <span aria-hidden="true">+</span></summary><div>
+          <p>All three branches share the same first 120 seconds, including the move from A to B at 60 seconds. At 120 seconds the light returns to A. “Keep learning” continues updating its action values. “Current values” fixes the values reached just before the return. “First-visit values” restores the values saved at 60 seconds and fixes them. Fixed values still guide actions from current sensor feedback; they do not mean a motionless motor or a prerecorded movement.</p>
+          <p>The experiment selects the earlier checkpoint. It tests the usefulness of those saved values, not a creature’s ability to recognize a place and retrieve a memory by itself. The comparison checks matching recorded physical state, a complete learner-state fingerprint before the branch, and preservation of nonparameter learner state when the earlier values are restored.</p>
+          <p>Curves retain received-light samples from the native report. Reward and electrical energy come from the report’s integrated measurements. The faint band marks the primary 120–140-second window. This page reads an exported record and does not run or change a creature.</p>
+          <ul class="evidence-checks" data-checks></ul>
+          <dl class="source-record"><div><dt>Native report</dt><dd data-source-path></dd></div><div><dt>Report SHA-256</dt><dd><code data-source-hash></code></dd></div><div><dt>Body SHA-256</dt><dd><code data-assembly-hash></code></dd></div><div><dt>Case</dt><dd data-case-id></dd></div></dl>
+          <p class="data-link"><a href="/retention-data.json" download>Download this compact record</a> <span aria-hidden="true">·</span> <a href="/adaptation.html">Earlier experiment: when the sun moves</a></p>
+        </div></details>
+      </div>
+      <p class="screen-reader-status" data-live aria-live="polite"></p>
+    </main>
+  </body>
+</html>
+

@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#173e32">
+    <meta name="description" content="A measured Droid Blocks experiment: can local sensor readings distinguish two light conditions under matching actions and entirely withheld test sequences?">
+    <title>Droid Blocks — Can its senses tell the difference?</title>
+    <link rel="icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/construction.css">
+    <link rel="stylesheet" href="/context.css">
+    <script src="/context.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#comparison-chart">Skip to the measured comparison</a>
+    <main class="workshop context-workshop">
+      <header class="masthead"><a class="home-link" href="/light.html">← Back to the sunshine workshop</a><span class="record-label">A record of what happened</span></header>
+      <div class="introduction"><div><p class="eyebrow">Droid Blocks · A senses experiment</p><h1>Can its senses<br>tell the difference?</h1><p>Same actions. Different sunshine.<br>We ask whether local readings distinguish A from B<br class="wide-only"> in whole sequences kept out of training.</p></div><div class="senses-emblem" aria-hidden="true"><div><span>A</span><b>☀</b><span>B</span></div><p>notice · compare</p></div></div>
+      <div class="load-state" data-loading role="status"><span class="load-dot" aria-hidden="true"></span>Reading the completed experiment…</div>
+      <div class="load-error" data-error role="alert" hidden><h2>The experiment record is not available yet.</h2><p data-error-detail>This page waits for a completed, validated report. No provisional result is shown.</p><button type="button" data-retry>Try reading it again</button></div>
+
+      <div data-results hidden>
+        <div class="body-picker"><div><label for="body-choice">Creature</label><select id="body-choice" data-body></select></div><p data-body-detail></p></div>
+
+        <section class="model-overview" aria-labelledby="overview-title">
+          <div class="section-heading"><div><p class="eyebrow">Four ways to read the same senses</p><h2 id="overview-title">What carries the difference?</h2></div><p>Choose a view to inspect its readings below.</p></div>
+          <div class="context-headline"><div><span>One-second history accuracy</span><strong data-history-accuracy>—</strong><small>Four withheld sequences · chance reference 50%</small></div><div><span>History − current senses</span><strong data-history-delta>—</strong><small>Percentage points · a descriptive difference</small></div></div>
+          <div class="model-cards" data-models role="group" aria-label="Sensor views and withheld-sequence accuracy"></div>
+          <p class="aggregate-note">Accuracy is averaged equally across four withheld action sequences. Each range runs from the lowest to the highest sequence accuracy.</p>
+        </section>
+
+        <section class="comparison-panel" aria-labelledby="comparison-title">
+          <div class="comparison-heading"><div><p>Smoothed neighbor vote · p(A)</p><h2 id="comparison-title" data-plot-title>Measured comparison</h2></div><div class="probe-picker"><label for="probe-choice">Withheld action sequence</label><select id="probe-choice" data-probe></select></div></div>
+          <div class="curve-legend"><span><i class="legend-a" aria-hidden="true"></i>Light A <small>evaluator label</small></span><span><i class="legend-b" aria-hidden="true"></i>Light B <small>evaluator label</small></span><span class="chance-legend"><i aria-hidden="true"></i>0.5 reference</span></div>
+          <svg id="comparison-chart" data-chart viewBox="0 0 1000 370" role="img" tabindex="-1" aria-labelledby="chart-title chart-description"><title id="chart-title">Votes for condition A under matching actions</title><desc id="chart-description">The measured comparison will appear here.</desc></svg>
+          <p class="chart-note">Above 0.5 favors A; below 0.5 favors B. The two lines come from separate runs with the same action sequence.</p>
+        </section>
+        <p class="vote-note">p(A) is a smoothed vote among nearby training examples. It is not a calibrated confidence estimate.</p>
+
+        <section class="sequence-results" aria-labelledby="sequence-title"><h2 id="sequence-title">Each withheld sequence gets a say</h2><p data-table-description>Accuracy for each complete withheld action sequence, combining its A and B trials.</p><table><caption class="screen-reader-status">Accuracy by entirely withheld action sequence and sensor view.</caption><thead><tr><th scope="col">Sequence</th><th scope="col">History<br><small>1 second</small></th><th scope="col">Current<br><small>senses</small></th><th scope="col">Brightness<br><small>only</small></th><th scope="col">Without<br><small>light</small></th></tr></thead><tbody data-sequence-results></tbody></table></section>
+
+        <section class="evidence-summary" aria-label="Evidence validation"><span class="evidence-seal" aria-hidden="true">✓</span><div><strong data-validation-title>Completed native evidence</strong><p data-validation-detail></p></div></section>
+        <p class="development-note">This is a supervised test on two known bodies. A and B are labels supplied by the experiment. Distinguishable readings would not, by themselves, show that a creature recognizes a returning place or retrieves a memory.</p>
+        <details class="inside-notes"><summary>Look at the evidence behind these readings <span aria-hidden="true">+</span></summary><div>
+          <p>Eight complete action sequences (101–108) supply training examples. Four other complete sequences (109–112) are withheld for testing. Each sequence is run under both light conditions with matched actions. Neighboring windows from a test sequence stay out of training.</p>
+          <p>History uses one second of local sensor readings. The current-senses, brightness-only and without-light controls ask which readings carry information about the condition. A and B are evaluator labels; they are not extra inputs available to the creature. The plotted p(A) values are smoothed neighbor votes, not calibrated probabilities of correctness.</p>
+          <p>Accuracy is reported per withheld sequence and averaged equally across the four sequences for each body. The range describes those four sequence results. Overlapping sensor windows are not independent replications, and this page makes no window-level significance claim.</p>
+          <p>This static page reads a validated report from 48 native trials and 48 exact replays. It does not run or modify a creature. Results apply to these known bodies, action sequences and two light conditions.</p>
+          <ul class="evidence-checks" data-checks></ul>
+          <dl class="source-record"><div><dt>Native report</dt><dd data-source-path></dd></div><div><dt>Report SHA-256</dt><dd><code data-source-hash></code></dd></div><div><dt>Body SHA-256</dt><dd><code data-assembly-hash></code></dd></div></dl>
+          <p class="data-link"><a href="/context-data.json" download>Download this compact record</a><span aria-hidden="true">·</span><a href="/retention.html">Earlier experiment: when the sunshine returns</a></p>
+        </div></details>
+      </div>
+      <p class="screen-reader-status" data-live aria-live="polite"></p>
+    </main>
+  </body>
+</html>
+

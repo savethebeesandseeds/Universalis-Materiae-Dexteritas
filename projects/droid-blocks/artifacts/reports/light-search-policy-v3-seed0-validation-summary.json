@@ -1,0 +1,94 @@
+{
+  "schema_version": "droid-blocks.validation-summary.v1",
+  "classification": "diagnostic_non_official",
+  "record_provenance": {
+    "kind": "reduced_machine_readable_summary",
+    "source_command": "droid-agent validate-policy --input-policy /workspace/artifacts/light-search-policy-v3-seed0.json --model /workspace/models/droid.xml",
+    "raw_stdout_retained": false,
+    "reduction": "Selected compatibility, split, aggregate, safety, and paired-comparison fields copied from deterministic validation-only JSON stdout without changing their scientific values."
+  },
+  "artifact": {
+    "path": "artifacts/light-search-policy-v3-seed0.json",
+    "schema_version": "droid-blocks.policy-artifact.v1",
+    "self_sha256": "4dd4d6ccadecb0b3b69d3b3d412af83eff15208b19058701538dbdf83a4c32b5",
+    "serialized_file_sha256": "6f7d5069bdb884d75f1241629d437c039a2f7a486633d9ef2d7f6b70db0a5582",
+    "protocol_manifest_sha256": "f06d689351ddf10c6e987661d7a1f935df4cd8a3c911a76dd13395a6d4b49e93",
+    "algorithm_id": "cem_masked_best_sample_v1",
+    "architecture_id": "shared_linear_memory_v2",
+    "selected_generation": 6,
+    "parameter_count": 33
+  },
+  "runtime_compatibility": {
+    "assembly_id": "demo_rover_v0",
+    "environment_api_version": "agent_environment_v0",
+    "control_dt_s": 0.02,
+    "control_dt_binary64": "0x3f947ae147ae147b",
+    "model_sha256": "20b36ed04d5f7c8d7cf660422ac074bbb4000cde8ce8483cc402417f63dd6b5e",
+    "module_catalog_sha256": "3663aa729b55caeb059516b4cf59251b34938985bf13539f0c38b7b093aa7060",
+    "environment_spec_sha256": "2312a7fe94e5bf2e81f26ba042648b593cf44ab8782640bf1fa9efd359a11053",
+    "feature_schema_sha256": "5cb9e458f076bdf5cd442d8105375bf7aebca4d9019c1ab647d79f269388c7ea"
+  },
+  "split_provenance": {
+    "derivation_id": "balanced_light_side_splitmix64_v1",
+    "base_seed": 0,
+    "validation_seed_count": 16,
+    "validation_seeds_sha256": "52f43b16bb55a187bce3795dcf992970e6876a3af96be8087b3acfa1e0112221",
+    "test_seed_count": 64,
+    "test_seeds_sha256": "ea76b89662d8b090a2d45ea573a10657992930c326f5fe1167b7db72569ed011",
+    "split_evaluated": "validation",
+    "test_rollouts_executed": false
+  },
+  "scientific_status": {
+    "heldout_decision_emitted": false,
+    "acceptance_result": null
+  },
+  "validation": {
+    "learned": {
+      "mean_reward_rate": 0.7603299107875002,
+      "mean_return": 15.206598215750004,
+      "episode_count": 16,
+      "terminated_episodes": 0,
+      "truncated_episodes": 0,
+      "safety_veto_count": 0,
+      "invalid_reward_sensor_samples": 0,
+      "invalid_actuator_feedback_samples": 0,
+      "mean_abs_effort": 0.31318514771991324,
+      "max_abs_effort": 0.5999999976413114,
+      "peak_abs_current_a": 1.4999999759926383,
+      "peak_temperature_c": 27.840471196252533,
+      "peak_stuck_score": 0.011833241530305292,
+      "voltage_limited_flag_count": 8640
+    },
+    "zero": {
+      "mean_reward_rate": 0.6630260000000452,
+      "mean_return": 13.260520000000906,
+      "episode_count": 16,
+      "terminated_episodes": 0,
+      "truncated_episodes": 0,
+      "safety_veto_count": 0,
+      "invalid_reward_sensor_samples": 0,
+      "invalid_actuator_feedback_samples": 0
+    },
+    "paired_comparison": {
+      "metric": "mean_reward_rate",
+      "pairing": "exact_environment_seed_and_order",
+      "overall": {
+        "learned_minus_zero": 0.09730391078745496,
+        "learned_wins": 16,
+        "ties": 0,
+        "zero_wins": 0,
+        "scenario_count": 16
+      },
+      "negative_x": {
+        "learned_minus_zero": 0.09791938469996925,
+        "learned_wins": 8,
+        "scenario_count": 8
+      },
+      "positive_x": {
+        "learned_minus_zero": 0.09668843687494068,
+        "learned_wins": 8,
+        "scenario_count": 8
+      }
+    }
+  }
+}

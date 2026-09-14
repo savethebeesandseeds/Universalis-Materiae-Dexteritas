@@ -1,0 +1,41 @@
+{
+  "schema": "actuation_transfer_preservation_detail_v1",
+  "checked_at_utc": "2026-09-06T22:45:36.6124912Z",
+  "initial_report_path": "build/actuation-transfer-qa/preservation-check.json",
+  "initial_report_sha256": "d697b1a553ba31a2fadd206e5c0f37f6460055e6fa5e50ed1ad8cc4d87e764ca",
+  "scientific_artifacts_preserved": true,
+  "protected_file_count": 466,
+  "live_light_byte_identical": true,
+  "construction": {
+    "url": "http://127.0.0.1:43117/api/construction/state",
+    "method": "GET",
+    "before_sha256": "df7ca0a5f1ff9c0281d433de3d3a3caf6901e608daccb70c65a45fc81d7aa07c",
+    "current_sha256": "f1c69b536cfe88482e6036ed5dcca2985cebbf79c2c8e5f16950c375c6cd42f7",
+    "full_byte_identity": false,
+    "identical_after_replacing_only_session_id": true,
+    "unique_session_id_token_verified": true,
+    "difference": {
+      "path": "$/session_id",
+      "before": 2,
+      "current": 3
+    },
+    "all_other_state_preserved": true
+  },
+  "code_review": {
+    "get_changes_id": false,
+    "page_open_changes_id": false,
+    "increments": "build/reset/explore/replay controls only",
+    "consistent_possible_explanation": "One additional completed Explore/Wake invocation would reproduce this complete explore state and increment the ID; no caller or timing is inferred from code alone.",
+    "training_isolation": "The training bridge owns ConstructionWorld instances directly and makes no live HTTP/session control calls.",
+    "references": [
+      "src/main.cpp:454",
+      "src/construction_session.cpp:144",
+      "src/construction_session.cpp:157",
+      "src/construction_session.cpp:173",
+      "src/construction_session.cpp:195",
+      "web/construction.js:442",
+      "web/construction.js:516"
+    ]
+  },
+  "conclusion": "All protected scientific files match. Light response bytes match. Construction physical/controller/evidence state matches except its session identity; strict full-byte preservation remains false. No reset or revert was attempted."
+}

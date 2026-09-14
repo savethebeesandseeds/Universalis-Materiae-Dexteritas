@@ -1,0 +1,14 @@
+{
+  "schema": "droid-blocks.source-archive.v1",
+  "purpose": "Exact construction_kit_v1 native header/source before mounted light successor",
+  "files": [
+    {
+      "path": "include/droid/construction.hpp",
+      "sha256": "f4ea509b7520122b03436291c6bc5cd3b7f2fec39425e436479e8dfb4d267367"
+    },
+    {
+      "path": "src/construction.cpp",
+      "sha256": "ceacdc64ccb25d38a8c06524d9718a480305aa264f83a8a5b8f4c225acb473ad"
+    }
+  ]
+}

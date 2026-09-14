@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="344.514mm" height="600.636mm" viewBox="0 0 344.514 600.636">
+<title>tunic_front - Inner tunic - wrap front</title>
+<desc>Millimeters. 1:1 when physical dimensions are preserved. Prototype. Black: cut; dashed blue: seam or finished boundary. Allowances already included.</desc>
+<rect width="100%" height="100%" fill="white"/>
+<text x="15" y="9" font-family="sans-serif" font-size="4">tunic_front | Inner tunic - wrap front | CUT 2 MIRRORED (one left, one right)</text>
+<text x="15" y="15" font-family="sans-serif" font-size="3">PROTOTYPE / mm / allowances included / confirm calibration before cutting</text>
+<g transform="translate(15,30)">
+<polygon points="137.491,1.000 297.000,18.737 297.000,192.420 314.514,520.636 313.714,535.636 314.247,545.636 1.000,545.636 1.000,535.636 1.000,520.636 1.000,350.636 77.000,153.436" fill="none" stroke="#24343b" stroke-width="0.3"/>
+<polygon points="133.667,10.636 287.000,27.686 287.000,192.686 304.500,520.636 1.000,520.636 1.000,350.636 77.000,153.436" fill="none" stroke="#3e728b" stroke-width="0.2" stroke-dasharray="2 1"/>
+<polyline points="77.000,173.436 77.000,490.636" fill="none" stroke="#ac744c" stroke-width="0.25"/>
+<polyline points="16.000,350.636 272.000,350.636" fill="none" stroke="#ac744c" stroke-width="0.25"/>
+<polyline points="279.000,192.686 287.000,192.686" fill="none" stroke="#ac744c" stroke-width="0.25"/>
+<polyline points="77.000,153.436 85.000,155.436" fill="none" stroke="#ac744c" stroke-width="0.25"/>
+<polyline points="303.700,535.636 1.000,535.636" fill="none" stroke="#ac744c" stroke-width="0.25" stroke-dasharray="2 1"/>
+<polyline points="304.500,520.636 303.700,535.636 304.233,545.636" fill="none" stroke="#ac744c" stroke-width="0.25"/>
+<polyline points="1.000,520.636 1.000,535.636 1.000,545.636" fill="none" stroke="#ac744c" stroke-width="0.25"/>
+<polyline points="192.500,214.636 192.500,377.836" fill="none" stroke="#61737a" stroke-width="0.3"/>
+<polyline points="190.500,218.636 192.500,214.636 194.500,218.636" fill="none" stroke="#61737a" stroke-width="0.3"/>
+<polyline points="190.500,373.836 192.500,377.836 194.500,373.836" fill="none" stroke="#61737a" stroke-width="0.3"/>
+<text x="104.300" y="153.436" font-family="sans-serif" font-size="3">FRONT / MIRRORED PAIR</text>
+<text x="81.000" y="169.436" font-family="sans-serif" font-size="2.5" fill="#3e728b">M1</text>
+<text x="20.000" y="346.636" font-family="sans-serif" font-size="2.5" fill="#3e728b">M2</text>
+<text x="283.000" y="188.686" font-family="sans-serif" font-size="2.5" fill="#3e728b">M3</text>
+<text x="81.000" y="149.436" font-family="sans-serif" font-size="2.5" fill="#3e728b">M4</text>
+<text x="302.514" y="531.636" font-family="sans-serif" font-size="2.5" fill="#3e728b">M5</text>
+</g>
+<path d="M 15 593.636 h 100 m -100 -2 v 4 m 100 -4 v 4" fill="none" stroke="black" stroke-width="0.3"/>
+<text x="15" y="590.636" font-family="sans-serif" font-size="3">100 mm verification line</text>
+</svg>

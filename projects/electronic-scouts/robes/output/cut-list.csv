@@ -1,0 +1,12 @@
+piece,name,group,cut,material,envelope_width_mm,envelope_height_mm
+robe_back,Outer robe - full back,robe,CUT 1 FULL PIECE; no fold,Charcoal outer cloth,531.04,786.2
+robe_front,Outer robe - wrap front,robe,"CUT 2 MIRRORED (one left, one right)",Charcoal outer cloth,361.02,786.73
+robe_sleeve,Outer robe - flat sleeve,robe,CUT 2 FULL PIECES; no fold,Charcoal outer cloth,151.0,375.81
+tunic_back,Inner tunic - full back,tunic,CUT 1 FULL PIECE; no fold,Slate-blue inner cloth,476.03,545.94
+tunic_front,Inner tunic - wrap front,tunic,"CUT 2 MIRRORED (one left, one right)",Slate-blue inner cloth,314.51,545.64
+tunic_sleeve,Inner tunic - flat sleeve,tunic,CUT 2 FULL PIECES; no fold,Slate-blue inner cloth,211.0,352.79
+robe_hood,Outer robe - hood side,robe,"CUT 2 MIRRORED (one left, one right)",Charcoal outer cloth,240.81,346.0
+robe_bias_strip,Outer - bias binding strip,robe,CUT 2 STRIPS ON TRUE BIAS; may piece shorter strips,Charcoal outer cloth,1001.0,41.0
+tunic_bias_strip,Inner - bias binding strip,tunic,CUT 2 STRIPS ON TRUE BIAS; may piece shorter strips,Slate-blue inner cloth,1001.0,41.0
+tabard,Shoulder tabard,accessories,"CUT 4 = two tabards, each with two fabric layers",Charcoal outer cloth,106.0,921.0
+sash,Short fastening sash,accessories,CUT 2 = one sash with two fabric layers,Charcoal outer cloth,771.0,71.0

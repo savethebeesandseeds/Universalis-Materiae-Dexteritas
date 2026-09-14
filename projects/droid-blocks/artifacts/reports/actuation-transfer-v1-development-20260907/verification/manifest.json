@@ -1,0 +1,37 @@
+[
+  {
+    "path": "audit-source.mjs",
+    "sha256": "f2827d9ba7618d18ba7509237213f5fc806001d48c4628a9f1ab5a5a0d6da1fd",
+    "bytes": 49103
+  },
+  {
+    "path": "audited-results.json",
+    "sha256": "a7705aee977e158a150ebee8379e7e669687ca0a8520bdd8efc14bd14258d7e1",
+    "bytes": 546235
+  },
+  {
+    "path": "browser-checks.json",
+    "sha256": "b9349ed971d28920a3401729077acac8ba0267b64b96cb8918f7505ebadd5aa3",
+    "bytes": 1586
+  },
+  {
+    "path": "final-preservation.json",
+    "sha256": "63705a6e0501ab5478034e178effe43704b5fd865f073f7f4bc75827f89522fa",
+    "bytes": 269
+  },
+  {
+    "path": "independent-comparison.json",
+    "sha256": "6120e0b2f339ff6dc320d751b7f6512c10482e07180018fb52c1862c042ff077",
+    "bytes": 256535
+  },
+  {
+    "path": "preservation-check-details.json",
+    "sha256": "b6959d22baa4c1a309576d3c08a35259d6a9965f66b6bf78f09fa809c442106f",
+    "bytes": 2017
+  },
+  {
+    "path": "preservation-check.json",
+    "sha256": "d697b1a553ba31a2fadd206e5c0f37f6460055e6fa5e50ed1ad8cc4d87e764ca",
+    "bytes": 170081
+  }
+]

@@ -1,0 +1,28 @@
+{
+  "id": "transmission_discovery_v1",
+  "purpose": "Known-development-body comparison of per-motor and shared paired light probes",
+  "status": "development_only",
+  "episode_profile": "body_discovery_1d_v1",
+  "assembly_ids": ["transmission_normal_v1", "transmission_reversed_v1", "transmission_disconnected_v1"],
+  "worlds": [
+    {"side": "left", "seed_decimal": "6106049681611768608"},
+    {"side": "right", "seed_decimal": "6990021049862345368"}
+  ],
+  "exposure": "The two published v3 training worlds and all three successor bodies are development data. No validation or held-out worlds are instantiated.",
+  "historical_parent_artifact_sha256": "4dd4d6ccadecb0b3b69d3b3d412af83eff15208b19058701538dbdf83a4c32b5",
+  "parent_weights_used": false,
+  "strategies": ["discover", "together", "zero"],
+  "control_dt_s": 0.02,
+  "max_control_steps": 2000,
+  "comparison_budget": "Equal 40-second total episode budget, including each strategy's probing time",
+  "light_sensor_period_s": 0.1,
+  "light_sensor_latency_s": 0.04,
+  "hypotheses": [
+    "Paired individual motor probes can expose different local light-response signs after a transmission reversal.",
+    "A disconnected shaft may produce little or contradictory light-response evidence, which does not by itself identify disconnection.",
+    "Individual probing may improve useful control compared with broadcasting one shared direction; results on this small family may also refute that benefit."
+  ],
+  "measurements": ["delivered illuminance", "summed sensor reward integral", "probe time", "per-motor response evidence", "applied effort", "simulated safety events", "privileged final pose for reporting only"],
+  "acceptance": "Engineering checks require causal observations, real mechanics, ownership isolation, reset/replay determinism and fail-closed safety. No performance or generalization acceptance decision is defined for these exposed development runs.",
+  "future_challenge": "A fresh separately versioned challenge family must be designated and kept outside development before any future generalization claim. This experiment declares no unseen challenge or official held-out result."
+}

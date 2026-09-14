@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#173e32">
+  <meta name="description" content="Watch the same Droid Blocks parts after their motor moves to the elbow. Compare saved learning, continued adaptation and learning from scratch in synchronized recorded simulations.">
+  <title>Droid Blocks — The motor moved</title>
+  <link rel="icon" href="/favicon.ico">
+  <link rel="stylesheet" href="/construction.css">
+  <link rel="stylesheet" href="/transfer.css">
+  <script src="/transfer.js" defer></script>
+</head>
+<body class="transfer-workshop">
+  <a class="skip-link" href="#replay-bench">Skip to the recorded creatures</a>
+  <main class="workshop transfer-page">
+    <header class="masthead"><a class="home-link" href="/discoveries.html">← The research notebook</a><span class="record-badge">Recorded native simulations</span></header>
+    <div class="introduction transfer-introduction">
+      <div><p class="eyebrow">Droid Blocks · Learn, rebuild, adapt</p><h1>The same parts.<br>The motor moved.</h1><p>We moved the drive from the anchor to the elbow.<br>Can earlier learning help this changed body find its sunshine?</p></div>
+      <div class="hinge-sketch" aria-hidden="true"><span>before</span><svg viewBox="0 0 150 110"><path d="M20 15h30m-15 0v22m0 0 20 29 18 26" fill="none" stroke="#668470" stroke-width="8" stroke-linecap="round"/><circle cx="35" cy="37" r="9" fill="#d9b568" stroke="#9c824c"/><circle cx="55" cy="66" r="5" fill="#e9dec0" stroke="#668470"/><path d="M94 15h30m-15 0v22m0 0 17 29-13 26" fill="none" stroke="#668470" stroke-width="8" stroke-linecap="round"/><circle cx="109" cy="37" r="5" fill="#e9dec0" stroke="#668470"/><circle cx="126" cy="66" r="9" fill="#d9b568" stroke="#9c824c"/></svg><span>after</span></div>
+    </div>
+    <p class="scope-line">One motor, two linked beams, one passive hinge. The chain remains anchored in place.</p>
+
+    <section class="evidence-status" data-load-state role="status"><span class="status-dot" aria-hidden="true"></span><div><strong data-load-title>Reading the experiment record…</strong><p data-load-detail>The three recorded comparisons will appear here when their evidence is ready.</p></div><button type="button" data-retry>Read again</button></section>
+    <p class="study-status" data-study-status hidden></p>
+
+    <div class="replay-selection">
+      <label for="transfer-case">Rebuilt creature<select id="transfer-case" data-case disabled><option>Evidence preparing</option></select></label>
+      <label for="transfer-seed">Learning seed<select id="transfer-seed" data-seed disabled><option>101</option></select></label>
+      <label class="reference-toggle"><input type="checkbox" data-reference disabled><span>Also show the original motor position<small>A reference before the rebuild</small></span></label>
+    </div>
+    <p class="selected-description" data-case-description>Each comparison uses the same parts and sunshine, with the motor attached at the elbow.</p>
+
+    <section id="replay-bench" class="replay-bench" aria-label="Synchronized recorded simulation comparison">
+      <div class="creature-panels" data-panels>
+        <article class="creature-panel arm-frozen" data-panel="frozen" aria-labelledby="frozen-title"><header><span class="arm-number">01</span><div><h2 id="frozen-title">Use earlier learning</h2><p>Saved policy · stays fixed</p></div></header><div class="creature-stage"><svg data-motion viewBox="0 0 360 340" role="img" aria-label="Earlier-learning simulation is preparing"></svg><span class="stage-status" data-stage-status>Evidence preparing</span></div><div class="creature-readouts"><div><span>Reward so far</span><strong data-reward>—</strong></div><div><span>Light at its eye</span><strong data-light>— <small>lx</small></strong></div></div><p class="panel-footnote" data-panel-note>The earlier policy meets the changed motor position.</p></article>
+        <article class="creature-panel arm-adapt" data-panel="adapt" aria-labelledby="adapt-title"><header><span class="arm-number">02</span><div><h2 id="adapt-title">Keep learning</h2><p>Same saved policy · adapts</p></div></header><div class="creature-stage"><svg data-motion viewBox="0 0 360 340" role="img" aria-label="Adapting simulation is preparing"></svg><span class="stage-status" data-stage-status>Evidence preparing</span></div><div class="creature-readouts"><div><span>Reward so far</span><strong data-reward>—</strong></div><div><span>Light at its eye</span><strong data-light>— <small>lx</small></strong></div></div><p class="panel-footnote" data-panel-note>New movements can update the earlier policy.</p></article>
+        <article class="creature-panel arm-scratch" data-panel="scratch" aria-labelledby="scratch-title"><header><span class="arm-number">03</span><div><h2 id="scratch-title">Learn from scratch</h2><p>Fresh policy · same new opportunity</p></div></header><div class="creature-stage"><svg data-motion viewBox="0 0 360 340" role="img" aria-label="Learning-from-scratch simulation is preparing"></svg><span class="stage-status" data-stage-status>Evidence preparing</span></div><div class="creature-readouts"><div><span>Reward so far</span><strong data-reward>—</strong></div><div><span>Light at its eye</span><strong data-light>— <small>lx</small></strong></div></div><p class="panel-footnote" data-panel-note>Learning begins on the rebuilt creature.</p></article>
+        <article class="creature-panel arm-source_frozen" data-panel="source_frozen" aria-labelledby="source-title" hidden><header><span class="arm-number">↶</span><div><h2 id="source-title">Before the rebuild</h2><p>Saved policy · motor at the anchor</p></div></header><div class="creature-stage"><svg data-motion viewBox="0 0 360 340" role="img" aria-label="Original-layout simulation is preparing"></svg><span class="stage-status" data-stage-status>Evidence preparing</span></div><div class="creature-readouts"><div><span>Reward so far</span><strong data-reward>—</strong></div><div><span>Light at its eye</span><strong data-light>— <small>lx</small></strong></div></div><p class="panel-footnote" data-panel-note>The original actuation layout provides a separate reference.</p></article>
+      </div>
+
+      <div class="shared-playback">
+        <div class="playback-actions"><button type="button" class="play-button" data-play disabled aria-label="Play all recorded simulations">Play together <span aria-hidden="true">▶</span></button><button type="button" data-restart disabled>Restart</button><label class="speed-control">Speed<select data-speed aria-label="Replay speed"><option value="0.5">½×</option><option value="1" selected>1×</option><option value="2">2×</option><option value="4">4×</option></select></label><output data-time for="replay-time">0.0 / 64.0 s</output></div>
+        <label class="timeline-label" for="replay-time">Shared time <span>All creatures use the same clock</span></label><input id="replay-time" data-timeline type="range" min="0" max="64" step="0.1" value="0" disabled aria-valuetext="0 seconds of 64 seconds">
+        <div class="timeline-labels"><span>New motor position</span><span data-duration-label>64 seconds of new experience</span></div>
+        <p class="playback-note" data-playback-note>Playback reads saved physical snapshots. A run that ended early stays at its last recorded position.</p>
+      </div>
+    </section>
+
+    <section class="experiment-outcome" aria-labelledby="outcome-title" data-outcome>
+      <div class="outcome-heading"><div><p class="eyebrow">Across the whole experiment</p><h2 id="outcome-title">Did earlier learning help?</h2></div><span class="outcome-verdict" data-overall-verdict>Awaiting the audited result</span></div>
+      <p class="outcome-conclusion" data-overall-conclusion>The experiment summary will appear with the audited recordings.</p>
+      <p class="outcome-explanation">Each number below averages adapting minus scratch over that learning seed’s cases. Positive means adapting earned more native reward; negative means it earned less.</p>
+      <dl class="seed-results" data-seed-means><div><dt>Learning seeds</dt><dd>Evidence preparing</dd></div></dl>
+      <p class="outcome-criterion" data-overall-criterion>The overall criterion uses the seed averages, rather than choosing a favorable creature.</p>
+      <p class="outcome-integrity" data-overall-integrity></p>
+      <div class="control-comparisons"><h3>Did learning beat a quiet motor?</h3><p data-control-summary>The source and quiet comparisons will appear here when their measured returns are available.</p><p data-usefulness>Beating scratch alone does not establish useful behavior. A quiet motor still allows gravity and passive movement.</p></div>
+    </section>
+
+    <section class="reward-panel" aria-labelledby="reward-title"><div class="reward-heading"><div><p class="eyebrow">The selected creature and seed</p><h2 id="reward-title">Received sensor reward</h2></div><div class="comparison-delta"><span>This case: adapting − scratch · full run</span><strong data-delta>—</strong><small data-delta-note>Waiting for a complete matched comparison</small></div></div><div class="reward-legend" data-legend><span class="arm-frozen">Earlier learning</span><span class="arm-adapt">Keep learning</span><span class="arm-scratch">From scratch</span><span class="arm-source_frozen" data-source-legend hidden>Original position</span></div><svg data-reward-chart viewBox="0 0 1000 220" role="img" aria-label="Cumulative native sensor reward will appear with the recorded trials"></svg><p class="reward-note">Reward adds the light sensor’s reading and the IMU’s motion penalty over time. The chart follows measured native reward; net electrical energy is reported separately.</p></section>
+
+    <details class="inside-notes transfer-details"><summary>What is learning here? <span aria-hidden="true">+</span></summary><div><p>The saved actor and critic belong to a PPO controller. “Keep learning” starts with those weights and updates them after new interactions. “Learn from scratch” starts with fresh weights and gets the same interaction budget. The frozen policy still reacts to its current senses.</p><p>The policy reads a short stack of local motor feedback, delayed IMU and light measurements, and its recent actions and rewards. The motor’s hinge index, body geometry and sun position stay outside that input.</p><dl class="protocol-facts"><div><dt>Earlier source learning</dt><dd data-source-budget>Evidence preparing</dd></div><div><dt>New interaction budget</dt><dd data-target-budget>640 decisions · 64 simulated seconds</dd></div><div><dt>Construction scope</dt><dd data-scope>The same two-link chain with one powered hinge and one passive hinge.</dd></div></dl><p>These are simulations of an anchored mechanism. This comparison does not demonstrate walking, a new chain topology or transfer to hardware.</p></div></details>
+    <details class="inside-notes transfer-details"><summary>Measurements and replay evidence <span aria-hidden="true">+</span></summary><div><p data-evidence-note>The completed run records will supply durations, net electrical energy and native replay checks.</p><div class="metrics-scroll"><table><caption class="screen-reader-status">Measurements for the selected creature and training seed</caption><thead><tr><th scope="col">Recorded run</th><th scope="col">Duration</th><th scope="col">Reward</th><th scope="col">Net electrical energy</th><th scope="col">Replay</th></tr></thead><tbody data-measures></tbody></table></div><p class="sample-note" data-sample-note>Only saved geometry is used for the animation. Numerical experiment results retain the full native record.</p><p><a href="/transfer-data.json" download>Download the comparison index</a> · <a href="/discoveries.html">Browse earlier findings</a></p><details class="raw-record"><summary>Declared protocol and experiment summary</summary><pre data-protocol>Evidence preparing</pre></details></div></details>
+    <p class="screen-reader-status" data-live aria-live="polite"></p>
+  </main>
+</body>
+</html>

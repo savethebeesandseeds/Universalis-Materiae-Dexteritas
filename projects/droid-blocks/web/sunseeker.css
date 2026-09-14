@@ -1,0 +1,163 @@
+/* The workshop foregrounds the experiment; the original airship remains a view. */
+.console-shell { max-width: 1240px; padding: 12px 28px 22px; }
+.brand-strip { position: relative; inset: auto; align-items: center; }
+.brand-link { width: 110px; }
+.link-plate { margin: 0; }
+.workshop-intro { display: flex; align-items: center; justify-content: space-between; gap: 24px; margin: 2px 0 14px; color: #273a2e; }
+.eyebrow { margin: 0 0 10px; color: #716039; font: 600 11px var(--mono); letter-spacing: .16em; text-transform: uppercase; }
+.workshop-intro h1 { margin: 0 0 10px; font-weight: 500; font-size: clamp(32px, 4.2vw, 48px); letter-spacing: -.045em; line-height: 1.06; }
+.workshop-intro > div > p:last-child { margin: 0; font-size: 16px; line-height: 1.45; color: #625c46; }
+.workshop-vignette { width: 180px; height: auto; transform: rotate(-4deg); }
+.experiment-switch { display: flex; flex-wrap: wrap; gap: 8px; margin: 16px 0; }
+.experiment-switch button { min-height: 42px; border: 1px solid #a39472; border-radius: 8px; padding: 9px 16px; background: #f4e9ce; color: #514930; font: 600 13px var(--mono); cursor: pointer; }
+.experiment-switch button[aria-pressed="true"] { background: #354e3a; border-color: #354e3a; color: #f8e7b6; }
+.experiment-switch button[data-body-entry] span { margin-left: 8px; color: #97701f; }
+.experiment-switch button[aria-pressed="true"] span { color: inherit; }
+.experiment-switch button:disabled { opacity: .55; cursor: wait; }
+.body-lab-panel { padding: 16px 18px 12px; border: 1px solid #b0a082; border-radius: 12px; background: rgba(255,248,228,.52); }
+.body-lab-panel[hidden], .motor-discovery[hidden] { display: none; }
+.body-lab-heading, .discovery-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 14px; }
+.body-lab-heading h2, .discovery-heading h2 { margin: 0; color: #3c4935; font-size: 16px; font-weight: 600; }
+.body-lab-heading > span { color: #746b56; font-size: 12px; }
+.body-lab-choices { display: flex; flex-wrap: wrap; column-gap: 30px; row-gap: 15px; margin-top: 16px; }
+.body-choice > span { display: block; margin: 0 0 7px 2px; color: #6b5b42; font-size: 12px; }
+.body-choice > div { display: flex; flex-wrap: wrap; gap: 6px; }
+.body-choice button { min-height: 39px; border: 1px solid #aca080; border-radius: 7px; padding: 8px 13px; color: #39452f; background: #eee3c9; cursor: pointer; font-size: 13px; }
+.body-choice button[aria-pressed="true"] { color: #faedd0; background: #55466a; border-color: #55466a; }
+.body-choice button:disabled { opacity: .6; cursor: wait; }
+.body-lab-panel > p { margin: 12px 2px 0; color: #70634e; font-size: 12px; line-height: 1.5; }
+.motor-discovery { margin-top: 16px; padding: 16px 18px 12px; border: 1px solid #b3a073; border-radius: 12px; background: rgba(255,247,222,.48); }
+.discovery-heading > span { color: #6c547c; font-size: 12px; }
+.discovery-motors { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 9px; margin: 12px 0 10px; }
+.discovery-motor { min-width: 0; padding: 11px 12px; border: 1px solid #c3b697; border-radius: 8px; background: #f5ecd7; transition: background .15s, border-color .15s; }
+.discovery-motor header { display: flex; justify-content: space-between; align-items: baseline; gap: 5px; color: #576148; font: 600 11px var(--mono); }
+.discovery-motor:first-child header > strong { color: #72538b; }
+.motor-trial-status { font: 11px Georgia, serif; color: #7b7863; text-align: right; }
+.discovery-motor.is-probing { background: #fff1bd; border-color: #a8903d; box-shadow: inset 0 0 0 1px #b4a051; }
+.discovery-motor.is-probing .motor-trial-status { color: #745827; }
+.discovery-motor[data-confidence="uncertain"] { border-style: dashed; }
+.motor-preference { margin: 10px 0 7px; color: #40583d; font-size: 14px; line-height: 1.3; }
+.motor-evidence, .motor-effort { display: block; color: #746c55; font: 10px var(--mono); line-height: 1.65; }
+.motor-identity { display: none; }
+.motor-discovery > p { margin: 0; color: #75694f; font-size: 12px; line-height: 1.5; }
+.body-lab-view .workshop-intro > div > p:last-child { max-width: 620px; }
+.body-lab-view .controller-chip::before { background: #d0acfa; }
+.body-lab-view.workbench-view .simulation-window { height: clamp(280px, 34vh, 380px); }
+.experiment-toolbar { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; margin: 12px 0; }
+.sun-choice { display: flex; align-items: center; flex-wrap: wrap; gap: 6px; }
+.sun-choice > span { margin-right: 10px; color: #594e33; font-size: 15px; }
+.sun-choice button, .view-toggle { min-height: 42px; padding: 9px 16px; border: 1px solid #9f8553; border-radius: 24px; background: rgba(255,244,217,.32); color: #3c4a35; font-size: 14px; cursor: pointer; }
+.sun-choice button[aria-pressed="true"] { background: #173f36; border-color: #173f36; color: #ffe4a1; box-shadow: inset 0 0 0 2px rgba(236,198,112,.14); }
+.sun-choice button:disabled { cursor: wait; opacity: .6; }
+.view-toggle { border: 0; text-decoration: underline; text-underline-offset: 4px; }
+.experiment-heading { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 12px 18px; border-radius: 12px 12px 0 0; color: #d4c8a6; background: #112d27; font-size: 13px; }
+.controller-chip { color: #f3d595; font-weight: 700; }
+.controller-chip::before { content: ""; display: inline-block; width: 7px; height: 7px; margin: 0 8px 1px 0; border-radius: 50%; background: #c8dc8e; }
+.workbench-view .stage-viewport { height: auto; min-height: 0; aspect-ratio: auto; overflow: visible; border: 1px solid #17392f; background: #0a1e19; }
+.workbench-view .airship-stage { position: relative; inset: auto; display: grid; grid-template-columns: 1fr 1.4fr 1fr; gap: 10px; width: 100%; height: auto; aspect-ratio: auto; padding: 0 18px 16px; }
+.workbench-view .simulation-window { position: relative; inset: auto; grid-column: 1 / -1; width: calc(100% + 36px); height: clamp(280px, 39vh, 430px); margin: 0 -18px 6px; border-radius: 0; }
+.workbench-view .airship-art, .workbench-view .instrument { display: none; }
+.workbench-view .airship-control { position: relative; inset: auto; z-index: 3; display: grid; place-items: center; width: auto; height: auto; min-height: 48px; padding: 10px 16px; border: 1px solid #486255; border-radius: 8px; background: #183b30; color: #e9d6a8; font-size: 16px; cursor: pointer; box-shadow: none; text-transform: none; letter-spacing: 0; }
+.workbench-view .airship-control::before, .workbench-view .airship-control::after { display: none; content: none; }
+.workbench-view .airship-control .sr-only { position: static; width: auto; height: auto; margin: 0; overflow: visible; clip: auto; white-space: normal; }
+.workbench-view .control-play { background: #e8c56d; border-color: #f1d698; color: #213c2c; font-weight: 700; }
+.workbench-view .airship-control:hover:not(:disabled) { filter: brightness(1.13); }
+.workbench-view .airship-control:disabled { opacity: .5; cursor: default; }
+.workbench-view .window-readout, .workbench-view .window-world { display: none; }
+.workbench-view .window-time { top: 16px; right: 18px; padding: 6px 9px; }
+.workbench-view .window-time strong { font-size: 12px; }
+.workbench-view .window-time small { display: none; }
+.workbench-view .course-meter { bottom: 12px; left: 22px; right: 22px; padding: 5px 9px; }
+.workbench-view .course-meter > div { font-size: 10px; }
+.sensing-panel { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 17px 20px; border: 1px solid #b3a073; border-top: 0; border-radius: 0 0 12px 12px; background: rgba(255,247,222,.48); color: #364833; }
+.eye-reading { display: flex; align-items: center; gap: 14px; min-width: 300px; }
+.eye-icon { display: grid; width: 34px; height: 34px; place-items: center; border: 1px solid #988e5b; border-radius: 50%; color: #556536; font-size: 24px; }
+.eye-reading > div { display: grid; gap: 7px; flex: 1; }
+.eye-reading label { font-size: 13px; }
+.eye-reading meter { width: 100%; height: 10px; }
+meter::-webkit-meter-bar { background: #d4ccb0; border: none; border-radius: 6px; }
+meter::-webkit-meter-optimum-value { background: #789345; border-radius: 6px; }
+.eye-reading > strong { min-width: 70px; font: 600 16px var(--mono); text-align: right; }
+.eye-reading small { font-size: 11px; font-weight: 400; }
+.sensing-panel > p { margin: 0; color: #5b633e; text-align: right; font-size: 15px; }
+.experiment-caption { margin: 12px 8px 0; color: #675f49; font-size: 13px; line-height: 1.5; text-align: center; }
+.control-error { margin: 12px 0; padding: 14px; border: 1px solid #934230; color: #7c3123; background: #fbe1cb; border-radius: 8px; }
+.learning-details { grid-column: 1 / -1; }
+.learning-details > p { color: var(--ink); font-size: 14px; line-height: 1.5; }
+.learning-details > small { display: block; line-height: 1.5; color: var(--muted); }
+.provenance-list { display: grid; gap: 12px; font-size: 13px; }
+.provenance-list > div { display: grid; grid-template-columns: 125px 1fr; gap: 12px; }
+.provenance-list dt { color: var(--muted); }
+.provenance-list dd { margin: 0; overflow-wrap: anywhere; }
+.provenance-list code { font-size: 11px; }
+.mode-actions { display: flex; flex-wrap: wrap; gap: 10px; margin: 20px 0 12px; }
+.mode-actions button { min-height: 42px; padding: 8px 12px; border: 1px solid #7d815c; background: #193b31; color: #f0dfae; border-radius: 6px; cursor: pointer; }
+.mode-actions button:disabled { opacity: .45; cursor: default; }
+/* Accessible labels stay truthful in the illustrated view too. */
+body:not(.workbench-view) .control-play::before { content: attr(data-action-label); }
+body:not(.workbench-view) .control-play { background: #154238; border: 1px solid #b18c42; border-radius: 8px; color: #f1dfad; font-size: clamp(14px, 1.8vw, 26px); }
+body:not(.workbench-view) .window-readout, body:not(.workbench-view) .window-world { display: none; }
+body:not(.workbench-view) .stage-viewport { margin-top: -12px; }
+
+@media (max-width: 720px) {
+  .console-shell { padding: 12px 14px 20px; }
+  .brand-strip { padding: 0; }
+  .brand-link { width: 120px; }
+  .workshop-intro { margin: 18px 0; }
+  .workshop-intro > div > p:last-child { font-size: 15px; }
+  .workshop-vignette { width: 135px; }
+  .experiment-toolbar { margin: 14px 0; }
+  .sun-choice > span { flex-basis: 100%; margin-bottom: 4px; font-size: 13px; }
+  .sun-choice button { padding: 8px 12px; }
+  .experiment-heading { padding: 10px 12px; font-size: 11px; }
+  .workbench-view .simulation-window { height: 330px; }
+  .workbench-view .airship-stage { padding: 0 10px 12px; gap: 6px; }
+  .workbench-view .simulation-window { width: calc(100% + 20px); margin: 0 -10px 4px; }
+  .workbench-view .airship-control { padding: 8px 6px; font-size: 14px; }
+  .sensing-panel { flex-direction: column; align-items: stretch; gap: 12px; padding: 15px; }
+  .eye-reading { min-width: 0; }
+  .sensing-panel > p { text-align: left; font-size: 14px; }
+  .provenance-list > div { grid-template-columns: 85px 1fr; }
+  .experiment-switch { gap: 6px; }
+  .experiment-switch button { padding: 9px 10px; font-size: 11px; }
+  .body-lab-panel, .motor-discovery { padding: 14px 12px 12px; }
+  .body-lab-heading, .discovery-heading { flex-wrap: wrap; gap: 5px; }
+  .body-lab-heading h2, .discovery-heading h2 { font-size: 15px; }
+  .body-lab-choices { margin-top: 13px; }
+  .body-choice button { padding: 9px 10px; font-size: 12px; }
+  .discovery-motors { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .body-lab-view.workbench-view .simulation-window { height: 330px; }
+}
+@media (max-width: 440px) {
+  .workshop-vignette { display: none; }
+  .link-plate { min-width: 130px; }
+  .experiment-heading { align-items: flex-start; }
+  .experiment-heading > span:last-child { text-align: right; }
+  .view-toggle { padding-right: 0; padding-left: 0; font-size: 12px; }
+}
+@media (forced-colors: active) {
+  .workshop-intro, .workshop-intro > div > p:last-child, .eyebrow, .experiment-caption, .sun-choice > span { color: CanvasText; }
+  .workshop-vignette { display: none; }
+  .controller-chip, .sensing-panel, .sensing-panel > p { color: CanvasText; }
+  .workbench-view .airship-control, .sun-choice button, .view-toggle { border: 1px solid ButtonText; color: ButtonText; background: ButtonFace; }
+  .sun-choice button[aria-pressed="true"] { border: 3px solid Highlight; color: Highlight; }
+  .experiment-switch button, .body-choice button { border: 1px solid ButtonText; color: ButtonText; background: ButtonFace; }
+  .experiment-switch button[aria-pressed="true"], .body-choice button[aria-pressed="true"] { border: 3px solid Highlight; color: Highlight; }
+  .discovery-motor.is-probing { outline: 3px solid Highlight; }
+}
+/* The construction bench has its own editable assembly and native world. */
+.experiment-switch .construction-entry {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: .8rem 1rem;
+  border: 1px solid #6c897c;
+  border-radius: .6rem;
+  background: #f3e8c9;
+  color: #183e31;
+  font: inherit;
+  font-weight: 700;
+  text-decoration: none;
+}
+.experiment-switch .construction-entry:hover { background: #fff6dc; }
+.experiment-switch .construction-entry:focus-visible { outline: 3px solid #cf9348; outline-offset: 3px; }

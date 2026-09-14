@@ -1,0 +1,451 @@
+{
+  "schema": "actuation_transfer_source_v1",
+  "files": [
+    {
+      "path": "build/actuation-transfer-qa/adapter-tests.json",
+      "sha256": "d5c36a86858caf798afd09676d6f579d0c2e7381ca892aa62194bfb649d12232",
+      "bytes": 713
+    },
+    {
+      "path": "build/actuation-transfer-qa/bridge-tests.json",
+      "sha256": "3497657fb8a978a794e009528e2c58994b27ffa0647486b48547e1a3cda46424",
+      "bytes": 1699
+    },
+    {
+      "path": "build/actuation-transfer-qa/native-ctest.log",
+      "sha256": "252f7f95642908ff1c955c8f0d1dc91812ebaab0a346eb3ddf41ae383efb9597",
+      "bytes": 17105
+    },
+    {
+      "path": "build/actuation-transfer-qa/prior-artifact-hashes.json",
+      "sha256": "ba87b06d3c8ad770a84776b0bab2fcfb84ef2d29bc2c8d90c593741d5769146a",
+      "bytes": 95390
+    },
+    {
+      "path": "build/actuation-transfer-reference/cartpole-v1/protocol.json",
+      "sha256": "f1f4962fbfd4f3bb921ee6bd52001cb1e75c3719a361b9b12d2ab28ab7f15e8a",
+      "bytes": 1626
+    },
+    {
+      "path": "build/actuation-transfer-reference/cartpole-v1/report.json",
+      "sha256": "a0421bb5fa1b792af934986a3758fdb517081dceb6fdaaf68f1498116decd309",
+      "bytes": 65990
+    },
+    {
+      "path": "build/actuation-transfer-reference/setup/installed-packages.json",
+      "sha256": "4509779db5df0cf65ae3240907dc2c4c99fbcbad189e87f848ce1a5bb1448cb1",
+      "bytes": 53221
+    },
+    {
+      "path": "build/actuation-transfer-reference/setup/pypi-install.json",
+      "sha256": "c5c12dd8bd1621789f535057d58e7e29bc9f6847cee46d3eba3628965fbd0dbb",
+      "bytes": 149851
+    },
+    {
+      "path": "build/actuation-transfer-reference/setup/torch-install.json",
+      "sha256": "2caef4bc119ca634e93b94783b34a783a7462edc11200e31001937abf78e0b8f",
+      "bytes": 32121
+    },
+    {
+      "path": "build/native/droid-transfer-env",
+      "sha256": "377b754985b2977c947e37e41cbbff286595fe70b08888c9fc32ece1db2d9777",
+      "bytes": 19086480
+    },
+    {
+      "path": "CMakeLists.txt",
+      "sha256": "5ba6875dde649770beb9d3ef4802206f788a9aa172c1903524b43753b8398115",
+      "bytes": 12694
+    },
+    {
+      "path": "config/body_experiment_v1.json",
+      "sha256": "c9f32f58368dfd67c6dff06e51245dccf01e7294222953593a80ea4ea6b1c33d",
+      "bytes": 2163
+    },
+    {
+      "path": "config/learning_experiment_v1.json",
+      "sha256": "8c489dcd3a8b9a8c7207552c9355ad1e0dc193d4fb10e7d70d0080f0e63f967f",
+      "bytes": 2231
+    },
+    {
+      "path": "config/learning_experiment_v2.json",
+      "sha256": "9fca6a46716dc8fef95d2e3a80778a867b9d34744c6dc3ea46e7f6b3568f3f84",
+      "bytes": 2651
+    },
+    {
+      "path": "config/learning_experiment_v3.json",
+      "sha256": "ea3ed8403ad1a0c23d4e73aa9d854bc7825ece63c1e12ebb983cd7019a00ba1c",
+      "bytes": 3103
+    },
+    {
+      "path": "config/module_catalog.json",
+      "sha256": "5327cc56ebbe6817db8af4e5fca2cf8228b07ccc8904d9bd90d738e3a7cd6781",
+      "bytes": 6978
+    },
+    {
+      "path": "docs/ACTUATION_TRANSFER_EXPERIMENT.md",
+      "sha256": "ac23d4a73af65235480f3a633cede0a87f5f19f95d4da60d7ade105adb07f1d5",
+      "bytes": 27170
+    },
+    {
+      "path": "docs/MODULE_CONTRACT.md",
+      "sha256": "712527f1f849f96dd9f585c3afd8175eb8fb7a649602e34605719aafed9003e4",
+      "bytes": 10129
+    },
+    {
+      "path": "include/droid/baseline.hpp",
+      "sha256": "d3119b95c99467e433be506bcb14b89d7c850dc8abf1928a83d62810853b5cc0",
+      "bytes": 2233
+    },
+    {
+      "path": "include/droid/body_controller.hpp",
+      "sha256": "debaa2ef481f185f15293a9d5c64daf872a7c1db2f47d0e9439c0980f90012cb",
+      "bytes": 1968
+    },
+    {
+      "path": "include/droid/construction.hpp",
+      "sha256": "6a04e26471093cc8ee639729e3b6b248b2fb16e2e5d0b70c6fab39cc03de6a17",
+      "bytes": 1676
+    },
+    {
+      "path": "include/droid/construction_session.hpp",
+      "sha256": "7e883fbbe20d914821014698af2ff36952938325961b963a39194380131a39c3",
+      "bytes": 749
+    },
+    {
+      "path": "include/droid/environment.hpp",
+      "sha256": "2e72cd9496d115dd9ff9694e796cf7a86a18957e2cc1cfbaadedad600cc02f8f",
+      "bytes": 3441
+    },
+    {
+      "path": "include/droid/evaluation.hpp",
+      "sha256": "950584d94473946b5c0f8a6abd6f14cb4539b907e12580a6e8a2ede640f9c96e",
+      "bytes": 2736
+    },
+    {
+      "path": "include/droid/learner.hpp",
+      "sha256": "6d31aea2e2cbc1232f3353b9d6de4a0f0a68347a905889989bf7e0b75d13ff29",
+      "bytes": 7537
+    },
+    {
+      "path": "include/droid/light_context.hpp",
+      "sha256": "9b65fd35524ea99d30983275c7192cf5cc0440101c7e136581466154dd226748",
+      "bytes": 1871
+    },
+    {
+      "path": "include/droid/light_learner.hpp",
+      "sha256": "3571dd0ef11f82bf13f5e04f4d8fa059769d758174bb04da4a674245ff5b2e58",
+      "bytes": 2544
+    },
+    {
+      "path": "include/droid/light_prediction.hpp",
+      "sha256": "99760228dc0dfffcd14a5fc76f1fc1c5ad2704bcb0271939d51721bc7a2157cc",
+      "bytes": 2569
+    },
+    {
+      "path": "include/droid/light_session.hpp",
+      "sha256": "2a8668d95487083baa996366e275f1b7876eefb90f94a17b494e53c3509b3418",
+      "bytes": 1467
+    },
+    {
+      "path": "include/droid/module_catalog.hpp",
+      "sha256": "e7a85ace104fea22f4d35677a691312ed1325f92e9fa7450971705c7d76fb65c",
+      "bytes": 3993
+    },
+    {
+      "path": "include/droid/motion_explorer.hpp",
+      "sha256": "46c38b1d58e3f1610fe0d46d94038461ff2dc4b4c5949c2844787571205cf44b",
+      "bytes": 1634
+    },
+    {
+      "path": "include/droid/playground.hpp",
+      "sha256": "b94ab7ac715f0f4f8f4e0e67ed64648f27f1f626a8a155b2dfef58524794e9ff",
+      "bytes": 2864
+    },
+    {
+      "path": "include/droid/policy.hpp",
+      "sha256": "fe0e8bdc9ed835c311fd014c1c04960bd4bf67d77f872d750dfaa604566c59df",
+      "bytes": 5730
+    },
+    {
+      "path": "include/droid/simulation.hpp",
+      "sha256": "8c0d5b32824b6e06462211bd711b59cb8e137aa92c6bfe9a17cf569026c40bba",
+      "bytes": 2976
+    },
+    {
+      "path": "run.sh",
+      "sha256": "f09325610b071eb7e464d89f97e48cb29dd9b0eeaf2ae50c205bfb58e41bc690",
+      "bytes": 544
+    },
+    {
+      "path": "setup.sh",
+      "sha256": "97e2f69138a4477fd275a4112204f8ca8b3f6be104291519dabf1a554e191266",
+      "bytes": 1614
+    },
+    {
+      "path": "src/agent_cli.cpp",
+      "sha256": "1425ad65711bbcaae8edced99765b52f1fcee930ae33e39c5e60d65c338a7483",
+      "bytes": 69559
+    },
+    {
+      "path": "src/baseline.cpp",
+      "sha256": "150ae55b970dd7245b16b3cd4c2eb697336b68a926fdc995322a5aa68418040f",
+      "bytes": 7985
+    },
+    {
+      "path": "src/body_controller.cpp",
+      "sha256": "8dd85e8d7959e61a68707cdeb99368c554a5bc42411e93ace982f6c8a4384215",
+      "bytes": 22174
+    },
+    {
+      "path": "src/body_experiment_cli.cpp",
+      "sha256": "9d409a06b889feb989d590d9c01a4c0c744b46d34f44912de7a8830d68d7f8b6",
+      "bytes": 11086
+    },
+    {
+      "path": "src/construction.cpp",
+      "sha256": "36abfa36251b33931d6929125e351bbf1f3cf0582aecb0cacc34ef70003f500e",
+      "bytes": 41420
+    },
+    {
+      "path": "src/construction_experiment_cli.cpp",
+      "sha256": "431406dea941d69536a6f9635d454e1c8911f93d48c2198728d6d7b98c9e0a6a",
+      "bytes": 8397
+    },
+    {
+      "path": "src/construction_session.cpp",
+      "sha256": "c24a50947c7254723301a926868405d71e0ccb7ac9c8b4739e6a67ea2ae1ba8d",
+      "bytes": 9300
+    },
+    {
+      "path": "src/environment.cpp",
+      "sha256": "b6f851519e863be290f843899c4d8a3eefa9bdad892fddcf58803ee0b59fdd88",
+      "bytes": 24435
+    },
+    {
+      "path": "src/evaluation.cpp",
+      "sha256": "998dfddd38181a81ec0dbaab846d39fb8e943aa920a00f24f353bde314a56bc1",
+      "bytes": 41780
+    },
+    {
+      "path": "src/learner.cpp",
+      "sha256": "e25e454b2fdfaaccdb360dd7b05b0ea2c3465ab42cee361920df82aaad47bbf3",
+      "bytes": 77441
+    },
+    {
+      "path": "src/light_adaptation_cli.cpp",
+      "sha256": "4c1869d41e444a2f1252c3a7c470c1b14694182123b1273438f34c32987fdebb",
+      "bytes": 24601
+    },
+    {
+      "path": "src/light_context.cpp",
+      "sha256": "fd7bb50e94f041119ee7f45bf1890b1f8cb9dddfdcf0ca28e624385907f4d585",
+      "bytes": 8795
+    },
+    {
+      "path": "src/light_context_cli.cpp",
+      "sha256": "1c9033fb589a756e26d28403fa6025b560ddfff3dbbe98d9367d5aa0d76b5034",
+      "bytes": 33688
+    },
+    {
+      "path": "src/light_experiment_cli.cpp",
+      "sha256": "bb87488dfa9bf1dbcd14e0e5954ac0485adf15e6ab4d9975b41442b3461d2bc2",
+      "bytes": 10059
+    },
+    {
+      "path": "src/light_learner.cpp",
+      "sha256": "c9e8cea0c7e301a63a2439a4ff3417f5757123aae32428911bd67fc023b468a5",
+      "bytes": 41441
+    },
+    {
+      "path": "src/light_prediction.cpp",
+      "sha256": "ae494a37d8067f1dc6e945f817569da642706a94b7138afe22a81213f351eba6",
+      "bytes": 13232
+    },
+    {
+      "path": "src/light_prediction_cli.cpp",
+      "sha256": "e8c91a488f5c6a40ca26b8435d4d290bb3681f1df3c86228cf4920cd6f411ffa",
+      "bytes": 42756
+    },
+    {
+      "path": "src/light_retention_cli.cpp",
+      "sha256": "49787142cac66d9aede07a12c51c443fa98e04bf9b53bdd6e8fcc0d72f80d892",
+      "bytes": 32624
+    },
+    {
+      "path": "src/light_session.cpp",
+      "sha256": "4315857c13eace4f2accff020d2683ae4751a678261e4198bb1012d087e284a9",
+      "bytes": 15076
+    },
+    {
+      "path": "src/main.cpp",
+      "sha256": "7bfee671d1a8797b5f72c6db7038c0fd4d044f0c85730e83c42d67a2bd725407",
+      "bytes": 28092
+    },
+    {
+      "path": "src/module_catalog.cpp",
+      "sha256": "f0a3c3cf1ee21ed02acc6779bf0e1dc3efa0956132c08c87876d72c05fba34a5",
+      "bytes": 28176
+    },
+    {
+      "path": "src/motion_explorer.cpp",
+      "sha256": "d756c0f01bc23381827fb5d5a8066ad8b22f62bc6725d2957640356de6d51398",
+      "bytes": 20640
+    },
+    {
+      "path": "src/playground.cpp",
+      "sha256": "c2e0c1ed174c4a7a6a73c01845ca1de4231bf67138f98b773fec6ce9bdaa22be",
+      "bytes": 18914
+    },
+    {
+      "path": "src/policy.cpp",
+      "sha256": "f5736cbede8cc87aefc9a8fc9a5f2ddb033cf4397610be7e75a683aa23c9c796",
+      "bytes": 55527
+    },
+    {
+      "path": "src/simulation.cpp",
+      "sha256": "f9c50c7ece4614ea9d4cb26ba9100aef6347ae9407b7a218347154c90a8b7767",
+      "bytes": 71667
+    },
+    {
+      "path": "src/transfer_env_cli.cpp",
+      "sha256": "2a3a05bcd464707317b6b61ef8e9d62a2e2fa360edb9660278318de2968b21e2",
+      "bytes": 8964
+    },
+    {
+      "path": "tests/check_transfer_adapter.py",
+      "sha256": "f079b4934321c6e1bb9498f2ea24386d181118ec1a565b472d348d25b21309f2",
+      "bytes": 3931
+    },
+    {
+      "path": "tests/check_transfer_bridge.py",
+      "sha256": "8945e6608f8f65311f9a57767730d8f22ef401dfbbe8b39d71d0ccd9967d1974",
+      "bytes": 22022
+    },
+    {
+      "path": "tests/golden_trajectory.json",
+      "sha256": "37df0647d8bb11d6a122a1a2c6292dd940f0aa1d6fa3a79107353981de67dfa6",
+      "bytes": 1713
+    },
+    {
+      "path": "tests/native_baseline_tests.cpp",
+      "sha256": "54aa21639294c822f062b830f7c142e28c6f82f9e6917a026bc235559896b0f0",
+      "bytes": 27374
+    },
+    {
+      "path": "tests/native_body_controller_tests.cpp",
+      "sha256": "e2475432305f221650f46fff1b7fa3625465d1673df16b0d29f8f0d4e67e375b",
+      "bytes": 18509
+    },
+    {
+      "path": "tests/native_body_tests.cpp",
+      "sha256": "2808e06e157874ba3102b4782343e2aa89bee7eb73d149267c2167dae86f239a",
+      "bytes": 12862
+    },
+    {
+      "path": "tests/native_construction_actuation_tests.cpp",
+      "sha256": "b7124ea27d16b5e0940bead720f4967248403159f61706132dc205623b8199cb",
+      "bytes": 16259
+    },
+    {
+      "path": "tests/native_construction_light_tests.cpp",
+      "sha256": "c02dbcb06d798a19d43867f799210309f6afb1174a58cf087b88a21b7405be9d",
+      "bytes": 15835
+    },
+    {
+      "path": "tests/native_construction_session_tests.cpp",
+      "sha256": "f99b4e4a63b64229054a5228f6942e74df7b7d5e3cd552d02adfb742a1ccdd45",
+      "bytes": 3696
+    },
+    {
+      "path": "tests/native_construction_tests.cpp",
+      "sha256": "b57cf3baa27c91c7374eb362fc56cbb36e1cf2a1fe8ab74020012e01580d9afa",
+      "bytes": 13270
+    },
+    {
+      "path": "tests/native_contract_tests.cpp",
+      "sha256": "47ab041669af14de27d7c8c8b27be8e01fffe303744350f96c13de8c7a570de8",
+      "bytes": 18624
+    },
+    {
+      "path": "tests/native_environment_tests.cpp",
+      "sha256": "6de36468389797e6cb113c6fbebbfc9cb13f1f2eaa4c49af94e30c3564ca49e3",
+      "bytes": 37698
+    },
+    {
+      "path": "tests/native_light_context_tests.cpp",
+      "sha256": "ce4039603e1382cf18612ec50082d05886880ba9f9890aa569ff52399dba7787",
+      "bytes": 13739
+    },
+    {
+      "path": "tests/native_light_learner_tests.cpp",
+      "sha256": "f54684621679465ab5ab52fe28ea313966d8de29cec6c20958603cd076f2407d",
+      "bytes": 35716
+    },
+    {
+      "path": "tests/native_light_prediction_tests.cpp",
+      "sha256": "1f85c2e34f9d875ccc698ef3969c3997180dc73d3d82d240919bc3c2a2489f36",
+      "bytes": 14068
+    },
+    {
+      "path": "tests/native_light_session_tests.cpp",
+      "sha256": "2424b0b181982e7131ac44710a424e9c8de0bb0eeaaa4a381b63013cf4f3e547",
+      "bytes": 11089
+    },
+    {
+      "path": "tests/native_motion_explorer_tests.cpp",
+      "sha256": "69cb9cb41993f597091ef2f3ce629a9b93f0bb1643452ddd76f2f4d16b3e1fc7",
+      "bytes": 16225
+    },
+    {
+      "path": "tests/native_playground_tests.cpp",
+      "sha256": "12974076a9511cee38f784815a414c85410915ef9f1b5a4420c7ff1cd1835640",
+      "bytes": 21086
+    },
+    {
+      "path": "tests/native_policy_tests.cpp",
+      "sha256": "680abc6223c93a94b81ec7e9f44d3b2c367618fb24d35ee6a7631e593c47fb5c",
+      "bytes": 32466
+    },
+    {
+      "path": "tests/native_simulation_parity_tests.cpp",
+      "sha256": "001a3b3bd32c9e79eff5b1f6ec83804816477a35377608eb11345ff11a7249a9",
+      "bytes": 7081
+    },
+    {
+      "path": "tests/native_training_tests.cpp",
+      "sha256": "24b222f9fbe18dacd0eac63baacdacc11d9307d0e66457b9b769478e8f86b907",
+      "bytes": 53188
+    },
+    {
+      "path": "training/actuation_transfer.py",
+      "sha256": "9ca26988995106d9fd74c520a4c549893a5417f15631cc0a534b85d995a73bac",
+      "bytes": 27785
+    },
+    {
+      "path": "training/archive_transfer.py",
+      "sha256": "d73770cc109470920be445dc84a7ae95d72d813561dc438736bafcf4e63d439a",
+      "bytes": 2625
+    },
+    {
+      "path": "training/native_transfer.py",
+      "sha256": "972d9fa7d98a67bc0c39b373e5dd093a4b6268999e824cbe55bd05dcf0c49fc1",
+      "bytes": 9652
+    },
+    {
+      "path": "training/reference_ppo.py",
+      "sha256": "9c1a5a193b8228ede5a49db6ac0ce2088a2c77c8783303a1bed0d5a523f9057c",
+      "bytes": 14924
+    },
+    {
+      "path": "training/requirements-transfer.txt",
+      "sha256": "b2576ba52c29d31f856bc5509c314fe4420a1313a26376d4de6be636dbc96b08",
+      "bytes": 541
+    },
+    {
+      "path": "training/setup-transfer.ps1",
+      "sha256": "0cde6c2dc7c826b2da0da6105dbd2df24e601e2c6152c0ad466f20bbb2c2e22e",
+      "bytes": 4219
+    }
+  ],
+  "protocol_sha256": "82d83fe5004304bba9f8b17ac8710a8212fc9c5ec729908f05e14f98b08fcef1"
+}

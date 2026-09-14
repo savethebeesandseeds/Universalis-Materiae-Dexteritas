@@ -1,0 +1,962 @@
+{
+  "schema": "actuation_transfer_protocol_v1",
+  "status": "locked_before_native_learning",
+  "question": "Does original-layout pretraining improve early native light reward after the motor moves to the elbow?",
+  "scope": "Same two-link graph and one motor. Actuation layout is withheld; target geometry and lights occur in the source distribution.",
+  "evidence_status": "Exploratory native comparison; the separate CartPole reproduction missed its declared gain gate. Its gate remains failed, with no retuning or rerun.",
+  "reference": {
+    "report": "build/actuation-transfer-reference/cartpole-v1/report.json",
+    "report_sha256": "a0421bb5fa1b792af934986a3758fdb517081dceb6fdaaf68f1498116decd309",
+    "overall_passed": false,
+    "trained_mean_return": 409.2,
+    "untrained_mean_return": 333.2,
+    "gain": 76.0,
+    "required_gain": 100.0,
+    "absolute_performance_and_integrity_checks": true
+  },
+  "source_cases": [
+    {
+      "assembly": {
+        "schema": "construction_kit_v2",
+        "name": "The same parts, rebuilt",
+        "segments": [
+          3,
+          3
+        ],
+        "powered_hinge": 0,
+        "blocks": [],
+        "sensor": {
+          "segment": 1,
+          "slot": 2,
+          "side": -1
+        },
+        "light": {
+          "segment": 1,
+          "slot": 2,
+          "side": 1,
+          "face": 1
+        }
+      },
+      "sun": {
+        "position_m": [
+          -0.3,
+          0.0,
+          0.2
+        ],
+        "intensity_lux": 1000.0
+      }
+    },
+    {
+      "assembly": {
+        "schema": "construction_kit_v2",
+        "name": "The same parts, rebuilt",
+        "segments": [
+          3,
+          3
+        ],
+        "powered_hinge": 0,
+        "blocks": [],
+        "sensor": {
+          "segment": 1,
+          "slot": 2,
+          "side": -1
+        },
+        "light": {
+          "segment": 1,
+          "slot": 2,
+          "side": 1,
+          "face": 1
+        }
+      },
+      "sun": {
+        "position_m": [
+          0.3,
+          0.0,
+          0.2
+        ],
+        "intensity_lux": 1000.0
+      }
+    },
+    {
+      "assembly": {
+        "schema": "construction_kit_v2",
+        "name": "The same parts, rebuilt",
+        "segments": [
+          3,
+          3
+        ],
+        "powered_hinge": 0,
+        "blocks": [
+          {
+            "id": "block-1",
+            "segment": 1,
+            "slot": 0,
+            "side": -1
+          }
+        ],
+        "sensor": {
+          "segment": 1,
+          "slot": 2,
+          "side": -1
+        },
+        "light": {
+          "segment": 1,
+          "slot": 2,
+          "side": 1,
+          "face": 1
+        }
+      },
+      "sun": {
+        "position_m": [
+          -0.3,
+          0.0,
+          0.2
+        ],
+        "intensity_lux": 1000.0
+      }
+    },
+    {
+      "assembly": {
+        "schema": "construction_kit_v2",
+        "name": "The same parts, rebuilt",
+        "segments": [
+          3,
+          3
+        ],
+        "powered_hinge": 0,
+        "blocks": [
+          {
+            "id": "block-1",
+            "segment": 1,
+            "slot": 0,
+            "side": -1
+          }
+        ],
+        "sensor": {
+          "segment": 1,
+          "slot": 2,
+          "side": -1
+        },
+        "light": {
+          "segment": 1,
+          "slot": 2,
+          "side": 1,
+          "face": 1
+        }
+      },
+      "sun": {
+        "position_m": [
+          0.3,
+          0.0,
+          0.2
+        ],
+        "intensity_lux": 1000.0
+      }
+    },
+    {
+      "assembly": {
+        "schema": "construction_kit_v2",
+        "name": "The same parts, rebuilt",
+        "segments": [
+          3,
+          4
+        ],
+        "powered_hinge": 0,
+        "blocks": [],
+        "sensor": {
+          "segment": 1,
+          "slot": 2,
+          "side": -1
+        },
+        "light": {
+          "segment": 1,
+          "slot": 2,
+          "side": 1,
+          "face": 1
+        }
+      },
+      "sun": {
+        "position_m": [
+          -0.3,
+          0.0,
+          0.2
+        ],
+        "intensity_lux": 1000.0
+      }
+    },
+    {
+      "assembly": {
+        "schema": "construction_kit_v2",
+        "name": "The same parts, rebuilt",
+        "segments": [
+          3,
+          4
+        ],
+        "powered_hinge": 0,
+        "blocks": [],
+        "sensor": {
+          "segment": 1,
+          "slot": 2,
+          "side": -1
+        },
+        "light": {
+          "segment": 1,
+          "slot": 2,
+          "side": 1,
+          "face": 1
+        }
+      },
+      "sun": {
+        "position_m": [
+          0.3,
+          0.0,
+          0.2
+        ],
+        "intensity_lux": 1000.0
+      }
+    },
+    {
+      "assembly": {
+        "schema": "construction_kit_v2",
+        "name": "The same parts, rebuilt",
+        "segments": [
+          3,
+          4
+        ],
+        "powered_hinge": 0,
+        "blocks": [
+          {
+            "id": "block-1",
+            "segment": 1,
+            "slot": 0,
+            "side": -1
+          }
+        ],
+        "sensor": {
+          "segment": 1,
+          "slot": 2,
+          "side": -1
+        },
+        "light": {
+          "segment": 1,
+          "slot": 2,
+          "side": 1,
+          "face": 1
+        }
+      },
+      "sun": {
+        "position_m": [
+          -0.3,
+          0.0,
+          0.2
+        ],
+        "intensity_lux": 1000.0
+      }
+    },
+    {
+      "assembly": {
+        "schema": "construction_kit_v2",
+        "name": "The same parts, rebuilt",
+        "segments": [
+          3,
+          4
+        ],
+        "powered_hinge": 0,
+        "blocks": [
+          {
+            "id": "block-1",
+            "segment": 1,
+            "slot": 0,
+            "side": -1
+          }
+        ],
+        "sensor": {
+          "segment": 1,
+          "slot": 2,
+          "side": -1
+        },
+        "light": {
+          "segment": 1,
+          "slot": 2,
+          "side": 1,
+          "face": 1
+        }
+      },
+      "sun": {
+        "position_m": [
+          0.3,
+          0.0,
+          0.2
+        ],
+        "intensity_lux": 1000.0
+      }
+    },
+    {
+      "assembly": {
+        "schema": "construction_kit_v2",
+        "name": "The same parts, rebuilt",
+        "segments": [
+          4,
+          3
+        ],
+        "powered_hinge": 0,
+        "blocks": [],
+        "sensor": {
+          "segment": 1,
+          "slot": 2,
+          "side": -1
+        },
+        "light": {
+          "segment": 1,
+          "slot": 2,
+          "side": 1,
+          "face": 1
+        }
+      },
+      "sun": {
+        "position_m": [
+          -0.3,
+          0.0,
+          0.2
+        ],
+        "intensity_lux": 1000.0
+      }
+    },
+    {
+      "assembly": {
+        "schema": "construction_kit_v2",
+        "name": "The same parts, rebuilt",
+        "segments": [
+          4,
+          3
+        ],
+        "powered_hinge": 0,
+        "blocks": [],
+        "sensor": {
+          "segment": 1,
+          "slot": 2,
+          "side": -1
+        },
+        "light": {
+          "segment": 1,
+          "slot": 2,
+          "side": 1,
+          "face": 1
+        }
+      },
+      "sun": {
+        "position_m": [
+          0.3,
+          0.0,
+          0.2
+        ],
+        "intensity_lux": 1000.0
+      }
+    },
+    {
+      "assembly": {
+        "schema": "construction_kit_v2",
+        "name": "The same parts, rebuilt",
+        "segments": [
+          4,
+          3
+        ],
+        "powered_hinge": 0,
+        "blocks": [
+          {
+            "id": "block-1",
+            "segment": 1,
+            "slot": 0,
+            "side": -1
+          }
+        ],
+        "sensor": {
+          "segment": 1,
+          "slot": 2,
+          "side": -1
+        },
+        "light": {
+          "segment": 1,
+          "slot": 2,
+          "side": 1,
+          "face": 1
+        }
+      },
+      "sun": {
+        "position_m": [
+          -0.3,
+          0.0,
+          0.2
+        ],
+        "intensity_lux": 1000.0
+      }
+    },
+    {
+      "assembly": {
+        "schema": "construction_kit_v2",
+        "name": "The same parts, rebuilt",
+        "segments": [
+          4,
+          3
+        ],
+        "powered_hinge": 0,
+        "blocks": [
+          {
+            "id": "block-1",
+            "segment": 1,
+            "slot": 0,
+            "side": -1
+          }
+        ],
+        "sensor": {
+          "segment": 1,
+          "slot": 2,
+          "side": -1
+        },
+        "light": {
+          "segment": 1,
+          "slot": 2,
+          "side": 1,
+          "face": 1
+        }
+      },
+      "sun": {
+        "position_m": [
+          0.3,
+          0.0,
+          0.2
+        ],
+        "intensity_lux": 1000.0
+      }
+    },
+    {
+      "assembly": {
+        "schema": "construction_kit_v2",
+        "name": "The same parts, rebuilt",
+        "segments": [
+          4,
+          4
+        ],
+        "powered_hinge": 0,
+        "blocks": [],
+        "sensor": {
+          "segment": 1,
+          "slot": 2,
+          "side": -1
+        },
+        "light": {
+          "segment": 1,
+          "slot": 2,
+          "side": 1,
+          "face": 1
+        }
+      },
+      "sun": {
+        "position_m": [
+          -0.3,
+          0.0,
+          0.2
+        ],
+        "intensity_lux": 1000.0
+      }
+    },
+    {
+      "assembly": {
+        "schema": "construction_kit_v2",
+        "name": "The same parts, rebuilt",
+        "segments": [
+          4,
+          4
+        ],
+        "powered_hinge": 0,
+        "blocks": [],
+        "sensor": {
+          "segment": 1,
+          "slot": 2,
+          "side": -1
+        },
+        "light": {
+          "segment": 1,
+          "slot": 2,
+          "side": 1,
+          "face": 1
+        }
+      },
+      "sun": {
+        "position_m": [
+          0.3,
+          0.0,
+          0.2
+        ],
+        "intensity_lux": 1000.0
+      }
+    },
+    {
+      "assembly": {
+        "schema": "construction_kit_v2",
+        "name": "The same parts, rebuilt",
+        "segments": [
+          4,
+          4
+        ],
+        "powered_hinge": 0,
+        "blocks": [
+          {
+            "id": "block-1",
+            "segment": 1,
+            "slot": 0,
+            "side": -1
+          }
+        ],
+        "sensor": {
+          "segment": 1,
+          "slot": 2,
+          "side": -1
+        },
+        "light": {
+          "segment": 1,
+          "slot": 2,
+          "side": 1,
+          "face": 1
+        }
+      },
+      "sun": {
+        "position_m": [
+          -0.3,
+          0.0,
+          0.2
+        ],
+        "intensity_lux": 1000.0
+      }
+    },
+    {
+      "assembly": {
+        "schema": "construction_kit_v2",
+        "name": "The same parts, rebuilt",
+        "segments": [
+          4,
+          4
+        ],
+        "powered_hinge": 0,
+        "blocks": [
+          {
+            "id": "block-1",
+            "segment": 1,
+            "slot": 0,
+            "side": -1
+          }
+        ],
+        "sensor": {
+          "segment": 1,
+          "slot": 2,
+          "side": -1
+        },
+        "light": {
+          "segment": 1,
+          "slot": 2,
+          "side": 1,
+          "face": 1
+        }
+      },
+      "sun": {
+        "position_m": [
+          0.3,
+          0.0,
+          0.2
+        ],
+        "intensity_lux": 1000.0
+      }
+    }
+  ],
+  "target_cases": [
+    {
+      "id": "long-upper-left",
+      "case": {
+        "assembly": {
+          "schema": "construction_kit_v2",
+          "name": "The same parts, rebuilt",
+          "segments": [
+            4,
+            3
+          ],
+          "powered_hinge": 1,
+          "blocks": [],
+          "sensor": {
+            "segment": 1,
+            "slot": 2,
+            "side": -1
+          },
+          "light": {
+            "segment": 1,
+            "slot": 2,
+            "side": 1,
+            "face": 1
+          }
+        },
+        "sun": {
+          "position_m": [
+            -0.3,
+            0.0,
+            0.2
+          ],
+          "intensity_lux": 1000.0
+        }
+      }
+    },
+    {
+      "id": "long-upper-right",
+      "case": {
+        "assembly": {
+          "schema": "construction_kit_v2",
+          "name": "The same parts, rebuilt",
+          "segments": [
+            4,
+            3
+          ],
+          "powered_hinge": 1,
+          "blocks": [],
+          "sensor": {
+            "segment": 1,
+            "slot": 2,
+            "side": -1
+          },
+          "light": {
+            "segment": 1,
+            "slot": 2,
+            "side": 1,
+            "face": 1
+          }
+        },
+        "sun": {
+          "position_m": [
+            0.3,
+            0.0,
+            0.2
+          ],
+          "intensity_lux": 1000.0
+        }
+      }
+    },
+    {
+      "id": "long-lower-left",
+      "case": {
+        "assembly": {
+          "schema": "construction_kit_v2",
+          "name": "The same parts, rebuilt",
+          "segments": [
+            3,
+            4
+          ],
+          "powered_hinge": 1,
+          "blocks": [],
+          "sensor": {
+            "segment": 1,
+            "slot": 2,
+            "side": -1
+          },
+          "light": {
+            "segment": 1,
+            "slot": 2,
+            "side": 1,
+            "face": 1
+          }
+        },
+        "sun": {
+          "position_m": [
+            -0.3,
+            0.0,
+            0.2
+          ],
+          "intensity_lux": 1000.0
+        }
+      }
+    },
+    {
+      "id": "long-lower-right",
+      "case": {
+        "assembly": {
+          "schema": "construction_kit_v2",
+          "name": "The same parts, rebuilt",
+          "segments": [
+            3,
+            4
+          ],
+          "powered_hinge": 1,
+          "blocks": [],
+          "sensor": {
+            "segment": 1,
+            "slot": 2,
+            "side": -1
+          },
+          "light": {
+            "segment": 1,
+            "slot": 2,
+            "side": 1,
+            "face": 1
+          }
+        },
+        "sun": {
+          "position_m": [
+            0.3,
+            0.0,
+            0.2
+          ],
+          "intensity_lux": 1000.0
+        }
+      }
+    },
+    {
+      "id": "weighted-left",
+      "case": {
+        "assembly": {
+          "schema": "construction_kit_v2",
+          "name": "The same parts, rebuilt",
+          "segments": [
+            4,
+            4
+          ],
+          "powered_hinge": 1,
+          "blocks": [
+            {
+              "id": "block-1",
+              "segment": 1,
+              "slot": 0,
+              "side": -1
+            }
+          ],
+          "sensor": {
+            "segment": 1,
+            "slot": 2,
+            "side": -1
+          },
+          "light": {
+            "segment": 1,
+            "slot": 2,
+            "side": 1,
+            "face": 1
+          }
+        },
+        "sun": {
+          "position_m": [
+            -0.3,
+            0.0,
+            0.2
+          ],
+          "intensity_lux": 1000.0
+        }
+      }
+    },
+    {
+      "id": "weighted-right",
+      "case": {
+        "assembly": {
+          "schema": "construction_kit_v2",
+          "name": "The same parts, rebuilt",
+          "segments": [
+            4,
+            4
+          ],
+          "powered_hinge": 1,
+          "blocks": [
+            {
+              "id": "block-1",
+              "segment": 1,
+              "slot": 0,
+              "side": -1
+            }
+          ],
+          "sensor": {
+            "segment": 1,
+            "slot": 2,
+            "side": -1
+          },
+          "light": {
+            "segment": 1,
+            "slot": 2,
+            "side": 1,
+            "face": 1
+          }
+        },
+        "sun": {
+          "position_m": [
+            0.3,
+            0.0,
+            0.2
+          ],
+          "intensity_lux": 1000.0
+        }
+      }
+    }
+  ],
+  "development_cases": [
+    {
+      "assembly": {
+        "schema": "construction_kit_v2",
+        "name": "The same parts, rebuilt",
+        "segments": [
+          3,
+          3
+        ],
+        "powered_hinge": 1,
+        "blocks": [],
+        "sensor": {
+          "segment": 1,
+          "slot": 2,
+          "side": -1
+        },
+        "light": {
+          "segment": 1,
+          "slot": 2,
+          "side": 1,
+          "face": 1
+        }
+      },
+      "sun": {
+        "position_m": [
+          -0.3,
+          0.0,
+          0.2
+        ],
+        "intensity_lux": 1000.0
+      }
+    },
+    {
+      "assembly": {
+        "schema": "construction_kit_v2",
+        "name": "The same parts, rebuilt",
+        "segments": [
+          3,
+          3
+        ],
+        "powered_hinge": 1,
+        "blocks": [],
+        "sensor": {
+          "segment": 1,
+          "slot": 2,
+          "side": -1
+        },
+        "light": {
+          "segment": 1,
+          "slot": 2,
+          "side": 1,
+          "face": 1
+        }
+      },
+      "sun": {
+        "position_m": [
+          0.3,
+          0.0,
+          0.2
+        ],
+        "intensity_lux": 1000.0
+      }
+    }
+  ],
+  "source_seeds": [
+    101,
+    202,
+    303
+  ],
+  "development_seed": 404,
+  "target_action_seed_rule": "10000 + source_seed * 10 + case_index; reset after model construction/weight transfer",
+  "source_decisions_per_seed": 98304,
+  "development_decisions": 32768,
+  "target_decisions": 640,
+  "decision_dt_s": 0.1,
+  "native_dt_s": 0.02,
+  "early_windows_s": [
+    6.4,
+    12.8,
+    32.0,
+    64.0
+  ],
+  "native_reward": "Unmodified sum of five native transitions; one light plus one IMU; no reward shaping or normalization",
+  "policy_input": {
+    "frames": 12,
+    "frame_size": 17,
+    "dimension": 204,
+    "order": "oldest to newest",
+    "fixed_clip": [
+      -5.0,
+      5.0
+    ],
+    "frame": [
+      "executed_effort/.15",
+      "sin(motor_position)",
+      "cos(motor_position)",
+      "motor_velocity/10",
+      "motor_current/.5",
+      "imu_force_xyz/50 (3)",
+      "imu_gyro_xyz/10 (3)",
+      "light_lux/1000",
+      "previous_request/.15",
+      "previous_macro_reward/(2*.1)",
+      "imu_valid",
+      "light_valid",
+      "frame_present"
+    ],
+    "initialization": "11 zero absent frames and current local frame; invalid sensor values zero under validity masks",
+    "excluded": [
+      "assembly",
+      "powered_hinge",
+      "geometry",
+      "passive_joint",
+      "sun_position",
+      "absolute_time",
+      "case_id"
+    ],
+    "critic": "same local stack as actor; no privileged critic inputs"
+  },
+  "ppo": {
+    "implementation": "stable-baselines3",
+    "version": "2.9.0",
+    "network": "Separate two-layer 64x64 tanh actor/value networks; categorical 3-action output",
+    "learning_rate": 0.0003,
+    "n_epochs": 4,
+    "batch_size": 64,
+    "gamma": 0.9793703613355593,
+    "gae_lambda": 0.95,
+    "clip_range": 0.2,
+    "ent_coef": 0.01,
+    "vf_coef": 0.5,
+    "max_grad_norm": 0.5,
+    "optimizer": "Adam",
+    "optimizer_eps": 1e-05,
+    "ortho_init": true,
+    "clip_range_vf": null,
+    "target_kl": null,
+    "source_n_steps": 256,
+    "source_n_envs": 8,
+    "target_n_steps": 64,
+    "target_n_envs": 1,
+    "source_sampling": "uniform cases at each reset; independent numpy Generator(source_seed+500000), never rewound by policy RNG reset",
+    "normalization": "advantage normalization only; fixed sensor scaling; no VecNormalize",
+    "transfer": "actor+critic weights only; fresh optimizer, rollout buffer and episode history",
+    "target_updates": "10 batches; last update is saved but earns no measured post-update reward"
+  },
+  "arms": [
+    "frozen",
+    "adapt",
+    "scratch"
+  ],
+  "controls": [
+    "source_frozen",
+    "source_quiet",
+    "quiet",
+    "negative",
+    "positive",
+    "rhythm_2s",
+    "rhythm_4s"
+  ],
+  "probe_scope": "Run only after source checkpoints fixed. Same governor and raw reward. Best probe is an exposed attainable witness, not a learned policy or upper bound.",
+  "safety": "Native veto or any motor feedback flag ends target opportunity; no reset rescue. Report raw prefix return and actual duration; a stop fails the success gate.",
+  "primary": "Paired adapt-minus-scratch integrated native return through64s, summarized per training seed then median across3 seeds",
+  "success_gate": "All target arms complete without safety stops; median seed mean adapt-minus-scratch is positive and at least2 of3 seed means positive. Claim useful behavior only where adapt also beats quiet and source learning beats source quiet.",
+  "limits": "Three training seeds/six declared cases are a bounded development comparison, not population generalization or a hardware sample-efficiency guarantee.",
+  "wall_time_caps_s": {
+    "reference_development": 900,
+    "source_per_seed": 1800,
+    "target_trial": 180
+  },
+  "no_tuning": "Final checkpoints only; no architecture/hyperparameter/seed selection after outcomes. Failed or incomplete budgeted runs remain evidence."
+}

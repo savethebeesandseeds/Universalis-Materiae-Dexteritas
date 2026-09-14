@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240.000mm" height="430.815mm" viewBox="0 0 240.000 430.815">
+<title>robe_sleeve - Outer robe - flat sleeve</title>
+<desc>Millimeters. 1:1 when physical dimensions are preserved. Prototype. Black: cut; dashed blue: seam or finished boundary. Allowances already included.</desc>
+<rect width="100%" height="100%" fill="white"/>
+<text x="15" y="9" font-family="sans-serif" font-size="4">robe_sleeve | Outer robe - flat sleeve | CUT 2 FULL PIECES; no fold</text>
+<text x="15" y="15" font-family="sans-serif" font-size="3">PROTOTYPE / mm / allowances included / confirm calibration before cutting</text>
+<g transform="translate(15,30)">
+<polygon points="1.000,1.000 126.000,28.174 141.000,24.913 151.000,27.087 151.000,349.728 141.000,351.902 126.000,348.641 1.000,375.815" fill="none" stroke="#24343b" stroke-width="0.3"/>
+<polygon points="11.000,13.407 126.000,38.407 126.000,338.407 11.000,363.407" fill="none" stroke="#3e728b" stroke-width="0.2" stroke-dasharray="2 1"/>
+<polyline points="11.000,188.407 21.000,188.407" fill="none" stroke="#ac744c" stroke-width="0.25"/>
+<polyline points="39.750,188.407 97.250,188.407" fill="none" stroke="#ac744c" stroke-width="0.25"/>
+<polyline points="141.000,35.147 141.000,341.668" fill="none" stroke="#ac744c" stroke-width="0.25" stroke-dasharray="2 1"/>
+<polyline points="126.000,38.407 141.000,35.147 151.000,37.321" fill="none" stroke="#ac744c" stroke-width="0.25"/>
+<polyline points="126.000,338.407 141.000,341.668 151.000,339.494" fill="none" stroke="#ac744c" stroke-width="0.25"/>
+<polyline points="34.000,153.407 103.000,153.407" fill="none" stroke="#61737a" stroke-width="0.3"/>
+<polyline points="38.000,155.407 34.000,153.407 38.000,151.407" fill="none" stroke="#61737a" stroke-width="0.3"/>
+<polyline points="99.000,155.407 103.000,153.407 99.000,151.407" fill="none" stroke="#61737a" stroke-width="0.3"/>
+<text x="36.300" y="127.157" font-family="sans-serif" font-size="3">SLEEVE / CUT 2</text>
+<text x="15.000" y="184.407" font-family="sans-serif" font-size="2.5" fill="#3e728b">M1</text>
+<text x="43.750" y="184.407" font-family="sans-serif" font-size="2.5" fill="#3e728b">M2</text>
+<text x="139.000" y="31.147" font-family="sans-serif" font-size="2.5" fill="#3e728b">M3</text>
+</g>
+<path d="M 15 423.815 h 100 m -100 -2 v 4 m 100 -4 v 4" fill="none" stroke="black" stroke-width="0.3"/>
+<text x="15" y="420.815" font-family="sans-serif" font-size="3">100 mm verification line</text>
+</svg>

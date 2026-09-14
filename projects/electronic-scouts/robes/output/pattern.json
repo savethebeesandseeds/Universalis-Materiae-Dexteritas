@@ -1,0 +1,2697 @@
+{
+  "schema_version": 1,
+  "units": "mm",
+  "params": {
+    "chest": 680,
+    "hip": 720,
+    "waist": 630,
+    "shoulder_width": 310,
+    "neck_circumference": 300,
+    "head_circumference": 540,
+    "head_height": 285,
+    "shoulder_to_waist": 340,
+    "upper_arm": 230,
+    "hand_circumference": 170,
+    "wrist": 140,
+    "sleeve_length": 180,
+    "tunic_sleeve_length": 230,
+    "robe_length": 750,
+    "tunic_length": 510,
+    "chest_ease": 160,
+    "hip_ease": 160,
+    "sleeve_ease": 120,
+    "cuff_ease": 70,
+    "neck_ease": 40,
+    "hood_ease": 40,
+    "wrap_overlap": 95,
+    "hem_flare": 35,
+    "seam_allowance": 10,
+    "hem_allowance": 25,
+    "binding_width": 10,
+    "sash_width": 50,
+    "sash_overlap": 80,
+    "sash_ease": 40,
+    "tabard_width": 85,
+    "tabard_drop": 110,
+    "include_hood": true,
+    "include_tunic": true,
+    "include_tabards": true,
+    "include_sash": true
+  },
+  "pieces": [
+    {
+      "id": "robe_back",
+      "name": "Outer robe - full back",
+      "cut": "CUT 1 FULL PIECE; no fold",
+      "cut_count": 1,
+      "material": "Charcoal outer cloth",
+      "group": "robe",
+      "outline": [
+        [
+          36.01966,
+          19.2373
+        ],
+        [
+          210.72692,
+          1.0
+        ],
+        [
+          266.01966,
+          22.56417
+        ],
+        [
+          321.31239,
+          1.0
+        ],
+        [
+          496.01966,
+          19.2373
+        ],
+        [
+          496.01966,
+          202.93442
+        ],
+        [
+          531.03931,
+          761.19776
+        ],
+        [
+          530.09837,
+          776.19776
+        ],
+        [
+          530.72566,
+          786.19776
+        ],
+        [
+          1.31365,
+          786.19776
+        ],
+        [
+          1.94094,
+          776.19776
+        ],
+        [
+          1.0,
+          761.19776
+        ],
+        [
+          36.01966,
+          202.93442
+        ]
+      ],
+      "seam": [
+        [
+          46.01966,
+          28.24776
+        ],
+        [
+          209.35299,
+          11.19776
+        ],
+        [
+          266.01966,
+          33.29776
+        ],
+        [
+          322.68632,
+          11.19776
+        ],
+        [
+          486.01966,
+          28.24776
+        ],
+        [
+          486.01966,
+          203.24776
+        ],
+        [
+          521.01966,
+          761.19776
+        ],
+        [
+          11.01966,
+          761.19776
+        ],
+        [
+          46.01966,
+          203.24776
+        ]
+      ],
+      "lines": [
+        {
+          "points": [
+            [
+              266.01966,
+              53.29776
+            ],
+            [
+              266.01966,
+              731.19776
+            ]
+          ],
+          "kind": "centre",
+          "label": "CENTRE BACK"
+        },
+        {
+          "points": [
+            [
+              66.01966,
+              351.19776
+            ],
+            [
+              466.01966,
+              351.19776
+            ]
+          ],
+          "kind": "placement",
+          "label": "SASH LEVEL"
+        },
+        {
+          "points": [
+            [
+              46.01966,
+              203.24776
+            ],
+            [
+              54.01966,
+              203.24776
+            ]
+          ],
+          "kind": "notch",
+          "label": "UNDERARM"
+        },
+        {
+          "points": [
+            [
+              478.01966,
+              203.24776
+            ],
+            [
+              486.01966,
+              203.24776
+            ]
+          ],
+          "kind": "notch"
+        },
+        {
+          "points": [
+            [
+              520.07871,
+              776.19776
+            ],
+            [
+              11.9606,
+              776.19776
+            ]
+          ],
+          "kind": "fold",
+          "label": "FIRST TURN 10 MM"
+        },
+        {
+          "points": [
+            [
+              521.01966,
+              761.19776
+            ],
+            [
+              520.07871,
+              776.19776
+            ],
+            [
+              520.70601,
+              786.19776
+            ]
+          ],
+          "kind": "seam_extension"
+        },
+        {
+          "points": [
+            [
+              11.01966,
+              761.19776
+            ],
+            [
+              11.9606,
+              776.19776
+            ],
+            [
+              11.3333,
+              786.19776
+            ]
+          ],
+          "kind": "seam_extension"
+        }
+      ],
+      "labels": [
+        {
+          "x": 101.01966,
+          "y": 221.19776,
+          "text": "FULL BACK / CUT 1"
+        }
+      ],
+      "grain": [
+        [
+          178.01966,
+          311.19776
+        ],
+        [
+          178.01966,
+          536.19776
+        ]
+      ],
+      "notes": [
+        "Trace the full piece once, not on a fold.",
+        "Join shoulders and side seams at seam allowance; stop at underarm marks.",
+        "Staystitch the angular back neckline. Clip inside the V allowance only as needed, stopping short of stitching.",
+        "Bottom hem: turn 10 mm, then 15 mm to the marked finished line."
+      ],
+      "edge_allowances": [
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        25,
+        10,
+        10
+      ],
+      "edge_finishes": [
+        {
+          "edge": 0,
+          "type": "sew",
+          "allowance_mm": 10,
+          "label": "left shoulder"
+        },
+        {
+          "edge": 1,
+          "type": "sew",
+          "allowance_mm": 10,
+          "label": "hood attachment"
+        },
+        {
+          "edge": 2,
+          "type": "sew",
+          "allowance_mm": 10,
+          "label": "hood attachment"
+        },
+        {
+          "edge": 3,
+          "type": "sew",
+          "allowance_mm": 10,
+          "label": "right shoulder"
+        },
+        {
+          "edge": 4,
+          "type": "sew",
+          "allowance_mm": 10,
+          "label": "right arm opening"
+        },
+        {
+          "edge": 5,
+          "type": "sew",
+          "allowance_mm": 10,
+          "label": "right side"
+        },
+        {
+          "edge": 6,
+          "type": "hem",
+          "allowance_mm": 25,
+          "label": "bottom hem"
+        },
+        {
+          "edge": 7,
+          "type": "sew",
+          "allowance_mm": 10,
+          "label": "left side"
+        },
+        {
+          "edge": 8,
+          "type": "sew",
+          "allowance_mm": 10,
+          "label": "left arm opening"
+        }
+      ],
+      "width_mm": 532.0393,
+      "height_mm": 787.1978,
+      "cut_area_mm2": 378086.951
+    },
+    {
+      "id": "robe_front",
+      "name": "Outer robe - wrap front",
+      "cut": "CUT 2 MIRRORED (one left, one right)",
+      "cut_count": 2,
+      "material": "Charcoal outer cloth",
+      "group": "robe",
+      "outline": [
+        [
+          146.16714,
+          1.0
+        ],
+        [
+          326.0,
+          19.77235
+        ],
+        [
+          326.0,
+          203.46947
+        ],
+        [
+          361.01966,
+          761.73281
+        ],
+        [
+          360.07871,
+          776.73281
+        ],
+        [
+          360.70601,
+          786.73281
+        ],
+        [
+          1.0,
+          786.73281
+        ],
+        [
+          1.0,
+          776.73281
+        ],
+        [
+          1.0,
+          761.73281
+        ],
+        [
+          1.0,
+          351.73281
+        ],
+        [
+          96.0,
+          154.53281
+        ],
+        [
+          86.70509,
+          150.84435
+        ]
+      ],
+      "seam": [
+        [
+          152.66667,
+          11.73281
+        ],
+        [
+          316.0,
+          28.78281
+        ],
+        [
+          316.0,
+          203.78281
+        ],
+        [
+          351.0,
+          761.73281
+        ],
+        [
+          1.0,
+          761.73281
+        ],
+        [
+          1.0,
+          351.73281
+        ],
+        [
+          96.0,
+          154.53281
+        ]
+      ],
+      "lines": [
+        {
+          "points": [
+            [
+              96.0,
+              174.53281
+            ],
+            [
+              96.0,
+              731.73281
+            ]
+          ],
+          "kind": "centre",
+          "label": "CENTRE FRONT"
+        },
+        {
+          "points": [
+            [
+              16.0,
+              351.73281
+            ],
+            [
+              301.0,
+              351.73281
+            ]
+          ],
+          "kind": "placement",
+          "label": "SASH LEVEL"
+        },
+        {
+          "points": [
+            [
+              308.0,
+              203.78281
+            ],
+            [
+              316.0,
+              203.78281
+            ]
+          ],
+          "kind": "notch",
+          "label": "UNDERARM"
+        },
+        {
+          "points": [
+            [
+              96.0,
+              154.53281
+            ],
+            [
+              104.0,
+              156.53281
+            ]
+          ],
+          "kind": "notch",
+          "label": "HOOD ENDS HERE"
+        },
+        {
+          "points": [
+            [
+              350.05906,
+              776.73281
+            ],
+            [
+              1.0,
+              776.73281
+            ]
+          ],
+          "kind": "fold",
+          "label": "FIRST TURN 10 MM"
+        },
+        {
+          "points": [
+            [
+              351.0,
+              761.73281
+            ],
+            [
+              350.05906,
+              776.73281
+            ],
+            [
+              350.68635,
+              786.73281
+            ]
+          ],
+          "kind": "seam_extension"
+        },
+        {
+          "points": [
+            [
+              1.0,
+              761.73281
+            ],
+            [
+              1.0,
+              776.73281
+            ],
+            [
+              1.0,
+              786.73281
+            ]
+          ],
+          "kind": "seam_extension"
+        }
+      ],
+      "labels": [
+        {
+          "x": 124.6,
+          "y": 221.73281,
+          "text": "FRONT / MIRRORED PAIR"
+        }
+      ],
+      "grain": [
+        [
+          217.0,
+          311.73281
+        ],
+        [
+          217.0,
+          551.73281
+        ]
+      ],
+      "notes": [
+        "Cut one left and one right; do not cut two identical handed fronts.",
+        "Front openings have zero allowance and receive double-fold bias binding.",
+        "The diagonal below the marked neck endpoint is the wrap edge; do not sew it to the hood.",
+        "Bottom hem: turn 10 mm, then 15 mm to the marked finished line.",
+        "Position short internal hook-and-loop tabs during fitting; no long internal ties are required."
+      ],
+      "edge_allowances": [
+        10,
+        10,
+        10,
+        25,
+        0,
+        0,
+        10
+      ],
+      "edge_finishes": [
+        {
+          "edge": 0,
+          "type": "sew",
+          "allowance_mm": 10,
+          "label": "shoulder"
+        },
+        {
+          "edge": 1,
+          "type": "sew",
+          "allowance_mm": 10,
+          "label": "arm opening"
+        },
+        {
+          "edge": 2,
+          "type": "sew",
+          "allowance_mm": 10,
+          "label": "side"
+        },
+        {
+          "edge": 3,
+          "type": "hem",
+          "allowance_mm": 25,
+          "label": "bottom hem"
+        },
+        {
+          "edge": 4,
+          "type": "bind",
+          "allowance_mm": 0,
+          "label": "vertical front opening"
+        },
+        {
+          "edge": 5,
+          "type": "bind",
+          "allowance_mm": 0,
+          "label": "diagonal wrap opening"
+        },
+        {
+          "edge": 6,
+          "type": "sew",
+          "allowance_mm": 10,
+          "label": "hood attachment"
+        }
+      ],
+      "width_mm": 362.0197,
+      "height_mm": 787.7328,
+      "cut_area_mm2": 237314.765
+    },
+    {
+      "id": "robe_sleeve",
+      "name": "Outer robe - flat sleeve",
+      "cut": "CUT 2 FULL PIECES; no fold",
+      "cut_count": 2,
+      "material": "Charcoal outer cloth",
+      "group": "robe",
+      "outline": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          126.0,
+          28.17391
+        ],
+        [
+          141.0,
+          24.91304
+        ],
+        [
+          151.0,
+          27.08696
+        ],
+        [
+          151.0,
+          349.728
+        ],
+        [
+          141.0,
+          351.90192
+        ],
+        [
+          126.0,
+          348.64105
+        ],
+        [
+          1.0,
+          375.81496
+        ]
+      ],
+      "seam": [
+        [
+          11.0,
+          13.40748
+        ],
+        [
+          126.0,
+          38.40748
+        ],
+        [
+          126.0,
+          338.40748
+        ],
+        [
+          11.0,
+          363.40748
+        ]
+      ],
+      "lines": [
+        {
+          "points": [
+            [
+              11.0,
+              188.40748
+            ],
+            [
+              21.0,
+              188.40748
+            ]
+          ],
+          "kind": "notch",
+          "label": "SHOULDER SEAM"
+        },
+        {
+          "points": [
+            [
+              39.75,
+              188.40748
+            ],
+            [
+              97.25,
+              188.40748
+            ]
+          ],
+          "kind": "centre",
+          "label": "TOP OF SLEEVE"
+        },
+        {
+          "points": [
+            [
+              141.0,
+              35.14661
+            ],
+            [
+              141.0,
+              341.66835
+            ]
+          ],
+          "kind": "fold",
+          "label": "FIRST TURN 10 MM"
+        },
+        {
+          "points": [
+            [
+              126.0,
+              38.40748
+            ],
+            [
+              141.0,
+              35.14661
+            ],
+            [
+              151.0,
+              37.32052
+            ]
+          ],
+          "kind": "seam_extension"
+        },
+        {
+          "points": [
+            [
+              126.0,
+              338.40748
+            ],
+            [
+              141.0,
+              341.66835
+            ],
+            [
+              151.0,
+              339.49444
+            ]
+          ],
+          "kind": "seam_extension"
+        }
+      ],
+      "labels": [
+        {
+          "x": 36.3,
+          "y": 127.15748,
+          "text": "SLEEVE / CUT 2"
+        }
+      ],
+      "grain": [
+        [
+          34.0,
+          153.40748
+        ],
+        [
+          103.0,
+          153.40748
+        ]
+      ],
+      "notes": [
+        "The long body edge joins the front and back arm openings without gathering.",
+        "Match centre notch on attachment edge to shoulder seam; remaining ends are underarms.",
+        "Join the two equal sloping underarm edges to close each sleeve.",
+        "Cuff hem: turn 10 mm, then 15 mm. The cut extension is reflected at both folds to match the sleeve taper.",
+        "Follow the marked underarm seam extensions through the shaped hem allowance; do not trim them to a straight continuation."
+      ],
+      "edge_allowances": [
+        10,
+        25,
+        10,
+        10
+      ],
+      "edge_finishes": [
+        {
+          "edge": 0,
+          "type": "sew",
+          "allowance_mm": 10,
+          "label": "first underarm edge"
+        },
+        {
+          "edge": 1,
+          "type": "hem",
+          "allowance_mm": 25,
+          "label": "cuff hem"
+        },
+        {
+          "edge": 2,
+          "type": "sew",
+          "allowance_mm": 10,
+          "label": "second underarm edge"
+        },
+        {
+          "edge": 3,
+          "type": "sew",
+          "allowance_mm": 10,
+          "label": "armhole attachment"
+        }
+      ],
+      "width_mm": 152.0,
+      "height_mm": 376.815,
+      "cut_area_mm2": 51559.2006
+    },
+    {
+      "id": "tunic_back",
+      "name": "Inner tunic - full back",
+      "cut": "CUT 1 FULL PIECE; no fold",
+      "cut_count": 1,
+      "material": "Slate-blue inner cloth",
+      "group": "tunic",
+      "outline": [
+        [
+          18.51423,
+          19.03907
+        ],
+        [
+          180.74242,
+          1.0
+        ],
+        [
+          181.84756,
+          10.93875
+        ],
+        [
+          238.51423,
+          33.03875
+        ],
+        [
+          295.18089,
+          10.93875
+        ],
+        [
+          296.28604,
+          1.0
+        ],
+        [
+          458.51423,
+          19.03907
+        ],
+        [
+          458.51423,
+          192.72213
+        ],
+        [
+          476.02845,
+          520.93875
+        ],
+        [
+          475.22803,
+          535.93875
+        ],
+        [
+          475.76165,
+          545.93875
+        ],
+        [
+          1.26681,
+          545.93875
+        ],
+        [
+          1.80043,
+          535.93875
+        ],
+        [
+          1.0,
+          520.93875
+        ],
+        [
+          18.51423,
+          192.72213
+        ]
+      ],
+      "seam": [
+        [
+          28.51423,
+          27.98875
+        ],
+        [
+          181.84756,
+          10.93875
+        ],
+        [
+          238.51423,
+          33.03875
+        ],
+        [
+          295.18089,
+          10.93875
+        ],
+        [
+          448.51423,
+          27.98875
+        ],
+        [
+          448.51423,
+          192.98875
+        ],
+        [
+          466.01423,
+          520.93875
+        ],
+        [
+          11.01423,
+          520.93875
+        ],
+        [
+          28.51423,
+          192.98875
+        ]
+      ],
+      "lines": [
+        {
+          "points": [
+            [
+              238.51423,
+              53.03875
+            ],
+            [
+              238.51423,
+              490.93875
+            ]
+          ],
+          "kind": "centre",
+          "label": "CENTRE BACK"
+        },
+        {
+          "points": [
+            [
+              48.51423,
+              350.93875
+            ],
+            [
+              428.51423,
+              350.93875
+            ]
+          ],
+          "kind": "placement",
+          "label": "SASH LEVEL"
+        },
+        {
+          "points": [
+            [
+              28.51423,
+              192.98875
+            ],
+            [
+              36.51423,
+              192.98875
+            ]
+          ],
+          "kind": "notch",
+          "label": "UNDERARM"
+        },
+        {
+          "points": [
+            [
+              440.51423,
+              192.98875
+            ],
+            [
+              448.51423,
+              192.98875
+            ]
+          ],
+          "kind": "notch"
+        },
+        {
+          "points": [
+            [
+              465.2138,
+              535.93875
+            ],
+            [
+              11.81465,
+              535.93875
+            ]
+          ],
+          "kind": "fold",
+          "label": "FIRST TURN 10 MM"
+        },
+        {
+          "points": [
+            [
+              466.01423,
+              520.93875
+            ],
+            [
+              465.2138,
+              535.93875
+            ],
+            [
+              465.74742,
+              545.93875
+            ]
+          ],
+          "kind": "seam_extension"
+        },
+        {
+          "points": [
+            [
+              11.01423,
+              520.93875
+            ],
+            [
+              11.81465,
+              535.93875
+            ],
+            [
+              11.28104,
+              545.93875
+            ]
+          ],
+          "kind": "seam_extension"
+        }
+      ],
+      "labels": [
+        {
+          "x": 81.01423,
+          "y": 153.73875,
+          "text": "FULL BACK / CUT 1"
+        }
+      ],
+      "grain": [
+        [
+          154.51423,
+          214.93875
+        ],
+        [
+          154.51423,
+          367.93875
+        ]
+      ],
+      "notes": [
+        "Trace the full piece once, not on a fold.",
+        "Join shoulders and side seams at seam allowance; stop at underarm marks.",
+        "Bind neckline raw/final edge; zero extra allowance on those two edges.",
+        "Bottom hem: turn 10 mm, then 15 mm to the marked finished line."
+      ],
+      "edge_allowances": [
+        10,
+        0,
+        0,
+        10,
+        10,
+        10,
+        25,
+        10,
+        10
+      ],
+      "edge_finishes": [
+        {
+          "edge": 0,
+          "type": "sew",
+          "allowance_mm": 10,
+          "label": "left shoulder"
+        },
+        {
+          "edge": 1,
+          "type": "bind",
+          "allowance_mm": 0,
+          "label": "neckline bias binding"
+        },
+        {
+          "edge": 2,
+          "type": "bind",
+          "allowance_mm": 0,
+          "label": "neckline bias binding"
+        },
+        {
+          "edge": 3,
+          "type": "sew",
+          "allowance_mm": 10,
+          "label": "right shoulder"
+        },
+        {
+          "edge": 4,
+          "type": "sew",
+          "allowance_mm": 10,
+          "label": "right arm opening"
+        },
+        {
+          "edge": 5,
+          "type": "sew",
+          "allowance_mm": 10,
+          "label": "right side"
+        },
+        {
+          "edge": 6,
+          "type": "hem",
+          "allowance_mm": 25,
+          "label": "bottom hem"
+        },
+        {
+          "edge": 7,
+          "type": "sew",
+          "allowance_mm": 10,
+          "label": "left side"
+        },
+        {
+          "edge": 8,
+          "type": "sew",
+          "allowance_mm": 10,
+          "label": "left arm opening"
+        }
+      ],
+      "width_mm": 477.0285,
+      "height_mm": 546.9388,
+      "cut_area_mm2": 241058.3872
+    },
+    {
+      "id": "tunic_front",
+      "name": "Inner tunic - wrap front",
+      "cut": "CUT 2 MIRRORED (one left, one right)",
+      "cut_count": 2,
+      "material": "Slate-blue inner cloth",
+      "group": "tunic",
+      "outline": [
+        [
+          137.49064,
+          1.0
+        ],
+        [
+          297.0,
+          18.73675
+        ],
+        [
+          297.0,
+          192.4198
+        ],
+        [
+          314.51423,
+          520.63642
+        ],
+        [
+          313.7138,
+          535.63642
+        ],
+        [
+          314.24742,
+          545.63642
+        ],
+        [
+          1.0,
+          545.63642
+        ],
+        [
+          1.0,
+          535.63642
+        ],
+        [
+          1.0,
+          520.63642
+        ],
+        [
+          1.0,
+          350.63642
+        ],
+        [
+          77.0,
+          153.43642
+        ]
+      ],
+      "seam": [
+        [
+          133.66667,
+          10.63642
+        ],
+        [
+          287.0,
+          27.68642
+        ],
+        [
+          287.0,
+          192.68642
+        ],
+        [
+          304.5,
+          520.63642
+        ],
+        [
+          1.0,
+          520.63642
+        ],
+        [
+          1.0,
+          350.63642
+        ],
+        [
+          77.0,
+          153.43642
+        ]
+      ],
+      "lines": [
+        {
+          "points": [
+            [
+              77.0,
+              173.43642
+            ],
+            [
+              77.0,
+              490.63642
+            ]
+          ],
+          "kind": "centre",
+          "label": "CENTRE FRONT"
+        },
+        {
+          "points": [
+            [
+              16.0,
+              350.63642
+            ],
+            [
+              272.0,
+              350.63642
+            ]
+          ],
+          "kind": "placement",
+          "label": "SASH LEVEL"
+        },
+        {
+          "points": [
+            [
+              279.0,
+              192.68642
+            ],
+            [
+              287.0,
+              192.68642
+            ]
+          ],
+          "kind": "notch",
+          "label": "UNDERARM"
+        },
+        {
+          "points": [
+            [
+              77.0,
+              153.43642
+            ],
+            [
+              85.0,
+              155.43642
+            ]
+          ],
+          "kind": "notch",
+          "label": "NECK/WRAP CORNER"
+        },
+        {
+          "points": [
+            [
+              303.69957,
+              535.63642
+            ],
+            [
+              1.0,
+              535.63642
+            ]
+          ],
+          "kind": "fold",
+          "label": "FIRST TURN 10 MM"
+        },
+        {
+          "points": [
+            [
+              304.5,
+              520.63642
+            ],
+            [
+              303.69957,
+              535.63642
+            ],
+            [
+              304.23319,
+              545.63642
+            ]
+          ],
+          "kind": "seam_extension"
+        },
+        {
+          "points": [
+            [
+              1.0,
+              520.63642
+            ],
+            [
+              1.0,
+              535.63642
+            ],
+            [
+              1.0,
+              545.63642
+            ]
+          ],
+          "kind": "seam_extension"
+        }
+      ],
+      "labels": [
+        {
+          "x": 104.3,
+          "y": 153.43642,
+          "text": "FRONT / MIRRORED PAIR"
+        }
+      ],
+      "grain": [
+        [
+          192.5,
+          214.63642
+        ],
+        [
+          192.5,
+          377.83642
+        ]
+      ],
+      "notes": [
+        "Cut one left and one right; do not cut two identical handed fronts.",
+        "Front openings have zero allowance and receive double-fold bias binding.",
+        "Bind neckline and front opening as one continuous edge after joining shoulders.",
+        "Bottom hem: turn 10 mm, then 15 mm to the marked finished line.",
+        "Position short internal hook-and-loop tabs during fitting; no long internal ties are required."
+      ],
+      "edge_allowances": [
+        10,
+        10,
+        10,
+        25,
+        0,
+        0,
+        0
+      ],
+      "edge_finishes": [
+        {
+          "edge": 0,
+          "type": "sew",
+          "allowance_mm": 10,
+          "label": "shoulder"
+        },
+        {
+          "edge": 1,
+          "type": "sew",
+          "allowance_mm": 10,
+          "label": "arm opening"
+        },
+        {
+          "edge": 2,
+          "type": "sew",
+          "allowance_mm": 10,
+          "label": "side"
+        },
+        {
+          "edge": 3,
+          "type": "hem",
+          "allowance_mm": 25,
+          "label": "bottom hem"
+        },
+        {
+          "edge": 4,
+          "type": "bind",
+          "allowance_mm": 0,
+          "label": "vertical front opening"
+        },
+        {
+          "edge": 5,
+          "type": "bind",
+          "allowance_mm": 0,
+          "label": "diagonal wrap opening"
+        },
+        {
+          "edge": 6,
+          "type": "bind",
+          "allowance_mm": 0,
+          "label": "neckline bias binding"
+        }
+      ],
+      "width_mm": 315.5142,
+      "height_mm": 546.6364,
+      "cut_area_mm2": 139409.2823
+    },
+    {
+      "id": "tunic_sleeve",
+      "name": "Inner tunic - flat sleeve",
+      "cut": "CUT 2 FULL PIECES; no fold",
+      "cut_count": 2,
+      "material": "Slate-blue inner cloth",
+      "group": "tunic",
+      "outline": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          186.0,
+          16.85714
+        ],
+        [
+          201.0,
+          15.57143
+        ],
+        [
+          211.0,
+          16.42857
+        ],
+        [
+          211.0,
+          337.35905
+        ],
+        [
+          201.0,
+          338.21619
+        ],
+        [
+          186.0,
+          336.93048
+        ],
+        [
+          1.0,
+          352.78762
+        ]
+      ],
+      "seam": [
+        [
+          11.0,
+          11.89381
+        ],
+        [
+          186.0,
+          26.89381
+        ],
+        [
+          186.0,
+          326.89381
+        ],
+        [
+          11.0,
+          341.89381
+        ]
+      ],
+      "lines": [
+        {
+          "points": [
+            [
+              11.0,
+              176.89381
+            ],
+            [
+              21.0,
+              176.89381
+            ]
+          ],
+          "kind": "notch",
+          "label": "SHOULDER SEAM"
+        },
+        {
+          "points": [
+            [
+              54.75,
+              176.89381
+            ],
+            [
+              142.25,
+              176.89381
+            ]
+          ],
+          "kind": "centre",
+          "label": "TOP OF SLEEVE"
+        },
+        {
+          "points": [
+            [
+              201.0,
+              25.6081
+            ],
+            [
+              201.0,
+              328.17952
+            ]
+          ],
+          "kind": "fold",
+          "label": "FIRST TURN 10 MM"
+        },
+        {
+          "points": [
+            [
+              186.0,
+              26.89381
+            ],
+            [
+              201.0,
+              25.6081
+            ],
+            [
+              211.0,
+              26.46524
+            ]
+          ],
+          "kind": "seam_extension"
+        },
+        {
+          "points": [
+            [
+              186.0,
+              326.89381
+            ],
+            [
+              201.0,
+              328.17952
+            ],
+            [
+              211.0,
+              327.32238
+            ]
+          ],
+          "kind": "seam_extension"
+        }
+      ],
+      "labels": [
+        {
+          "x": 49.5,
+          "y": 119.14381,
+          "text": "SLEEVE / CUT 2"
+        }
+      ],
+      "grain": [
+        [
+          46.0,
+          143.89381
+        ],
+        [
+          151.0,
+          143.89381
+        ]
+      ],
+      "notes": [
+        "The long body edge joins the front and back arm openings without gathering.",
+        "Match centre notch on attachment edge to shoulder seam; remaining ends are underarms.",
+        "Join the two equal sloping underarm edges to close each sleeve.",
+        "Cuff hem: turn 10 mm, then 15 mm. The cut extension is reflected at both folds to match the sleeve taper.",
+        "Follow the marked underarm seam extensions through the shaped hem allowance; do not trim them to a straight continuation."
+      ],
+      "edge_allowances": [
+        10,
+        25,
+        10,
+        10
+      ],
+      "edge_finishes": [
+        {
+          "edge": 0,
+          "type": "sew",
+          "allowance_mm": 10,
+          "label": "first underarm edge"
+        },
+        {
+          "edge": 1,
+          "type": "hem",
+          "allowance_mm": 25,
+          "label": "cuff hem"
+        },
+        {
+          "edge": 2,
+          "type": "sew",
+          "allowance_mm": 10,
+          "label": "second underarm edge"
+        },
+        {
+          "edge": 3,
+          "type": "sew",
+          "allowance_mm": 10,
+          "label": "armhole attachment"
+        }
+      ],
+      "width_mm": 212.0,
+      "height_mm": 353.7876,
+      "cut_area_mm2": 70185.4003
+    },
+    {
+      "id": "robe_hood",
+      "name": "Outer robe - hood side",
+      "cut": "CUT 2 MIRRORED (one left, one right)",
+      "cut_count": 2,
+      "material": "Charcoal outer cloth",
+      "group": "robe",
+      "outline": [
+        [
+          1.0,
+          346.0
+        ],
+        [
+          1.0,
+          49.61509
+        ],
+        [
+          4.59458,
+          31.54393
+        ],
+        [
+          15.38897,
+          15.38897
+        ],
+        [
+          31.54393,
+          4.59458
+        ],
+        [
+          49.61509,
+          1.0
+        ],
+        [
+          192.38491,
+          1.0
+        ],
+        [
+          210.45607,
+          4.59458
+        ],
+        [
+          226.61103,
+          15.38897
+        ],
+        [
+          237.40542,
+          31.54393
+        ],
+        [
+          240.80785,
+          48.6491
+        ],
+        [
+          231.0,
+          50.6
+        ],
+        [
+          225.26196,
+          346.0
+        ]
+      ],
+      "seam": [
+        [
+          11.0,
+          336.0
+        ],
+        [
+          11.0,
+          50.6
+        ],
+        [
+          14.01437,
+          35.44574
+        ],
+        [
+          22.59857,
+          22.59857
+        ],
+        [
+          35.44574,
+          14.01437
+        ],
+        [
+          50.6,
+          11.0
+        ],
+        [
+          191.4,
+          11.0
+        ],
+        [
+          206.55426,
+          14.01437
+        ],
+        [
+          219.40143,
+          22.59857
+        ],
+        [
+          227.98563,
+          35.44574
+        ],
+        [
+          231.0,
+          50.6
+        ],
+        [
+          225.45621,
+          336.0
+        ]
+      ],
+      "lines": [
+        {
+          "points": [
+            [
+              71.82369,
+              336.0
+            ],
+            [
+              71.82369,
+              327.0
+            ]
+          ],
+          "kind": "notch",
+          "label": "SHOULDER"
+        },
+        {
+          "points": [
+            [
+              11.0,
+              336.0
+            ],
+            [
+              19.0,
+              328.0
+            ]
+          ],
+          "kind": "notch",
+          "label": "CENTRE BACK"
+        },
+        {
+          "points": [
+            [
+              225.45621,
+              336.0
+            ],
+            [
+              216.45621,
+              328.0
+            ]
+          ],
+          "kind": "notch",
+          "label": "FRONT NECK END"
+        }
+      ],
+      "labels": [
+        {
+          "x": 55.0,
+          "y": 150.75,
+          "text": "HOOD / MIRRORED PAIR"
+        }
+      ],
+      "grain": [
+        [
+          121.0,
+          92.25
+        ],
+        [
+          121.0,
+          245.0
+        ]
+      ],
+      "notes": [
+        "Join the two panels around the back and crown; face edge remains open.",
+        "Bottom attachment edge runs from centre-back to the marked front neckline endpoint.",
+        "Match shoulder notch to body shoulder seam; hood face and garment wrap edges meet at the front neck endpoint.",
+        "Bias-bind the face opening with zero extra edge allowance. No drawcord channel.",
+        "Crown is drafted as short straight segments; sew along the supplied polyline for the first toile."
+      ],
+      "edge_allowances": [
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        0,
+        10
+      ],
+      "edge_finishes": [
+        {
+          "edge": 0,
+          "type": "sew",
+          "allowance_mm": 10,
+          "label": "crown / centre-back panel seam"
+        },
+        {
+          "edge": 1,
+          "type": "sew",
+          "allowance_mm": 10,
+          "label": "crown / centre-back panel seam"
+        },
+        {
+          "edge": 2,
+          "type": "sew",
+          "allowance_mm": 10,
+          "label": "crown / centre-back panel seam"
+        },
+        {
+          "edge": 3,
+          "type": "sew",
+          "allowance_mm": 10,
+          "label": "crown / centre-back panel seam"
+        },
+        {
+          "edge": 4,
+          "type": "sew",
+          "allowance_mm": 10,
+          "label": "crown / centre-back panel seam"
+        },
+        {
+          "edge": 5,
+          "type": "sew",
+          "allowance_mm": 10,
+          "label": "crown / centre-back panel seam"
+        },
+        {
+          "edge": 6,
+          "type": "sew",
+          "allowance_mm": 10,
+          "label": "crown / centre-back panel seam"
+        },
+        {
+          "edge": 7,
+          "type": "sew",
+          "allowance_mm": 10,
+          "label": "crown / centre-back panel seam"
+        },
+        {
+          "edge": 8,
+          "type": "sew",
+          "allowance_mm": 10,
+          "label": "crown / centre-back panel seam"
+        },
+        {
+          "edge": 9,
+          "type": "sew",
+          "allowance_mm": 10,
+          "label": "crown / centre-back panel seam"
+        },
+        {
+          "edge": 10,
+          "type": "bind",
+          "allowance_mm": 0,
+          "label": "hood face opening"
+        },
+        {
+          "edge": 11,
+          "type": "sew",
+          "allowance_mm": 10,
+          "label": "neckline attachment"
+        }
+      ],
+      "width_mm": 241.8079,
+      "height_mm": 347.0,
+      "cut_area_mm2": 77863.5943
+    },
+    {
+      "id": "robe_bias_strip",
+      "name": "Outer - bias binding strip",
+      "cut": "CUT 2 STRIPS ON TRUE BIAS; may piece shorter strips",
+      "cut_count": 2,
+      "material": "Charcoal outer cloth",
+      "group": "robe",
+      "outline": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1001.0,
+          1.0
+        ],
+        [
+          1001.0,
+          41.0
+        ],
+        [
+          1.0,
+          41.0
+        ]
+      ],
+      "seam": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1001.0,
+          1.0
+        ],
+        [
+          1001.0,
+          41.0
+        ],
+        [
+          1.0,
+          41.0
+        ]
+      ],
+      "lines": [
+        {
+          "points": [
+            [
+              6.0,
+              11.0
+            ],
+            [
+              996.0,
+              11.0
+            ]
+          ],
+          "kind": "fold"
+        },
+        {
+          "points": [
+            [
+              6.0,
+              21.0
+            ],
+            [
+              996.0,
+              21.0
+            ]
+          ],
+          "kind": "fold",
+          "label": "FOLD"
+        },
+        {
+          "points": [
+            [
+              6.0,
+              31.0
+            ],
+            [
+              996.0,
+              31.0
+            ]
+          ],
+          "kind": "fold"
+        }
+      ],
+      "labels": [],
+      "grain": [
+        [
+          551.0,
+          7.0
+        ],
+        [
+          579.0,
+          35.0
+        ]
+      ],
+      "notes": [
+        "Cut width 40 mm on TRUE BIAS (45 degrees to straight grain), no added allowance.",
+        "Supply at least 1928.7 mm usable binding after joins; shown strips supply 1980.0 mm.",
+        "Join short ends with 10 mm straight seams; press open. Shorter strips need extra length for each additional join.",
+        "Fold outer long raw edges to centre; then fold in half, yielding 10 mm finished binding.",
+        "Enclose the zero-allowance garment edges; do not trim or move the marked boundary inward.",
+        "This rectangle is the RAW CUT strip; dashed quarter lines are folds, not joining seams."
+      ],
+      "edge_allowances": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "edge_finishes": [
+        {
+          "edge": 0,
+          "type": "raw",
+          "allowance_mm": 0,
+          "label": "raw strip edge"
+        },
+        {
+          "edge": 1,
+          "type": "raw",
+          "allowance_mm": 0,
+          "label": "raw strip edge"
+        },
+        {
+          "edge": 2,
+          "type": "raw",
+          "allowance_mm": 0,
+          "label": "raw strip edge"
+        },
+        {
+          "edge": 3,
+          "type": "raw",
+          "allowance_mm": 0,
+          "label": "raw strip edge"
+        }
+      ],
+      "width_mm": 1002.0,
+      "height_mm": 42.0,
+      "cut_area_mm2": 40000.0
+    },
+    {
+      "id": "tunic_bias_strip",
+      "name": "Inner - bias binding strip",
+      "cut": "CUT 2 STRIPS ON TRUE BIAS; may piece shorter strips",
+      "cut_count": 2,
+      "material": "Slate-blue inner cloth",
+      "group": "tunic",
+      "outline": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1001.0,
+          1.0
+        ],
+        [
+          1001.0,
+          41.0
+        ],
+        [
+          1.0,
+          41.0
+        ]
+      ],
+      "seam": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1001.0,
+          1.0
+        ],
+        [
+          1001.0,
+          41.0
+        ],
+        [
+          1.0,
+          41.0
+        ]
+      ],
+      "lines": [
+        {
+          "points": [
+            [
+              6.0,
+              11.0
+            ],
+            [
+              996.0,
+              11.0
+            ]
+          ],
+          "kind": "fold"
+        },
+        {
+          "points": [
+            [
+              6.0,
+              21.0
+            ],
+            [
+              996.0,
+              21.0
+            ]
+          ],
+          "kind": "fold",
+          "label": "FOLD"
+        },
+        {
+          "points": [
+            [
+              6.0,
+              31.0
+            ],
+            [
+              996.0,
+              31.0
+            ]
+          ],
+          "kind": "fold"
+        }
+      ],
+      "labels": [],
+      "grain": [
+        [
+          551.0,
+          7.0
+        ],
+        [
+          579.0,
+          35.0
+        ]
+      ],
+      "notes": [
+        "Cut width 40 mm on TRUE BIAS (45 degrees to straight grain), no added allowance.",
+        "Supply at least 1291.6 mm usable binding after joins; shown strips supply 1980.0 mm.",
+        "Join short ends with 10 mm straight seams; press open. Shorter strips need extra length for each additional join.",
+        "Fold outer long raw edges to centre; then fold in half, yielding 10 mm finished binding.",
+        "Enclose the zero-allowance garment edges; do not trim or move the marked boundary inward.",
+        "This rectangle is the RAW CUT strip; dashed quarter lines are folds, not joining seams."
+      ],
+      "edge_allowances": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "edge_finishes": [
+        {
+          "edge": 0,
+          "type": "raw",
+          "allowance_mm": 0,
+          "label": "raw strip edge"
+        },
+        {
+          "edge": 1,
+          "type": "raw",
+          "allowance_mm": 0,
+          "label": "raw strip edge"
+        },
+        {
+          "edge": 2,
+          "type": "raw",
+          "allowance_mm": 0,
+          "label": "raw strip edge"
+        },
+        {
+          "edge": 3,
+          "type": "raw",
+          "allowance_mm": 0,
+          "label": "raw strip edge"
+        }
+      ],
+      "width_mm": 1002.0,
+      "height_mm": 42.0,
+      "cut_area_mm2": 40000.0
+    },
+    {
+      "id": "tabard",
+      "name": "Shoulder tabard",
+      "cut": "CUT 4 = two tabards, each with two fabric layers",
+      "cut_count": 4,
+      "material": "Charcoal outer cloth",
+      "group": "accessories",
+      "outline": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          106.0,
+          1.0
+        ],
+        [
+          106.0,
+          921.0
+        ],
+        [
+          1.0,
+          921.0
+        ]
+      ],
+      "seam": [
+        [
+          11.0,
+          11.0
+        ],
+        [
+          96.0,
+          11.0
+        ],
+        [
+          96.0,
+          911.0
+        ],
+        [
+          11.0,
+          911.0
+        ]
+      ],
+      "lines": [
+        {
+          "points": [
+            [
+              11.0,
+              461.0
+            ],
+            [
+              96.0,
+              461.0
+            ]
+          ],
+          "kind": "placement",
+          "label": "SHOULDER MIDPOINT"
+        },
+        {
+          "points": [
+            [
+              11.0,
+              121.0
+            ],
+            [
+              96.0,
+              121.0
+            ]
+          ],
+          "kind": "placement",
+          "label": "SASH LEVEL"
+        },
+        {
+          "points": [
+            [
+              11.0,
+              801.0
+            ],
+            [
+              96.0,
+              801.0
+            ]
+          ],
+          "kind": "placement",
+          "label": "SASH LEVEL"
+        }
+      ],
+      "labels": [],
+      "grain": [
+        [
+          53.5,
+          236.0
+        ],
+        [
+          53.5,
+          641.0
+        ]
+      ],
+      "notes": [
+        "Sew in pairs right sides together; leave a turning gap, turn and close gap.",
+        "One finished tabard drapes over each shoulder with equal front/back drop.",
+        "Mark actual shoulder and sash levels during fitting; secure tabards with a few removable tacks."
+      ],
+      "edge_allowances": [
+        10,
+        10,
+        10,
+        10
+      ],
+      "edge_finishes": [
+        {
+          "edge": 0,
+          "type": "sew",
+          "allowance_mm": 10,
+          "label": "bagged tabard perimeter"
+        },
+        {
+          "edge": 1,
+          "type": "sew",
+          "allowance_mm": 10,
+          "label": "bagged tabard perimeter"
+        },
+        {
+          "edge": 2,
+          "type": "sew",
+          "allowance_mm": 10,
+          "label": "bagged tabard perimeter"
+        },
+        {
+          "edge": 3,
+          "type": "sew",
+          "allowance_mm": 10,
+          "label": "bagged tabard perimeter"
+        }
+      ],
+      "width_mm": 107.0,
+      "height_mm": 922.0,
+      "cut_area_mm2": 96600.0
+    },
+    {
+      "id": "sash",
+      "name": "Short fastening sash",
+      "cut": "CUT 2 = one sash with two fabric layers",
+      "cut_count": 2,
+      "material": "Charcoal outer cloth",
+      "group": "accessories",
+      "outline": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          771.0,
+          1.0
+        ],
+        [
+          771.0,
+          71.0
+        ],
+        [
+          1.0,
+          71.0
+        ]
+      ],
+      "seam": [
+        [
+          11.0,
+          11.0
+        ],
+        [
+          761.0,
+          11.0
+        ],
+        [
+          761.0,
+          61.0
+        ],
+        [
+          11.0,
+          61.0
+        ]
+      ],
+      "lines": [
+        {
+          "points": [
+            [
+              91.0,
+              11.0
+            ],
+            [
+              91.0,
+              61.0
+            ]
+          ],
+          "kind": "placement",
+          "label": "OVERLAP"
+        },
+        {
+          "points": [
+            [
+              681.0,
+              11.0
+            ],
+            [
+              681.0,
+              61.0
+            ]
+          ],
+          "kind": "placement",
+          "label": "OVERLAP"
+        }
+      ],
+      "labels": [],
+      "grain": [
+        [
+          236.0,
+          36.0
+        ],
+        [
+          536.0,
+          36.0
+        ]
+      ],
+      "notes": [
+        "Sew right sides together around the perimeter; leave a turning gap, turn and close gap.",
+        "Finished overlap is 80 mm; position low-profile hook-and-loop on opposite faces after checking fit over all layers.",
+        "Keep fastening ends short. This clothing sash is not a load-bearing device harness."
+      ],
+      "edge_allowances": [
+        10,
+        10,
+        10,
+        10
+      ],
+      "edge_finishes": [
+        {
+          "edge": 0,
+          "type": "sew",
+          "allowance_mm": 10,
+          "label": "bagged sash perimeter"
+        },
+        {
+          "edge": 1,
+          "type": "sew",
+          "allowance_mm": 10,
+          "label": "bagged sash perimeter"
+        },
+        {
+          "edge": 2,
+          "type": "sew",
+          "allowance_mm": 10,
+          "label": "bagged sash perimeter"
+        },
+        {
+          "edge": 3,
+          "type": "sew",
+          "allowance_mm": 10,
+          "label": "bagged sash perimeter"
+        }
+      ],
+      "width_mm": 772.0,
+      "height_mm": 72.0,
+      "cut_area_mm2": 53900.0
+    }
+  ],
+  "derived": {
+    "illustrative_defaults_only": true,
+    "binding": {
+      "robe": {
+        "finished_edge_length_mm": 1828.6877120769743,
+        "handling_reserve_mm": 100,
+        "cut_width_mm": 40,
+        "strip_length_mm": 1000.0,
+        "strip_count": 2,
+        "usable_length_after_joins_mm": 1980.0
+      },
+      "tunic": {
+        "finished_edge_length_mm": 1191.5888415810348,
+        "handling_reserve_mm": 100,
+        "cut_width_mm": 40,
+        "strip_length_mm": 1000.0,
+        "strip_count": 2,
+        "usable_length_after_joins_mm": 1980.0
+      }
+    },
+    "robe": {
+      "finished_base_circumference_mm": 880,
+      "finished_overlap_at_sash_mm": 190,
+      "hem_circumference_excluding_overlap_mm": 1020,
+      "shoulder_drop_each_side_mm": 65.0,
+      "sleeve_seam_length_along_centre_mm": 115.0,
+      "upper_sleeve_circumference_mm": 350,
+      "cuff_circumference_mm": 300,
+      "neckline_seam_length_mm": 428.9124168776928,
+      "hood_base_half_mm": 214.4562084388464,
+      "front_neck_depth_mm": 142.79999999999998,
+      "back_neck_depth_mm": 22.1,
+      "neck_half_width_mm": 56.666666666666664,
+      "armhole_depth_below_shoulder_tip_mm": 175.0,
+      "shoulder_slope_mm": 17.05,
+      "quarter_body_mm": 220.0,
+      "length_mm": 750
+    },
+    "tunic": {
+      "finished_base_circumference_mm": 840,
+      "finished_overlap_at_sash_mm": 152.0,
+      "hem_circumference_excluding_overlap_mm": 910.0,
+      "shoulder_drop_each_side_mm": 55.0,
+      "sleeve_seam_length_along_centre_mm": 175.0,
+      "upper_sleeve_circumference_mm": 330,
+      "cuff_circumference_mm": 300,
+      "neckline_seam_length_mm": 428.9124168776928,
+      "hood_base_half_mm": null,
+      "front_neck_depth_mm": 142.79999999999998,
+      "back_neck_depth_mm": 22.1,
+      "neck_half_width_mm": 56.666666666666664,
+      "armhole_depth_below_shoulder_tip_mm": 165.0,
+      "shoulder_slope_mm": 17.05,
+      "quarter_body_mm": 210.0,
+      "length_mm": 510
+    },
+    "hood": {
+      "panel_base_mm": 214.4562084388464,
+      "panel_height_mm": 325,
+      "panel_upper_depth_mm": 220.0,
+      "panel_face_edge_mm": 285.45383799289425,
+      "panel_crown_seam_mm": 549.8092280294188,
+      "shoulder_notch_from_cb_mm": 60.82368873318281
+    },
+    "tabard": {
+      "finished_width_mm": 85,
+      "finished_length_mm": 900,
+      "finished_quantity": 2
+    },
+    "sash": {
+      "finished_length_mm": 750,
+      "finished_width_mm": 50,
+      "closed_circumference_mm": 670,
+      "overlap_mm": 80
+    },
+    "cut_piece_count": 22,
+    "net_cut_area_m2": 2.4260098232
+  },
+  "seam_checks": [
+    {
+      "name": "Outer robe shoulders: front / back",
+      "a_mm": 164.2208,
+      "b_mm": 164.2208,
+      "tolerance_mm": 0.05,
+      "difference_mm": 0.0,
+      "passed": true
+    },
+    {
+      "name": "Outer robe side seams: front / back",
+      "a_mm": 559.0467,
+      "b_mm": 559.0467,
+      "tolerance_mm": 0.05,
+      "difference_mm": 0.0,
+      "passed": true
+    },
+    {
+      "name": "Outer robe sleeve attachment / front+back arm opening",
+      "a_mm": 350.0,
+      "b_mm": 350.0,
+      "tolerance_mm": 0.05,
+      "difference_mm": 0.0,
+      "passed": true
+    },
+    {
+      "name": "Outer robe sleeve underside pair",
+      "a_mm": 117.686,
+      "b_mm": 117.686,
+      "tolerance_mm": 0.05,
+      "difference_mm": 0.0,
+      "passed": true
+    },
+    {
+      "name": "Outer robe sleeve centre / front arm opening",
+      "a_mm": 175.0,
+      "b_mm": 175.0,
+      "tolerance_mm": 0.05,
+      "difference_mm": 0.0,
+      "passed": true
+    },
+    {
+      "name": "Inner tunic shoulders: front / back",
+      "a_mm": 154.2784,
+      "b_mm": 154.2784,
+      "tolerance_mm": 0.05,
+      "difference_mm": 0.0,
+      "passed": true
+    },
+    {
+      "name": "Inner tunic side seams: front / back",
+      "a_mm": 328.4166,
+      "b_mm": 328.4166,
+      "tolerance_mm": 0.05,
+      "difference_mm": 0.0,
+      "passed": true
+    },
+    {
+      "name": "Inner tunic sleeve attachment / front+back arm opening",
+      "a_mm": 330.0,
+      "b_mm": 330.0,
+      "tolerance_mm": 0.05,
+      "difference_mm": 0.0,
+      "passed": true
+    },
+    {
+      "name": "Inner tunic sleeve underside pair",
+      "a_mm": 175.6417,
+      "b_mm": 175.6417,
+      "tolerance_mm": 0.05,
+      "difference_mm": 0.0,
+      "passed": true
+    },
+    {
+      "name": "Inner tunic sleeve centre / front arm opening",
+      "a_mm": 165.0,
+      "b_mm": 165.0,
+      "tolerance_mm": 0.05,
+      "difference_mm": 0.0,
+      "passed": true
+    },
+    {
+      "name": "Hood base / complete garment neckline",
+      "a_mm": 428.9124,
+      "b_mm": 428.9124,
+      "tolerance_mm": 0.05,
+      "difference_mm": 0.0,
+      "passed": true
+    },
+    {
+      "name": "Hood CB-to-shoulder notch / back half-neck",
+      "a_mm": 60.8237,
+      "b_mm": 60.8237,
+      "tolerance_mm": 0.05,
+      "difference_mm": 0.0,
+      "passed": true
+    },
+    {
+      "name": "Hood shoulder-to-front / front neck",
+      "a_mm": 153.6325,
+      "b_mm": 153.6325,
+      "tolerance_mm": 0.05,
+      "difference_mm": 0.0,
+      "passed": true
+    }
+  ],
+  "warnings": [],
+  "fit_status": "Unfitted experimental toile draft; seam agreement is a geometry check, not proof of fit.",
+  "legend": {
+    "outline": "CUT line; allowances included",
+    "seam": "SEW on joined edges / FOLD on hemmed edges / RAW FINAL edge where bias bound",
+    "fold": "First hem turn or bias strip fold",
+    "seam_extension": "Continue joining seam through shaped hem allowance",
+    "centre": "Reference centre line",
+    "placement": "Placement guide; adjust during fitting",
+    "notch": "Transfer as a mark; do not cut into seam line"
+  },
+  "formula_notes": [
+    "Body base circumference = max(chest + chest_ease, hip + hip_ease); inner subtracts 40 mm ease.",
+    "Shoulder drop = quarter body circumference - half anatomical shoulder width; subtract drop from sleeve measurement.",
+    "Arm opening on each body panel = half upper-sleeve circumference. Flat sleeve attachment = sum of both openings.",
+    "Neck half-width = (neck + neck_ease)/6; back V depth = 0.065*(neck+ease); front V depth = 0.42*(neck+ease). These are design proportions, not an anthropometric sizing standard.",
+    "Each hood base = measured back half-neck seam + measured front-neck seam; shoulder notch marks their junction.",
+    "Hood upper depth = head circumference/3 + hood_ease; height = shoulder-to-crown height + hood_ease. Check hood vision and turning in a toile.",
+    "Wrap overlap below sash = twice each front extension. Tabard length = 2*(shoulder_to_waist + tabard_drop).",
+    "No allowance is added to bias-bound edges. Binding width is 4 times finished width, and supply includes joins plus 100 mm handling reserve.",
+    "Tapered cuff and flared body hem extensions reflect adjacent seams at the final fold and again at the first 10 mm turn.",
+    "Net cut area is piece area only; it is NOT fabric yardage and excludes layout waste, bias placement and shrinkage."
+  ],
+  "tile_plan": [
+    {
+      "id": "robe_back",
+      "name": "Outer robe - full back",
+      "columns": 3,
+      "rows": 4,
+      "first_page": 2,
+      "last_page": 13
+    },
+    {
+      "id": "robe_front",
+      "name": "Outer robe - wrap front",
+      "columns": 3,
+      "rows": 4,
+      "first_page": 14,
+      "last_page": 25
+    },
+    {
+      "id": "robe_sleeve",
+      "name": "Outer robe - flat sleeve",
+      "columns": 1,
+      "rows": 2,
+      "first_page": 26,
+      "last_page": 27
+    },
+    {
+      "id": "tunic_back",
+      "name": "Inner tunic - full back",
+      "columns": 3,
+      "rows": 3,
+      "first_page": 28,
+      "last_page": 36
+    },
+    {
+      "id": "tunic_front",
+      "name": "Inner tunic - wrap front",
+      "columns": 2,
+      "rows": 3,
+      "first_page": 37,
+      "last_page": 42
+    },
+    {
+      "id": "tunic_sleeve",
+      "name": "Inner tunic - flat sleeve",
+      "columns": 2,
+      "rows": 2,
+      "first_page": 43,
+      "last_page": 46
+    },
+    {
+      "id": "robe_hood",
+      "name": "Outer robe - hood side",
+      "columns": 2,
+      "rows": 2,
+      "first_page": 47,
+      "last_page": 50
+    },
+    {
+      "id": "robe_bias_strip",
+      "name": "Outer - bias binding strip",
+      "columns": 6,
+      "rows": 1,
+      "first_page": 51,
+      "last_page": 56
+    },
+    {
+      "id": "tunic_bias_strip",
+      "name": "Inner - bias binding strip",
+      "columns": 6,
+      "rows": 1,
+      "first_page": 57,
+      "last_page": 62
+    },
+    {
+      "id": "tabard",
+      "name": "Shoulder tabard",
+      "columns": 1,
+      "rows": 4,
+      "first_page": 63,
+      "last_page": 66
+    },
+    {
+      "id": "sash",
+      "name": "Short fastening sash",
+      "columns": 5,
+      "rows": 1,
+      "first_page": 67,
+      "last_page": 71
+    }
+  ]
+}

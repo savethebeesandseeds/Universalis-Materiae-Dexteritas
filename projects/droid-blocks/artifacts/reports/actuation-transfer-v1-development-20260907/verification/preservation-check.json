@@ -1,0 +1,3313 @@
+{
+  "schema": "actuation_transfer_preservation_v1",
+  "checked_at_utc": "2026-09-06T22:42:11.1226938Z",
+  "scope": "Read-only check while source learning runs; no session-control requests or protected-file writes",
+  "project_root": "C:\\Work\\Universalis-Materiae-Dexteritas\\projects\\droid-blocks",
+  "manifest_path": "build/actuation-transfer-qa/prior-artifact-hashes.json",
+  "manifest_sha256": "ba87b06d3c8ad770a84776b0bab2fcfb84ef2d29bc2c8d90c593741d5769146a",
+  "file_count": 466,
+  "unique_path_count": 466,
+  "unchanged_file_count": 466,
+  "changed_file_count": 0,
+  "endpoint_count": 2,
+  "byte_identical_endpoint_count": 1,
+  "complete": false,
+  "files": [
+    {
+      "path": "artifacts/exploratory-light-search-g12-p16-seed0.json",
+      "before_sha256": "3fe1103a8cca3e43b7b5475939883ad1d3c890cca34ad4742187ed1bf7e53517",
+      "current_sha256": "3fe1103a8cca3e43b7b5475939883ad1d3c890cca34ad4742187ed1bf7e53517",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/exploratory-v2-light-search-g12-p16-seed0.json",
+      "before_sha256": "ef7c1811850551aaa1a69c355ccff7383e1862b356547e02fc264cfbf8c19d9d",
+      "current_sha256": "ef7c1811850551aaa1a69c355ccff7383e1862b356547e02fc264cfbf8c19d9d",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/exploratory-v3-light-search-g12-p16-seed0.json",
+      "before_sha256": "38d0d788e29b573bc49d517195d0d5ddeafdb3fb9a50dfef933a39258a651677",
+      "current_sha256": "38d0d788e29b573bc49d517195d0d5ddeafdb3fb9a50dfef933a39258a651677",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/light-search-policy-v3-seed0.json",
+      "before_sha256": "6f7d5069bdb884d75f1241629d437c039a2f7a486633d9ef2d7f6b70db0a5582",
+      "current_sha256": "6f7d5069bdb884d75f1241629d437c039a2f7a486633d9ef2d7f6b70db0a5582",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/README.md",
+      "before_sha256": "9492ca51d10b1834852c6c451b83bff73ed35c54a9d41ad524c12f82e3356ef4",
+      "current_sha256": "9492ca51d10b1834852c6c451b83bff73ed35c54a9d41ad524c12f82e3356ef4",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/body-probe-v1-source/body_controller.cpp",
+      "before_sha256": "136d62d3101a4310a76018cc66c93109f7d589b91285f9461b6bf7bec29fe8ed",
+      "current_sha256": "136d62d3101a4310a76018cc66c93109f7d589b91285f9461b6bf7bec29fe8ed",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/body-probe-v1-source/body_controller.hpp",
+      "before_sha256": "414c80b21d5f60c2178179134c767e970e1a40abbdde5473777435c8326ab22b",
+      "current_sha256": "414c80b21d5f60c2178179134c767e970e1a40abbdde5473777435c8326ab22b",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-search-policy-v3-seed0-validation-summary.json",
+      "before_sha256": "da43e2094fc679cbb4328bea2476a8ba8d4416761ab1f124b24ac2371620e802",
+      "current_sha256": "da43e2094fc679cbb4328bea2476a8ba8d4416761ab1f124b24ac2371620e802",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/README.md",
+      "before_sha256": "1421ff9e6a4fef72ce430a43d935775c79880d7592ec26917ad5d79a0f54ab57",
+      "current_sha256": "1421ff9e6a4fef72ce430a43d935775c79880d7592ec26917ad5d79a0f54ab57",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/body-discovery-v1-development-20260905/report.json",
+      "before_sha256": "75e95fd0b14d48d1fe5e5f628951d4239145c172e1dad07e36fd6ba8c47db7b7",
+      "current_sha256": "75e95fd0b14d48d1fe5e5f628951d4239145c172e1dad07e36fd6ba8c47db7b7",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/body-discovery-v1-diagnostics-20260905/report.json",
+      "before_sha256": "2b04e96d7046cb425adeaaa7ed5c22b2ba7ae286ea93fb856d06fcbfb9eb93c5",
+      "current_sha256": "2b04e96d7046cb425adeaaa7ed5c22b2ba7ae286ea93fb856d06fcbfb9eb93c5",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/body-discovery-v1-governed-20260905/report.json",
+      "before_sha256": "82cec00d0f5ea678f8a7d8a149c8c0ad174f032c2169376f61e08c6277f10f03",
+      "current_sha256": "82cec00d0f5ea678f8a7d8a149c8c0ad174f032c2169376f61e08c6277f10f03",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/construction-v1-development-20260905/report.json",
+      "before_sha256": "42c8d8fd2e137e6958ede34f80c76539e18f6c4e4b34d73f36acb6cf191edbc0",
+      "current_sha256": "42c8d8fd2e137e6958ede34f80c76539e18f6c4e4b34d73f36acb6cf191edbc0",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/construction-v1-light-compatibility-20260905/report.json",
+      "before_sha256": "80ab197dd5a14c0f30a03af078a5b6521d82907c6e2540bcc2fb4f06a827478a",
+      "current_sha256": "80ab197dd5a14c0f30a03af078a5b6521d82907c6e2540bcc2fb4f06a827478a",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-adaptation-v1-development-20260906/report.json",
+      "before_sha256": "531faefe51ed3044cc10d09b194a6341487dfe4f6f203035365407369572b054",
+      "current_sha256": "531faefe51ed3044cc10d09b194a6341487dfe4f6f203035365407369572b054",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-adaptation-v1-development-20260906/source/CMakeLists.txt",
+      "before_sha256": "95b329205f3c1775b6ff14b6496833979bff2b70b174200291aa7afc4c000989",
+      "current_sha256": "95b329205f3c1775b6ff14b6496833979bff2b70b174200291aa7afc4c000989",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-adaptation-v1-development-20260906/source/Dockerfile",
+      "before_sha256": "59285428ebaabd1b695871176dd5993bdcb91bfaade7720ae318907217114d7c",
+      "current_sha256": "59285428ebaabd1b695871176dd5993bdcb91bfaade7720ae318907217114d7c",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-adaptation-v1-development-20260906/source/run.sh",
+      "before_sha256": "f09325610b071eb7e464d89f97e48cb29dd9b0eeaf2ae50c205bfb58e41bc690",
+      "current_sha256": "f09325610b071eb7e464d89f97e48cb29dd9b0eeaf2ae50c205bfb58e41bc690",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-adaptation-v1-development-20260906/source/setup.sh",
+      "before_sha256": "97e2f69138a4477fd275a4112204f8ca8b3f6be104291519dabf1a554e191266",
+      "current_sha256": "97e2f69138a4477fd275a4112204f8ca8b3f6be104291519dabf1a554e191266",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-adaptation-v1-development-20260906/source/artifacts/light-search-policy-v3-seed0.json",
+      "before_sha256": "6f7d5069bdb884d75f1241629d437c039a2f7a486633d9ef2d7f6b70db0a5582",
+      "current_sha256": "6f7d5069bdb884d75f1241629d437c039a2f7a486633d9ef2d7f6b70db0a5582",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-adaptation-v1-development-20260906/source/artifacts/reports/light-learning-v2-development-20260905/report.json",
+      "before_sha256": "931a26b17b399456bb5461293e382ae9880486f1b38157007500eead65998230",
+      "current_sha256": "931a26b17b399456bb5461293e382ae9880486f1b38157007500eead65998230",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-adaptation-v1-development-20260906/source/artifacts/reports/light-learning-v2-development-20260905/source/artifacts/light-search-policy-v3-seed0.json",
+      "before_sha256": "6f7d5069bdb884d75f1241629d437c039a2f7a486633d9ef2d7f6b70db0a5582",
+      "current_sha256": "6f7d5069bdb884d75f1241629d437c039a2f7a486633d9ef2d7f6b70db0a5582",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-adaptation-v1-development-20260906/source/artifacts/reports/light-learning-v2-development-20260905/source/config/learning_experiment_v3.json",
+      "before_sha256": "ea3ed8403ad1a0c23d4e73aa9d854bc7825ece63c1e12ebb983cd7019a00ba1c",
+      "current_sha256": "ea3ed8403ad1a0c23d4e73aa9d854bc7825ece63c1e12ebb983cd7019a00ba1c",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-adaptation-v1-development-20260906/source/artifacts/reports/light-learning-v2-development-20260905/source/config/module_catalog.json",
+      "before_sha256": "5327cc56ebbe6817db8af4e5fca2cf8228b07ccc8904d9bd90d738e3a7cd6781",
+      "current_sha256": "5327cc56ebbe6817db8af4e5fca2cf8228b07ccc8904d9bd90d738e3a7cd6781",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-adaptation-v1-development-20260906/source/artifacts/reports/light-learning-v2-development-20260905/source/docs/LIGHT_LEARNING_EXPERIMENT.md",
+      "before_sha256": "77628e71e83939737c73faf578955a4d1c7363635984784f6a0ee39deadd13ae",
+      "current_sha256": "77628e71e83939737c73faf578955a4d1c7363635984784f6a0ee39deadd13ae",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-adaptation-v1-development-20260906/source/artifacts/reports/light-learning-v2-development-20260905/source/include/droid/construction.hpp",
+      "before_sha256": "cdf663cda17f386e91d8de6de819dd9f37d1a106bab471d780aa0f6080a34d98",
+      "current_sha256": "cdf663cda17f386e91d8de6de819dd9f37d1a106bab471d780aa0f6080a34d98",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-adaptation-v1-development-20260906/source/artifacts/reports/light-learning-v2-development-20260905/source/include/droid/light_learner.hpp",
+      "before_sha256": "4b3496886e38ca81083a70af120ee2ab4033088788d5498d27321becccd641d4",
+      "current_sha256": "4b3496886e38ca81083a70af120ee2ab4033088788d5498d27321becccd641d4",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-adaptation-v1-development-20260906/source/artifacts/reports/light-learning-v2-development-20260905/source/include/droid/light_session.hpp",
+      "before_sha256": "a5a260077717172e0f99cb85949bd80a0173a6340240840177cfa5b4255dfb11",
+      "current_sha256": "a5a260077717172e0f99cb85949bd80a0173a6340240840177cfa5b4255dfb11",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-adaptation-v1-development-20260906/source/artifacts/reports/light-learning-v2-development-20260905/source/models/droid.xml",
+      "before_sha256": "20b36ed04d5f7c8d7cf660422ac074bbb4000cde8ce8483cc402417f63dd6b5e",
+      "current_sha256": "20b36ed04d5f7c8d7cf660422ac074bbb4000cde8ce8483cc402417f63dd6b5e",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-adaptation-v1-development-20260906/source/artifacts/reports/light-learning-v2-development-20260905/source/src/construction.cpp",
+      "before_sha256": "dc415ee2342ba89c612ae4dc22344f2e33dabad040cbef7e35ea661ee3015f21",
+      "current_sha256": "dc415ee2342ba89c612ae4dc22344f2e33dabad040cbef7e35ea661ee3015f21",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-adaptation-v1-development-20260906/source/artifacts/reports/light-learning-v2-development-20260905/source/src/light_experiment_cli.cpp",
+      "before_sha256": "bb87488dfa9bf1dbcd14e0e5954ac0485adf15e6ab4d9975b41442b3461d2bc2",
+      "current_sha256": "bb87488dfa9bf1dbcd14e0e5954ac0485adf15e6ab4d9975b41442b3461d2bc2",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-adaptation-v1-development-20260906/source/artifacts/reports/light-learning-v2-development-20260905/source/src/light_learner.cpp",
+      "before_sha256": "58335943c9e11d4e61f27df4edde291c8833823b8cb2245aeb287685df2283ff",
+      "current_sha256": "58335943c9e11d4e61f27df4edde291c8833823b8cb2245aeb287685df2283ff",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-adaptation-v1-development-20260906/source/artifacts/reports/light-learning-v2-development-20260905/source/src/light_session.cpp",
+      "before_sha256": "0d3afb919a1e1b6bc0ed8d1c9a761ff9c4f48cdcf95f37ae9be944cf2aa56870",
+      "current_sha256": "0d3afb919a1e1b6bc0ed8d1c9a761ff9c4f48cdcf95f37ae9be944cf2aa56870",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-adaptation-v1-development-20260906/source/build/light-adaptation-qa/runtime.json",
+      "before_sha256": "0e5940f4808b9d7e3745f9d4bbe0cf18bb2b8ff696749d36b6cb8a6b632462de",
+      "current_sha256": "0e5940f4808b9d7e3745f9d4bbe0cf18bb2b8ff696749d36b6cb8a6b632462de",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-adaptation-v1-development-20260906/source/config/learning_experiment_v3.json",
+      "before_sha256": "ea3ed8403ad1a0c23d4e73aa9d854bc7825ece63c1e12ebb983cd7019a00ba1c",
+      "current_sha256": "ea3ed8403ad1a0c23d4e73aa9d854bc7825ece63c1e12ebb983cd7019a00ba1c",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-adaptation-v1-development-20260906/source/config/module_catalog.json",
+      "before_sha256": "5327cc56ebbe6817db8af4e5fca2cf8228b07ccc8904d9bd90d738e3a7cd6781",
+      "current_sha256": "5327cc56ebbe6817db8af4e5fca2cf8228b07ccc8904d9bd90d738e3a7cd6781",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-adaptation-v1-development-20260906/source/docs/LIGHT_ADAPTATION_EXPERIMENT.md",
+      "before_sha256": "bc6a9d0b56a6dd651bb602defb20f903bae52ad597a6f69a10660df7c88ed1dd",
+      "current_sha256": "bc6a9d0b56a6dd651bb602defb20f903bae52ad597a6f69a10660df7c88ed1dd",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-adaptation-v1-development-20260906/source/docs/LIGHT_LEARNING_EXPERIMENT.md",
+      "before_sha256": "090d8572bafb546f2d5c48d8863e8d27c5c8c133f5d3de57672c4f1165f66646",
+      "current_sha256": "090d8572bafb546f2d5c48d8863e8d27c5c8c133f5d3de57672c4f1165f66646",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-adaptation-v1-development-20260906/source/include/droid/baseline.hpp",
+      "before_sha256": "d3119b95c99467e433be506bcb14b89d7c850dc8abf1928a83d62810853b5cc0",
+      "current_sha256": "d3119b95c99467e433be506bcb14b89d7c850dc8abf1928a83d62810853b5cc0",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-adaptation-v1-development-20260906/source/include/droid/body_controller.hpp",
+      "before_sha256": "debaa2ef481f185f15293a9d5c64daf872a7c1db2f47d0e9439c0980f90012cb",
+      "current_sha256": "debaa2ef481f185f15293a9d5c64daf872a7c1db2f47d0e9439c0980f90012cb",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-adaptation-v1-development-20260906/source/include/droid/construction_session.hpp",
+      "before_sha256": "7e883fbbe20d914821014698af2ff36952938325961b963a39194380131a39c3",
+      "current_sha256": "7e883fbbe20d914821014698af2ff36952938325961b963a39194380131a39c3",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-adaptation-v1-development-20260906/source/include/droid/construction.hpp",
+      "before_sha256": "cdf663cda17f386e91d8de6de819dd9f37d1a106bab471d780aa0f6080a34d98",
+      "current_sha256": "cdf663cda17f386e91d8de6de819dd9f37d1a106bab471d780aa0f6080a34d98",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-adaptation-v1-development-20260906/source/include/droid/environment.hpp",
+      "before_sha256": "2e72cd9496d115dd9ff9694e796cf7a86a18957e2cc1cfbaadedad600cc02f8f",
+      "current_sha256": "2e72cd9496d115dd9ff9694e796cf7a86a18957e2cc1cfbaadedad600cc02f8f",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-adaptation-v1-development-20260906/source/include/droid/evaluation.hpp",
+      "before_sha256": "950584d94473946b5c0f8a6abd6f14cb4539b907e12580a6e8a2ede640f9c96e",
+      "current_sha256": "950584d94473946b5c0f8a6abd6f14cb4539b907e12580a6e8a2ede640f9c96e",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-adaptation-v1-development-20260906/source/include/droid/learner.hpp",
+      "before_sha256": "6d31aea2e2cbc1232f3353b9d6de4a0f0a68347a905889989bf7e0b75d13ff29",
+      "current_sha256": "6d31aea2e2cbc1232f3353b9d6de4a0f0a68347a905889989bf7e0b75d13ff29",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-adaptation-v1-development-20260906/source/include/droid/light_learner.hpp",
+      "before_sha256": "c24d47f18950d1631bdd24c5713af6b8c0081764f00b25e6a69cc1e8c2e706d5",
+      "current_sha256": "c24d47f18950d1631bdd24c5713af6b8c0081764f00b25e6a69cc1e8c2e706d5",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-adaptation-v1-development-20260906/source/include/droid/light_session.hpp",
+      "before_sha256": "8190aff88019d363406235c6ef979bd453ac9597766e46d0cf62269231fbd935",
+      "current_sha256": "8190aff88019d363406235c6ef979bd453ac9597766e46d0cf62269231fbd935",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-adaptation-v1-development-20260906/source/include/droid/module_catalog.hpp",
+      "before_sha256": "e7a85ace104fea22f4d35677a691312ed1325f92e9fa7450971705c7d76fb65c",
+      "current_sha256": "e7a85ace104fea22f4d35677a691312ed1325f92e9fa7450971705c7d76fb65c",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-adaptation-v1-development-20260906/source/include/droid/motion_explorer.hpp",
+      "before_sha256": "46c38b1d58e3f1610fe0d46d94038461ff2dc4b4c5949c2844787571205cf44b",
+      "current_sha256": "46c38b1d58e3f1610fe0d46d94038461ff2dc4b4c5949c2844787571205cf44b",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-adaptation-v1-development-20260906/source/include/droid/playground.hpp",
+      "before_sha256": "b94ab7ac715f0f4f8f4e0e67ed64648f27f1f626a8a155b2dfef58524794e9ff",
+      "current_sha256": "b94ab7ac715f0f4f8f4e0e67ed64648f27f1f626a8a155b2dfef58524794e9ff",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-adaptation-v1-development-20260906/source/include/droid/policy.hpp",
+      "before_sha256": "fe0e8bdc9ed835c311fd014c1c04960bd4bf67d77f872d750dfaa604566c59df",
+      "current_sha256": "fe0e8bdc9ed835c311fd014c1c04960bd4bf67d77f872d750dfaa604566c59df",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-adaptation-v1-development-20260906/source/include/droid/simulation.hpp",
+      "before_sha256": "8c0d5b32824b6e06462211bd711b59cb8e137aa92c6bfe9a17cf569026c40bba",
+      "current_sha256": "8c0d5b32824b6e06462211bd711b59cb8e137aa92c6bfe9a17cf569026c40bba",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-adaptation-v1-development-20260906/source/models/droid.xml",
+      "before_sha256": "20b36ed04d5f7c8d7cf660422ac074bbb4000cde8ce8483cc402417f63dd6b5e",
+      "current_sha256": "20b36ed04d5f7c8d7cf660422ac074bbb4000cde8ce8483cc402417f63dd6b5e",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-adaptation-v1-development-20260906/source/src/agent_cli.cpp",
+      "before_sha256": "1425ad65711bbcaae8edced99765b52f1fcee930ae33e39c5e60d65c338a7483",
+      "current_sha256": "1425ad65711bbcaae8edced99765b52f1fcee930ae33e39c5e60d65c338a7483",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-adaptation-v1-development-20260906/source/src/baseline.cpp",
+      "before_sha256": "150ae55b970dd7245b16b3cd4c2eb697336b68a926fdc995322a5aa68418040f",
+      "current_sha256": "150ae55b970dd7245b16b3cd4c2eb697336b68a926fdc995322a5aa68418040f",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-adaptation-v1-development-20260906/source/src/body_controller.cpp",
+      "before_sha256": "8dd85e8d7959e61a68707cdeb99368c554a5bc42411e93ace982f6c8a4384215",
+      "current_sha256": "8dd85e8d7959e61a68707cdeb99368c554a5bc42411e93ace982f6c8a4384215",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-adaptation-v1-development-20260906/source/src/body_experiment_cli.cpp",
+      "before_sha256": "9d409a06b889feb989d590d9c01a4c0c744b46d34f44912de7a8830d68d7f8b6",
+      "current_sha256": "9d409a06b889feb989d590d9c01a4c0c744b46d34f44912de7a8830d68d7f8b6",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-adaptation-v1-development-20260906/source/src/construction_experiment_cli.cpp",
+      "before_sha256": "431406dea941d69536a6f9635d454e1c8911f93d48c2198728d6d7b98c9e0a6a",
+      "current_sha256": "431406dea941d69536a6f9635d454e1c8911f93d48c2198728d6d7b98c9e0a6a",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-adaptation-v1-development-20260906/source/src/construction_session.cpp",
+      "before_sha256": "c24a50947c7254723301a926868405d71e0ccb7ac9c8b4739e6a67ea2ae1ba8d",
+      "current_sha256": "c24a50947c7254723301a926868405d71e0ccb7ac9c8b4739e6a67ea2ae1ba8d",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-adaptation-v1-development-20260906/source/src/construction.cpp",
+      "before_sha256": "dc415ee2342ba89c612ae4dc22344f2e33dabad040cbef7e35ea661ee3015f21",
+      "current_sha256": "dc415ee2342ba89c612ae4dc22344f2e33dabad040cbef7e35ea661ee3015f21",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-adaptation-v1-development-20260906/source/src/environment.cpp",
+      "before_sha256": "b6f851519e863be290f843899c4d8a3eefa9bdad892fddcf58803ee0b59fdd88",
+      "current_sha256": "b6f851519e863be290f843899c4d8a3eefa9bdad892fddcf58803ee0b59fdd88",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-adaptation-v1-development-20260906/source/src/evaluation.cpp",
+      "before_sha256": "998dfddd38181a81ec0dbaab846d39fb8e943aa920a00f24f353bde314a56bc1",
+      "current_sha256": "998dfddd38181a81ec0dbaab846d39fb8e943aa920a00f24f353bde314a56bc1",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-adaptation-v1-development-20260906/source/src/learner.cpp",
+      "before_sha256": "e25e454b2fdfaaccdb360dd7b05b0ea2c3465ab42cee361920df82aaad47bbf3",
+      "current_sha256": "e25e454b2fdfaaccdb360dd7b05b0ea2c3465ab42cee361920df82aaad47bbf3",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-adaptation-v1-development-20260906/source/src/light_adaptation_cli.cpp",
+      "before_sha256": "4c1869d41e444a2f1252c3a7c470c1b14694182123b1273438f34c32987fdebb",
+      "current_sha256": "4c1869d41e444a2f1252c3a7c470c1b14694182123b1273438f34c32987fdebb",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-adaptation-v1-development-20260906/source/src/light_experiment_cli.cpp",
+      "before_sha256": "bb87488dfa9bf1dbcd14e0e5954ac0485adf15e6ab4d9975b41442b3461d2bc2",
+      "current_sha256": "bb87488dfa9bf1dbcd14e0e5954ac0485adf15e6ab4d9975b41442b3461d2bc2",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-adaptation-v1-development-20260906/source/src/light_learner.cpp",
+      "before_sha256": "e9325b21ce3f093a6ff59561f48fc7ca0e67915a792fef6dc46a3932527f8277",
+      "current_sha256": "e9325b21ce3f093a6ff59561f48fc7ca0e67915a792fef6dc46a3932527f8277",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-adaptation-v1-development-20260906/source/src/light_session.cpp",
+      "before_sha256": "06b1a1e6a887f9f247f709ae05bde05bfb1465845a5e17de404564e06d63ca38",
+      "current_sha256": "06b1a1e6a887f9f247f709ae05bde05bfb1465845a5e17de404564e06d63ca38",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-adaptation-v1-development-20260906/source/src/main.cpp",
+      "before_sha256": "7bfee671d1a8797b5f72c6db7038c0fd4d044f0c85730e83c42d67a2bd725407",
+      "current_sha256": "7bfee671d1a8797b5f72c6db7038c0fd4d044f0c85730e83c42d67a2bd725407",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-adaptation-v1-development-20260906/source/src/module_catalog.cpp",
+      "before_sha256": "f0a3c3cf1ee21ed02acc6779bf0e1dc3efa0956132c08c87876d72c05fba34a5",
+      "current_sha256": "f0a3c3cf1ee21ed02acc6779bf0e1dc3efa0956132c08c87876d72c05fba34a5",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-adaptation-v1-development-20260906/source/src/motion_explorer.cpp",
+      "before_sha256": "d756c0f01bc23381827fb5d5a8066ad8b22f62bc6725d2957640356de6d51398",
+      "current_sha256": "d756c0f01bc23381827fb5d5a8066ad8b22f62bc6725d2957640356de6d51398",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-adaptation-v1-development-20260906/source/src/playground.cpp",
+      "before_sha256": "c2e0c1ed174c4a7a6a73c01845ca1de4231bf67138f98b773fec6ce9bdaa22be",
+      "current_sha256": "c2e0c1ed174c4a7a6a73c01845ca1de4231bf67138f98b773fec6ce9bdaa22be",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-adaptation-v1-development-20260906/source/src/policy.cpp",
+      "before_sha256": "f5736cbede8cc87aefc9a8fc9a5f2ddb033cf4397610be7e75a683aa23c9c796",
+      "current_sha256": "f5736cbede8cc87aefc9a8fc9a5f2ddb033cf4397610be7e75a683aa23c9c796",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-adaptation-v1-development-20260906/source/src/simulation.cpp",
+      "before_sha256": "f9c50c7ece4614ea9d4cb26ba9100aef6347ae9407b7a218347154c90a8b7767",
+      "current_sha256": "f9c50c7ece4614ea9d4cb26ba9100aef6347ae9407b7a218347154c90a8b7767",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-adaptation-v1-development-20260906/source/tests/native_baseline_tests.cpp",
+      "before_sha256": "54aa21639294c822f062b830f7c142e28c6f82f9e6917a026bc235559896b0f0",
+      "current_sha256": "54aa21639294c822f062b830f7c142e28c6f82f9e6917a026bc235559896b0f0",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-adaptation-v1-development-20260906/source/tests/native_body_controller_tests.cpp",
+      "before_sha256": "e2475432305f221650f46fff1b7fa3625465d1673df16b0d29f8f0d4e67e375b",
+      "current_sha256": "e2475432305f221650f46fff1b7fa3625465d1673df16b0d29f8f0d4e67e375b",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-adaptation-v1-development-20260906/source/tests/native_body_tests.cpp",
+      "before_sha256": "2808e06e157874ba3102b4782343e2aa89bee7eb73d149267c2167dae86f239a",
+      "current_sha256": "2808e06e157874ba3102b4782343e2aa89bee7eb73d149267c2167dae86f239a",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-adaptation-v1-development-20260906/source/tests/native_construction_light_tests.cpp",
+      "before_sha256": "c02dbcb06d798a19d43867f799210309f6afb1174a58cf087b88a21b7405be9d",
+      "current_sha256": "c02dbcb06d798a19d43867f799210309f6afb1174a58cf087b88a21b7405be9d",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-adaptation-v1-development-20260906/source/tests/native_construction_session_tests.cpp",
+      "before_sha256": "f99b4e4a63b64229054a5228f6942e74df7b7d5e3cd552d02adfb742a1ccdd45",
+      "current_sha256": "f99b4e4a63b64229054a5228f6942e74df7b7d5e3cd552d02adfb742a1ccdd45",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-adaptation-v1-development-20260906/source/tests/native_construction_tests.cpp",
+      "before_sha256": "b57cf3baa27c91c7374eb362fc56cbb36e1cf2a1fe8ab74020012e01580d9afa",
+      "current_sha256": "b57cf3baa27c91c7374eb362fc56cbb36e1cf2a1fe8ab74020012e01580d9afa",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-adaptation-v1-development-20260906/source/tests/native_contract_tests.cpp",
+      "before_sha256": "47ab041669af14de27d7c8c8b27be8e01fffe303744350f96c13de8c7a570de8",
+      "current_sha256": "47ab041669af14de27d7c8c8b27be8e01fffe303744350f96c13de8c7a570de8",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-adaptation-v1-development-20260906/source/tests/native_environment_tests.cpp",
+      "before_sha256": "6de36468389797e6cb113c6fbebbfc9cb13f1f2eaa4c49af94e30c3564ca49e3",
+      "current_sha256": "6de36468389797e6cb113c6fbebbfc9cb13f1f2eaa4c49af94e30c3564ca49e3",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-adaptation-v1-development-20260906/source/tests/native_light_learner_tests.cpp",
+      "before_sha256": "0b5acaf4167cfd19df75686214d57e7e1b0d4e219b98fee3e22bbdc736328db5",
+      "current_sha256": "0b5acaf4167cfd19df75686214d57e7e1b0d4e219b98fee3e22bbdc736328db5",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-adaptation-v1-development-20260906/source/tests/native_light_session_tests.cpp",
+      "before_sha256": "564641f5669ffbdabdcf32563df0165fd0c89e8658b0338a681f54e7ec65a179",
+      "current_sha256": "564641f5669ffbdabdcf32563df0165fd0c89e8658b0338a681f54e7ec65a179",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-adaptation-v1-development-20260906/source/tests/native_motion_explorer_tests.cpp",
+      "before_sha256": "69cb9cb41993f597091ef2f3ce629a9b93f0bb1643452ddd76f2f4d16b3e1fc7",
+      "current_sha256": "69cb9cb41993f597091ef2f3ce629a9b93f0bb1643452ddd76f2f4d16b3e1fc7",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-adaptation-v1-development-20260906/source/tests/native_playground_tests.cpp",
+      "before_sha256": "12974076a9511cee38f784815a414c85410915ef9f1b5a4420c7ff1cd1835640",
+      "current_sha256": "12974076a9511cee38f784815a414c85410915ef9f1b5a4420c7ff1cd1835640",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-adaptation-v1-development-20260906/source/tests/native_policy_tests.cpp",
+      "before_sha256": "680abc6223c93a94b81ec7e9f44d3b2c367618fb24d35ee6a7631e593c47fb5c",
+      "current_sha256": "680abc6223c93a94b81ec7e9f44d3b2c367618fb24d35ee6a7631e593c47fb5c",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-adaptation-v1-development-20260906/source/tests/native_simulation_parity_tests.cpp",
+      "before_sha256": "001a3b3bd32c9e79eff5b1f6ec83804816477a35377608eb11345ff11a7249a9",
+      "current_sha256": "001a3b3bd32c9e79eff5b1f6ec83804816477a35377608eb11345ff11a7249a9",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-adaptation-v1-development-20260906/source/tests/native_training_tests.cpp",
+      "before_sha256": "24b222f9fbe18dacd0eac63baacdacc11d9307d0e66457b9b769478e8f86b907",
+      "current_sha256": "24b222f9fbe18dacd0eac63baacdacc11d9307d0e66457b9b769478e8f86b907",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-adaptation-v1-development-20260906/source/tools/summarize-light-adaptation.mjs",
+      "before_sha256": "45f1dfc21a25226f6085485c4da3ce09d2d56b74a0f5d00fbf72498b906acaab",
+      "current_sha256": "45f1dfc21a25226f6085485c4da3ce09d2d56b74a0f5d00fbf72498b906acaab",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-context-v1-development-20260906/report.json",
+      "before_sha256": "f3f729120df6b13f79845ecbd4ee72409f111f76b1b525037d3c059e41f7c6ee",
+      "current_sha256": "f3f729120df6b13f79845ecbd4ee72409f111f76b1b525037d3c059e41f7c6ee",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-context-v1-development-20260906/training-models.json",
+      "before_sha256": "8b81255e3712017234deb8023f2a1b6291d30548e06cde3cf55810c1d480d3b5",
+      "current_sha256": "8b81255e3712017234deb8023f2a1b6291d30548e06cde3cf55810c1d480d3b5",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-context-v1-development-20260906/source/CMakeLists.txt",
+      "before_sha256": "ac50547e0752db524cde49fdd275344650833e851c1dc8e64b0275a445454da9",
+      "current_sha256": "ac50547e0752db524cde49fdd275344650833e851c1dc8e64b0275a445454da9",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-context-v1-development-20260906/source/Dockerfile",
+      "before_sha256": "59285428ebaabd1b695871176dd5993bdcb91bfaade7720ae318907217114d7c",
+      "current_sha256": "59285428ebaabd1b695871176dd5993bdcb91bfaade7720ae318907217114d7c",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-context-v1-development-20260906/source/run.sh",
+      "before_sha256": "f09325610b071eb7e464d89f97e48cb29dd9b0eeaf2ae50c205bfb58e41bc690",
+      "current_sha256": "f09325610b071eb7e464d89f97e48cb29dd9b0eeaf2ae50c205bfb58e41bc690",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-context-v1-development-20260906/source/setup.sh",
+      "before_sha256": "97e2f69138a4477fd275a4112204f8ca8b3f6be104291519dabf1a554e191266",
+      "current_sha256": "97e2f69138a4477fd275a4112204f8ca8b3f6be104291519dabf1a554e191266",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-context-v1-development-20260906/source/artifacts/light-search-policy-v3-seed0.json",
+      "before_sha256": "6f7d5069bdb884d75f1241629d437c039a2f7a486633d9ef2d7f6b70db0a5582",
+      "current_sha256": "6f7d5069bdb884d75f1241629d437c039a2f7a486633d9ef2d7f6b70db0a5582",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-context-v1-development-20260906/source/artifacts/reports/light-learning-v2-development-20260905/report.json",
+      "before_sha256": "931a26b17b399456bb5461293e382ae9880486f1b38157007500eead65998230",
+      "current_sha256": "931a26b17b399456bb5461293e382ae9880486f1b38157007500eead65998230",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-context-v1-development-20260906/source/artifacts/reports/light-learning-v2-development-20260905/source/artifacts/light-search-policy-v3-seed0.json",
+      "before_sha256": "6f7d5069bdb884d75f1241629d437c039a2f7a486633d9ef2d7f6b70db0a5582",
+      "current_sha256": "6f7d5069bdb884d75f1241629d437c039a2f7a486633d9ef2d7f6b70db0a5582",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-context-v1-development-20260906/source/artifacts/reports/light-learning-v2-development-20260905/source/config/learning_experiment_v3.json",
+      "before_sha256": "ea3ed8403ad1a0c23d4e73aa9d854bc7825ece63c1e12ebb983cd7019a00ba1c",
+      "current_sha256": "ea3ed8403ad1a0c23d4e73aa9d854bc7825ece63c1e12ebb983cd7019a00ba1c",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-context-v1-development-20260906/source/artifacts/reports/light-learning-v2-development-20260905/source/config/module_catalog.json",
+      "before_sha256": "5327cc56ebbe6817db8af4e5fca2cf8228b07ccc8904d9bd90d738e3a7cd6781",
+      "current_sha256": "5327cc56ebbe6817db8af4e5fca2cf8228b07ccc8904d9bd90d738e3a7cd6781",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-context-v1-development-20260906/source/artifacts/reports/light-learning-v2-development-20260905/source/docs/LIGHT_LEARNING_EXPERIMENT.md",
+      "before_sha256": "77628e71e83939737c73faf578955a4d1c7363635984784f6a0ee39deadd13ae",
+      "current_sha256": "77628e71e83939737c73faf578955a4d1c7363635984784f6a0ee39deadd13ae",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-context-v1-development-20260906/source/artifacts/reports/light-learning-v2-development-20260905/source/include/droid/construction.hpp",
+      "before_sha256": "cdf663cda17f386e91d8de6de819dd9f37d1a106bab471d780aa0f6080a34d98",
+      "current_sha256": "cdf663cda17f386e91d8de6de819dd9f37d1a106bab471d780aa0f6080a34d98",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-context-v1-development-20260906/source/artifacts/reports/light-learning-v2-development-20260905/source/include/droid/light_learner.hpp",
+      "before_sha256": "4b3496886e38ca81083a70af120ee2ab4033088788d5498d27321becccd641d4",
+      "current_sha256": "4b3496886e38ca81083a70af120ee2ab4033088788d5498d27321becccd641d4",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-context-v1-development-20260906/source/artifacts/reports/light-learning-v2-development-20260905/source/include/droid/light_session.hpp",
+      "before_sha256": "a5a260077717172e0f99cb85949bd80a0173a6340240840177cfa5b4255dfb11",
+      "current_sha256": "a5a260077717172e0f99cb85949bd80a0173a6340240840177cfa5b4255dfb11",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-context-v1-development-20260906/source/artifacts/reports/light-learning-v2-development-20260905/source/models/droid.xml",
+      "before_sha256": "20b36ed04d5f7c8d7cf660422ac074bbb4000cde8ce8483cc402417f63dd6b5e",
+      "current_sha256": "20b36ed04d5f7c8d7cf660422ac074bbb4000cde8ce8483cc402417f63dd6b5e",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-context-v1-development-20260906/source/artifacts/reports/light-learning-v2-development-20260905/source/src/construction.cpp",
+      "before_sha256": "dc415ee2342ba89c612ae4dc22344f2e33dabad040cbef7e35ea661ee3015f21",
+      "current_sha256": "dc415ee2342ba89c612ae4dc22344f2e33dabad040cbef7e35ea661ee3015f21",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-context-v1-development-20260906/source/artifacts/reports/light-learning-v2-development-20260905/source/src/light_experiment_cli.cpp",
+      "before_sha256": "bb87488dfa9bf1dbcd14e0e5954ac0485adf15e6ab4d9975b41442b3461d2bc2",
+      "current_sha256": "bb87488dfa9bf1dbcd14e0e5954ac0485adf15e6ab4d9975b41442b3461d2bc2",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-context-v1-development-20260906/source/artifacts/reports/light-learning-v2-development-20260905/source/src/light_learner.cpp",
+      "before_sha256": "58335943c9e11d4e61f27df4edde291c8833823b8cb2245aeb287685df2283ff",
+      "current_sha256": "58335943c9e11d4e61f27df4edde291c8833823b8cb2245aeb287685df2283ff",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-context-v1-development-20260906/source/artifacts/reports/light-learning-v2-development-20260905/source/src/light_session.cpp",
+      "before_sha256": "0d3afb919a1e1b6bc0ed8d1c9a761ff9c4f48cdcf95f37ae9be944cf2aa56870",
+      "current_sha256": "0d3afb919a1e1b6bc0ed8d1c9a761ff9c4f48cdcf95f37ae9be944cf2aa56870",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-context-v1-development-20260906/source/build/light-context-qa/runtime.json",
+      "before_sha256": "0e5940f4808b9d7e3745f9d4bbe0cf18bb2b8ff696749d36b6cb8a6b632462de",
+      "current_sha256": "0e5940f4808b9d7e3745f9d4bbe0cf18bb2b8ff696749d36b6cb8a6b632462de",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-context-v1-development-20260906/source/config/learning_experiment_v3.json",
+      "before_sha256": "ea3ed8403ad1a0c23d4e73aa9d854bc7825ece63c1e12ebb983cd7019a00ba1c",
+      "current_sha256": "ea3ed8403ad1a0c23d4e73aa9d854bc7825ece63c1e12ebb983cd7019a00ba1c",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-context-v1-development-20260906/source/config/module_catalog.json",
+      "before_sha256": "5327cc56ebbe6817db8af4e5fca2cf8228b07ccc8904d9bd90d738e3a7cd6781",
+      "current_sha256": "5327cc56ebbe6817db8af4e5fca2cf8228b07ccc8904d9bd90d738e3a7cd6781",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-context-v1-development-20260906/source/docs/LIGHT_CONTEXT_EXPERIMENT.md",
+      "before_sha256": "3e1218d1e0000cca5020962aeb73ba773f92bdcc1012a178ba4d238389d87dff",
+      "current_sha256": "3e1218d1e0000cca5020962aeb73ba773f92bdcc1012a178ba4d238389d87dff",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-context-v1-development-20260906/source/include/droid/baseline.hpp",
+      "before_sha256": "d3119b95c99467e433be506bcb14b89d7c850dc8abf1928a83d62810853b5cc0",
+      "current_sha256": "d3119b95c99467e433be506bcb14b89d7c850dc8abf1928a83d62810853b5cc0",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-context-v1-development-20260906/source/include/droid/body_controller.hpp",
+      "before_sha256": "debaa2ef481f185f15293a9d5c64daf872a7c1db2f47d0e9439c0980f90012cb",
+      "current_sha256": "debaa2ef481f185f15293a9d5c64daf872a7c1db2f47d0e9439c0980f90012cb",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-context-v1-development-20260906/source/include/droid/construction_session.hpp",
+      "before_sha256": "7e883fbbe20d914821014698af2ff36952938325961b963a39194380131a39c3",
+      "current_sha256": "7e883fbbe20d914821014698af2ff36952938325961b963a39194380131a39c3",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-context-v1-development-20260906/source/include/droid/construction.hpp",
+      "before_sha256": "cdf663cda17f386e91d8de6de819dd9f37d1a106bab471d780aa0f6080a34d98",
+      "current_sha256": "cdf663cda17f386e91d8de6de819dd9f37d1a106bab471d780aa0f6080a34d98",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-context-v1-development-20260906/source/include/droid/environment.hpp",
+      "before_sha256": "2e72cd9496d115dd9ff9694e796cf7a86a18957e2cc1cfbaadedad600cc02f8f",
+      "current_sha256": "2e72cd9496d115dd9ff9694e796cf7a86a18957e2cc1cfbaadedad600cc02f8f",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-context-v1-development-20260906/source/include/droid/evaluation.hpp",
+      "before_sha256": "950584d94473946b5c0f8a6abd6f14cb4539b907e12580a6e8a2ede640f9c96e",
+      "current_sha256": "950584d94473946b5c0f8a6abd6f14cb4539b907e12580a6e8a2ede640f9c96e",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-context-v1-development-20260906/source/include/droid/learner.hpp",
+      "before_sha256": "6d31aea2e2cbc1232f3353b9d6de4a0f0a68347a905889989bf7e0b75d13ff29",
+      "current_sha256": "6d31aea2e2cbc1232f3353b9d6de4a0f0a68347a905889989bf7e0b75d13ff29",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-context-v1-development-20260906/source/include/droid/light_context.hpp",
+      "before_sha256": "9b65fd35524ea99d30983275c7192cf5cc0440101c7e136581466154dd226748",
+      "current_sha256": "9b65fd35524ea99d30983275c7192cf5cc0440101c7e136581466154dd226748",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-context-v1-development-20260906/source/include/droid/light_learner.hpp",
+      "before_sha256": "3571dd0ef11f82bf13f5e04f4d8fa059769d758174bb04da4a674245ff5b2e58",
+      "current_sha256": "3571dd0ef11f82bf13f5e04f4d8fa059769d758174bb04da4a674245ff5b2e58",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-context-v1-development-20260906/source/include/droid/light_session.hpp",
+      "before_sha256": "2a8668d95487083baa996366e275f1b7876eefb90f94a17b494e53c3509b3418",
+      "current_sha256": "2a8668d95487083baa996366e275f1b7876eefb90f94a17b494e53c3509b3418",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-context-v1-development-20260906/source/include/droid/module_catalog.hpp",
+      "before_sha256": "e7a85ace104fea22f4d35677a691312ed1325f92e9fa7450971705c7d76fb65c",
+      "current_sha256": "e7a85ace104fea22f4d35677a691312ed1325f92e9fa7450971705c7d76fb65c",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-context-v1-development-20260906/source/include/droid/motion_explorer.hpp",
+      "before_sha256": "46c38b1d58e3f1610fe0d46d94038461ff2dc4b4c5949c2844787571205cf44b",
+      "current_sha256": "46c38b1d58e3f1610fe0d46d94038461ff2dc4b4c5949c2844787571205cf44b",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-context-v1-development-20260906/source/include/droid/playground.hpp",
+      "before_sha256": "b94ab7ac715f0f4f8f4e0e67ed64648f27f1f626a8a155b2dfef58524794e9ff",
+      "current_sha256": "b94ab7ac715f0f4f8f4e0e67ed64648f27f1f626a8a155b2dfef58524794e9ff",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-context-v1-development-20260906/source/include/droid/policy.hpp",
+      "before_sha256": "fe0e8bdc9ed835c311fd014c1c04960bd4bf67d77f872d750dfaa604566c59df",
+      "current_sha256": "fe0e8bdc9ed835c311fd014c1c04960bd4bf67d77f872d750dfaa604566c59df",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-context-v1-development-20260906/source/include/droid/simulation.hpp",
+      "before_sha256": "8c0d5b32824b6e06462211bd711b59cb8e137aa92c6bfe9a17cf569026c40bba",
+      "current_sha256": "8c0d5b32824b6e06462211bd711b59cb8e137aa92c6bfe9a17cf569026c40bba",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-context-v1-development-20260906/source/models/droid.xml",
+      "before_sha256": "20b36ed04d5f7c8d7cf660422ac074bbb4000cde8ce8483cc402417f63dd6b5e",
+      "current_sha256": "20b36ed04d5f7c8d7cf660422ac074bbb4000cde8ce8483cc402417f63dd6b5e",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-context-v1-development-20260906/source/src/agent_cli.cpp",
+      "before_sha256": "1425ad65711bbcaae8edced99765b52f1fcee930ae33e39c5e60d65c338a7483",
+      "current_sha256": "1425ad65711bbcaae8edced99765b52f1fcee930ae33e39c5e60d65c338a7483",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-context-v1-development-20260906/source/src/baseline.cpp",
+      "before_sha256": "150ae55b970dd7245b16b3cd4c2eb697336b68a926fdc995322a5aa68418040f",
+      "current_sha256": "150ae55b970dd7245b16b3cd4c2eb697336b68a926fdc995322a5aa68418040f",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-context-v1-development-20260906/source/src/body_controller.cpp",
+      "before_sha256": "8dd85e8d7959e61a68707cdeb99368c554a5bc42411e93ace982f6c8a4384215",
+      "current_sha256": "8dd85e8d7959e61a68707cdeb99368c554a5bc42411e93ace982f6c8a4384215",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-context-v1-development-20260906/source/src/body_experiment_cli.cpp",
+      "before_sha256": "9d409a06b889feb989d590d9c01a4c0c744b46d34f44912de7a8830d68d7f8b6",
+      "current_sha256": "9d409a06b889feb989d590d9c01a4c0c744b46d34f44912de7a8830d68d7f8b6",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-context-v1-development-20260906/source/src/construction_experiment_cli.cpp",
+      "before_sha256": "431406dea941d69536a6f9635d454e1c8911f93d48c2198728d6d7b98c9e0a6a",
+      "current_sha256": "431406dea941d69536a6f9635d454e1c8911f93d48c2198728d6d7b98c9e0a6a",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-context-v1-development-20260906/source/src/construction_session.cpp",
+      "before_sha256": "c24a50947c7254723301a926868405d71e0ccb7ac9c8b4739e6a67ea2ae1ba8d",
+      "current_sha256": "c24a50947c7254723301a926868405d71e0ccb7ac9c8b4739e6a67ea2ae1ba8d",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-context-v1-development-20260906/source/src/construction.cpp",
+      "before_sha256": "dc415ee2342ba89c612ae4dc22344f2e33dabad040cbef7e35ea661ee3015f21",
+      "current_sha256": "dc415ee2342ba89c612ae4dc22344f2e33dabad040cbef7e35ea661ee3015f21",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-context-v1-development-20260906/source/src/environment.cpp",
+      "before_sha256": "b6f851519e863be290f843899c4d8a3eefa9bdad892fddcf58803ee0b59fdd88",
+      "current_sha256": "b6f851519e863be290f843899c4d8a3eefa9bdad892fddcf58803ee0b59fdd88",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-context-v1-development-20260906/source/src/evaluation.cpp",
+      "before_sha256": "998dfddd38181a81ec0dbaab846d39fb8e943aa920a00f24f353bde314a56bc1",
+      "current_sha256": "998dfddd38181a81ec0dbaab846d39fb8e943aa920a00f24f353bde314a56bc1",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-context-v1-development-20260906/source/src/learner.cpp",
+      "before_sha256": "e25e454b2fdfaaccdb360dd7b05b0ea2c3465ab42cee361920df82aaad47bbf3",
+      "current_sha256": "e25e454b2fdfaaccdb360dd7b05b0ea2c3465ab42cee361920df82aaad47bbf3",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-context-v1-development-20260906/source/src/light_adaptation_cli.cpp",
+      "before_sha256": "4c1869d41e444a2f1252c3a7c470c1b14694182123b1273438f34c32987fdebb",
+      "current_sha256": "4c1869d41e444a2f1252c3a7c470c1b14694182123b1273438f34c32987fdebb",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-context-v1-development-20260906/source/src/light_context_cli.cpp",
+      "before_sha256": "1c9033fb589a756e26d28403fa6025b560ddfff3dbbe98d9367d5aa0d76b5034",
+      "current_sha256": "1c9033fb589a756e26d28403fa6025b560ddfff3dbbe98d9367d5aa0d76b5034",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-context-v1-development-20260906/source/src/light_context.cpp",
+      "before_sha256": "fd7bb50e94f041119ee7f45bf1890b1f8cb9dddfdcf0ca28e624385907f4d585",
+      "current_sha256": "fd7bb50e94f041119ee7f45bf1890b1f8cb9dddfdcf0ca28e624385907f4d585",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-context-v1-development-20260906/source/src/light_experiment_cli.cpp",
+      "before_sha256": "bb87488dfa9bf1dbcd14e0e5954ac0485adf15e6ab4d9975b41442b3461d2bc2",
+      "current_sha256": "bb87488dfa9bf1dbcd14e0e5954ac0485adf15e6ab4d9975b41442b3461d2bc2",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-context-v1-development-20260906/source/src/light_learner.cpp",
+      "before_sha256": "c9e8cea0c7e301a63a2439a4ff3417f5757123aae32428911bd67fc023b468a5",
+      "current_sha256": "c9e8cea0c7e301a63a2439a4ff3417f5757123aae32428911bd67fc023b468a5",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-context-v1-development-20260906/source/src/light_retention_cli.cpp",
+      "before_sha256": "49787142cac66d9aede07a12c51c443fa98e04bf9b53bdd6e8fcc0d72f80d892",
+      "current_sha256": "49787142cac66d9aede07a12c51c443fa98e04bf9b53bdd6e8fcc0d72f80d892",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-context-v1-development-20260906/source/src/light_session.cpp",
+      "before_sha256": "4315857c13eace4f2accff020d2683ae4751a678261e4198bb1012d087e284a9",
+      "current_sha256": "4315857c13eace4f2accff020d2683ae4751a678261e4198bb1012d087e284a9",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-context-v1-development-20260906/source/src/main.cpp",
+      "before_sha256": "7bfee671d1a8797b5f72c6db7038c0fd4d044f0c85730e83c42d67a2bd725407",
+      "current_sha256": "7bfee671d1a8797b5f72c6db7038c0fd4d044f0c85730e83c42d67a2bd725407",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-context-v1-development-20260906/source/src/module_catalog.cpp",
+      "before_sha256": "f0a3c3cf1ee21ed02acc6779bf0e1dc3efa0956132c08c87876d72c05fba34a5",
+      "current_sha256": "f0a3c3cf1ee21ed02acc6779bf0e1dc3efa0956132c08c87876d72c05fba34a5",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-context-v1-development-20260906/source/src/motion_explorer.cpp",
+      "before_sha256": "d756c0f01bc23381827fb5d5a8066ad8b22f62bc6725d2957640356de6d51398",
+      "current_sha256": "d756c0f01bc23381827fb5d5a8066ad8b22f62bc6725d2957640356de6d51398",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-context-v1-development-20260906/source/src/playground.cpp",
+      "before_sha256": "c2e0c1ed174c4a7a6a73c01845ca1de4231bf67138f98b773fec6ce9bdaa22be",
+      "current_sha256": "c2e0c1ed174c4a7a6a73c01845ca1de4231bf67138f98b773fec6ce9bdaa22be",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-context-v1-development-20260906/source/src/policy.cpp",
+      "before_sha256": "f5736cbede8cc87aefc9a8fc9a5f2ddb033cf4397610be7e75a683aa23c9c796",
+      "current_sha256": "f5736cbede8cc87aefc9a8fc9a5f2ddb033cf4397610be7e75a683aa23c9c796",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-context-v1-development-20260906/source/src/simulation.cpp",
+      "before_sha256": "f9c50c7ece4614ea9d4cb26ba9100aef6347ae9407b7a218347154c90a8b7767",
+      "current_sha256": "f9c50c7ece4614ea9d4cb26ba9100aef6347ae9407b7a218347154c90a8b7767",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-context-v1-development-20260906/source/tests/native_baseline_tests.cpp",
+      "before_sha256": "54aa21639294c822f062b830f7c142e28c6f82f9e6917a026bc235559896b0f0",
+      "current_sha256": "54aa21639294c822f062b830f7c142e28c6f82f9e6917a026bc235559896b0f0",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-context-v1-development-20260906/source/tests/native_body_controller_tests.cpp",
+      "before_sha256": "e2475432305f221650f46fff1b7fa3625465d1673df16b0d29f8f0d4e67e375b",
+      "current_sha256": "e2475432305f221650f46fff1b7fa3625465d1673df16b0d29f8f0d4e67e375b",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-context-v1-development-20260906/source/tests/native_body_tests.cpp",
+      "before_sha256": "2808e06e157874ba3102b4782343e2aa89bee7eb73d149267c2167dae86f239a",
+      "current_sha256": "2808e06e157874ba3102b4782343e2aa89bee7eb73d149267c2167dae86f239a",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-context-v1-development-20260906/source/tests/native_construction_light_tests.cpp",
+      "before_sha256": "c02dbcb06d798a19d43867f799210309f6afb1174a58cf087b88a21b7405be9d",
+      "current_sha256": "c02dbcb06d798a19d43867f799210309f6afb1174a58cf087b88a21b7405be9d",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-context-v1-development-20260906/source/tests/native_construction_session_tests.cpp",
+      "before_sha256": "f99b4e4a63b64229054a5228f6942e74df7b7d5e3cd552d02adfb742a1ccdd45",
+      "current_sha256": "f99b4e4a63b64229054a5228f6942e74df7b7d5e3cd552d02adfb742a1ccdd45",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-context-v1-development-20260906/source/tests/native_construction_tests.cpp",
+      "before_sha256": "b57cf3baa27c91c7374eb362fc56cbb36e1cf2a1fe8ab74020012e01580d9afa",
+      "current_sha256": "b57cf3baa27c91c7374eb362fc56cbb36e1cf2a1fe8ab74020012e01580d9afa",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-context-v1-development-20260906/source/tests/native_contract_tests.cpp",
+      "before_sha256": "47ab041669af14de27d7c8c8b27be8e01fffe303744350f96c13de8c7a570de8",
+      "current_sha256": "47ab041669af14de27d7c8c8b27be8e01fffe303744350f96c13de8c7a570de8",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-context-v1-development-20260906/source/tests/native_environment_tests.cpp",
+      "before_sha256": "6de36468389797e6cb113c6fbebbfc9cb13f1f2eaa4c49af94e30c3564ca49e3",
+      "current_sha256": "6de36468389797e6cb113c6fbebbfc9cb13f1f2eaa4c49af94e30c3564ca49e3",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-context-v1-development-20260906/source/tests/native_light_context_tests.cpp",
+      "before_sha256": "ce4039603e1382cf18612ec50082d05886880ba9f9890aa569ff52399dba7787",
+      "current_sha256": "ce4039603e1382cf18612ec50082d05886880ba9f9890aa569ff52399dba7787",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-context-v1-development-20260906/source/tests/native_light_learner_tests.cpp",
+      "before_sha256": "f54684621679465ab5ab52fe28ea313966d8de29cec6c20958603cd076f2407d",
+      "current_sha256": "f54684621679465ab5ab52fe28ea313966d8de29cec6c20958603cd076f2407d",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-context-v1-development-20260906/source/tests/native_light_session_tests.cpp",
+      "before_sha256": "2424b0b181982e7131ac44710a424e9c8de0bb0eeaaa4a381b63013cf4f3e547",
+      "current_sha256": "2424b0b181982e7131ac44710a424e9c8de0bb0eeaaa4a381b63013cf4f3e547",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-context-v1-development-20260906/source/tests/native_motion_explorer_tests.cpp",
+      "before_sha256": "69cb9cb41993f597091ef2f3ce629a9b93f0bb1643452ddd76f2f4d16b3e1fc7",
+      "current_sha256": "69cb9cb41993f597091ef2f3ce629a9b93f0bb1643452ddd76f2f4d16b3e1fc7",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-context-v1-development-20260906/source/tests/native_playground_tests.cpp",
+      "before_sha256": "12974076a9511cee38f784815a414c85410915ef9f1b5a4420c7ff1cd1835640",
+      "current_sha256": "12974076a9511cee38f784815a414c85410915ef9f1b5a4420c7ff1cd1835640",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-context-v1-development-20260906/source/tests/native_policy_tests.cpp",
+      "before_sha256": "680abc6223c93a94b81ec7e9f44d3b2c367618fb24d35ee6a7631e593c47fb5c",
+      "current_sha256": "680abc6223c93a94b81ec7e9f44d3b2c367618fb24d35ee6a7631e593c47fb5c",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-context-v1-development-20260906/source/tests/native_simulation_parity_tests.cpp",
+      "before_sha256": "001a3b3bd32c9e79eff5b1f6ec83804816477a35377608eb11345ff11a7249a9",
+      "current_sha256": "001a3b3bd32c9e79eff5b1f6ec83804816477a35377608eb11345ff11a7249a9",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-context-v1-development-20260906/source/tests/native_training_tests.cpp",
+      "before_sha256": "24b222f9fbe18dacd0eac63baacdacc11d9307d0e66457b9b769478e8f86b907",
+      "current_sha256": "24b222f9fbe18dacd0eac63baacdacc11d9307d0e66457b9b769478e8f86b907",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-context-v1-development-20260906/source/tools/summarize-light-context.mjs",
+      "before_sha256": "829ab49489ee1d68006081cc42f6c25ebbb8959dfb05efbfc62966b520da77d6",
+      "current_sha256": "829ab49489ee1d68006081cc42f6c25ebbb8959dfb05efbfc62966b520da77d6",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-context-v1-development-20260906/traces/body-0-probe-101-A.json",
+      "before_sha256": "bb56752b19f63b0dcb66a8c76ff7fc5d2f18146ed1fd8e1a4b5f342abfe0d029",
+      "current_sha256": "bb56752b19f63b0dcb66a8c76ff7fc5d2f18146ed1fd8e1a4b5f342abfe0d029",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-context-v1-development-20260906/traces/body-0-probe-101-B.json",
+      "before_sha256": "6e1ec4f91e80180f36e9533ab93658e3e88050d18d3e0b6bac0d38aa8939f4a2",
+      "current_sha256": "6e1ec4f91e80180f36e9533ab93658e3e88050d18d3e0b6bac0d38aa8939f4a2",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-context-v1-development-20260906/traces/body-0-probe-102-A.json",
+      "before_sha256": "88ee5b645b0a18055e30908d01519c934be6ff1d1adb68f3e5b4f38ed16b1cac",
+      "current_sha256": "88ee5b645b0a18055e30908d01519c934be6ff1d1adb68f3e5b4f38ed16b1cac",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-context-v1-development-20260906/traces/body-0-probe-102-B.json",
+      "before_sha256": "fdaf06463c8f72e531745e468148be10252e03032e99980816a6db2489293be5",
+      "current_sha256": "fdaf06463c8f72e531745e468148be10252e03032e99980816a6db2489293be5",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-context-v1-development-20260906/traces/body-0-probe-103-A.json",
+      "before_sha256": "df0b46404ffd32f33841bbb914300dada2f16df2a3623f80062ce8a6971dcf9c",
+      "current_sha256": "df0b46404ffd32f33841bbb914300dada2f16df2a3623f80062ce8a6971dcf9c",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-context-v1-development-20260906/traces/body-0-probe-103-B.json",
+      "before_sha256": "4563e92450b6d5cb3b79faff36a0f0a53344c983fd189137e7e936c6fa70961a",
+      "current_sha256": "4563e92450b6d5cb3b79faff36a0f0a53344c983fd189137e7e936c6fa70961a",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-context-v1-development-20260906/traces/body-0-probe-104-A.json",
+      "before_sha256": "0f888f5021601d41af59f4311c35ef2338506a4703c9b6d185313be34a74da76",
+      "current_sha256": "0f888f5021601d41af59f4311c35ef2338506a4703c9b6d185313be34a74da76",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-context-v1-development-20260906/traces/body-0-probe-104-B.json",
+      "before_sha256": "568d977199cf9ec5e3cb3c4c95b7769445ec815dcda4fee9e5df61770e3170a5",
+      "current_sha256": "568d977199cf9ec5e3cb3c4c95b7769445ec815dcda4fee9e5df61770e3170a5",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-context-v1-development-20260906/traces/body-0-probe-105-A.json",
+      "before_sha256": "6039bec808e442bcf97b64902f0568bcde242a8d6631f6211092d030b5c205fb",
+      "current_sha256": "6039bec808e442bcf97b64902f0568bcde242a8d6631f6211092d030b5c205fb",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-context-v1-development-20260906/traces/body-0-probe-105-B.json",
+      "before_sha256": "34645f74fec246474f1f5229367e18a84c1b24bfb18f6bfbdff3aa313876106f",
+      "current_sha256": "34645f74fec246474f1f5229367e18a84c1b24bfb18f6bfbdff3aa313876106f",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-context-v1-development-20260906/traces/body-0-probe-106-A.json",
+      "before_sha256": "cb1ed689bfaa36967d3c3b0506226d85baffd267e20d01caff4fd7529ecb9aa5",
+      "current_sha256": "cb1ed689bfaa36967d3c3b0506226d85baffd267e20d01caff4fd7529ecb9aa5",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-context-v1-development-20260906/traces/body-0-probe-106-B.json",
+      "before_sha256": "4d6b0a414298482049b7e87b6048fbc083d989946e272b8308b18481ff319b74",
+      "current_sha256": "4d6b0a414298482049b7e87b6048fbc083d989946e272b8308b18481ff319b74",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-context-v1-development-20260906/traces/body-0-probe-107-A.json",
+      "before_sha256": "4000cb64cba2e7ca69e758ac69ae09ddb6fa51afefb0cc0923720fa60e3a6ca4",
+      "current_sha256": "4000cb64cba2e7ca69e758ac69ae09ddb6fa51afefb0cc0923720fa60e3a6ca4",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-context-v1-development-20260906/traces/body-0-probe-107-B.json",
+      "before_sha256": "b3a1dc2878026ae2da55605bb7e6b35659b55d78a4927c10f18488b7b7604648",
+      "current_sha256": "b3a1dc2878026ae2da55605bb7e6b35659b55d78a4927c10f18488b7b7604648",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-context-v1-development-20260906/traces/body-0-probe-108-A.json",
+      "before_sha256": "98c1913da10f86b8afb9ee3d94a179de1ab2d013f0438de881d5a1760667ac04",
+      "current_sha256": "98c1913da10f86b8afb9ee3d94a179de1ab2d013f0438de881d5a1760667ac04",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-context-v1-development-20260906/traces/body-0-probe-108-B.json",
+      "before_sha256": "21454296a7c81a39e97de45d8b745688c46cad046468920422b5b0cc3172e560",
+      "current_sha256": "21454296a7c81a39e97de45d8b745688c46cad046468920422b5b0cc3172e560",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-context-v1-development-20260906/traces/body-0-probe-109-A.json",
+      "before_sha256": "d61f82629cf080495c497ec72864a6a58427237188ae33e49a56aa4c0b17f27f",
+      "current_sha256": "d61f82629cf080495c497ec72864a6a58427237188ae33e49a56aa4c0b17f27f",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-context-v1-development-20260906/traces/body-0-probe-109-B.json",
+      "before_sha256": "49a6e1ffd383fced4c62f57972b59ce332c7e1fd88a3281ba4dc91516aa846de",
+      "current_sha256": "49a6e1ffd383fced4c62f57972b59ce332c7e1fd88a3281ba4dc91516aa846de",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-context-v1-development-20260906/traces/body-0-probe-110-A.json",
+      "before_sha256": "aa559c38710a53f35abbb665462052f08dfb063e14201b9a6ba732811dd840c3",
+      "current_sha256": "aa559c38710a53f35abbb665462052f08dfb063e14201b9a6ba732811dd840c3",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-context-v1-development-20260906/traces/body-0-probe-110-B.json",
+      "before_sha256": "b74e4ece338f22025d14fdabf4437f0c1a0dfbdcdf2519ca02d71166fd26469f",
+      "current_sha256": "b74e4ece338f22025d14fdabf4437f0c1a0dfbdcdf2519ca02d71166fd26469f",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-context-v1-development-20260906/traces/body-0-probe-111-A.json",
+      "before_sha256": "f47616aa04ecf8fb0b9ce76b2f839b9fe5c136c271bd5d577936a3d37bcac4b0",
+      "current_sha256": "f47616aa04ecf8fb0b9ce76b2f839b9fe5c136c271bd5d577936a3d37bcac4b0",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-context-v1-development-20260906/traces/body-0-probe-111-B.json",
+      "before_sha256": "31bbfaa65e8f8d09c79980f064e4bad92885f196596da3d23c4c39088590c799",
+      "current_sha256": "31bbfaa65e8f8d09c79980f064e4bad92885f196596da3d23c4c39088590c799",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-context-v1-development-20260906/traces/body-0-probe-112-A.json",
+      "before_sha256": "c34a6bb5f458c082850605d98509abfe15747e0ab29714a5d82667fc5cff1f11",
+      "current_sha256": "c34a6bb5f458c082850605d98509abfe15747e0ab29714a5d82667fc5cff1f11",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-context-v1-development-20260906/traces/body-0-probe-112-B.json",
+      "before_sha256": "e93d07ca9087e6220150e1cf4ad675eeab64c7c169dbda6bf9b25a72f289b77f",
+      "current_sha256": "e93d07ca9087e6220150e1cf4ad675eeab64c7c169dbda6bf9b25a72f289b77f",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-context-v1-development-20260906/traces/body-1-probe-101-A.json",
+      "before_sha256": "f4e34d408e82d2bd2dbebfe924e8409bef5fe95df92f464e18976ce2a98e9c3e",
+      "current_sha256": "f4e34d408e82d2bd2dbebfe924e8409bef5fe95df92f464e18976ce2a98e9c3e",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-context-v1-development-20260906/traces/body-1-probe-101-B.json",
+      "before_sha256": "7a9fd9aa91ec25226d0837d244ddb5d779d19b903dcb2e674af83e1fbee5efb2",
+      "current_sha256": "7a9fd9aa91ec25226d0837d244ddb5d779d19b903dcb2e674af83e1fbee5efb2",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-context-v1-development-20260906/traces/body-1-probe-102-A.json",
+      "before_sha256": "20ad54b63041aa891adfa414b9b19e5417e35292d680d3c4d11460be61dae731",
+      "current_sha256": "20ad54b63041aa891adfa414b9b19e5417e35292d680d3c4d11460be61dae731",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-context-v1-development-20260906/traces/body-1-probe-102-B.json",
+      "before_sha256": "267c5463376be318e220a1f0cdfcd460abf44d1cd3cf7e4faab3efd947fe5742",
+      "current_sha256": "267c5463376be318e220a1f0cdfcd460abf44d1cd3cf7e4faab3efd947fe5742",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-context-v1-development-20260906/traces/body-1-probe-103-A.json",
+      "before_sha256": "b98408910dc94123a5f7330b2694c6ee3dc076d7e70a1a555ef8ad8f36f63ae4",
+      "current_sha256": "b98408910dc94123a5f7330b2694c6ee3dc076d7e70a1a555ef8ad8f36f63ae4",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-context-v1-development-20260906/traces/body-1-probe-103-B.json",
+      "before_sha256": "77fccd7cfad1b9944d0fe719fcbef3e94e42cb2252f374397a1d9517d3a12bf0",
+      "current_sha256": "77fccd7cfad1b9944d0fe719fcbef3e94e42cb2252f374397a1d9517d3a12bf0",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-context-v1-development-20260906/traces/body-1-probe-104-A.json",
+      "before_sha256": "4e93edafb0c174ab65588703e00f3e4a43c368a6b8b5642a6025dd8f70255f4a",
+      "current_sha256": "4e93edafb0c174ab65588703e00f3e4a43c368a6b8b5642a6025dd8f70255f4a",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-context-v1-development-20260906/traces/body-1-probe-104-B.json",
+      "before_sha256": "c8cc5a32933d5b5e3844c4bdf8e592ddcf10c71dbd1af057b9d49739b94be466",
+      "current_sha256": "c8cc5a32933d5b5e3844c4bdf8e592ddcf10c71dbd1af057b9d49739b94be466",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-context-v1-development-20260906/traces/body-1-probe-105-A.json",
+      "before_sha256": "289fd2664c0dca740140d90dee1a1b1a61b5a73af24e10bee39100c78316d169",
+      "current_sha256": "289fd2664c0dca740140d90dee1a1b1a61b5a73af24e10bee39100c78316d169",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-context-v1-development-20260906/traces/body-1-probe-105-B.json",
+      "before_sha256": "e6e335799c5969b733ee22041872680498d07994006cfe5eeee74625ba584675",
+      "current_sha256": "e6e335799c5969b733ee22041872680498d07994006cfe5eeee74625ba584675",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-context-v1-development-20260906/traces/body-1-probe-106-A.json",
+      "before_sha256": "e90c143439463fc9d1046aaa376864eccb14bdc834f5a2919e6152fa3ab21c04",
+      "current_sha256": "e90c143439463fc9d1046aaa376864eccb14bdc834f5a2919e6152fa3ab21c04",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-context-v1-development-20260906/traces/body-1-probe-106-B.json",
+      "before_sha256": "2a55f95a939c14fadd9660256a86e0961532fd081674a95d5d63ba2bb5d42e86",
+      "current_sha256": "2a55f95a939c14fadd9660256a86e0961532fd081674a95d5d63ba2bb5d42e86",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-context-v1-development-20260906/traces/body-1-probe-107-A.json",
+      "before_sha256": "f71a885692b306ae2bfa27e9ac11332e4d8599cd24695f9acc2c8e93899a949d",
+      "current_sha256": "f71a885692b306ae2bfa27e9ac11332e4d8599cd24695f9acc2c8e93899a949d",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-context-v1-development-20260906/traces/body-1-probe-107-B.json",
+      "before_sha256": "658a430b36133d582e33e0b2b46e0ce021fed32dea7c328e8b7fdb97f3059863",
+      "current_sha256": "658a430b36133d582e33e0b2b46e0ce021fed32dea7c328e8b7fdb97f3059863",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-context-v1-development-20260906/traces/body-1-probe-108-A.json",
+      "before_sha256": "b92b8fc33b077ba8c6bed96086a598072ffd09a50d1f75d501733d6ced0584fb",
+      "current_sha256": "b92b8fc33b077ba8c6bed96086a598072ffd09a50d1f75d501733d6ced0584fb",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-context-v1-development-20260906/traces/body-1-probe-108-B.json",
+      "before_sha256": "e502f039372753d222ffc819f2300995f7f3aff8206bf1f6f410c8d8cc4ba108",
+      "current_sha256": "e502f039372753d222ffc819f2300995f7f3aff8206bf1f6f410c8d8cc4ba108",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-context-v1-development-20260906/traces/body-1-probe-109-A.json",
+      "before_sha256": "690261ee52fe2b2d9d0450137fb123bb261e4db9ea33f1cac7874025b2c7e1a6",
+      "current_sha256": "690261ee52fe2b2d9d0450137fb123bb261e4db9ea33f1cac7874025b2c7e1a6",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-context-v1-development-20260906/traces/body-1-probe-109-B.json",
+      "before_sha256": "eeb3621adeb0e713f692be94da5876d9348051ed8b8d3ec59429866a7c7e4e99",
+      "current_sha256": "eeb3621adeb0e713f692be94da5876d9348051ed8b8d3ec59429866a7c7e4e99",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-context-v1-development-20260906/traces/body-1-probe-110-A.json",
+      "before_sha256": "cef02955fabe23f895f5e0711d57913ecf85a51582299d9042771792c5471880",
+      "current_sha256": "cef02955fabe23f895f5e0711d57913ecf85a51582299d9042771792c5471880",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-context-v1-development-20260906/traces/body-1-probe-110-B.json",
+      "before_sha256": "21dc7078b2391367a8b7e4153ab0988f275682adf394691991c2c2c84ab8e54a",
+      "current_sha256": "21dc7078b2391367a8b7e4153ab0988f275682adf394691991c2c2c84ab8e54a",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-context-v1-development-20260906/traces/body-1-probe-111-A.json",
+      "before_sha256": "216555145783649ca0445a4d77f059aff1c8c6b6990afb6e07a38fa92b9eb6a4",
+      "current_sha256": "216555145783649ca0445a4d77f059aff1c8c6b6990afb6e07a38fa92b9eb6a4",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-context-v1-development-20260906/traces/body-1-probe-111-B.json",
+      "before_sha256": "6124132d0938f4221aef37e339cddff6445b19bc0093a97ea71e1e9b72cda46e",
+      "current_sha256": "6124132d0938f4221aef37e339cddff6445b19bc0093a97ea71e1e9b72cda46e",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-context-v1-development-20260906/traces/body-1-probe-112-A.json",
+      "before_sha256": "78b88c5b40787732d74780101cba64bf3eff9123e7703aa9a917879424d471ff",
+      "current_sha256": "78b88c5b40787732d74780101cba64bf3eff9123e7703aa9a917879424d471ff",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-context-v1-development-20260906/traces/body-1-probe-112-B.json",
+      "before_sha256": "7b93b9c48beb91676913db7eef23d97ba8146ecdb893f6c8ed16c8bee449a6a9",
+      "current_sha256": "7b93b9c48beb91676913db7eef23d97ba8146ecdb893f6c8ed16c8bee449a6a9",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-learning-v1-development-20260905/report.json",
+      "before_sha256": "a80018579d0266c9792951348b5ad25f1da7764997880073e88af6fe9f1536e5",
+      "current_sha256": "a80018579d0266c9792951348b5ad25f1da7764997880073e88af6fe9f1536e5",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-learning-v1-development-20260905/source/artifacts/light-search-policy-v3-seed0.json",
+      "before_sha256": "6f7d5069bdb884d75f1241629d437c039a2f7a486633d9ef2d7f6b70db0a5582",
+      "current_sha256": "6f7d5069bdb884d75f1241629d437c039a2f7a486633d9ef2d7f6b70db0a5582",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-learning-v1-development-20260905/source/config/learning_experiment_v3.json",
+      "before_sha256": "ea3ed8403ad1a0c23d4e73aa9d854bc7825ece63c1e12ebb983cd7019a00ba1c",
+      "current_sha256": "ea3ed8403ad1a0c23d4e73aa9d854bc7825ece63c1e12ebb983cd7019a00ba1c",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-learning-v1-development-20260905/source/config/module_catalog.json",
+      "before_sha256": "5327cc56ebbe6817db8af4e5fca2cf8228b07ccc8904d9bd90d738e3a7cd6781",
+      "current_sha256": "5327cc56ebbe6817db8af4e5fca2cf8228b07ccc8904d9bd90d738e3a7cd6781",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-learning-v1-development-20260905/source/docs/LIGHT_LEARNING_EXPERIMENT.md",
+      "before_sha256": "8650d31ca6674b910f606ff0ea76eef7644fe3880448ec9e18a5f0665e8c0dd7",
+      "current_sha256": "8650d31ca6674b910f606ff0ea76eef7644fe3880448ec9e18a5f0665e8c0dd7",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-learning-v1-development-20260905/source/include/droid/construction.hpp",
+      "before_sha256": "cdf663cda17f386e91d8de6de819dd9f37d1a106bab471d780aa0f6080a34d98",
+      "current_sha256": "cdf663cda17f386e91d8de6de819dd9f37d1a106bab471d780aa0f6080a34d98",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-learning-v1-development-20260905/source/include/droid/light_learner.hpp",
+      "before_sha256": "5e1396c3f3b85eff8955d8f90aa78363bf40e86ee9704a8a78ca61a8b953f9a5",
+      "current_sha256": "5e1396c3f3b85eff8955d8f90aa78363bf40e86ee9704a8a78ca61a8b953f9a5",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-learning-v1-development-20260905/source/include/droid/light_session.hpp",
+      "before_sha256": "a5a260077717172e0f99cb85949bd80a0173a6340240840177cfa5b4255dfb11",
+      "current_sha256": "a5a260077717172e0f99cb85949bd80a0173a6340240840177cfa5b4255dfb11",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-learning-v1-development-20260905/source/models/droid.xml",
+      "before_sha256": "20b36ed04d5f7c8d7cf660422ac074bbb4000cde8ce8483cc402417f63dd6b5e",
+      "current_sha256": "20b36ed04d5f7c8d7cf660422ac074bbb4000cde8ce8483cc402417f63dd6b5e",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-learning-v1-development-20260905/source/src/construction.cpp",
+      "before_sha256": "dc415ee2342ba89c612ae4dc22344f2e33dabad040cbef7e35ea661ee3015f21",
+      "current_sha256": "dc415ee2342ba89c612ae4dc22344f2e33dabad040cbef7e35ea661ee3015f21",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-learning-v1-development-20260905/source/src/light_experiment_cli.cpp",
+      "before_sha256": "bb87488dfa9bf1dbcd14e0e5954ac0485adf15e6ab4d9975b41442b3461d2bc2",
+      "current_sha256": "bb87488dfa9bf1dbcd14e0e5954ac0485adf15e6ab4d9975b41442b3461d2bc2",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-learning-v1-development-20260905/source/src/light_learner.cpp",
+      "before_sha256": "9d832188525716836aea851dff5576c1eaff228c2381b50be85c0d4d9786e37a",
+      "current_sha256": "9d832188525716836aea851dff5576c1eaff228c2381b50be85c0d4d9786e37a",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-learning-v1-development-20260905/source/src/light_session.cpp",
+      "before_sha256": "0d3afb919a1e1b6bc0ed8d1c9a761ff9c4f48cdcf95f37ae9be944cf2aa56870",
+      "current_sha256": "0d3afb919a1e1b6bc0ed8d1c9a761ff9c4f48cdcf95f37ae9be944cf2aa56870",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-learning-v2-development-20260905/report.json",
+      "before_sha256": "931a26b17b399456bb5461293e382ae9880486f1b38157007500eead65998230",
+      "current_sha256": "931a26b17b399456bb5461293e382ae9880486f1b38157007500eead65998230",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-learning-v2-development-20260905/source/artifacts/light-search-policy-v3-seed0.json",
+      "before_sha256": "6f7d5069bdb884d75f1241629d437c039a2f7a486633d9ef2d7f6b70db0a5582",
+      "current_sha256": "6f7d5069bdb884d75f1241629d437c039a2f7a486633d9ef2d7f6b70db0a5582",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-learning-v2-development-20260905/source/config/learning_experiment_v3.json",
+      "before_sha256": "ea3ed8403ad1a0c23d4e73aa9d854bc7825ece63c1e12ebb983cd7019a00ba1c",
+      "current_sha256": "ea3ed8403ad1a0c23d4e73aa9d854bc7825ece63c1e12ebb983cd7019a00ba1c",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-learning-v2-development-20260905/source/config/module_catalog.json",
+      "before_sha256": "5327cc56ebbe6817db8af4e5fca2cf8228b07ccc8904d9bd90d738e3a7cd6781",
+      "current_sha256": "5327cc56ebbe6817db8af4e5fca2cf8228b07ccc8904d9bd90d738e3a7cd6781",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-learning-v2-development-20260905/source/docs/LIGHT_LEARNING_EXPERIMENT.md",
+      "before_sha256": "77628e71e83939737c73faf578955a4d1c7363635984784f6a0ee39deadd13ae",
+      "current_sha256": "77628e71e83939737c73faf578955a4d1c7363635984784f6a0ee39deadd13ae",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-learning-v2-development-20260905/source/include/droid/construction.hpp",
+      "before_sha256": "cdf663cda17f386e91d8de6de819dd9f37d1a106bab471d780aa0f6080a34d98",
+      "current_sha256": "cdf663cda17f386e91d8de6de819dd9f37d1a106bab471d780aa0f6080a34d98",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-learning-v2-development-20260905/source/include/droid/light_learner.hpp",
+      "before_sha256": "4b3496886e38ca81083a70af120ee2ab4033088788d5498d27321becccd641d4",
+      "current_sha256": "4b3496886e38ca81083a70af120ee2ab4033088788d5498d27321becccd641d4",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-learning-v2-development-20260905/source/include/droid/light_session.hpp",
+      "before_sha256": "a5a260077717172e0f99cb85949bd80a0173a6340240840177cfa5b4255dfb11",
+      "current_sha256": "a5a260077717172e0f99cb85949bd80a0173a6340240840177cfa5b4255dfb11",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-learning-v2-development-20260905/source/models/droid.xml",
+      "before_sha256": "20b36ed04d5f7c8d7cf660422ac074bbb4000cde8ce8483cc402417f63dd6b5e",
+      "current_sha256": "20b36ed04d5f7c8d7cf660422ac074bbb4000cde8ce8483cc402417f63dd6b5e",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-learning-v2-development-20260905/source/src/construction.cpp",
+      "before_sha256": "dc415ee2342ba89c612ae4dc22344f2e33dabad040cbef7e35ea661ee3015f21",
+      "current_sha256": "dc415ee2342ba89c612ae4dc22344f2e33dabad040cbef7e35ea661ee3015f21",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-learning-v2-development-20260905/source/src/light_experiment_cli.cpp",
+      "before_sha256": "bb87488dfa9bf1dbcd14e0e5954ac0485adf15e6ab4d9975b41442b3461d2bc2",
+      "current_sha256": "bb87488dfa9bf1dbcd14e0e5954ac0485adf15e6ab4d9975b41442b3461d2bc2",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-learning-v2-development-20260905/source/src/light_learner.cpp",
+      "before_sha256": "58335943c9e11d4e61f27df4edde291c8833823b8cb2245aeb287685df2283ff",
+      "current_sha256": "58335943c9e11d4e61f27df4edde291c8833823b8cb2245aeb287685df2283ff",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-learning-v2-development-20260905/source/src/light_session.cpp",
+      "before_sha256": "0d3afb919a1e1b6bc0ed8d1c9a761ff9c4f48cdcf95f37ae9be944cf2aa56870",
+      "current_sha256": "0d3afb919a1e1b6bc0ed8d1c9a761ff9c4f48cdcf95f37ae9be944cf2aa56870",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/models.json",
+      "before_sha256": "5421f975d958d831e58414eef661eabfd852e78734036acb293d057fd7bb81ee",
+      "current_sha256": "5421f975d958d831e58414eef661eabfd852e78734036acb293d057fd7bb81ee",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/report.json",
+      "before_sha256": "3d9e70141c7fd73da226c4b5715678205c9181623a308f8f93e9d7a59494b0e0",
+      "current_sha256": "3d9e70141c7fd73da226c4b5715678205c9181623a308f8f93e9d7a59494b0e0",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/source/CMakeLists.txt",
+      "before_sha256": "a246ab54ca9da73232925c1215508e9a7b2d61b2021c400fa587dd353b5e0f48",
+      "current_sha256": "a246ab54ca9da73232925c1215508e9a7b2d61b2021c400fa587dd353b5e0f48",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/source/Dockerfile",
+      "before_sha256": "59285428ebaabd1b695871176dd5993bdcb91bfaade7720ae318907217114d7c",
+      "current_sha256": "59285428ebaabd1b695871176dd5993bdcb91bfaade7720ae318907217114d7c",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/source/run.sh",
+      "before_sha256": "f09325610b071eb7e464d89f97e48cb29dd9b0eeaf2ae50c205bfb58e41bc690",
+      "current_sha256": "f09325610b071eb7e464d89f97e48cb29dd9b0eeaf2ae50c205bfb58e41bc690",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/source/setup.sh",
+      "before_sha256": "97e2f69138a4477fd275a4112204f8ca8b3f6be104291519dabf1a554e191266",
+      "current_sha256": "97e2f69138a4477fd275a4112204f8ca8b3f6be104291519dabf1a554e191266",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/source/artifacts/light-search-policy-v3-seed0.json",
+      "before_sha256": "6f7d5069bdb884d75f1241629d437c039a2f7a486633d9ef2d7f6b70db0a5582",
+      "current_sha256": "6f7d5069bdb884d75f1241629d437c039a2f7a486633d9ef2d7f6b70db0a5582",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/source/artifacts/reports/light-context-v1-development-20260906/report.json",
+      "before_sha256": "f3f729120df6b13f79845ecbd4ee72409f111f76b1b525037d3c059e41f7c6ee",
+      "current_sha256": "f3f729120df6b13f79845ecbd4ee72409f111f76b1b525037d3c059e41f7c6ee",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/source/build/light-prediction-qa/runtime.json",
+      "before_sha256": "042e35ef09abfd6e3c57d48c801b7a1c230c412ebdcae3df2748d92f7c27d659",
+      "current_sha256": "042e35ef09abfd6e3c57d48c801b7a1c230c412ebdcae3df2748d92f7c27d659",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/source/config/learning_experiment_v3.json",
+      "before_sha256": "ea3ed8403ad1a0c23d4e73aa9d854bc7825ece63c1e12ebb983cd7019a00ba1c",
+      "current_sha256": "ea3ed8403ad1a0c23d4e73aa9d854bc7825ece63c1e12ebb983cd7019a00ba1c",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/source/config/module_catalog.json",
+      "before_sha256": "5327cc56ebbe6817db8af4e5fca2cf8228b07ccc8904d9bd90d738e3a7cd6781",
+      "current_sha256": "5327cc56ebbe6817db8af4e5fca2cf8228b07ccc8904d9bd90d738e3a7cd6781",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/source/docs/LIGHT_PREDICTION_EXPERIMENT.md",
+      "before_sha256": "7cc508c8cf1bc88e0b0f417b49df93022e895f8f90c9f1c91e528372696ef6be",
+      "current_sha256": "7cc508c8cf1bc88e0b0f417b49df93022e895f8f90c9f1c91e528372696ef6be",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/source/include/droid/baseline.hpp",
+      "before_sha256": "d3119b95c99467e433be506bcb14b89d7c850dc8abf1928a83d62810853b5cc0",
+      "current_sha256": "d3119b95c99467e433be506bcb14b89d7c850dc8abf1928a83d62810853b5cc0",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/source/include/droid/body_controller.hpp",
+      "before_sha256": "debaa2ef481f185f15293a9d5c64daf872a7c1db2f47d0e9439c0980f90012cb",
+      "current_sha256": "debaa2ef481f185f15293a9d5c64daf872a7c1db2f47d0e9439c0980f90012cb",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/source/include/droid/construction_session.hpp",
+      "before_sha256": "7e883fbbe20d914821014698af2ff36952938325961b963a39194380131a39c3",
+      "current_sha256": "7e883fbbe20d914821014698af2ff36952938325961b963a39194380131a39c3",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/source/include/droid/construction.hpp",
+      "before_sha256": "cdf663cda17f386e91d8de6de819dd9f37d1a106bab471d780aa0f6080a34d98",
+      "current_sha256": "cdf663cda17f386e91d8de6de819dd9f37d1a106bab471d780aa0f6080a34d98",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/source/include/droid/environment.hpp",
+      "before_sha256": "2e72cd9496d115dd9ff9694e796cf7a86a18957e2cc1cfbaadedad600cc02f8f",
+      "current_sha256": "2e72cd9496d115dd9ff9694e796cf7a86a18957e2cc1cfbaadedad600cc02f8f",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/source/include/droid/evaluation.hpp",
+      "before_sha256": "950584d94473946b5c0f8a6abd6f14cb4539b907e12580a6e8a2ede640f9c96e",
+      "current_sha256": "950584d94473946b5c0f8a6abd6f14cb4539b907e12580a6e8a2ede640f9c96e",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/source/include/droid/learner.hpp",
+      "before_sha256": "6d31aea2e2cbc1232f3353b9d6de4a0f0a68347a905889989bf7e0b75d13ff29",
+      "current_sha256": "6d31aea2e2cbc1232f3353b9d6de4a0f0a68347a905889989bf7e0b75d13ff29",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/source/include/droid/light_context.hpp",
+      "before_sha256": "9b65fd35524ea99d30983275c7192cf5cc0440101c7e136581466154dd226748",
+      "current_sha256": "9b65fd35524ea99d30983275c7192cf5cc0440101c7e136581466154dd226748",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/source/include/droid/light_learner.hpp",
+      "before_sha256": "3571dd0ef11f82bf13f5e04f4d8fa059769d758174bb04da4a674245ff5b2e58",
+      "current_sha256": "3571dd0ef11f82bf13f5e04f4d8fa059769d758174bb04da4a674245ff5b2e58",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/source/include/droid/light_prediction.hpp",
+      "before_sha256": "99760228dc0dfffcd14a5fc76f1fc1c5ad2704bcb0271939d51721bc7a2157cc",
+      "current_sha256": "99760228dc0dfffcd14a5fc76f1fc1c5ad2704bcb0271939d51721bc7a2157cc",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/source/include/droid/light_session.hpp",
+      "before_sha256": "2a8668d95487083baa996366e275f1b7876eefb90f94a17b494e53c3509b3418",
+      "current_sha256": "2a8668d95487083baa996366e275f1b7876eefb90f94a17b494e53c3509b3418",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/source/include/droid/module_catalog.hpp",
+      "before_sha256": "e7a85ace104fea22f4d35677a691312ed1325f92e9fa7450971705c7d76fb65c",
+      "current_sha256": "e7a85ace104fea22f4d35677a691312ed1325f92e9fa7450971705c7d76fb65c",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/source/include/droid/motion_explorer.hpp",
+      "before_sha256": "46c38b1d58e3f1610fe0d46d94038461ff2dc4b4c5949c2844787571205cf44b",
+      "current_sha256": "46c38b1d58e3f1610fe0d46d94038461ff2dc4b4c5949c2844787571205cf44b",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/source/include/droid/playground.hpp",
+      "before_sha256": "b94ab7ac715f0f4f8f4e0e67ed64648f27f1f626a8a155b2dfef58524794e9ff",
+      "current_sha256": "b94ab7ac715f0f4f8f4e0e67ed64648f27f1f626a8a155b2dfef58524794e9ff",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/source/include/droid/policy.hpp",
+      "before_sha256": "fe0e8bdc9ed835c311fd014c1c04960bd4bf67d77f872d750dfaa604566c59df",
+      "current_sha256": "fe0e8bdc9ed835c311fd014c1c04960bd4bf67d77f872d750dfaa604566c59df",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/source/include/droid/simulation.hpp",
+      "before_sha256": "8c0d5b32824b6e06462211bd711b59cb8e137aa92c6bfe9a17cf569026c40bba",
+      "current_sha256": "8c0d5b32824b6e06462211bd711b59cb8e137aa92c6bfe9a17cf569026c40bba",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/source/models/droid.xml",
+      "before_sha256": "20b36ed04d5f7c8d7cf660422ac074bbb4000cde8ce8483cc402417f63dd6b5e",
+      "current_sha256": "20b36ed04d5f7c8d7cf660422ac074bbb4000cde8ce8483cc402417f63dd6b5e",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/source/src/agent_cli.cpp",
+      "before_sha256": "1425ad65711bbcaae8edced99765b52f1fcee930ae33e39c5e60d65c338a7483",
+      "current_sha256": "1425ad65711bbcaae8edced99765b52f1fcee930ae33e39c5e60d65c338a7483",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/source/src/baseline.cpp",
+      "before_sha256": "150ae55b970dd7245b16b3cd4c2eb697336b68a926fdc995322a5aa68418040f",
+      "current_sha256": "150ae55b970dd7245b16b3cd4c2eb697336b68a926fdc995322a5aa68418040f",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/source/src/body_controller.cpp",
+      "before_sha256": "8dd85e8d7959e61a68707cdeb99368c554a5bc42411e93ace982f6c8a4384215",
+      "current_sha256": "8dd85e8d7959e61a68707cdeb99368c554a5bc42411e93ace982f6c8a4384215",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/source/src/body_experiment_cli.cpp",
+      "before_sha256": "9d409a06b889feb989d590d9c01a4c0c744b46d34f44912de7a8830d68d7f8b6",
+      "current_sha256": "9d409a06b889feb989d590d9c01a4c0c744b46d34f44912de7a8830d68d7f8b6",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/source/src/construction_experiment_cli.cpp",
+      "before_sha256": "431406dea941d69536a6f9635d454e1c8911f93d48c2198728d6d7b98c9e0a6a",
+      "current_sha256": "431406dea941d69536a6f9635d454e1c8911f93d48c2198728d6d7b98c9e0a6a",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/source/src/construction_session.cpp",
+      "before_sha256": "c24a50947c7254723301a926868405d71e0ccb7ac9c8b4739e6a67ea2ae1ba8d",
+      "current_sha256": "c24a50947c7254723301a926868405d71e0ccb7ac9c8b4739e6a67ea2ae1ba8d",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/source/src/construction.cpp",
+      "before_sha256": "dc415ee2342ba89c612ae4dc22344f2e33dabad040cbef7e35ea661ee3015f21",
+      "current_sha256": "dc415ee2342ba89c612ae4dc22344f2e33dabad040cbef7e35ea661ee3015f21",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/source/src/environment.cpp",
+      "before_sha256": "b6f851519e863be290f843899c4d8a3eefa9bdad892fddcf58803ee0b59fdd88",
+      "current_sha256": "b6f851519e863be290f843899c4d8a3eefa9bdad892fddcf58803ee0b59fdd88",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/source/src/evaluation.cpp",
+      "before_sha256": "998dfddd38181a81ec0dbaab846d39fb8e943aa920a00f24f353bde314a56bc1",
+      "current_sha256": "998dfddd38181a81ec0dbaab846d39fb8e943aa920a00f24f353bde314a56bc1",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/source/src/learner.cpp",
+      "before_sha256": "e25e454b2fdfaaccdb360dd7b05b0ea2c3465ab42cee361920df82aaad47bbf3",
+      "current_sha256": "e25e454b2fdfaaccdb360dd7b05b0ea2c3465ab42cee361920df82aaad47bbf3",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/source/src/light_adaptation_cli.cpp",
+      "before_sha256": "4c1869d41e444a2f1252c3a7c470c1b14694182123b1273438f34c32987fdebb",
+      "current_sha256": "4c1869d41e444a2f1252c3a7c470c1b14694182123b1273438f34c32987fdebb",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/source/src/light_context_cli.cpp",
+      "before_sha256": "1c9033fb589a756e26d28403fa6025b560ddfff3dbbe98d9367d5aa0d76b5034",
+      "current_sha256": "1c9033fb589a756e26d28403fa6025b560ddfff3dbbe98d9367d5aa0d76b5034",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/source/src/light_context.cpp",
+      "before_sha256": "fd7bb50e94f041119ee7f45bf1890b1f8cb9dddfdcf0ca28e624385907f4d585",
+      "current_sha256": "fd7bb50e94f041119ee7f45bf1890b1f8cb9dddfdcf0ca28e624385907f4d585",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/source/src/light_experiment_cli.cpp",
+      "before_sha256": "bb87488dfa9bf1dbcd14e0e5954ac0485adf15e6ab4d9975b41442b3461d2bc2",
+      "current_sha256": "bb87488dfa9bf1dbcd14e0e5954ac0485adf15e6ab4d9975b41442b3461d2bc2",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/source/src/light_learner.cpp",
+      "before_sha256": "c9e8cea0c7e301a63a2439a4ff3417f5757123aae32428911bd67fc023b468a5",
+      "current_sha256": "c9e8cea0c7e301a63a2439a4ff3417f5757123aae32428911bd67fc023b468a5",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/source/src/light_prediction_cli.cpp",
+      "before_sha256": "e8c91a488f5c6a40ca26b8435d4d290bb3681f1df3c86228cf4920cd6f411ffa",
+      "current_sha256": "e8c91a488f5c6a40ca26b8435d4d290bb3681f1df3c86228cf4920cd6f411ffa",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/source/src/light_prediction.cpp",
+      "before_sha256": "ae494a37d8067f1dc6e945f817569da642706a94b7138afe22a81213f351eba6",
+      "current_sha256": "ae494a37d8067f1dc6e945f817569da642706a94b7138afe22a81213f351eba6",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/source/src/light_retention_cli.cpp",
+      "before_sha256": "49787142cac66d9aede07a12c51c443fa98e04bf9b53bdd6e8fcc0d72f80d892",
+      "current_sha256": "49787142cac66d9aede07a12c51c443fa98e04bf9b53bdd6e8fcc0d72f80d892",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/source/src/light_session.cpp",
+      "before_sha256": "4315857c13eace4f2accff020d2683ae4751a678261e4198bb1012d087e284a9",
+      "current_sha256": "4315857c13eace4f2accff020d2683ae4751a678261e4198bb1012d087e284a9",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/source/src/main.cpp",
+      "before_sha256": "7bfee671d1a8797b5f72c6db7038c0fd4d044f0c85730e83c42d67a2bd725407",
+      "current_sha256": "7bfee671d1a8797b5f72c6db7038c0fd4d044f0c85730e83c42d67a2bd725407",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/source/src/module_catalog.cpp",
+      "before_sha256": "f0a3c3cf1ee21ed02acc6779bf0e1dc3efa0956132c08c87876d72c05fba34a5",
+      "current_sha256": "f0a3c3cf1ee21ed02acc6779bf0e1dc3efa0956132c08c87876d72c05fba34a5",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/source/src/motion_explorer.cpp",
+      "before_sha256": "d756c0f01bc23381827fb5d5a8066ad8b22f62bc6725d2957640356de6d51398",
+      "current_sha256": "d756c0f01bc23381827fb5d5a8066ad8b22f62bc6725d2957640356de6d51398",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/source/src/playground.cpp",
+      "before_sha256": "c2e0c1ed174c4a7a6a73c01845ca1de4231bf67138f98b773fec6ce9bdaa22be",
+      "current_sha256": "c2e0c1ed174c4a7a6a73c01845ca1de4231bf67138f98b773fec6ce9bdaa22be",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/source/src/policy.cpp",
+      "before_sha256": "f5736cbede8cc87aefc9a8fc9a5f2ddb033cf4397610be7e75a683aa23c9c796",
+      "current_sha256": "f5736cbede8cc87aefc9a8fc9a5f2ddb033cf4397610be7e75a683aa23c9c796",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/source/src/simulation.cpp",
+      "before_sha256": "f9c50c7ece4614ea9d4cb26ba9100aef6347ae9407b7a218347154c90a8b7767",
+      "current_sha256": "f9c50c7ece4614ea9d4cb26ba9100aef6347ae9407b7a218347154c90a8b7767",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/source/tests/native_baseline_tests.cpp",
+      "before_sha256": "54aa21639294c822f062b830f7c142e28c6f82f9e6917a026bc235559896b0f0",
+      "current_sha256": "54aa21639294c822f062b830f7c142e28c6f82f9e6917a026bc235559896b0f0",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/source/tests/native_body_controller_tests.cpp",
+      "before_sha256": "e2475432305f221650f46fff1b7fa3625465d1673df16b0d29f8f0d4e67e375b",
+      "current_sha256": "e2475432305f221650f46fff1b7fa3625465d1673df16b0d29f8f0d4e67e375b",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/source/tests/native_body_tests.cpp",
+      "before_sha256": "2808e06e157874ba3102b4782343e2aa89bee7eb73d149267c2167dae86f239a",
+      "current_sha256": "2808e06e157874ba3102b4782343e2aa89bee7eb73d149267c2167dae86f239a",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/source/tests/native_construction_light_tests.cpp",
+      "before_sha256": "c02dbcb06d798a19d43867f799210309f6afb1174a58cf087b88a21b7405be9d",
+      "current_sha256": "c02dbcb06d798a19d43867f799210309f6afb1174a58cf087b88a21b7405be9d",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/source/tests/native_construction_session_tests.cpp",
+      "before_sha256": "f99b4e4a63b64229054a5228f6942e74df7b7d5e3cd552d02adfb742a1ccdd45",
+      "current_sha256": "f99b4e4a63b64229054a5228f6942e74df7b7d5e3cd552d02adfb742a1ccdd45",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/source/tests/native_construction_tests.cpp",
+      "before_sha256": "b57cf3baa27c91c7374eb362fc56cbb36e1cf2a1fe8ab74020012e01580d9afa",
+      "current_sha256": "b57cf3baa27c91c7374eb362fc56cbb36e1cf2a1fe8ab74020012e01580d9afa",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/source/tests/native_contract_tests.cpp",
+      "before_sha256": "47ab041669af14de27d7c8c8b27be8e01fffe303744350f96c13de8c7a570de8",
+      "current_sha256": "47ab041669af14de27d7c8c8b27be8e01fffe303744350f96c13de8c7a570de8",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/source/tests/native_environment_tests.cpp",
+      "before_sha256": "6de36468389797e6cb113c6fbebbfc9cb13f1f2eaa4c49af94e30c3564ca49e3",
+      "current_sha256": "6de36468389797e6cb113c6fbebbfc9cb13f1f2eaa4c49af94e30c3564ca49e3",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/source/tests/native_light_context_tests.cpp",
+      "before_sha256": "ce4039603e1382cf18612ec50082d05886880ba9f9890aa569ff52399dba7787",
+      "current_sha256": "ce4039603e1382cf18612ec50082d05886880ba9f9890aa569ff52399dba7787",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/source/tests/native_light_learner_tests.cpp",
+      "before_sha256": "f54684621679465ab5ab52fe28ea313966d8de29cec6c20958603cd076f2407d",
+      "current_sha256": "f54684621679465ab5ab52fe28ea313966d8de29cec6c20958603cd076f2407d",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/source/tests/native_light_prediction_tests.cpp",
+      "before_sha256": "1f85c2e34f9d875ccc698ef3969c3997180dc73d3d82d240919bc3c2a2489f36",
+      "current_sha256": "1f85c2e34f9d875ccc698ef3969c3997180dc73d3d82d240919bc3c2a2489f36",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/source/tests/native_light_session_tests.cpp",
+      "before_sha256": "2424b0b181982e7131ac44710a424e9c8de0bb0eeaaa4a381b63013cf4f3e547",
+      "current_sha256": "2424b0b181982e7131ac44710a424e9c8de0bb0eeaaa4a381b63013cf4f3e547",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/source/tests/native_motion_explorer_tests.cpp",
+      "before_sha256": "69cb9cb41993f597091ef2f3ce629a9b93f0bb1643452ddd76f2f4d16b3e1fc7",
+      "current_sha256": "69cb9cb41993f597091ef2f3ce629a9b93f0bb1643452ddd76f2f4d16b3e1fc7",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/source/tests/native_playground_tests.cpp",
+      "before_sha256": "12974076a9511cee38f784815a414c85410915ef9f1b5a4420c7ff1cd1835640",
+      "current_sha256": "12974076a9511cee38f784815a414c85410915ef9f1b5a4420c7ff1cd1835640",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/source/tests/native_policy_tests.cpp",
+      "before_sha256": "680abc6223c93a94b81ec7e9f44d3b2c367618fb24d35ee6a7631e593c47fb5c",
+      "current_sha256": "680abc6223c93a94b81ec7e9f44d3b2c367618fb24d35ee6a7631e593c47fb5c",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/source/tests/native_simulation_parity_tests.cpp",
+      "before_sha256": "001a3b3bd32c9e79eff5b1f6ec83804816477a35377608eb11345ff11a7249a9",
+      "current_sha256": "001a3b3bd32c9e79eff5b1f6ec83804816477a35377608eb11345ff11a7249a9",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/source/tests/native_training_tests.cpp",
+      "before_sha256": "24b222f9fbe18dacd0eac63baacdacc11d9307d0e66457b9b769478e8f86b907",
+      "current_sha256": "24b222f9fbe18dacd0eac63baacdacc11d9307d0e66457b9b769478e8f86b907",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/source/tools/summarize-light-prediction.mjs",
+      "before_sha256": "48c4fb3f290a323ef06420004760a81c5df98483e820cd90eb7be989a32c0d39",
+      "current_sha256": "48c4fb3f290a323ef06420004760a81c5df98483e820cd90eb7be989a32c0d39",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/traces/body-0-probe-201-A.json",
+      "before_sha256": "702c305ece42cb2f7da8ee9fadbfc0ad84fdce25a65940035a90858843ecea57",
+      "current_sha256": "702c305ece42cb2f7da8ee9fadbfc0ad84fdce25a65940035a90858843ecea57",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/traces/body-0-probe-201-B.json",
+      "before_sha256": "87c57345ce6a7547b06a6189881a6b46aa3bc1a4492baf8994dcfc914ebe0f62",
+      "current_sha256": "87c57345ce6a7547b06a6189881a6b46aa3bc1a4492baf8994dcfc914ebe0f62",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/traces/body-0-probe-202-A.json",
+      "before_sha256": "4b7051ac39e2362e29d83f043d9a9b9c891f6541085dbe22447ae864dd9e0edf",
+      "current_sha256": "4b7051ac39e2362e29d83f043d9a9b9c891f6541085dbe22447ae864dd9e0edf",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/traces/body-0-probe-202-B.json",
+      "before_sha256": "57e69bff20e019de788942f5063d254ec2fd3bd768525c214e05e8224996504f",
+      "current_sha256": "57e69bff20e019de788942f5063d254ec2fd3bd768525c214e05e8224996504f",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/traces/body-0-probe-203-A.json",
+      "before_sha256": "ee79b668052e1b34efdbf0bd468d2019850faad3c6d2ac950953714e23b4fcea",
+      "current_sha256": "ee79b668052e1b34efdbf0bd468d2019850faad3c6d2ac950953714e23b4fcea",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/traces/body-0-probe-203-B.json",
+      "before_sha256": "633d5c7330eac0c450d6822b559ad6189e6305d127cc45a0d17a4642667593e4",
+      "current_sha256": "633d5c7330eac0c450d6822b559ad6189e6305d127cc45a0d17a4642667593e4",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/traces/body-0-probe-204-A.json",
+      "before_sha256": "6ad4b4ff01bad99c2b3893664ecec7b4bf2f71ca3535daa8ee004bed3e8a5e7a",
+      "current_sha256": "6ad4b4ff01bad99c2b3893664ecec7b4bf2f71ca3535daa8ee004bed3e8a5e7a",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/traces/body-0-probe-204-B.json",
+      "before_sha256": "7d873bc9058a1b4dd4727935ad5152b827036eeea5ce36b67ad6b86d771e594f",
+      "current_sha256": "7d873bc9058a1b4dd4727935ad5152b827036eeea5ce36b67ad6b86d771e594f",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/traces/body-0-probe-205-A.json",
+      "before_sha256": "db93c47d4b3486b4c947a47e5f9f17982eda5b140443117c67e043ca69d5ab61",
+      "current_sha256": "db93c47d4b3486b4c947a47e5f9f17982eda5b140443117c67e043ca69d5ab61",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/traces/body-0-probe-205-B.json",
+      "before_sha256": "f3a8cef58032cdf131351c31e44b5f6e113622d4f2f38e2bdeb040cdc4dbaca2",
+      "current_sha256": "f3a8cef58032cdf131351c31e44b5f6e113622d4f2f38e2bdeb040cdc4dbaca2",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/traces/body-0-probe-206-A.json",
+      "before_sha256": "6eb05e6062411ab2d33db0c99c7223a4c194f7eb60057f4b11f9f4c8244511ee",
+      "current_sha256": "6eb05e6062411ab2d33db0c99c7223a4c194f7eb60057f4b11f9f4c8244511ee",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/traces/body-0-probe-206-B.json",
+      "before_sha256": "613bcaff23cbc5a3259675c1aff7e76a7e4b3cfece4cbea589a7da5868474a19",
+      "current_sha256": "613bcaff23cbc5a3259675c1aff7e76a7e4b3cfece4cbea589a7da5868474a19",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/traces/body-0-probe-207-A.json",
+      "before_sha256": "4a83dcae94e7f2f8637894aa17574622e65c3b8f8fd4b3fb489b1ace6e5a94c6",
+      "current_sha256": "4a83dcae94e7f2f8637894aa17574622e65c3b8f8fd4b3fb489b1ace6e5a94c6",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/traces/body-0-probe-207-B.json",
+      "before_sha256": "4b306e5d2a79f844b10ad456b122101ac86057a0e4b1e4302ccbc2683076d843",
+      "current_sha256": "4b306e5d2a79f844b10ad456b122101ac86057a0e4b1e4302ccbc2683076d843",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/traces/body-0-probe-208-A.json",
+      "before_sha256": "d59c2e72aa4875fff701c58556ec9e6d71d34c5e93cc4b86c87103da98dcb234",
+      "current_sha256": "d59c2e72aa4875fff701c58556ec9e6d71d34c5e93cc4b86c87103da98dcb234",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/traces/body-0-probe-208-B.json",
+      "before_sha256": "aae5f230fd4b3f44f8e0899920de574669e7cb541e5868d33d910c4cd658dea7",
+      "current_sha256": "aae5f230fd4b3f44f8e0899920de574669e7cb541e5868d33d910c4cd658dea7",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/traces/body-0-probe-209-A.json",
+      "before_sha256": "7f716122f17cd01b74781496ad78b1e87b9d27a5aab8f15776e1073c1805e3ac",
+      "current_sha256": "7f716122f17cd01b74781496ad78b1e87b9d27a5aab8f15776e1073c1805e3ac",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/traces/body-0-probe-209-B.json",
+      "before_sha256": "2dad2dbe63979e5a0dd1042ca286824775066e4bd82381496385ab35e00fe77e",
+      "current_sha256": "2dad2dbe63979e5a0dd1042ca286824775066e4bd82381496385ab35e00fe77e",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/traces/body-0-probe-210-A.json",
+      "before_sha256": "6680d3f44279bfdf42b57951ab8ac6a952e70ffb23f7b936480f77b1c2f05617",
+      "current_sha256": "6680d3f44279bfdf42b57951ab8ac6a952e70ffb23f7b936480f77b1c2f05617",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/traces/body-0-probe-210-B.json",
+      "before_sha256": "6f3565f81b720d02dbdd49b75f01a52ae9f4bacdcd484e370ced2463649765bc",
+      "current_sha256": "6f3565f81b720d02dbdd49b75f01a52ae9f4bacdcd484e370ced2463649765bc",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/traces/body-0-probe-211-A.json",
+      "before_sha256": "2829cf3d015c7d3dd5476b137785291b6101b4dac90a781f5003e57ffeee15a2",
+      "current_sha256": "2829cf3d015c7d3dd5476b137785291b6101b4dac90a781f5003e57ffeee15a2",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/traces/body-0-probe-211-B.json",
+      "before_sha256": "4788e8766542ebf6c42b8e93aa87d13aeac0b8cb145c252e156d3c0d92d5e38b",
+      "current_sha256": "4788e8766542ebf6c42b8e93aa87d13aeac0b8cb145c252e156d3c0d92d5e38b",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/traces/body-0-probe-212-A.json",
+      "before_sha256": "a1d7791c5ce095a8018728594b74a4e14cc6c0f93af0062af0273ab90d866f9f",
+      "current_sha256": "a1d7791c5ce095a8018728594b74a4e14cc6c0f93af0062af0273ab90d866f9f",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/traces/body-0-probe-212-B.json",
+      "before_sha256": "d788003c02a760d6e2bad8e31de883bdf5df82e3fc23cb5a97ddc9f0e587f2b7",
+      "current_sha256": "d788003c02a760d6e2bad8e31de883bdf5df82e3fc23cb5a97ddc9f0e587f2b7",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/traces/body-1-probe-201-A.json",
+      "before_sha256": "226f5674a7a3d03bb7a715a4d8f636dd4ba1451834ca00c7d42b0361d8932b34",
+      "current_sha256": "226f5674a7a3d03bb7a715a4d8f636dd4ba1451834ca00c7d42b0361d8932b34",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/traces/body-1-probe-201-B.json",
+      "before_sha256": "cd664e56fa721e22e73ab8cfa03eee2a0b08ceed5a707465f57466e6588dddc4",
+      "current_sha256": "cd664e56fa721e22e73ab8cfa03eee2a0b08ceed5a707465f57466e6588dddc4",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/traces/body-1-probe-202-A.json",
+      "before_sha256": "d031cfd8e10131dbb2ad2ccbcf5e1ed5661bad9bd45df3a017bee9375e121db7",
+      "current_sha256": "d031cfd8e10131dbb2ad2ccbcf5e1ed5661bad9bd45df3a017bee9375e121db7",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/traces/body-1-probe-202-B.json",
+      "before_sha256": "ef585c391cec13aa6b0d1018cc081792e6c38b27d65a33e749c960fd452b4ca9",
+      "current_sha256": "ef585c391cec13aa6b0d1018cc081792e6c38b27d65a33e749c960fd452b4ca9",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/traces/body-1-probe-203-A.json",
+      "before_sha256": "f72df136b9d3872719b09fd17a67f746ccfb10b649f8e98c86e190d0b811d9e5",
+      "current_sha256": "f72df136b9d3872719b09fd17a67f746ccfb10b649f8e98c86e190d0b811d9e5",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/traces/body-1-probe-203-B.json",
+      "before_sha256": "766aedb2478b3aa6c43ebc991e618c7c3b84d1a73f146598a7d399cd00005dc3",
+      "current_sha256": "766aedb2478b3aa6c43ebc991e618c7c3b84d1a73f146598a7d399cd00005dc3",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/traces/body-1-probe-204-A.json",
+      "before_sha256": "1c5e6d4ac6be0dadaf8fba2a0c47fd8eebfcfbd45d12f97b3b23565f8e4f1bee",
+      "current_sha256": "1c5e6d4ac6be0dadaf8fba2a0c47fd8eebfcfbd45d12f97b3b23565f8e4f1bee",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/traces/body-1-probe-204-B.json",
+      "before_sha256": "20e8344e570239a736bc7db24048349781f782ebdfdac8f82daa4b13961ebd5f",
+      "current_sha256": "20e8344e570239a736bc7db24048349781f782ebdfdac8f82daa4b13961ebd5f",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/traces/body-1-probe-205-A.json",
+      "before_sha256": "39ea7ecfcf7d917f8c457372109f6f3b8ea6574def9af346072ce8fa2aecdbe4",
+      "current_sha256": "39ea7ecfcf7d917f8c457372109f6f3b8ea6574def9af346072ce8fa2aecdbe4",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/traces/body-1-probe-205-B.json",
+      "before_sha256": "4261caf4e76e0c75cd925eb2839c2ace914baf5c5bb75e6502233938f8983c03",
+      "current_sha256": "4261caf4e76e0c75cd925eb2839c2ace914baf5c5bb75e6502233938f8983c03",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/traces/body-1-probe-206-A.json",
+      "before_sha256": "03a9c59b495978d8929cccd3cac0bf0c28d634987a72bd9c70bed336c1715921",
+      "current_sha256": "03a9c59b495978d8929cccd3cac0bf0c28d634987a72bd9c70bed336c1715921",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/traces/body-1-probe-206-B.json",
+      "before_sha256": "99faf60a2d37e4e1d628a74b7f0218b51826aeab6fb2cfdfd60ff76ba3bb2549",
+      "current_sha256": "99faf60a2d37e4e1d628a74b7f0218b51826aeab6fb2cfdfd60ff76ba3bb2549",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/traces/body-1-probe-207-A.json",
+      "before_sha256": "87bfacc34c5e540d5c179b2fc10c8953521637ebfccc04011c1e4f1348f1f1ac",
+      "current_sha256": "87bfacc34c5e540d5c179b2fc10c8953521637ebfccc04011c1e4f1348f1f1ac",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/traces/body-1-probe-207-B.json",
+      "before_sha256": "beb277837777caccb88fb0532084afa02b7848be8101f50101c4ce83f677aa59",
+      "current_sha256": "beb277837777caccb88fb0532084afa02b7848be8101f50101c4ce83f677aa59",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/traces/body-1-probe-208-A.json",
+      "before_sha256": "6009ec1f75d11e95fe260e1c7743d9363ec78e8cc170f52b1a303644671738c5",
+      "current_sha256": "6009ec1f75d11e95fe260e1c7743d9363ec78e8cc170f52b1a303644671738c5",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/traces/body-1-probe-208-B.json",
+      "before_sha256": "872320bc09074f638d5561dd40464f2d464fcc927f325ab8d5848b5ef1708ab3",
+      "current_sha256": "872320bc09074f638d5561dd40464f2d464fcc927f325ab8d5848b5ef1708ab3",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/traces/body-1-probe-209-A.json",
+      "before_sha256": "0ac8a535295654d82ef998e2dfb777c1ba522bfcf57d4c76718751289d3f8678",
+      "current_sha256": "0ac8a535295654d82ef998e2dfb777c1ba522bfcf57d4c76718751289d3f8678",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/traces/body-1-probe-209-B.json",
+      "before_sha256": "7efaab502a7837bd6e52c5f6332e58cf6d333ec2d4058648340e813f3915b9e7",
+      "current_sha256": "7efaab502a7837bd6e52c5f6332e58cf6d333ec2d4058648340e813f3915b9e7",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/traces/body-1-probe-210-A.json",
+      "before_sha256": "0547b929d34dc7c56c23953b38fd417f60914a0463a395b8673e24e50eb802c3",
+      "current_sha256": "0547b929d34dc7c56c23953b38fd417f60914a0463a395b8673e24e50eb802c3",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/traces/body-1-probe-210-B.json",
+      "before_sha256": "3f422f9aaad811a9794057a726f66c94447f31002c7a4620140c877a274ed37e",
+      "current_sha256": "3f422f9aaad811a9794057a726f66c94447f31002c7a4620140c877a274ed37e",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/traces/body-1-probe-211-A.json",
+      "before_sha256": "c0c62f0b745752e16b1b5b1b5fb8f7f8fae34b6180ee049aaee1ea1126055d12",
+      "current_sha256": "c0c62f0b745752e16b1b5b1b5fb8f7f8fae34b6180ee049aaee1ea1126055d12",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/traces/body-1-probe-211-B.json",
+      "before_sha256": "fdc95fb00be837f13135b8c9b36df2ccb11ddf7f85ff8aa6cfc3451ccf33c7f5",
+      "current_sha256": "fdc95fb00be837f13135b8c9b36df2ccb11ddf7f85ff8aa6cfc3451ccf33c7f5",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/traces/body-1-probe-212-A.json",
+      "before_sha256": "ba991c1a7e9357b189c7a6c6064de78bef3cd8ae46c63a36c4bb406f49835493",
+      "current_sha256": "ba991c1a7e9357b189c7a6c6064de78bef3cd8ae46c63a36c4bb406f49835493",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/traces/body-1-probe-212-B.json",
+      "before_sha256": "bf2359d92a571df17923a2f65d63f89ce38a181bd6c6fab6148dcc3fb67235c8",
+      "current_sha256": "bf2359d92a571df17923a2f65d63f89ce38a181bd6c6fab6148dcc3fb67235c8",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/traces/body-2-probe-201-A.json",
+      "before_sha256": "83ea2603c62a920cd9b654e61ab0cc86d5bb24cf1657e2357e3b6a65b5ede336",
+      "current_sha256": "83ea2603c62a920cd9b654e61ab0cc86d5bb24cf1657e2357e3b6a65b5ede336",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/traces/body-2-probe-201-B.json",
+      "before_sha256": "d1e761d59e0b48641720655c6305b3bdae21cf5b701029f399daa5eb13ad5e59",
+      "current_sha256": "d1e761d59e0b48641720655c6305b3bdae21cf5b701029f399daa5eb13ad5e59",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/traces/body-2-probe-202-A.json",
+      "before_sha256": "39d0145e5edfe124fa14a9c3a54ed3a55b4a2beb9ab6d9bed4380d599f422c79",
+      "current_sha256": "39d0145e5edfe124fa14a9c3a54ed3a55b4a2beb9ab6d9bed4380d599f422c79",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/traces/body-2-probe-202-B.json",
+      "before_sha256": "0d431c7b81127842ab75d7d0c012e8b09225ff45d54e3f87e887b35ade38ebd7",
+      "current_sha256": "0d431c7b81127842ab75d7d0c012e8b09225ff45d54e3f87e887b35ade38ebd7",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/traces/body-2-probe-203-A.json",
+      "before_sha256": "a04bf35370de92d98cb10fdb89c5698b208d60808d14c3cc621e50d8c0d6025d",
+      "current_sha256": "a04bf35370de92d98cb10fdb89c5698b208d60808d14c3cc621e50d8c0d6025d",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/traces/body-2-probe-203-B.json",
+      "before_sha256": "14a8b621095c1e5982a6b7d0f98b41074b7c40247b3217e7e15e378577258a48",
+      "current_sha256": "14a8b621095c1e5982a6b7d0f98b41074b7c40247b3217e7e15e378577258a48",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/traces/body-2-probe-204-A.json",
+      "before_sha256": "dee1104a7aab60332c2b0040b3e3d04e1b233d95164bed0844b878c58497129c",
+      "current_sha256": "dee1104a7aab60332c2b0040b3e3d04e1b233d95164bed0844b878c58497129c",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/traces/body-2-probe-204-B.json",
+      "before_sha256": "1ff5143a14e81856da27f2cddf8267a39b3153cc461c3fff06cdc52c14f68357",
+      "current_sha256": "1ff5143a14e81856da27f2cddf8267a39b3153cc461c3fff06cdc52c14f68357",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/traces/body-2-probe-205-A.json",
+      "before_sha256": "a38ff01dd7fa1d0d6de4330958ac2d3f7d5f57065646f94f534b7de5baf267c8",
+      "current_sha256": "a38ff01dd7fa1d0d6de4330958ac2d3f7d5f57065646f94f534b7de5baf267c8",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/traces/body-2-probe-205-B.json",
+      "before_sha256": "9b4a3694791ca50640288a582de235847013bbf9bdd48b296dec9a51acd5d253",
+      "current_sha256": "9b4a3694791ca50640288a582de235847013bbf9bdd48b296dec9a51acd5d253",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/traces/body-2-probe-206-A.json",
+      "before_sha256": "b5ab46b909faa8c1ea9e0d6a8f0003525f4de04b946277f93a4113e313ff4211",
+      "current_sha256": "b5ab46b909faa8c1ea9e0d6a8f0003525f4de04b946277f93a4113e313ff4211",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/traces/body-2-probe-206-B.json",
+      "before_sha256": "3daddbac171ad63df120f4c8678f8be7aa236fcc080f1ecc36bad2c8c37a5098",
+      "current_sha256": "3daddbac171ad63df120f4c8678f8be7aa236fcc080f1ecc36bad2c8c37a5098",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/traces/body-2-probe-207-A.json",
+      "before_sha256": "dbf4d321691815c9b438c650e5c63e4869246c350afac4befa271f3739fdd082",
+      "current_sha256": "dbf4d321691815c9b438c650e5c63e4869246c350afac4befa271f3739fdd082",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/traces/body-2-probe-207-B.json",
+      "before_sha256": "fc6656a2b8da9c0acc4bdfe69323ce92228742a1c04fc7efb806fd65354b658f",
+      "current_sha256": "fc6656a2b8da9c0acc4bdfe69323ce92228742a1c04fc7efb806fd65354b658f",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/traces/body-2-probe-208-A.json",
+      "before_sha256": "ec306ec2bb1efb067cb80f492b3d818a1963b2c151c286f868b04cd7a11aeddc",
+      "current_sha256": "ec306ec2bb1efb067cb80f492b3d818a1963b2c151c286f868b04cd7a11aeddc",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/traces/body-2-probe-208-B.json",
+      "before_sha256": "b4fb5e65f8fe9eb7fd60630c58f3087c3bb180d508638b0ff550c2ef5ad30950",
+      "current_sha256": "b4fb5e65f8fe9eb7fd60630c58f3087c3bb180d508638b0ff550c2ef5ad30950",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/traces/body-2-probe-209-A.json",
+      "before_sha256": "616407b39666a117853d9b594eafc84758125581cf18075ae4988944d363dd12",
+      "current_sha256": "616407b39666a117853d9b594eafc84758125581cf18075ae4988944d363dd12",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/traces/body-2-probe-209-B.json",
+      "before_sha256": "dfbe0baa826847f65f863834ab0f2ff52a686f033421914734377814868d728b",
+      "current_sha256": "dfbe0baa826847f65f863834ab0f2ff52a686f033421914734377814868d728b",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/traces/body-2-probe-210-A.json",
+      "before_sha256": "f07da64ed82e2ad6f1092a85a23c4eece55c7c94fe675686f99962c0f3778232",
+      "current_sha256": "f07da64ed82e2ad6f1092a85a23c4eece55c7c94fe675686f99962c0f3778232",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/traces/body-2-probe-210-B.json",
+      "before_sha256": "1b16d596764392136313adbabe3dbc6ef97ce748b784f754fc7341cee1328960",
+      "current_sha256": "1b16d596764392136313adbabe3dbc6ef97ce748b784f754fc7341cee1328960",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/traces/body-2-probe-211-A.json",
+      "before_sha256": "21645d2fc4b2fd0b30e9b7d98cca8686f106026a6fd899ad08c72b4c653a17e2",
+      "current_sha256": "21645d2fc4b2fd0b30e9b7d98cca8686f106026a6fd899ad08c72b4c653a17e2",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/traces/body-2-probe-211-B.json",
+      "before_sha256": "88f3a81c9dc95cbe921054716bbd5c3cf08a3c27b293e6c7a77630a39a0d7dd9",
+      "current_sha256": "88f3a81c9dc95cbe921054716bbd5c3cf08a3c27b293e6c7a77630a39a0d7dd9",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/traces/body-2-probe-212-A.json",
+      "before_sha256": "eff8277703cefb8d16cd2590b3d51a2de53c38315df5cb9f971c890676f94cca",
+      "current_sha256": "eff8277703cefb8d16cd2590b3d51a2de53c38315df5cb9f971c890676f94cca",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-prediction-v1-development-20260906/traces/body-2-probe-212-B.json",
+      "before_sha256": "b986658d9f91bff1ae0767f10ed8435e251deb0f2fb314df795147cc601fd70b",
+      "current_sha256": "b986658d9f91bff1ae0767f10ed8435e251deb0f2fb314df795147cc601fd70b",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-retention-v1-development-20260906/report.json",
+      "before_sha256": "aff06275e4380d9363bd61a722f5e806b40d6e5f04178748d900ef7e1d93478b",
+      "current_sha256": "aff06275e4380d9363bd61a722f5e806b40d6e5f04178748d900ef7e1d93478b",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-retention-v1-development-20260906/source/CMakeLists.txt",
+      "before_sha256": "8e784cac3bbfc99f14e7e83c568dab5c29b8847e037f93f16769ddc4ccb6069c",
+      "current_sha256": "8e784cac3bbfc99f14e7e83c568dab5c29b8847e037f93f16769ddc4ccb6069c",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-retention-v1-development-20260906/source/Dockerfile",
+      "before_sha256": "59285428ebaabd1b695871176dd5993bdcb91bfaade7720ae318907217114d7c",
+      "current_sha256": "59285428ebaabd1b695871176dd5993bdcb91bfaade7720ae318907217114d7c",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-retention-v1-development-20260906/source/run.sh",
+      "before_sha256": "f09325610b071eb7e464d89f97e48cb29dd9b0eeaf2ae50c205bfb58e41bc690",
+      "current_sha256": "f09325610b071eb7e464d89f97e48cb29dd9b0eeaf2ae50c205bfb58e41bc690",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-retention-v1-development-20260906/source/setup.sh",
+      "before_sha256": "97e2f69138a4477fd275a4112204f8ca8b3f6be104291519dabf1a554e191266",
+      "current_sha256": "97e2f69138a4477fd275a4112204f8ca8b3f6be104291519dabf1a554e191266",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-retention-v1-development-20260906/source/artifacts/light-search-policy-v3-seed0.json",
+      "before_sha256": "6f7d5069bdb884d75f1241629d437c039a2f7a486633d9ef2d7f6b70db0a5582",
+      "current_sha256": "6f7d5069bdb884d75f1241629d437c039a2f7a486633d9ef2d7f6b70db0a5582",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-retention-v1-development-20260906/source/artifacts/reports/light-learning-v2-development-20260905/report.json",
+      "before_sha256": "931a26b17b399456bb5461293e382ae9880486f1b38157007500eead65998230",
+      "current_sha256": "931a26b17b399456bb5461293e382ae9880486f1b38157007500eead65998230",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-retention-v1-development-20260906/source/artifacts/reports/light-learning-v2-development-20260905/source/artifacts/light-search-policy-v3-seed0.json",
+      "before_sha256": "6f7d5069bdb884d75f1241629d437c039a2f7a486633d9ef2d7f6b70db0a5582",
+      "current_sha256": "6f7d5069bdb884d75f1241629d437c039a2f7a486633d9ef2d7f6b70db0a5582",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-retention-v1-development-20260906/source/artifacts/reports/light-learning-v2-development-20260905/source/config/learning_experiment_v3.json",
+      "before_sha256": "ea3ed8403ad1a0c23d4e73aa9d854bc7825ece63c1e12ebb983cd7019a00ba1c",
+      "current_sha256": "ea3ed8403ad1a0c23d4e73aa9d854bc7825ece63c1e12ebb983cd7019a00ba1c",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-retention-v1-development-20260906/source/artifacts/reports/light-learning-v2-development-20260905/source/config/module_catalog.json",
+      "before_sha256": "5327cc56ebbe6817db8af4e5fca2cf8228b07ccc8904d9bd90d738e3a7cd6781",
+      "current_sha256": "5327cc56ebbe6817db8af4e5fca2cf8228b07ccc8904d9bd90d738e3a7cd6781",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-retention-v1-development-20260906/source/artifacts/reports/light-learning-v2-development-20260905/source/docs/LIGHT_LEARNING_EXPERIMENT.md",
+      "before_sha256": "77628e71e83939737c73faf578955a4d1c7363635984784f6a0ee39deadd13ae",
+      "current_sha256": "77628e71e83939737c73faf578955a4d1c7363635984784f6a0ee39deadd13ae",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-retention-v1-development-20260906/source/artifacts/reports/light-learning-v2-development-20260905/source/include/droid/construction.hpp",
+      "before_sha256": "cdf663cda17f386e91d8de6de819dd9f37d1a106bab471d780aa0f6080a34d98",
+      "current_sha256": "cdf663cda17f386e91d8de6de819dd9f37d1a106bab471d780aa0f6080a34d98",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-retention-v1-development-20260906/source/artifacts/reports/light-learning-v2-development-20260905/source/include/droid/light_learner.hpp",
+      "before_sha256": "4b3496886e38ca81083a70af120ee2ab4033088788d5498d27321becccd641d4",
+      "current_sha256": "4b3496886e38ca81083a70af120ee2ab4033088788d5498d27321becccd641d4",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-retention-v1-development-20260906/source/artifacts/reports/light-learning-v2-development-20260905/source/include/droid/light_session.hpp",
+      "before_sha256": "a5a260077717172e0f99cb85949bd80a0173a6340240840177cfa5b4255dfb11",
+      "current_sha256": "a5a260077717172e0f99cb85949bd80a0173a6340240840177cfa5b4255dfb11",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-retention-v1-development-20260906/source/artifacts/reports/light-learning-v2-development-20260905/source/models/droid.xml",
+      "before_sha256": "20b36ed04d5f7c8d7cf660422ac074bbb4000cde8ce8483cc402417f63dd6b5e",
+      "current_sha256": "20b36ed04d5f7c8d7cf660422ac074bbb4000cde8ce8483cc402417f63dd6b5e",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-retention-v1-development-20260906/source/artifacts/reports/light-learning-v2-development-20260905/source/src/construction.cpp",
+      "before_sha256": "dc415ee2342ba89c612ae4dc22344f2e33dabad040cbef7e35ea661ee3015f21",
+      "current_sha256": "dc415ee2342ba89c612ae4dc22344f2e33dabad040cbef7e35ea661ee3015f21",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-retention-v1-development-20260906/source/artifacts/reports/light-learning-v2-development-20260905/source/src/light_experiment_cli.cpp",
+      "before_sha256": "bb87488dfa9bf1dbcd14e0e5954ac0485adf15e6ab4d9975b41442b3461d2bc2",
+      "current_sha256": "bb87488dfa9bf1dbcd14e0e5954ac0485adf15e6ab4d9975b41442b3461d2bc2",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-retention-v1-development-20260906/source/artifacts/reports/light-learning-v2-development-20260905/source/src/light_learner.cpp",
+      "before_sha256": "58335943c9e11d4e61f27df4edde291c8833823b8cb2245aeb287685df2283ff",
+      "current_sha256": "58335943c9e11d4e61f27df4edde291c8833823b8cb2245aeb287685df2283ff",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-retention-v1-development-20260906/source/artifacts/reports/light-learning-v2-development-20260905/source/src/light_session.cpp",
+      "before_sha256": "0d3afb919a1e1b6bc0ed8d1c9a761ff9c4f48cdcf95f37ae9be944cf2aa56870",
+      "current_sha256": "0d3afb919a1e1b6bc0ed8d1c9a761ff9c4f48cdcf95f37ae9be944cf2aa56870",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-retention-v1-development-20260906/source/build/light-retention-qa/runtime.json",
+      "before_sha256": "0e5940f4808b9d7e3745f9d4bbe0cf18bb2b8ff696749d36b6cb8a6b632462de",
+      "current_sha256": "0e5940f4808b9d7e3745f9d4bbe0cf18bb2b8ff696749d36b6cb8a6b632462de",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-retention-v1-development-20260906/source/config/learning_experiment_v3.json",
+      "before_sha256": "ea3ed8403ad1a0c23d4e73aa9d854bc7825ece63c1e12ebb983cd7019a00ba1c",
+      "current_sha256": "ea3ed8403ad1a0c23d4e73aa9d854bc7825ece63c1e12ebb983cd7019a00ba1c",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-retention-v1-development-20260906/source/config/module_catalog.json",
+      "before_sha256": "5327cc56ebbe6817db8af4e5fca2cf8228b07ccc8904d9bd90d738e3a7cd6781",
+      "current_sha256": "5327cc56ebbe6817db8af4e5fca2cf8228b07ccc8904d9bd90d738e3a7cd6781",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-retention-v1-development-20260906/source/docs/LIGHT_LEARNING_EXPERIMENT.md",
+      "before_sha256": "090d8572bafb546f2d5c48d8863e8d27c5c8c133f5d3de57672c4f1165f66646",
+      "current_sha256": "090d8572bafb546f2d5c48d8863e8d27c5c8c133f5d3de57672c4f1165f66646",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-retention-v1-development-20260906/source/docs/LIGHT_RETENTION_EXPERIMENT.md",
+      "before_sha256": "d3a8daf76154004c1610d0d15e6b60983782ebfa081ef1739c3341977fd44af9",
+      "current_sha256": "d3a8daf76154004c1610d0d15e6b60983782ebfa081ef1739c3341977fd44af9",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-retention-v1-development-20260906/source/include/droid/baseline.hpp",
+      "before_sha256": "d3119b95c99467e433be506bcb14b89d7c850dc8abf1928a83d62810853b5cc0",
+      "current_sha256": "d3119b95c99467e433be506bcb14b89d7c850dc8abf1928a83d62810853b5cc0",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-retention-v1-development-20260906/source/include/droid/body_controller.hpp",
+      "before_sha256": "debaa2ef481f185f15293a9d5c64daf872a7c1db2f47d0e9439c0980f90012cb",
+      "current_sha256": "debaa2ef481f185f15293a9d5c64daf872a7c1db2f47d0e9439c0980f90012cb",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-retention-v1-development-20260906/source/include/droid/construction_session.hpp",
+      "before_sha256": "7e883fbbe20d914821014698af2ff36952938325961b963a39194380131a39c3",
+      "current_sha256": "7e883fbbe20d914821014698af2ff36952938325961b963a39194380131a39c3",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-retention-v1-development-20260906/source/include/droid/construction.hpp",
+      "before_sha256": "cdf663cda17f386e91d8de6de819dd9f37d1a106bab471d780aa0f6080a34d98",
+      "current_sha256": "cdf663cda17f386e91d8de6de819dd9f37d1a106bab471d780aa0f6080a34d98",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-retention-v1-development-20260906/source/include/droid/environment.hpp",
+      "before_sha256": "2e72cd9496d115dd9ff9694e796cf7a86a18957e2cc1cfbaadedad600cc02f8f",
+      "current_sha256": "2e72cd9496d115dd9ff9694e796cf7a86a18957e2cc1cfbaadedad600cc02f8f",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-retention-v1-development-20260906/source/include/droid/evaluation.hpp",
+      "before_sha256": "950584d94473946b5c0f8a6abd6f14cb4539b907e12580a6e8a2ede640f9c96e",
+      "current_sha256": "950584d94473946b5c0f8a6abd6f14cb4539b907e12580a6e8a2ede640f9c96e",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-retention-v1-development-20260906/source/include/droid/learner.hpp",
+      "before_sha256": "6d31aea2e2cbc1232f3353b9d6de4a0f0a68347a905889989bf7e0b75d13ff29",
+      "current_sha256": "6d31aea2e2cbc1232f3353b9d6de4a0f0a68347a905889989bf7e0b75d13ff29",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-retention-v1-development-20260906/source/include/droid/light_learner.hpp",
+      "before_sha256": "3571dd0ef11f82bf13f5e04f4d8fa059769d758174bb04da4a674245ff5b2e58",
+      "current_sha256": "3571dd0ef11f82bf13f5e04f4d8fa059769d758174bb04da4a674245ff5b2e58",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-retention-v1-development-20260906/source/include/droid/light_session.hpp",
+      "before_sha256": "2a8668d95487083baa996366e275f1b7876eefb90f94a17b494e53c3509b3418",
+      "current_sha256": "2a8668d95487083baa996366e275f1b7876eefb90f94a17b494e53c3509b3418",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-retention-v1-development-20260906/source/include/droid/module_catalog.hpp",
+      "before_sha256": "e7a85ace104fea22f4d35677a691312ed1325f92e9fa7450971705c7d76fb65c",
+      "current_sha256": "e7a85ace104fea22f4d35677a691312ed1325f92e9fa7450971705c7d76fb65c",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-retention-v1-development-20260906/source/include/droid/motion_explorer.hpp",
+      "before_sha256": "46c38b1d58e3f1610fe0d46d94038461ff2dc4b4c5949c2844787571205cf44b",
+      "current_sha256": "46c38b1d58e3f1610fe0d46d94038461ff2dc4b4c5949c2844787571205cf44b",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-retention-v1-development-20260906/source/include/droid/playground.hpp",
+      "before_sha256": "b94ab7ac715f0f4f8f4e0e67ed64648f27f1f626a8a155b2dfef58524794e9ff",
+      "current_sha256": "b94ab7ac715f0f4f8f4e0e67ed64648f27f1f626a8a155b2dfef58524794e9ff",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-retention-v1-development-20260906/source/include/droid/policy.hpp",
+      "before_sha256": "fe0e8bdc9ed835c311fd014c1c04960bd4bf67d77f872d750dfaa604566c59df",
+      "current_sha256": "fe0e8bdc9ed835c311fd014c1c04960bd4bf67d77f872d750dfaa604566c59df",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-retention-v1-development-20260906/source/include/droid/simulation.hpp",
+      "before_sha256": "8c0d5b32824b6e06462211bd711b59cb8e137aa92c6bfe9a17cf569026c40bba",
+      "current_sha256": "8c0d5b32824b6e06462211bd711b59cb8e137aa92c6bfe9a17cf569026c40bba",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-retention-v1-development-20260906/source/models/droid.xml",
+      "before_sha256": "20b36ed04d5f7c8d7cf660422ac074bbb4000cde8ce8483cc402417f63dd6b5e",
+      "current_sha256": "20b36ed04d5f7c8d7cf660422ac074bbb4000cde8ce8483cc402417f63dd6b5e",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-retention-v1-development-20260906/source/src/agent_cli.cpp",
+      "before_sha256": "1425ad65711bbcaae8edced99765b52f1fcee930ae33e39c5e60d65c338a7483",
+      "current_sha256": "1425ad65711bbcaae8edced99765b52f1fcee930ae33e39c5e60d65c338a7483",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-retention-v1-development-20260906/source/src/baseline.cpp",
+      "before_sha256": "150ae55b970dd7245b16b3cd4c2eb697336b68a926fdc995322a5aa68418040f",
+      "current_sha256": "150ae55b970dd7245b16b3cd4c2eb697336b68a926fdc995322a5aa68418040f",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-retention-v1-development-20260906/source/src/body_controller.cpp",
+      "before_sha256": "8dd85e8d7959e61a68707cdeb99368c554a5bc42411e93ace982f6c8a4384215",
+      "current_sha256": "8dd85e8d7959e61a68707cdeb99368c554a5bc42411e93ace982f6c8a4384215",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-retention-v1-development-20260906/source/src/body_experiment_cli.cpp",
+      "before_sha256": "9d409a06b889feb989d590d9c01a4c0c744b46d34f44912de7a8830d68d7f8b6",
+      "current_sha256": "9d409a06b889feb989d590d9c01a4c0c744b46d34f44912de7a8830d68d7f8b6",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-retention-v1-development-20260906/source/src/construction_experiment_cli.cpp",
+      "before_sha256": "431406dea941d69536a6f9635d454e1c8911f93d48c2198728d6d7b98c9e0a6a",
+      "current_sha256": "431406dea941d69536a6f9635d454e1c8911f93d48c2198728d6d7b98c9e0a6a",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-retention-v1-development-20260906/source/src/construction_session.cpp",
+      "before_sha256": "c24a50947c7254723301a926868405d71e0ccb7ac9c8b4739e6a67ea2ae1ba8d",
+      "current_sha256": "c24a50947c7254723301a926868405d71e0ccb7ac9c8b4739e6a67ea2ae1ba8d",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-retention-v1-development-20260906/source/src/construction.cpp",
+      "before_sha256": "dc415ee2342ba89c612ae4dc22344f2e33dabad040cbef7e35ea661ee3015f21",
+      "current_sha256": "dc415ee2342ba89c612ae4dc22344f2e33dabad040cbef7e35ea661ee3015f21",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-retention-v1-development-20260906/source/src/environment.cpp",
+      "before_sha256": "b6f851519e863be290f843899c4d8a3eefa9bdad892fddcf58803ee0b59fdd88",
+      "current_sha256": "b6f851519e863be290f843899c4d8a3eefa9bdad892fddcf58803ee0b59fdd88",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-retention-v1-development-20260906/source/src/evaluation.cpp",
+      "before_sha256": "998dfddd38181a81ec0dbaab846d39fb8e943aa920a00f24f353bde314a56bc1",
+      "current_sha256": "998dfddd38181a81ec0dbaab846d39fb8e943aa920a00f24f353bde314a56bc1",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-retention-v1-development-20260906/source/src/learner.cpp",
+      "before_sha256": "e25e454b2fdfaaccdb360dd7b05b0ea2c3465ab42cee361920df82aaad47bbf3",
+      "current_sha256": "e25e454b2fdfaaccdb360dd7b05b0ea2c3465ab42cee361920df82aaad47bbf3",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-retention-v1-development-20260906/source/src/light_adaptation_cli.cpp",
+      "before_sha256": "4c1869d41e444a2f1252c3a7c470c1b14694182123b1273438f34c32987fdebb",
+      "current_sha256": "4c1869d41e444a2f1252c3a7c470c1b14694182123b1273438f34c32987fdebb",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-retention-v1-development-20260906/source/src/light_experiment_cli.cpp",
+      "before_sha256": "bb87488dfa9bf1dbcd14e0e5954ac0485adf15e6ab4d9975b41442b3461d2bc2",
+      "current_sha256": "bb87488dfa9bf1dbcd14e0e5954ac0485adf15e6ab4d9975b41442b3461d2bc2",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-retention-v1-development-20260906/source/src/light_learner.cpp",
+      "before_sha256": "c9e8cea0c7e301a63a2439a4ff3417f5757123aae32428911bd67fc023b468a5",
+      "current_sha256": "c9e8cea0c7e301a63a2439a4ff3417f5757123aae32428911bd67fc023b468a5",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-retention-v1-development-20260906/source/src/light_retention_cli.cpp",
+      "before_sha256": "49787142cac66d9aede07a12c51c443fa98e04bf9b53bdd6e8fcc0d72f80d892",
+      "current_sha256": "49787142cac66d9aede07a12c51c443fa98e04bf9b53bdd6e8fcc0d72f80d892",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-retention-v1-development-20260906/source/src/light_session.cpp",
+      "before_sha256": "4315857c13eace4f2accff020d2683ae4751a678261e4198bb1012d087e284a9",
+      "current_sha256": "4315857c13eace4f2accff020d2683ae4751a678261e4198bb1012d087e284a9",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-retention-v1-development-20260906/source/src/main.cpp",
+      "before_sha256": "7bfee671d1a8797b5f72c6db7038c0fd4d044f0c85730e83c42d67a2bd725407",
+      "current_sha256": "7bfee671d1a8797b5f72c6db7038c0fd4d044f0c85730e83c42d67a2bd725407",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-retention-v1-development-20260906/source/src/module_catalog.cpp",
+      "before_sha256": "f0a3c3cf1ee21ed02acc6779bf0e1dc3efa0956132c08c87876d72c05fba34a5",
+      "current_sha256": "f0a3c3cf1ee21ed02acc6779bf0e1dc3efa0956132c08c87876d72c05fba34a5",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-retention-v1-development-20260906/source/src/motion_explorer.cpp",
+      "before_sha256": "d756c0f01bc23381827fb5d5a8066ad8b22f62bc6725d2957640356de6d51398",
+      "current_sha256": "d756c0f01bc23381827fb5d5a8066ad8b22f62bc6725d2957640356de6d51398",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-retention-v1-development-20260906/source/src/playground.cpp",
+      "before_sha256": "c2e0c1ed174c4a7a6a73c01845ca1de4231bf67138f98b773fec6ce9bdaa22be",
+      "current_sha256": "c2e0c1ed174c4a7a6a73c01845ca1de4231bf67138f98b773fec6ce9bdaa22be",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-retention-v1-development-20260906/source/src/policy.cpp",
+      "before_sha256": "f5736cbede8cc87aefc9a8fc9a5f2ddb033cf4397610be7e75a683aa23c9c796",
+      "current_sha256": "f5736cbede8cc87aefc9a8fc9a5f2ddb033cf4397610be7e75a683aa23c9c796",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-retention-v1-development-20260906/source/src/simulation.cpp",
+      "before_sha256": "f9c50c7ece4614ea9d4cb26ba9100aef6347ae9407b7a218347154c90a8b7767",
+      "current_sha256": "f9c50c7ece4614ea9d4cb26ba9100aef6347ae9407b7a218347154c90a8b7767",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-retention-v1-development-20260906/source/tests/native_baseline_tests.cpp",
+      "before_sha256": "54aa21639294c822f062b830f7c142e28c6f82f9e6917a026bc235559896b0f0",
+      "current_sha256": "54aa21639294c822f062b830f7c142e28c6f82f9e6917a026bc235559896b0f0",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-retention-v1-development-20260906/source/tests/native_body_controller_tests.cpp",
+      "before_sha256": "e2475432305f221650f46fff1b7fa3625465d1673df16b0d29f8f0d4e67e375b",
+      "current_sha256": "e2475432305f221650f46fff1b7fa3625465d1673df16b0d29f8f0d4e67e375b",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-retention-v1-development-20260906/source/tests/native_body_tests.cpp",
+      "before_sha256": "2808e06e157874ba3102b4782343e2aa89bee7eb73d149267c2167dae86f239a",
+      "current_sha256": "2808e06e157874ba3102b4782343e2aa89bee7eb73d149267c2167dae86f239a",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-retention-v1-development-20260906/source/tests/native_construction_light_tests.cpp",
+      "before_sha256": "c02dbcb06d798a19d43867f799210309f6afb1174a58cf087b88a21b7405be9d",
+      "current_sha256": "c02dbcb06d798a19d43867f799210309f6afb1174a58cf087b88a21b7405be9d",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-retention-v1-development-20260906/source/tests/native_construction_session_tests.cpp",
+      "before_sha256": "f99b4e4a63b64229054a5228f6942e74df7b7d5e3cd552d02adfb742a1ccdd45",
+      "current_sha256": "f99b4e4a63b64229054a5228f6942e74df7b7d5e3cd552d02adfb742a1ccdd45",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-retention-v1-development-20260906/source/tests/native_construction_tests.cpp",
+      "before_sha256": "b57cf3baa27c91c7374eb362fc56cbb36e1cf2a1fe8ab74020012e01580d9afa",
+      "current_sha256": "b57cf3baa27c91c7374eb362fc56cbb36e1cf2a1fe8ab74020012e01580d9afa",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-retention-v1-development-20260906/source/tests/native_contract_tests.cpp",
+      "before_sha256": "47ab041669af14de27d7c8c8b27be8e01fffe303744350f96c13de8c7a570de8",
+      "current_sha256": "47ab041669af14de27d7c8c8b27be8e01fffe303744350f96c13de8c7a570de8",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-retention-v1-development-20260906/source/tests/native_environment_tests.cpp",
+      "before_sha256": "6de36468389797e6cb113c6fbebbfc9cb13f1f2eaa4c49af94e30c3564ca49e3",
+      "current_sha256": "6de36468389797e6cb113c6fbebbfc9cb13f1f2eaa4c49af94e30c3564ca49e3",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-retention-v1-development-20260906/source/tests/native_light_learner_tests.cpp",
+      "before_sha256": "f54684621679465ab5ab52fe28ea313966d8de29cec6c20958603cd076f2407d",
+      "current_sha256": "f54684621679465ab5ab52fe28ea313966d8de29cec6c20958603cd076f2407d",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-retention-v1-development-20260906/source/tests/native_light_session_tests.cpp",
+      "before_sha256": "2424b0b181982e7131ac44710a424e9c8de0bb0eeaaa4a381b63013cf4f3e547",
+      "current_sha256": "2424b0b181982e7131ac44710a424e9c8de0bb0eeaaa4a381b63013cf4f3e547",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-retention-v1-development-20260906/source/tests/native_motion_explorer_tests.cpp",
+      "before_sha256": "69cb9cb41993f597091ef2f3ce629a9b93f0bb1643452ddd76f2f4d16b3e1fc7",
+      "current_sha256": "69cb9cb41993f597091ef2f3ce629a9b93f0bb1643452ddd76f2f4d16b3e1fc7",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-retention-v1-development-20260906/source/tests/native_playground_tests.cpp",
+      "before_sha256": "12974076a9511cee38f784815a414c85410915ef9f1b5a4420c7ff1cd1835640",
+      "current_sha256": "12974076a9511cee38f784815a414c85410915ef9f1b5a4420c7ff1cd1835640",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-retention-v1-development-20260906/source/tests/native_policy_tests.cpp",
+      "before_sha256": "680abc6223c93a94b81ec7e9f44d3b2c367618fb24d35ee6a7631e593c47fb5c",
+      "current_sha256": "680abc6223c93a94b81ec7e9f44d3b2c367618fb24d35ee6a7631e593c47fb5c",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-retention-v1-development-20260906/source/tests/native_simulation_parity_tests.cpp",
+      "before_sha256": "001a3b3bd32c9e79eff5b1f6ec83804816477a35377608eb11345ff11a7249a9",
+      "current_sha256": "001a3b3bd32c9e79eff5b1f6ec83804816477a35377608eb11345ff11a7249a9",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-retention-v1-development-20260906/source/tests/native_training_tests.cpp",
+      "before_sha256": "24b222f9fbe18dacd0eac63baacdacc11d9307d0e66457b9b769478e8f86b907",
+      "current_sha256": "24b222f9fbe18dacd0eac63baacdacc11d9307d0e66457b9b769478e8f86b907",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/reports/light-retention-v1-development-20260906/source/tools/summarize-light-retention.mjs",
+      "before_sha256": "ca019a77addcbd771fbba16ec5fb095d7901eef97aa43b84c29081155b884224",
+      "current_sha256": "ca019a77addcbd771fbba16ec5fb095d7901eef97aa43b84c29081155b884224",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/source-archives/construction-v1/SOURCE_SHA256.json",
+      "before_sha256": "dce0bbacb1fd87f129936551b4ae949255bf74d282c5e56501411f9cc9616994",
+      "current_sha256": "dce0bbacb1fd87f129936551b4ae949255bf74d282c5e56501411f9cc9616994",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/source-archives/construction-v1/include/droid/construction.hpp",
+      "before_sha256": "f4ea509b7520122b03436291c6bc5cd3b7f2fec39425e436479e8dfb4d267367",
+      "current_sha256": "f4ea509b7520122b03436291c6bc5cd3b7f2fec39425e436479e8dfb4d267367",
+      "unchanged": true,
+      "error": null
+    },
+    {
+      "path": "artifacts/source-archives/construction-v1/src/construction.cpp",
+      "before_sha256": "ceacdc64ccb25d38a8c06524d9718a480305aa264f83a8a5b8f4c225acb473ad",
+      "current_sha256": "ceacdc64ccb25d38a8c06524d9718a480305aa264f83a8a5b8f4c225acb473ad",
+      "unchanged": true,
+      "error": null
+    }
+  ],
+  "endpoints": [
+    {
+      "name": "light",
+      "method": "GET",
+      "url": "http://127.0.0.1:43117/api/light/state",
+      "route_source": "src/main.cpp:460",
+      "before_path": "build/actuation-transfer-qa/light-before.json",
+      "before_sha256": "23f9785b55f20a81030c85cff4e5dee173752bb741ba8c9a6670352b44e677d4",
+      "current_sha256": "23f9785b55f20a81030c85cff4e5dee173752bb741ba8c9a6670352b44e677d4",
+      "before_bytes": 136052,
+      "current_bytes": 136052,
+      "http_status": 200,
+      "byte_identical": true,
+      "current_status": "completed",
+      "current_elapsed_s": 120.0,
+      "error": null
+    },
+    {
+      "name": "construction",
+      "method": "GET",
+      "url": "http://127.0.0.1:43117/api/construction/state",
+      "route_source": "src/main.cpp:454",
+      "before_path": "build/actuation-transfer-qa/construction-before.json",
+      "before_sha256": "df7ca0a5f1ff9c0281d433de3d3a3caf6901e608daccb70c65a45fc81d7aa07c",
+      "current_sha256": "f1c69b536cfe88482e6036ed5dcca2985cebbf79c2c8e5f16950c375c6cd42f7",
+      "before_bytes": 82478,
+      "current_bytes": 82478,
+      "http_status": 200,
+      "byte_identical": false,
+      "current_status": "completed",
+      "current_elapsed_s": 30.0,
+      "error": null
+    }
+  ]
+}

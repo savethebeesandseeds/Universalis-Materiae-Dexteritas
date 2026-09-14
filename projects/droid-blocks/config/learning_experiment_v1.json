@@ -1,0 +1,64 @@
+{
+  "schema_version": "droid-blocks.learning-experiment.v1",
+  "scenario_profile_id": "light_search_1d_v1",
+  "assembly_id": "demo_rover_v0",
+  "control_dt_s": 0.02,
+  "max_control_steps": 1000,
+  "seed_split": {
+    "derivation_id": "balanced_light_side_splitmix64_v1",
+    "base_seed": 0,
+    "train_pairs": 16,
+    "validation_pairs": 8,
+    "test_pairs": 32
+  },
+  "policy": {
+    "architecture_id": "shared_linear_memory_v1",
+    "encoder_id": "module_set_encoder_v1",
+    "activation_id": "tanh_v1",
+    "parameter_count": 31,
+    "effort_limit": 0.6,
+    "slew_limit_per_control_step": 0.1
+  },
+  "optimizer": {
+    "algorithm_id": "cem_diagonal_v1",
+    "generations": 40,
+    "population_size": 32,
+    "elite_count": 8,
+    "train_batch_size": 8,
+    "initial_stddev": 0.35,
+    "minimum_stddev": 0.01,
+    "update_rate": 0.25,
+    "optimizer_seed": 0,
+    "sampler_id": "splitmix64_irwin_hall_12_v1",
+    "selection": "invalid_samples_then_terminations_then_vetoes_then_return",
+    "validation_selection": "best_validation_score_then_earliest_generation"
+  },
+  "heldout_acceptance": {
+    "scenario_count": 64,
+    "random_streams_per_scenario": 4,
+    "random_control_base_seed": 5927104639690624049,
+    "random_effort_limit": 0.6,
+    "random_hold_steps": 5,
+    "random_slew_limit_per_control_step": 0.1,
+    "bootstrap_method": "paired_side_stratified_percentile_v1",
+    "bootstrap_resamples": 10000,
+    "bootstrap_seed": 5786927923740624214,
+    "one_sided_lower_confidence": 0.975,
+    "multiplicity_control": "bonferroni_two_one_sided_0.025",
+    "joint_familywise_confidence": 0.95,
+    "practical_reward_rate_gain": 0.01,
+    "minimum_wins": 48,
+    "minimum_wins_per_side": 24,
+    "requirements": [
+      "learned_has_zero_terminations",
+      "learned_has_zero_safety_vetoes",
+      "learned_has_zero_invalid_samples",
+      "paired_stratified_97_5pct_one_sided_lower_bound_above_zero_vs_zero",
+      "paired_stratified_97_5pct_one_sided_lower_bound_above_zero_vs_random_mean",
+      "mean_reward_rate_gain_at_least_practical_margin_vs_both",
+      "wins_at_least_minimum_vs_both",
+      "positive_mean_delta_in_each_light_side_vs_both",
+      "wins_at_least_minimum_per_light_side_vs_both"
+    ]
+  }
+}
