@@ -1,0 +1,24 @@
+{
+  "verified_on": "2026-09-14",
+  "container": "documents-latex",
+  "container_id": "21153c3be40c5eb3eeb8857b88acafe726c8c23907f41552101e5448f57bf283",
+  "image": "debian:12-slim",
+  "source_sha256": "3242402070E41104276EA0C648CB32B1166610BB993DEEA7A2B0B8F98AE091E2",
+  "build_snapshot": "/tmp/delta-robot-summary-model-41789134600e472b8782333db8cfeda5",
+  "output_pages": 1,
+  "paper": "US Letter",
+  "format": "IEEEtran 1.8b conference, 10 point, two columns",
+  "qpdf": "passed",
+  "fonts": "embedded",
+  "latex_overfull_underfull_warnings": 0,
+  "visual_qa": "passed",
+  "pdf_sha256": "A0F75E6E5C21B168B3FF6BE2FE7EC30626BC4AA4C4ABFB1BABE3FA54441499C9",
+  "revision": "Expanded mathematical model: coupled constraints, compliance, dynamics, control and estimation; dimensions and component details removed",
+  "image_count": 2,
+  "image_files_unchanged": true,
+  "images": [
+    "018189E7F8C3DFA3DF04A55BB485AADBBB8CE3CBB8B1EE1794C26ACA4735CF2D",
+    "996B4DD5DA8B0D837FA275FA83DF2B4348607EF4C166C5ED8D6B39847054314A"
+  ],
+  "extracted_word_count": 550
+}
