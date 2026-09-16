@@ -1,0 +1,19 @@
+{
+  "verified_on": "2026-09-16",
+  "compiler": "pdfTeX-1.40.24 (TeX Live 2022/Debian)",
+  "container": "documents-latex",
+  "container_id": "21153c3be40c5eb3eeb8857b88acafe726c8c23907f41552101e5448f57bf283",
+  "image": "debian:12-slim",
+  "build_snapshot": "/tmp/humanoid-underactuated-deep-learning-cuABXU",
+  "source_sha256": "41723160CAAE26B0A5230025E29475CA5343C355E296A004E5F8497A7EB135DF",
+  "bibliography_sha256": "1B19C0EA6C5930436121B2CA57BC591DD5CD4B0312BE51BD9AAA84D296BD3943",
+  "pdf_sha256": "54E4ACCDF4C177FA60BC852B81869B2B4DC36B5B771A336CFF3066C38FD50FB5",
+  "output_pages": 1,
+  "format": "IEEEtran 1.8b conference, US Letter, 10 point, two columns, standard margins",
+  "qpdf": "passed",
+  "fonts": "embedded",
+  "latex_overfull_underfull_warnings": 0,
+  "visual_qa": "passed",
+  "content_audit": "Approved body wording, equations, citations, title and subtitle retained",
+  "python_generator_required": false
+}

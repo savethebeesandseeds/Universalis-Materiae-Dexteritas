@@ -1,0 +1,117 @@
+\input{ieee-preamble}
+\hypersetup{
+  pdftitle={Underactuated Humanoid Locomotion},
+  pdfauthor={Santiago Restrepo},
+  pdfsubject={Deep reinforcement learning method for humanoid bipedal walking},
+  pdfkeywords={humanoid, bipedal locomotion, underactuation, deep learning, PPO, sim-to-real}
+}
+
+\title{Underactuated Humanoid Locomotion}
+\author{\IEEEauthorblockN{Santiago Restrepo}
+\IEEEauthorblockA{\href{mailto:contact@waajacu.com}{contact@waajacu.com}\quad
+\url{https://waajacu.com/}\\[3pt]
+\textit{Learning-based control method for bipedal walking}}}
+\date{}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This brief proposes deep reinforcement learning for underactuated humanoid
+walking. A neural policy learns foot placement, load transfer, and whole-body
+coordination through interaction with simulated contact dynamics. Joint
+feedback executes the learned commands. The workflow combines physical
+modeling, policy training, and validation before hardware deployment; no
+robot-specific performance is assumed.
+\end{abstract}
+
+\begin{IEEEkeywords}
+Humanoid, bipedal locomotion, underactuation, deep reinforcement learning.
+\end{IEEEkeywords}
+
+\balance
+\section{Model the Floating Base and Contact}
+Assume a free-standing humanoid with $n$ actuated joints. Let $q$ denote
+configuration and $v$ generalized velocity. Between impacts, the
+floating-base dynamics are~\cite{tedrakeContact}
+\begin{equation}
+\begin{aligned}
+M(q)\dot v+h(q,v)&=B\tau+J_c^{\mathsf T}\lambda,\\
+\dot q&=N(q)v.
+\end{aligned}
+\end{equation}
+$M$ is inertia, $h$ includes gravity and velocity terms, $B$ maps joint
+torques $\tau$, and $J_c^{\mathsf T}$ maps contact forces $\lambda$; $N$
+handles orientation kinematics. The base has six unactuated directions.
+Foot contact changes the available control authority: fixed flat-foot
+support can be fully actuated in reduced coordinates.
+
+Model unilateral, nonpenetrating contact, friction limits, and impact
+velocity resets. Foot forces come from the coupled contact dynamics. The
+policy influences base momentum through joint motion and ground reaction
+forces; it must learn when to shift weight and place the next foot.
+
+\section{Connect a Neural Policy to the Motors}
+Use command $c$ = (forward speed, lateral speed, yaw rate)
+and history $H$ of IMU angular velocity, projected gravity, joint
+positions/velocities, and previous actions. A causal Transformer encodes
+this history to address partial observability~\cite{radosavovic2024}.
+\begin{equation}
+\begin{aligned}
+a_t&\sim\pi_\theta(\,\cdot\mid H_t,c_t),\\
+q_{\mathrm{des}}&=q_{\mathrm{nom}}+D\tanh(a_t),\\
+\tau&=\operatorname{sat}[K_p(q_{\mathrm{des}}-q_a)-K_dv_a].
+\end{aligned}
+\end{equation}
+$\theta$ denotes policy parameters; $D$ scales offsets about
+$q_{\mathrm{nom}}$, and $\operatorname{sat}$ applies motor torque limits.
+Joint states $q_a$, $v_a$ drive faster proportional-derivative (PD) loops.
+Match gains, action rates, and delays to the hardware.
+
+An asymmetric training critic can use simulator ground truth. The actor
+must use only deployment observations; privileged terrain or velocity
+signals must not leak into its inputs.
+
+\section{Train for Commanded Locomotion}
+Train an actor and value critic with proximal policy optimization
+(PPO)~\cite{schulman2017} in parallel physics simulations. Collect rollouts,
+estimate advantages, update the actor with PPO's clipped objective, and
+fit the critic to return targets. Optimize the expected discounted return:
+\begin{equation}
+\max_\theta J(\theta)=\mathbb E_{\pi_\theta}
+\left[\sum_{t=0}^{T-1}\gamma^t r_t\right].
+\end{equation}
+$T$ is the task horizon and $\gamma$ the discount factor; bootstrap values
+at nonterminal rollout truncations. Reward velocity/yaw tracking and
+upright locomotion; penalize falls, slip, collisions, effort, and abrupt
+action changes. Normalize terms before tuning weights. Test for shortcuts
+such as shuffling or hopping when the task calls for walking.
+
+\section{Bridge Simulation and Hardware}
+Identify link inertia, joint friction, motor response, and latency.
+Randomize mass, center of mass, ground friction, actuator strength, sensor
+noise, and delays over plausible ranges. Add pushes and a curriculum from
+standing and slow steps to turns and uneven terrain. Such
+simulation-trained policies have transferred to real
+humanoids~\cite{radosavovic2024}; transfer must be verified for the target
+robot.
+
+Freeze network weights and observation normalization for deployment. Use
+the policy mean with the same action transformation and filtering.
+Enforce actuator and command limits, monitor joint state and temperature,
+and provide an independent timeout/fall supervisor.
+
+\section{Measure What Generalizes}
+Evaluate multiple training seeds on held-out terrains, payloads,
+disturbances, and latency. Compare with a model-based walking baseline
+using fall rate, command-tracking error, slip, energy per distance, torque
+saturation, and inference time. Progress from simulation to restrained
+hardware trials and supervised walking. Report tested conditions and
+failures; a successful rollout is not a stability proof.
+
+\begingroup
+\raggedright
+\bibliographystyle{IEEEtran}
+\bibliography{references}
+\endgroup
+\end{document}

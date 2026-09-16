@@ -1,0 +1,116 @@
+\input{ieee-preamble}
+\hypersetup{
+  pdftitle={Entropy-Minimizing Optimal Control of a Helicopter},
+  pdfauthor={Santiago Restrepo},
+  pdfsubject={Proposed thermodynamic optimal-control method; one-page technical summary},
+  pdfkeywords={helicopter, entropy generation, exergy, nonlinear MPC, optimal control}
+}
+
+\title{Entropy-Minimizing Control of a Helicopter}
+\author{\IEEEauthorblockN{Santiago Restrepo}
+\IEEEauthorblockA{\href{mailto:contact@waajacu.com}{contact@waajacu.com}\quad
+\url{https://waajacu.com/}\\[3pt]
+\textit{Proposed thermodynamic optimal-control method}}}
+\date{}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This note proposes entropy-generation-minimizing control for a conventional
+helicopter near hover. A nonlinear predictive controller seeks to reduce
+irreversible losses while completing a prescribed flight task. The method
+combines coupled rotorcraft dynamics, thermodynamic loss maps, and explicit
+operating constraints; it requires vehicle-specific identification and
+closed-loop validation.
+\end{abstract}
+
+\begin{IEEEkeywords}
+Helicopter, entropy generation, exergy, nonlinear optimal control.
+\end{IEEEkeywords}
+
+\balance
+\section{Define the Mission and Dynamics}
+Specify a fixed-duration hover-to-hover maneuver, payload, flight corridor,
+and endpoint tolerances. This prevents apparent savings obtained by doing
+less work. Assume a single main rotor, a tail rotor, and governed rotor speed.
+\begin{equation}
+\begin{aligned}
+\dot{x}&=f(x,u,w),\\
+u&=[\theta_0,\theta_{1c},\theta_{1s},\theta_t]^{\mathsf T}.
+\end{aligned}
+\end{equation}
+The inputs are main collective, two cyclic pitches, and tail collective.
+State $x$ contains position, velocity, attitude, body rates, and relevant
+rotor flapping, inflow, actuator, and thermal states; $w$ represents wind.
+Identify the coupled force and moment model around trim. Include governor
+dynamics when rotor-speed transients matter.
+
+\section{Account for Physical Entropy}
+Choose a boundary covering the aircraft, propulsion, and specified wake
+relaxation. Define entropy generation rate $\sigma$ in W/K. At fixed ambient
+temperature $T_0$, destroyed exergy equals $T_0$ times generated
+entropy~\cite{philipp2024}. A component model gives
+\begin{equation}
+\begin{aligned}
+\sigma&=\sum_j P_{\mathrm{irr},j}/T_j+\sigma_{\mathrm{other}}\geq 0,\\
+P_{\mathrm{ex,dest}}&=T_0\sigma.
+\end{aligned}
+\end{equation}
+Here $P_{\mathrm{irr},j}$ is locally dissipated power at absolute temperature
+$T_j$; $\sigma_{\mathrm{other}}$ includes heat-transfer, mixing, and chemical
+or electrochemical irreversibility as applicable. Fit these terms from
+component balances and measured loss maps without double counting.
+
+Rotor-induced power initially leaves as organized wake energy. Count it as
+entropy generation only when wake relaxation is included; otherwise retain
+it as outgoing exergy. Shaft power divided by ambient temperature is
+therefore not a general entropy model. Track stored mechanical and thermal
+energy so the horizon cannot hide losses.
+
+\section{Connect Rotor Loads to the Cost}
+A near-hover power estimate for each rotor is~\cite{johnson2015}
+\begin{equation}
+P_r\approx\kappa_r F_r^{3/2}/(2\rho A_r)^{1/2}+P_{\mathrm{profile},r}.
+\end{equation}
+$F_r$ is thrust, $A_r$ disk area, $\rho$ air density, and $\kappa_r$ the
+induced-power correction. Sum main- and tail-rotor requirements and
+drivetrain losses. Use calibrated inflow and drag maps for moving flight;
+the hover relation does not cover stall or vortex-ring descent. These power
+terms feed the entropy accounting in Section~II.
+
+\section{Solve a Constrained Flight Problem}
+Discretize the dynamics over $N$ steps of duration $\Delta t$ and minimize
+total generated entropy:
+\begin{equation}
+\begin{aligned}
+\min_U\ J&=\sum_{k=0}^{N-1}\Delta t\,\sigma(x_k,u_k,w_k),\\
+x_{k+1}&=f_{\Delta t}(x_k,u_k,w_k),\\
+e_k&\in E_k,\quad x_N\in X_f,\quad(x_k,u_k,\Delta u_k)\in C.
+\end{aligned}
+\end{equation}
+$U$ is the input sequence, $x_0$ the estimated state, and $w_k$ the wind
+forecast. $E_k$ bounds tracking error; $X_f$ specifies terminal flight and
+mechanical/thermal states. $C$ limits pitch commands and rates, rotor speed,
+shaft torque/power, temperatures, attitude, clearance, and the identified
+flight envelope. Choose a terminal set compatible with a stabilizing
+controller; entropy minimization alone does not ensure stability.
+
+\section{Implement and Validate}
+First identify the model and solve offline by direct multiple shooting or
+collocation (e.g., CasADi~\cite{casadi}). Then estimate states, warm-start the
+optimization, apply its first input, and repeat as nonlinear model
+predictive control. Check feasibility and computation time; retain a
+stabilizing fallback.
+
+Compare the same maneuver with PID/LQR under wind, mass, and model errors.
+Report tracking error, integrated entropy or a declared power proxy, input
+energy, peak torque, and violations. Hover still requires positive power;
+no efficiency gain is established without these tests.
+
+\begingroup
+\raggedright
+\bibliographystyle{IEEEtran}
+\bibliography{references}
+\endgroup
+\end{document}
