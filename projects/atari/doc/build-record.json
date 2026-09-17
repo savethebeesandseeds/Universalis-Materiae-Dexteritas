@@ -1,0 +1,27 @@
+{
+  "verified_on": "2026-09-16",
+  "compiler": "pdfTeX-1.40.24 (TeX Live 2022/Debian)",
+  "container": "documents-latex",
+  "container_id": "21153c3be40c5eb3eeb8857b88acafe726c8c23907f41552101e5448f57bf283",
+  "image": "debian:12-slim",
+  "build_snapshot": "/tmp/atari-transfer-learning-dEkgSx",
+  "source_sha256": "B487E0E6999D9FA73E444A8F988CF032C94FFDD8F048BA12CCDAF9A5235482F4",
+  "bibliography_sha256": "65C4C9DFD475F8ADC39E8DBD3139FEDBED0294A0099C7FE24BF20D981CDB68AA",
+  "pdf_sha256": "66EF77BA2888824C7FBBDA5F8990F36BA8885F962841F9EEA30E06C017DC3869",
+  "output_pages": 1,
+  "format": "IEEEtran 1.8b conference, US Letter, 10 point, two columns, standard margins",
+  "qpdf": "passed",
+  "fonts": "11 embedded fonts",
+  "latex_layout_warnings": [
+    "Column balancing reports a 1.24397pt overfull vbox; visual inspection confirms no clipping or overlap."
+  ],
+  "text_bounds_points": [
+    48.96,
+    52.39,
+    563.04,
+    715.5
+  ],
+  "visual_qa": "passed",
+  "content_audit": "Shared policy and single frozen deployment checkpoint; held-out transfer and retention; per-game success criteria; no claimed training results",
+  "python_generator_required": false
+}

@@ -1,2 +1,3 @@
 /build/
-*.synctex.gz
+/artifacts/runtime-inspection.json
+/tmp_casadi_compiler_shell*.so

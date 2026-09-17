@@ -1,2 +1,6 @@
-/build/
-*.synctex.gz
+runtime/*.tar.gz
+runtime/*.zip
+runtime/unitree_rl_gym/
+runs/
+artifacts/
+build/

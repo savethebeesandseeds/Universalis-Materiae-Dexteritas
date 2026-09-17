@@ -1,0 +1,1604 @@
+{
+  "captured_at_utc": "2026-09-17T11:51:37.4018852Z",
+  "model_source_sha256": "076fba9b8d055319bac2e8679e8bdad80547a45cd54298ad6cdd38a4ed8bc7f4",
+  "evaluator_source_sha256": "759fda0aa1c2a6f1c6967f88dd46e55c06361c4ab440d61b86e9028aad54e162",
+  "native_output": {
+    "path": "build/native/optimizer-margin.json",
+    "sha256": "674b9be0e41099aa8a3fe70bed77c662b3d5ce71bc2e270e29c9dd4831cbfbb1",
+    "last_write_time_utc": "2026-09-17T11:22:34.4816919Z",
+    "bytes": 40085
+  },
+  "provenance_binding": "Associated with the source-matched final evaluation after relevant-source/output timestamp checks; this native output does not embed a source fingerprint.",
+  "capture_scope": "Existing output preserved; capture does not rerun the executable or infer a process exit code.",
+  "report": {
+    "first_action_independent_physical_violation": 0.0,
+    "landing_support_counted_separately": true,
+    "landing_support_diagnostics": {
+      "accepted": false,
+      "accepted_solves": 1,
+      "action_difference_norm": null,
+      "applied_controller": "pid_landing_support",
+      "available": true,
+      "control_decisions": 3,
+      "control_interval_ms": 100.0,
+      "converged": false,
+      "dynamics_residual": null,
+      "fallback": true,
+      "fallback_reason": "Planned PID landing support; skid contact lies outside the free-flight optimizer model",
+      "fallback_solves": 1,
+      "initial_guess_constraint_violation": null,
+      "intermediate_physical_violation": null,
+      "intermediate_planning_violation": null,
+      "iterations": 0,
+      "landing_support_decisions": 1,
+      "max_constraint_violation": null,
+      "objective_check_error": null,
+      "objective_j_per_k": null,
+      "objective_reduction_j_per_k": null,
+      "observation_hold_decisions": 0,
+      "optimizer_attempted": false,
+      "prediction": [],
+      "rejected_candidate_retained_for_warm_start": false,
+      "seed_constraint_violation": null,
+      "seed_objective_j_per_k": null,
+      "solve_ms": 0.0,
+      "solves": 2,
+      "status": "landing_support",
+      "time": 10.1,
+      "warm_start": false,
+      "warm_start_plan_time": null,
+      "warm_start_shift_steps": null,
+      "warm_start_source": "none",
+      "within_control_interval": true
+    },
+    "mass_scaled_attempts": [
+      {
+        "accepted": true,
+        "accepted_solves": 1,
+        "action_difference_norm": 0.0597657404590749,
+        "applied_controller": "entropy_nmpc",
+        "available": true,
+        "control_decisions": 1,
+        "control_interval_ms": 100.0,
+        "converged": true,
+        "dynamics_residual": 1.307098550923369E-08,
+        "fallback": false,
+        "fallback_reason": "",
+        "fallback_solves": 0,
+        "initial_guess_constraint_violation": 2.842170943040401E-15,
+        "intermediate_physical_violation": 0.0,
+        "intermediate_planning_violation": 0.0,
+        "iterations": 81,
+        "landing_support_decisions": 0,
+        "max_constraint_violation": 3.419506122703808E-09,
+        "model_mass_scale": 0.8,
+        "objective_check_error": 8.237299731206349E-12,
+        "objective_j_per_k": 0.941816714314083,
+        "objective_reduction_j_per_k": 0.010887073069153375,
+        "observation_hold_decisions": 0,
+        "optimizer_attempted": true,
+        "prediction": [
+          {
+            "position": [
+              0.0,
+              0.0,
+              2.5
+            ],
+            "temperature_k": [
+              293.15,
+              293.15
+            ],
+            "time": 10.0
+          },
+          {
+            "position": [
+              7.091105402408542E-05,
+              -0.0005506005251113586,
+              2.499824086654382
+            ],
+            "temperature_k": [
+              293.1617028424101,
+              293.1539310575718
+            ],
+            "time": 10.1
+          },
+          {
+            "position": [
+              0.0005048654902482584,
+              4.259543575074E-05,
+              2.5095594099790537
+            ],
+            "temperature_k": [
+              293.17614822877977,
+              293.15752990765543
+            ],
+            "time": 10.2
+          },
+          {
+            "position": [
+              0.0003470475346892121,
+              0.0019372219056622163,
+              2.5293710445492557
+            ],
+            "temperature_k": [
+              293.18612656268556,
+              293.1614379069201
+            ],
+            "time": 10.3
+          },
+          {
+            "position": [
+              -0.0008221109699805612,
+              -0.0002070531667356181,
+              2.5263520855443864
+            ],
+            "temperature_k": [
+              293.1983827247119,
+              293.16503484336016
+            ],
+            "time": 10.4
+          },
+          {
+            "position": [
+              -0.0036334104286992936,
+              -0.004033235107625236,
+              2.5474860450739216
+            ],
+            "temperature_k": [
+              293.2125176541065,
+              293.16897300193654
+            ],
+            "time": 10.5
+          },
+          {
+            "position": [
+              -0.006253621385950914,
+              -0.01114102875707208,
+              2.568823709662367
+            ],
+            "temperature_k": [
+              293.222275062081,
+              293.17235420914875
+            ],
+            "time": 10.6
+          },
+          {
+            "position": [
+              -0.007539780554209436,
+              -0.01829837071966673,
+              2.5747507307675246
+            ],
+            "temperature_k": [
+              293.2356949970061,
+              293.17610317377614
+            ],
+            "time": 10.7
+          },
+          {
+            "position": [
+              -0.006338981034947111,
+              -0.02385892933840457,
+              2.5973668762082354
+            ],
+            "temperature_k": [
+              293.2466164398483,
+              293.179489228648
+            ],
+            "time": 10.8
+          },
+          {
+            "position": [
+              -0.004116052241383686,
+              -0.02701244984166884,
+              2.60754291811459
+            ],
+            "temperature_k": [
+              293.2597857791373,
+              293.1832799896543
+            ],
+            "time": 10.9
+          },
+          {
+            "position": [
+              -0.0016562392979043363,
+              -0.029379934824969384,
+              2.629542813132879
+            ],
+            "temperature_k": [
+              293.2701668795561,
+              293.1867243361895
+            ],
+            "time": 11.0
+          },
+          {
+            "position": [
+              0.0001748449823716871,
+              -0.032261289687983946,
+              2.635580363105911
+            ],
+            "temperature_k": [
+              293.28303435969605,
+              293.1906342080251
+            ],
+            "time": 11.1
+          },
+          {
+            "position": [
+              0.0011447733685040144,
+              -0.0378438672093587,
+              2.653613805734204
+            ],
+            "temperature_k": [
+              293.29335802699427,
+              293.1941164878662
+            ],
+            "time": 11.2
+          },
+          {
+            "position": [
+              0.0020929046434115177,
+              -0.044983810713228496,
+              2.6560184880674242
+            ],
+            "temperature_k": [
+              293.3061986983733,
+              293.1977517116524
+            ],
+            "time": 11.3
+          },
+          {
+            "position": [
+              0.0032763145583677732,
+              -0.051852550119821136,
+              2.6704836392226388
+            ],
+            "temperature_k": [
+              293.3165206266291,
+              293.20094043650516
+            ],
+            "time": 11.4
+          },
+          {
+            "position": [
+              0.004504063879431596,
+              -0.0577949756802374,
+              2.6682320504348276
+            ],
+            "temperature_k": [
+              293.32906227922524,
+              293.2044297452029
+            ],
+            "time": 11.5
+          },
+          {
+            "position": [
+              0.006171068945403232,
+              -0.06369359521735725,
+              2.6742137933845953
+            ],
+            "temperature_k": [
+              293.3390053799756,
+              293.20760097438966
+            ],
+            "time": 11.6
+          },
+          {
+            "position": [
+              0.007111604936107087,
+              -0.06938442658738625,
+              2.661028228630514
+            ],
+            "temperature_k": [
+              293.3511909479897,
+              293.21108251357356
+            ],
+            "time": 11.7
+          },
+          {
+            "position": [
+              0.00809735503048216,
+              -0.07855172689271157,
+              2.655412322363044
+            ],
+            "temperature_k": [
+              293.360873155896,
+              293.21447374360287
+            ],
+            "time": 11.8
+          },
+          {
+            "position": [
+              0.009886216075102238,
+              -0.08976952454863556,
+              2.624409594824778
+            ],
+            "temperature_k": [
+              293.37155916622766,
+              293.21788409758693
+            ],
+            "time": 11.9
+          },
+          {
+            "position": [
+              0.012442841850012713,
+              -0.09999955283004104,
+              2.5999999989633054
+            ],
+            "temperature_k": [
+              293.3828818974886,
+              293.22132033785454
+            ],
+            "time": 12.0
+          }
+        ],
+        "rejected_candidate_retained_for_warm_start": false,
+        "seed_constraint_violation": 2.842170943040401E-15,
+        "seed_objective_j_per_k": 0.9527037873832364,
+        "solve_ms": 2200.455368,
+        "solves": 1,
+        "status": "Solve_Succeeded",
+        "time": 10.0,
+        "warm_start": false,
+        "warm_start_plan_time": null,
+        "warm_start_shift_steps": null,
+        "warm_start_source": "none",
+        "within_control_interval": false
+      },
+      {
+        "accepted": true,
+        "accepted_solves": 1,
+        "action_difference_norm": 0.0837943368759612,
+        "applied_controller": "entropy_nmpc",
+        "available": true,
+        "control_decisions": 1,
+        "control_interval_ms": 100.0,
+        "converged": true,
+        "dynamics_residual": 6.314336831181322E-10,
+        "fallback": false,
+        "fallback_reason": "",
+        "fallback_solves": 0,
+        "initial_guess_constraint_violation": 2.842170943040401E-15,
+        "intermediate_physical_violation": 0.0,
+        "intermediate_planning_violation": 0.0,
+        "iterations": 50,
+        "landing_support_decisions": 0,
+        "max_constraint_violation": 4.1001326778200566E-10,
+        "model_mass_scale": 1.2,
+        "objective_check_error": 3.3668623444782497E-12,
+        "objective_j_per_k": 1.2651778759419714,
+        "objective_reduction_j_per_k": 0.01892496557158707,
+        "observation_hold_decisions": 0,
+        "optimizer_attempted": true,
+        "prediction": [
+          {
+            "position": [
+              0.0,
+              0.0,
+              2.5
+            ],
+            "temperature_k": [
+              293.15,
+              293.15
+            ],
+            "time": 10.0
+          },
+          {
+            "position": [
+              0.00011674504897640542,
+              -5.6013850168106874E-05,
+              2.5067877213464262
+            ],
+            "temperature_k": [
+              293.17144904889153,
+              293.15453173175797
+            ],
+            "time": 10.1
+          },
+          {
+            "position": [
+              0.00081454365371234,
+              0.0012922584913515579,
+              2.522903121733154
+            ],
+            "temperature_k": [
+              293.1874654201202,
+              293.15845292783524
+            ],
+            "time": 10.2
+          },
+          {
+            "position": [
+              0.0007854791140685567,
+              0.0028304860279949324,
+              2.5301432202311225
+            ],
+            "temperature_k": [
+              293.2076357076331,
+              293.16298943422424
+            ],
+            "time": 10.3
+          },
+          {
+            "position": [
+              -0.0011302976132739708,
+              0.0011162371759978421,
+              2.549958432839939
+            ],
+            "temperature_k": [
+              293.224292929309,
+              293.1670156651667
+            ],
+            "time": 10.4
+          },
+          {
+            "position": [
+              -0.004027684599145975,
+              -0.0038276580254782543,
+              2.561831437235354
+            ],
+            "temperature_k": [
+              293.2443264235733,
+              293.1713420773185
+            ],
+            "time": 10.5
+          },
+          {
+            "position": [
+              -0.006599924480828991,
+              -0.01160807753780292,
+              2.5847019915211336
+            ],
+            "temperature_k": [
+              293.2606962689587,
+              293.17502781050916
+            ],
+            "time": 10.6
+          },
+          {
+            "position": [
+              -0.007745960626019212,
+              -0.019036648044633963,
+              2.598176427737602
+            ],
+            "temperature_k": [
+              293.2805561806459,
+              293.1790568317469
+            ],
+            "time": 10.7
+          },
+          {
+            "position": [
+              -0.006660315824978894,
+              -0.024506317811753123,
+              2.621922172187919
+            ],
+            "temperature_k": [
+              293.29686681424454,
+              293.18267575128465
+            ],
+            "time": 10.8
+          },
+          {
+            "position": [
+              -0.004646478160820071,
+              -0.027482504533054165,
+              2.6354391040646195
+            ],
+            "temperature_k": [
+              293.31619111685774,
+              293.18681953384726
+            ],
+            "time": 10.9
+          },
+          {
+            "position": [
+              -0.0024872392761761905,
+              -0.029901756846541436,
+              2.656984739235905
+            ],
+            "temperature_k": [
+              293.33174293500883,
+              293.19072714566363
+            ],
+            "time": 11.0
+          },
+          {
+            "position": [
+              -0.0009072113051235913,
+              -0.03320871189600646,
+              2.6662843742643263
+            ],
+            "temperature_k": [
+              293.3504874412475,
+              293.1950486435016
+            ],
+            "time": 11.1
+          },
+          {
+            "position": [
+              -0.00013267004167455345,
+              -0.03854423920526592,
+              2.682982646228969
+            ],
+            "temperature_k": [
+              293.3657875457579,
+              293.1988305993805
+            ],
+            "time": 11.2
+          },
+          {
+            "position": [
+              0.0005268362040538905,
+              -0.04503864624678958,
+              2.686913593506489
+            ],
+            "temperature_k": [
+              293.3843166851014,
+              293.20269472292256
+            ],
+            "time": 11.3
+          },
+          {
+            "position": [
+              0.0013606279942951418,
+              -0.0511559048764819,
+              2.697611315842724
+            ],
+            "temperature_k": [
+              293.3994553518527,
+              293.2059761929341
+            ],
+            "time": 11.4
+          },
+          {
+            "position": [
+              0.0021686120938233205,
+              -0.0562944346466999,
+              2.6943798389813076
+            ],
+            "temperature_k": [
+              293.41743662590477,
+              293.20958311700514
+            ],
+            "time": 11.5
+          },
+          {
+            "position": [
+              0.0033387350457717555,
+              -0.061846846411870236,
+              2.6951942371144506
+            ],
+            "temperature_k": [
+              293.4319160351016,
+              293.2128752177659
+            ],
+            "time": 11.6
+          },
+          {
+            "position": [
+              0.004074218080686,
+              -0.0680553336470821,
+              2.6794768245017
+            ],
+            "temperature_k": [
+              293.44884468954774,
+              293.21657053887543
+            ],
+            "time": 11.7
+          },
+          {
+            "position": [
+              0.005007194858808699,
+              -0.07802546872180095,
+              2.6645178709371695
+            ],
+            "temperature_k": [
+              293.4622609857013,
+              293.2202089594466
+            ],
+            "time": 11.8
+          },
+          {
+            "position": [
+              0.006551269298336591,
+              -0.0898447615543748,
+              2.6284401329361295
+            ],
+            "temperature_k": [
+              293.47752190611106,
+              293.2238464391183
+            ],
+            "time": 11.9
+          },
+          {
+            "position": [
+              0.008390070369597944,
+              -0.09999994238163687,
+              2.5999999994240706
+            ],
+            "temperature_k": [
+              293.49543947971495,
+              293.22757171303124
+            ],
+            "time": 12.0
+          }
+        ],
+        "rejected_candidate_retained_for_warm_start": false,
+        "seed_constraint_violation": 2.842170943040401E-15,
+        "seed_objective_j_per_k": 1.2841028415135585,
+        "solve_ms": 1212.443595,
+        "solves": 1,
+        "status": "Solve_Succeeded",
+        "time": 10.0,
+        "warm_start": false,
+        "warm_start_plan_time": null,
+        "warm_start_shift_steps": null,
+        "warm_start_source": "none",
+        "within_control_interval": false
+      }
+    ],
+    "mass_scaled_derivatives_verified": true,
+    "nominal_attempts": [
+      {
+        "accepted": true,
+        "accepted_solves": 1,
+        "action_difference_norm": 0.06878908716828652,
+        "applied_controller": "entropy_nmpc",
+        "available": true,
+        "control_decisions": 1,
+        "control_interval_ms": 100.0,
+        "converged": true,
+        "dynamics_residual": 1.4070197063009715E-08,
+        "fallback": false,
+        "fallback_reason": "",
+        "fallback_solves": 0,
+        "initial_guess_constraint_violation": 2.842170943040401E-15,
+        "intermediate_physical_violation": 0.0,
+        "intermediate_planning_violation": 0.0,
+        "iterations": 99,
+        "landing_support_decisions": 0,
+        "max_constraint_violation": 7.616114228170546E-09,
+        "model_mass_scale": 1.0,
+        "objective_check_error": 2.935607312792854E-11,
+        "objective_j_per_k": 1.0940827584050075,
+        "objective_reduction_j_per_k": 0.014468619676371697,
+        "observation_hold_decisions": 0,
+        "optimizer_attempted": true,
+        "prediction": [
+          {
+            "position": [
+              0.0,
+              0.0,
+              2.5
+            ],
+            "temperature_k": [
+              293.15,
+              293.15
+            ],
+            "time": 10.0
+          },
+          {
+            "position": [
+              7.69058851040311E-05,
+              -0.00032295673660238456,
+              2.5006109600450532
+            ],
+            "temperature_k": [
+              293.1645303206567,
+              293.154125672216
+            ],
+            "time": 10.1
+          },
+          {
+            "position": [
+              0.000538798028675289,
+              0.0007347184078865728,
+              2.510543588728458
+            ],
+            "temperature_k": [
+              293.1821800521195,
+              293.1579831340206
+            ],
+            "time": 10.2
+          },
+          {
+            "position": [
+              0.00029383194191659923,
+              0.002955276650370827,
+              2.52919533393076
+            ],
+            "temperature_k": [
+              293.1946128723511,
+              293.1620176499193
+            ],
+            "time": 10.3
+          },
+          {
+            "position": [
+              -0.001268004886918174,
+              0.0015741969519753923,
+              2.531763118274029
+            ],
+            "temperature_k": [
+              293.21002946828384,
+              293.1659326471686
+            ],
+            "time": 10.4
+          },
+          {
+            "position": [
+              -0.004436171661939638,
+              -0.002728895928302188,
+              2.553331220442852
+            ],
+            "temperature_k": [
+              293.2263947144214,
+              293.16993616298566
+            ],
+            "time": 10.5
+          },
+          {
+            "position": [
+              -0.007391194186667905,
+              -0.010194915567706736,
+              2.571648026256479
+            ],
+            "temperature_k": [
+              293.23889083463234,
+              293.17354795287537
+            ],
+            "time": 10.6
+          },
+          {
+            "position": [
+              -0.008743748254048833,
+              -0.017820976782863103,
+              2.5844677963117983
+            ],
+            "temperature_k": [
+              293.2557658245014,
+              293.17737702424097
+            ],
+            "time": 10.7
+          },
+          {
+            "position": [
+              -0.007728471303772418,
+              -0.023075567957711835,
+              2.609136860289779
+            ],
+            "temperature_k": [
+              293.2687547306642,
+              293.1808199078737
+            ],
+            "time": 10.8
+          },
+          {
+            "position": [
+              -0.005650961328919716,
+              -0.02610268247382266,
+              2.620488102353747
+            ],
+            "temperature_k": [
+              293.28461696039506,
+              293.18480999018
+            ],
+            "time": 10.9
+          },
+          {
+            "position": [
+              -0.0033694823081870367,
+              -0.028516335219193084,
+              2.6422829235456518
+            ],
+            "temperature_k": [
+              293.29746180538234,
+              293.18841696434197
+            ],
+            "time": 11.0
+          },
+          {
+            "position": [
+              -0.0017862110270889277,
+              -0.03152359743153555,
+              2.651109074934428
+            ],
+            "temperature_k": [
+              293.3130285642005,
+              293.19253454261496
+            ],
+            "time": 11.1
+          },
+          {
+            "position": [
+              -0.0010199180836110483,
+              -0.03711399319817448,
+              2.6689918596246978
+            ],
+            "temperature_k": [
+              293.32552793491175,
+              293.19616767759254
+            ],
+            "time": 11.2
+          },
+          {
+            "position": [
+              -0.0003724381698783511,
+              -0.04406178932977809,
+              2.6725719121797393
+            ],
+            "temperature_k": [
+              293.3409356855383,
+              293.19990225288745
+            ],
+            "time": 11.3
+          },
+          {
+            "position": [
+              0.0004554349561776789,
+              -0.05068351070317584,
+              2.685287996657785
+            ],
+            "temperature_k": [
+              293.35344939216566,
+              293.20313221111826
+            ],
+            "time": 11.4
+          },
+          {
+            "position": [
+              0.0012718386168092143,
+              -0.05627788014324003,
+              2.682984422621142
+            ],
+            "temperature_k": [
+              293.3684418932241,
+              293.20667552363466
+            ],
+            "time": 11.5
+          },
+          {
+            "position": [
+              0.0024645357544196534,
+              -0.0620111558122293,
+              2.6862407459056095
+            ],
+            "temperature_k": [
+              293.38038448686865,
+              293.2098973395322
+            ],
+            "time": 11.6
+          },
+          {
+            "position": [
+              0.003056224968295426,
+              -0.06797867512316172,
+              2.671753239529898
+            ],
+            "temperature_k": [
+              293.39475787521167,
+              293.2134670885687
+            ],
+            "time": 11.7
+          },
+          {
+            "position": [
+              0.0037649887095499014,
+              -0.0777329195312086,
+              2.661310801373539
+            ],
+            "temperature_k": [
+              293.40619831691146,
+              293.2169724216742
+            ],
+            "time": 11.8
+          },
+          {
+            "position": [
+              0.005158695752966023,
+              -0.08953711523692733,
+              2.6276240960798383
+            ],
+            "temperature_k": [
+              293.41871962762866,
+              293.2204848847129
+            ],
+            "time": 11.9
+          },
+          {
+            "position": [
+              0.007037354970588024,
+              -0.09999987794099752,
+              2.5999999990985803
+            ],
+            "temperature_k": [
+              293.4330044373561,
+              293.2240528077077
+            ],
+            "time": 12.0
+          }
+        ],
+        "rejected_candidate_retained_for_warm_start": false,
+        "seed_constraint_violation": 2.842170943040401E-15,
+        "seed_objective_j_per_k": 1.1085513780813792,
+        "solve_ms": 2706.451729,
+        "solves": 1,
+        "status": "Solve_Succeeded",
+        "time": 10.0,
+        "warm_start": false,
+        "warm_start_plan_time": null,
+        "warm_start_shift_steps": null,
+        "warm_start_source": "none",
+        "within_control_interval": false
+      }
+    ],
+    "observation_hold_counted_separately": true,
+    "observation_hold_diagnostics": {
+      "accepted": false,
+      "accepted_solves": 0,
+      "action_difference_norm": null,
+      "applied_controller": "trim_observation_hold",
+      "available": true,
+      "control_decisions": 1,
+      "control_interval_ms": 100.0,
+      "converged": false,
+      "dynamics_residual": null,
+      "fallback": true,
+      "fallback_reason": "Prepared trim is held for one causal observation interval before optimization",
+      "fallback_solves": 0,
+      "initial_guess_constraint_violation": null,
+      "intermediate_physical_violation": null,
+      "intermediate_planning_violation": null,
+      "iterations": 0,
+      "landing_support_decisions": 0,
+      "max_constraint_violation": null,
+      "objective_check_error": null,
+      "objective_j_per_k": null,
+      "objective_reduction_j_per_k": null,
+      "observation_hold_decisions": 1,
+      "optimizer_attempted": false,
+      "prediction": [],
+      "rejected_candidate_retained_for_warm_start": false,
+      "seed_constraint_violation": null,
+      "seed_objective_j_per_k": null,
+      "solve_ms": 0.0,
+      "solves": 0,
+      "status": "observation_hold",
+      "time": 0.0,
+      "warm_start": false,
+      "warm_start_plan_time": null,
+      "warm_start_shift_steps": null,
+      "warm_start_source": "none",
+      "within_control_interval": true
+    },
+    "overtemperature_diagnostics": {
+      "accepted": false,
+      "accepted_solves": 1,
+      "action_difference_norm": 0.0,
+      "applied_controller": "pid_fallback",
+      "available": true,
+      "control_decisions": 2,
+      "control_interval_ms": 100.0,
+      "converged": false,
+      "dynamics_residual": 7.317697448826519,
+      "fallback": true,
+      "fallback_reason": "Independently checked constraints or dynamics failed",
+      "fallback_solves": 1,
+      "initial_guess_constraint_violation": 2.4465350234923506,
+      "intermediate_physical_violation": 2.4465233461134215,
+      "intermediate_planning_violation": 0.0,
+      "iterations": 150,
+      "landing_support_decisions": 0,
+      "max_constraint_violation": 7.317697318538029,
+      "model_mass_scale": 1.0,
+      "objective_check_error": 22.941414952433753,
+      "objective_j_per_k": 26.950553041119143,
+      "objective_reduction_j_per_k": -0.03673610286946172,
+      "observation_hold_decisions": 0,
+      "optimizer_attempted": true,
+      "prediction": [],
+      "rejected_candidate_retained_for_warm_start": false,
+      "seed_constraint_violation": 2.4465350234923506,
+      "seed_objective_j_per_k": 26.91381693824968,
+      "solve_ms": 3738.736786,
+      "solves": 2,
+      "status": "Maximum_Iterations_Exceeded",
+      "time": 10.0,
+      "warm_start": false,
+      "warm_start_plan_time": null,
+      "warm_start_shift_steps": null,
+      "warm_start_source": "none",
+      "within_control_interval": false
+    },
+    "overtemperature_rejected": true,
+    "passed": true,
+    "post_reset_diagnostics": {
+      "accepted": true,
+      "accepted_solves": 1,
+      "action_difference_norm": 0.06878908716828652,
+      "applied_controller": "entropy_nmpc",
+      "available": true,
+      "control_decisions": 1,
+      "control_interval_ms": 100.0,
+      "converged": true,
+      "dynamics_residual": 1.4070197063009715E-08,
+      "fallback": false,
+      "fallback_reason": "",
+      "fallback_solves": 0,
+      "initial_guess_constraint_violation": 2.842170943040401E-15,
+      "intermediate_physical_violation": 0.0,
+      "intermediate_planning_violation": 0.0,
+      "iterations": 99,
+      "landing_support_decisions": 0,
+      "max_constraint_violation": 7.616114228170546E-09,
+      "model_mass_scale": 1.0,
+      "objective_check_error": 2.935607312792854E-11,
+      "objective_j_per_k": 1.0940827584050075,
+      "objective_reduction_j_per_k": 0.014468619676371697,
+      "observation_hold_decisions": 0,
+      "optimizer_attempted": true,
+      "prediction": [
+        {
+          "position": [
+            0.0,
+            0.0,
+            2.5
+          ],
+          "temperature_k": [
+            293.15,
+            293.15
+          ],
+          "time": 10.0
+        },
+        {
+          "position": [
+            7.69058851040311E-05,
+            -0.00032295673660238456,
+            2.5006109600450532
+          ],
+          "temperature_k": [
+            293.1645303206567,
+            293.154125672216
+          ],
+          "time": 10.1
+        },
+        {
+          "position": [
+            0.000538798028675289,
+            0.0007347184078865728,
+            2.510543588728458
+          ],
+          "temperature_k": [
+            293.1821800521195,
+            293.1579831340206
+          ],
+          "time": 10.2
+        },
+        {
+          "position": [
+            0.00029383194191659923,
+            0.002955276650370827,
+            2.52919533393076
+          ],
+          "temperature_k": [
+            293.1946128723511,
+            293.1620176499193
+          ],
+          "time": 10.3
+        },
+        {
+          "position": [
+            -0.001268004886918174,
+            0.0015741969519753923,
+            2.531763118274029
+          ],
+          "temperature_k": [
+            293.21002946828384,
+            293.1659326471686
+          ],
+          "time": 10.4
+        },
+        {
+          "position": [
+            -0.004436171661939638,
+            -0.002728895928302188,
+            2.553331220442852
+          ],
+          "temperature_k": [
+            293.2263947144214,
+            293.16993616298566
+          ],
+          "time": 10.5
+        },
+        {
+          "position": [
+            -0.007391194186667905,
+            -0.010194915567706736,
+            2.571648026256479
+          ],
+          "temperature_k": [
+            293.23889083463234,
+            293.17354795287537
+          ],
+          "time": 10.6
+        },
+        {
+          "position": [
+            -0.008743748254048833,
+            -0.017820976782863103,
+            2.5844677963117983
+          ],
+          "temperature_k": [
+            293.2557658245014,
+            293.17737702424097
+          ],
+          "time": 10.7
+        },
+        {
+          "position": [
+            -0.007728471303772418,
+            -0.023075567957711835,
+            2.609136860289779
+          ],
+          "temperature_k": [
+            293.2687547306642,
+            293.1808199078737
+          ],
+          "time": 10.8
+        },
+        {
+          "position": [
+            -0.005650961328919716,
+            -0.02610268247382266,
+            2.620488102353747
+          ],
+          "temperature_k": [
+            293.28461696039506,
+            293.18480999018
+          ],
+          "time": 10.9
+        },
+        {
+          "position": [
+            -0.0033694823081870367,
+            -0.028516335219193084,
+            2.6422829235456518
+          ],
+          "temperature_k": [
+            293.29746180538234,
+            293.18841696434197
+          ],
+          "time": 11.0
+        },
+        {
+          "position": [
+            -0.0017862110270889277,
+            -0.03152359743153555,
+            2.651109074934428
+          ],
+          "temperature_k": [
+            293.3130285642005,
+            293.19253454261496
+          ],
+          "time": 11.1
+        },
+        {
+          "position": [
+            -0.0010199180836110483,
+            -0.03711399319817448,
+            2.6689918596246978
+          ],
+          "temperature_k": [
+            293.32552793491175,
+            293.19616767759254
+          ],
+          "time": 11.2
+        },
+        {
+          "position": [
+            -0.0003724381698783511,
+            -0.04406178932977809,
+            2.6725719121797393
+          ],
+          "temperature_k": [
+            293.3409356855383,
+            293.19990225288745
+          ],
+          "time": 11.3
+        },
+        {
+          "position": [
+            0.0004554349561776789,
+            -0.05068351070317584,
+            2.685287996657785
+          ],
+          "temperature_k": [
+            293.35344939216566,
+            293.20313221111826
+          ],
+          "time": 11.4
+        },
+        {
+          "position": [
+            0.0012718386168092143,
+            -0.05627788014324003,
+            2.682984422621142
+          ],
+          "temperature_k": [
+            293.3684418932241,
+            293.20667552363466
+          ],
+          "time": 11.5
+        },
+        {
+          "position": [
+            0.0024645357544196534,
+            -0.0620111558122293,
+            2.6862407459056095
+          ],
+          "temperature_k": [
+            293.38038448686865,
+            293.2098973395322
+          ],
+          "time": 11.6
+        },
+        {
+          "position": [
+            0.003056224968295426,
+            -0.06797867512316172,
+            2.671753239529898
+          ],
+          "temperature_k": [
+            293.39475787521167,
+            293.2134670885687
+          ],
+          "time": 11.7
+        },
+        {
+          "position": [
+            0.0037649887095499014,
+            -0.0777329195312086,
+            2.661310801373539
+          ],
+          "temperature_k": [
+            293.40619831691146,
+            293.2169724216742
+          ],
+          "time": 11.8
+        },
+        {
+          "position": [
+            0.005158695752966023,
+            -0.08953711523692733,
+            2.6276240960798383
+          ],
+          "temperature_k": [
+            293.41871962762866,
+            293.2204848847129
+          ],
+          "time": 11.9
+        },
+        {
+          "position": [
+            0.007037354970588024,
+            -0.09999987794099752,
+            2.5999999990985803
+          ],
+          "temperature_k": [
+            293.4330044373561,
+            293.2240528077077
+          ],
+          "time": 12.0
+        }
+      ],
+      "rejected_candidate_retained_for_warm_start": false,
+      "seed_constraint_violation": 2.842170943040401E-15,
+      "seed_objective_j_per_k": 1.1085513780813792,
+      "solve_ms": 2605.450667,
+      "solves": 1,
+      "status": "Solve_Succeeded",
+      "time": 10.0,
+      "warm_start": false,
+      "warm_start_plan_time": null,
+      "warm_start_shift_steps": null,
+      "warm_start_source": "none",
+      "within_control_interval": false
+    },
+    "reset_counters_correct": true,
+    "selected_nominal": {
+      "accepted": true,
+      "accepted_solves": 1,
+      "action_difference_norm": 0.06878908716828652,
+      "applied_controller": "entropy_nmpc",
+      "available": true,
+      "control_decisions": 1,
+      "control_interval_ms": 100.0,
+      "converged": true,
+      "dynamics_residual": 1.4070197063009715E-08,
+      "fallback": false,
+      "fallback_reason": "",
+      "fallback_solves": 0,
+      "initial_guess_constraint_violation": 2.842170943040401E-15,
+      "intermediate_physical_violation": 0.0,
+      "intermediate_planning_violation": 0.0,
+      "iterations": 99,
+      "landing_support_decisions": 0,
+      "max_constraint_violation": 7.616114228170546E-09,
+      "model_mass_scale": 1.0,
+      "objective_check_error": 2.935607312792854E-11,
+      "objective_j_per_k": 1.0940827584050075,
+      "objective_reduction_j_per_k": 0.014468619676371697,
+      "observation_hold_decisions": 0,
+      "optimizer_attempted": true,
+      "prediction": [
+        {
+          "position": [
+            0.0,
+            0.0,
+            2.5
+          ],
+          "temperature_k": [
+            293.15,
+            293.15
+          ],
+          "time": 10.0
+        },
+        {
+          "position": [
+            7.69058851040311E-05,
+            -0.00032295673660238456,
+            2.5006109600450532
+          ],
+          "temperature_k": [
+            293.1645303206567,
+            293.154125672216
+          ],
+          "time": 10.1
+        },
+        {
+          "position": [
+            0.000538798028675289,
+            0.0007347184078865728,
+            2.510543588728458
+          ],
+          "temperature_k": [
+            293.1821800521195,
+            293.1579831340206
+          ],
+          "time": 10.2
+        },
+        {
+          "position": [
+            0.00029383194191659923,
+            0.002955276650370827,
+            2.52919533393076
+          ],
+          "temperature_k": [
+            293.1946128723511,
+            293.1620176499193
+          ],
+          "time": 10.3
+        },
+        {
+          "position": [
+            -0.001268004886918174,
+            0.0015741969519753923,
+            2.531763118274029
+          ],
+          "temperature_k": [
+            293.21002946828384,
+            293.1659326471686
+          ],
+          "time": 10.4
+        },
+        {
+          "position": [
+            -0.004436171661939638,
+            -0.002728895928302188,
+            2.553331220442852
+          ],
+          "temperature_k": [
+            293.2263947144214,
+            293.16993616298566
+          ],
+          "time": 10.5
+        },
+        {
+          "position": [
+            -0.007391194186667905,
+            -0.010194915567706736,
+            2.571648026256479
+          ],
+          "temperature_k": [
+            293.23889083463234,
+            293.17354795287537
+          ],
+          "time": 10.6
+        },
+        {
+          "position": [
+            -0.008743748254048833,
+            -0.017820976782863103,
+            2.5844677963117983
+          ],
+          "temperature_k": [
+            293.2557658245014,
+            293.17737702424097
+          ],
+          "time": 10.7
+        },
+        {
+          "position": [
+            -0.007728471303772418,
+            -0.023075567957711835,
+            2.609136860289779
+          ],
+          "temperature_k": [
+            293.2687547306642,
+            293.1808199078737
+          ],
+          "time": 10.8
+        },
+        {
+          "position": [
+            -0.005650961328919716,
+            -0.02610268247382266,
+            2.620488102353747
+          ],
+          "temperature_k": [
+            293.28461696039506,
+            293.18480999018
+          ],
+          "time": 10.9
+        },
+        {
+          "position": [
+            -0.0033694823081870367,
+            -0.028516335219193084,
+            2.6422829235456518
+          ],
+          "temperature_k": [
+            293.29746180538234,
+            293.18841696434197
+          ],
+          "time": 11.0
+        },
+        {
+          "position": [
+            -0.0017862110270889277,
+            -0.03152359743153555,
+            2.651109074934428
+          ],
+          "temperature_k": [
+            293.3130285642005,
+            293.19253454261496
+          ],
+          "time": 11.1
+        },
+        {
+          "position": [
+            -0.0010199180836110483,
+            -0.03711399319817448,
+            2.6689918596246978
+          ],
+          "temperature_k": [
+            293.32552793491175,
+            293.19616767759254
+          ],
+          "time": 11.2
+        },
+        {
+          "position": [
+            -0.0003724381698783511,
+            -0.04406178932977809,
+            2.6725719121797393
+          ],
+          "temperature_k": [
+            293.3409356855383,
+            293.19990225288745
+          ],
+          "time": 11.3
+        },
+        {
+          "position": [
+            0.0004554349561776789,
+            -0.05068351070317584,
+            2.685287996657785
+          ],
+          "temperature_k": [
+            293.35344939216566,
+            293.20313221111826
+          ],
+          "time": 11.4
+        },
+        {
+          "position": [
+            0.0012718386168092143,
+            -0.05627788014324003,
+            2.682984422621142
+          ],
+          "temperature_k": [
+            293.3684418932241,
+            293.20667552363466
+          ],
+          "time": 11.5
+        },
+        {
+          "position": [
+            0.0024645357544196534,
+            -0.0620111558122293,
+            2.6862407459056095
+          ],
+          "temperature_k": [
+            293.38038448686865,
+            293.2098973395322
+          ],
+          "time": 11.6
+        },
+        {
+          "position": [
+            0.003056224968295426,
+            -0.06797867512316172,
+            2.671753239529898
+          ],
+          "temperature_k": [
+            293.39475787521167,
+            293.2134670885687
+          ],
+          "time": 11.7
+        },
+        {
+          "position": [
+            0.0037649887095499014,
+            -0.0777329195312086,
+            2.661310801373539
+          ],
+          "temperature_k": [
+            293.40619831691146,
+            293.2169724216742
+          ],
+          "time": 11.8
+        },
+        {
+          "position": [
+            0.005158695752966023,
+            -0.08953711523692733,
+            2.6276240960798383
+          ],
+          "temperature_k": [
+            293.41871962762866,
+            293.2204848847129
+          ],
+          "time": 11.9
+        },
+        {
+          "position": [
+            0.007037354970588024,
+            -0.09999987794099752,
+            2.5999999990985803
+          ],
+          "temperature_k": [
+            293.4330044373561,
+            293.2240528077077
+          ],
+          "time": 12.0
+        }
+      ],
+      "rejected_candidate_retained_for_warm_start": false,
+      "seed_constraint_violation": 2.842170943040401E-15,
+      "seed_objective_j_per_k": 1.1085513780813792,
+      "solve_ms": 2706.451729,
+      "solves": 1,
+      "status": "Solve_Succeeded",
+      "time": 10.0,
+      "warm_start": false,
+      "warm_start_plan_time": null,
+      "warm_start_shift_steps": null,
+      "warm_start_source": "none",
+      "within_control_interval": false
+    },
+    "test": "Native entropy optimizer contribution, feasibility, rejection and reset",
+    "timing_note": "Wall times are diagnostic only; this test imposes no real-time success condition"
+  },
+  "native_stdout": "{\n  \"first_action_independent_physical_violation\": 0.0,\n  \"landing_support_counted_separately\": true,\n  \"landing_support_diagnostics\": {\n    \"accepted\": false,\n    \"accepted_solves\": 1,\n    \"action_difference_norm\": null,\n    \"applied_controller\": \"pid_landing_support\",\n    \"available\": true,\n    \"control_decisions\": 3,\n    \"control_interval_ms\": 100.0,\n    \"converged\": false,\n    \"dynamics_residual\": null,\n    \"fallback\": true,\n    \"fallback_reason\": \"Planned PID landing support; skid contact lies outside the free-flight optimizer model\",\n    \"fallback_solves\": 1,\n    \"initial_guess_constraint_violation\": null,\n    \"intermediate_physical_violation\": null,\n    \"intermediate_planning_violation\": null,\n    \"iterations\": 0,\n    \"landing_support_decisions\": 1,\n    \"max_constraint_violation\": null,\n    \"objective_check_error\": null,\n    \"objective_j_per_k\": null,\n    \"objective_reduction_j_per_k\": null,\n    \"observation_hold_decisions\": 0,\n    \"optimizer_attempted\": false,\n    \"prediction\": [],\n    \"rejected_candidate_retained_for_warm_start\": false,\n    \"seed_constraint_violation\": null,\n    \"seed_objective_j_per_k\": null,\n    \"solve_ms\": 0.0,\n    \"solves\": 2,\n    \"status\": \"landing_support\",\n    \"time\": 10.1,\n    \"warm_start\": false,\n    \"warm_start_plan_time\": null,\n    \"warm_start_shift_steps\": null,\n    \"warm_start_source\": \"none\",\n    \"within_control_interval\": true\n  },\n  \"mass_scaled_attempts\": [\n    {\n      \"accepted\": true,\n      \"accepted_solves\": 1,\n      \"action_difference_norm\": 0.0597657404590749,\n      \"applied_controller\": \"entropy_nmpc\",\n      \"available\": true,\n      \"control_decisions\": 1,\n      \"control_interval_ms\": 100.0,\n      \"converged\": true,\n      \"dynamics_residual\": 1.307098550923369e-08,\n      \"fallback\": false,\n      \"fallback_reason\": \"\",\n      \"fallback_solves\": 0,\n      \"initial_guess_constraint_violation\": 2.842170943040401e-15,\n      \"intermediate_physical_violation\": 0.0,\n      \"intermediate_planning_violation\": 0.0,\n      \"iterations\": 81,\n      \"landing_support_decisions\": 0,\n      \"max_constraint_violation\": 3.419506122703808e-09,\n      \"model_mass_scale\": 0.8,\n      \"objective_check_error\": 8.237299731206349e-12,\n      \"objective_j_per_k\": 0.941816714314083,\n      \"objective_reduction_j_per_k\": 0.010887073069153375,\n      \"observation_hold_decisions\": 0,\n      \"optimizer_attempted\": true,\n      \"prediction\": [\n        {\n          \"position\": [\n            0.0,\n            0.0,\n            2.5\n          ],\n          \"temperature_k\": [\n            293.15,\n            293.15\n          ],\n          \"time\": 10.0\n        },\n        {\n          \"position\": [\n            7.091105402408542e-05,\n            -0.0005506005251113586,\n            2.499824086654382\n          ],\n          \"temperature_k\": [\n            293.1617028424101,\n            293.1539310575718\n          ],\n          \"time\": 10.1\n        },\n        {\n          \"position\": [\n            0.0005048654902482584,\n            4.259543575074e-05,\n            2.5095594099790537\n          ],\n          \"temperature_k\": [\n            293.17614822877977,\n            293.15752990765543\n          ],\n          \"time\": 10.2\n        },\n        {\n          \"position\": [\n            0.0003470475346892121,\n            0.0019372219056622163,\n            2.5293710445492557\n          ],\n          \"temperature_k\": [\n            293.18612656268556,\n            293.1614379069201\n          ],\n          \"time\": 10.3\n        },\n        {\n          \"position\": [\n            -0.0008221109699805612,\n            -0.0002070531667356181,\n            2.5263520855443864\n          ],\n          \"temperature_k\": [\n            293.1983827247119,\n            293.16503484336016\n          ],\n          \"time\": 10.4\n        },\n        {\n          \"position\": [\n            -0.0036334104286992936,\n            -0.004033235107625236,\n            2.5474860450739216\n          ],\n          \"temperature_k\": [\n            293.2125176541065,\n            293.16897300193654\n          ],\n          \"time\": 10.5\n        },\n        {\n          \"position\": [\n            -0.006253621385950914,\n            -0.01114102875707208,\n            2.568823709662367\n          ],\n          \"temperature_k\": [\n            293.222275062081,\n            293.17235420914875\n          ],\n          \"time\": 10.6\n        },\n        {\n          \"position\": [\n            -0.007539780554209436,\n            -0.01829837071966673,\n            2.5747507307675246\n          ],\n          \"temperature_k\": [\n            293.2356949970061,\n            293.17610317377614\n          ],\n          \"time\": 10.7\n        },\n        {\n          \"position\": [\n            -0.006338981034947111,\n            -0.02385892933840457,\n            2.5973668762082354\n          ],\n          \"temperature_k\": [\n            293.2466164398483,\n            293.179489228648\n          ],\n          \"time\": 10.8\n        },\n        {\n          \"position\": [\n            -0.004116052241383686,\n            -0.02701244984166884,\n            2.60754291811459\n          ],\n          \"temperature_k\": [\n            293.2597857791373,\n            293.1832799896543\n          ],\n          \"time\": 10.9\n        },\n        {\n          \"position\": [\n            -0.0016562392979043363,\n            -0.029379934824969384,\n            2.629542813132879\n          ],\n          \"temperature_k\": [\n            293.2701668795561,\n            293.1867243361895\n          ],\n          \"time\": 11.0\n        },\n        {\n          \"position\": [\n            0.0001748449823716871,\n            -0.032261289687983946,\n            2.635580363105911\n          ],\n          \"temperature_k\": [\n            293.28303435969605,\n            293.1906342080251\n          ],\n          \"time\": 11.1\n        },\n        {\n          \"position\": [\n            0.0011447733685040144,\n            -0.0378438672093587,\n            2.653613805734204\n          ],\n          \"temperature_k\": [\n            293.29335802699427,\n            293.1941164878662\n          ],\n          \"time\": 11.2\n        },\n        {\n          \"position\": [\n            0.0020929046434115177,\n            -0.044983810713228496,\n            2.6560184880674242\n          ],\n          \"temperature_k\": [\n            293.3061986983733,\n            293.1977517116524\n          ],\n          \"time\": 11.3\n        },\n        {\n          \"position\": [\n            0.0032763145583677732,\n            -0.051852550119821136,\n            2.6704836392226388\n          ],\n          \"temperature_k\": [\n            293.3165206266291,\n            293.20094043650516\n          ],\n          \"time\": 11.4\n        },\n        {\n          \"position\": [\n            0.004504063879431596,\n            -0.0577949756802374,\n            2.6682320504348276\n          ],\n          \"temperature_k\": [\n            293.32906227922524,\n            293.2044297452029\n          ],\n          \"time\": 11.5\n        },\n        {\n          \"position\": [\n            0.006171068945403232,\n            -0.06369359521735725,\n            2.6742137933845953\n          ],\n          \"temperature_k\": [\n            293.3390053799756,\n            293.20760097438966\n          ],\n          \"time\": 11.6\n        },\n        {\n          \"position\": [\n            0.007111604936107087,\n            -0.06938442658738625,\n            2.661028228630514\n          ],\n          \"temperature_k\": [\n            293.3511909479897,\n            293.21108251357356\n          ],\n          \"time\": 11.7\n        },\n        {\n          \"position\": [\n            0.00809735503048216,\n            -0.07855172689271157,\n            2.655412322363044\n          ],\n          \"temperature_k\": [\n            293.360873155896,\n            293.21447374360287\n          ],\n          \"time\": 11.8\n        },\n        {\n          \"position\": [\n            0.009886216075102238,\n            -0.08976952454863556,\n            2.624409594824778\n          ],\n          \"temperature_k\": [\n            293.37155916622766,\n            293.21788409758693\n          ],\n          \"time\": 11.9\n        },\n        {\n          \"position\": [\n            0.012442841850012713,\n            -0.09999955283004104,\n            2.5999999989633054\n          ],\n          \"temperature_k\": [\n            293.3828818974886,\n            293.22132033785454\n          ],\n          \"time\": 12.0\n        }\n      ],\n      \"rejected_candidate_retained_for_warm_start\": false,\n      \"seed_constraint_violation\": 2.842170943040401e-15,\n      \"seed_objective_j_per_k\": 0.9527037873832364,\n      \"solve_ms\": 2200.455368,\n      \"solves\": 1,\n      \"status\": \"Solve_Succeeded\",\n      \"time\": 10.0,\n      \"warm_start\": false,\n      \"warm_start_plan_time\": null,\n      \"warm_start_shift_steps\": null,\n      \"warm_start_source\": \"none\",\n      \"within_control_interval\": false\n    },\n    {\n      \"accepted\": true,\n      \"accepted_solves\": 1,\n      \"action_difference_norm\": 0.0837943368759612,\n      \"applied_controller\": \"entropy_nmpc\",\n      \"available\": true,\n      \"control_decisions\": 1,\n      \"control_interval_ms\": 100.0,\n      \"converged\": true,\n      \"dynamics_residual\": 6.314336831181322e-10,\n      \"fallback\": false,\n      \"fallback_reason\": \"\",\n      \"fallback_solves\": 0,\n      \"initial_guess_constraint_violation\": 2.842170943040401e-15,\n      \"intermediate_physical_violation\": 0.0,\n      \"intermediate_planning_violation\": 0.0,\n      \"iterations\": 50,\n      \"landing_support_decisions\": 0,\n      \"max_constraint_violation\": 4.1001326778200566e-10,\n      \"model_mass_scale\": 1.2,\n      \"objective_check_error\": 3.3668623444782497e-12,\n      \"objective_j_per_k\": 1.2651778759419714,\n      \"objective_reduction_j_per_k\": 0.01892496557158707,\n      \"observation_hold_decisions\": 0,\n      \"optimizer_attempted\": true,\n      \"prediction\": [\n        {\n          \"position\": [\n            0.0,\n            0.0,\n            2.5\n          ],\n          \"temperature_k\": [\n            293.15,\n            293.15\n          ],\n          \"time\": 10.0\n        },\n        {\n          \"position\": [\n            0.00011674504897640542,\n            -5.6013850168106874e-05,\n            2.5067877213464262\n          ],\n          \"temperature_k\": [\n            293.17144904889153,\n            293.15453173175797\n          ],\n          \"time\": 10.1\n        },\n        {\n          \"position\": [\n            0.00081454365371234,\n            0.0012922584913515579,\n            2.522903121733154\n          ],\n          \"temperature_k\": [\n            293.1874654201202,\n            293.15845292783524\n          ],\n          \"time\": 10.2\n        },\n        {\n          \"position\": [\n            0.0007854791140685567,\n            0.0028304860279949324,\n            2.5301432202311225\n          ],\n          \"temperature_k\": [\n            293.2076357076331,\n            293.16298943422424\n          ],\n          \"time\": 10.3\n        },\n        {\n          \"position\": [\n            -0.0011302976132739708,\n            0.0011162371759978421,\n            2.549958432839939\n          ],\n          \"temperature_k\": [\n            293.224292929309,\n            293.1670156651667\n          ],\n          \"time\": 10.4\n        },\n        {\n          \"position\": [\n            -0.004027684599145975,\n            -0.0038276580254782543,\n            2.561831437235354\n          ],\n          \"temperature_k\": [\n            293.2443264235733,\n            293.1713420773185\n          ],\n          \"time\": 10.5\n        },\n        {\n          \"position\": [\n            -0.006599924480828991,\n            -0.01160807753780292,\n            2.5847019915211336\n          ],\n          \"temperature_k\": [\n            293.2606962689587,\n            293.17502781050916\n          ],\n          \"time\": 10.6\n        },\n        {\n          \"position\": [\n            -0.007745960626019212,\n            -0.019036648044633963,\n            2.598176427737602\n          ],\n          \"temperature_k\": [\n            293.2805561806459,\n            293.1790568317469\n          ],\n          \"time\": 10.7\n        },\n        {\n          \"position\": [\n            -0.006660315824978894,\n            -0.024506317811753123,\n            2.621922172187919\n          ],\n          \"temperature_k\": [\n            293.29686681424454,\n            293.18267575128465\n          ],\n          \"time\": 10.8\n        },\n        {\n          \"position\": [\n            -0.004646478160820071,\n            -0.027482504533054165,\n            2.6354391040646195\n          ],\n          \"temperature_k\": [\n            293.31619111685774,\n            293.18681953384726\n          ],\n          \"time\": 10.9\n        },\n        {\n          \"position\": [\n            -0.0024872392761761905,\n            -0.029901756846541436,\n            2.656984739235905\n          ],\n          \"temperature_k\": [\n            293.33174293500883,\n            293.19072714566363\n          ],\n          \"time\": 11.0\n        },\n        {\n          \"position\": [\n            -0.0009072113051235913,\n            -0.03320871189600646,\n            2.6662843742643263\n          ],\n          \"temperature_k\": [\n            293.3504874412475,\n            293.1950486435016\n          ],\n          \"time\": 11.1\n        },\n        {\n          \"position\": [\n            -0.00013267004167455345,\n            -0.03854423920526592,\n            2.682982646228969\n          ],\n          \"temperature_k\": [\n            293.3657875457579,\n            293.19883059938053\n          ],\n          \"time\": 11.2\n        },\n        {\n          \"position\": [\n            0.0005268362040538905,\n            -0.04503864624678958,\n            2.686913593506489\n          ],\n          \"temperature_k\": [\n            293.3843166851014,\n            293.20269472292256\n          ],\n          \"time\": 11.3\n        },\n        {\n          \"position\": [\n            0.0013606279942951418,\n            -0.0511559048764819,\n            2.697611315842724\n          ],\n          \"temperature_k\": [\n            293.3994553518527,\n            293.2059761929341\n          ],\n          \"time\": 11.4\n        },\n        {\n          \"position\": [\n            0.0021686120938233205,\n            -0.0562944346466999,\n            2.6943798389813076\n          ],\n          \"temperature_k\": [\n            293.41743662590477,\n            293.20958311700514\n          ],\n          \"time\": 11.5\n        },\n        {\n          \"position\": [\n            0.0033387350457717555,\n            -0.061846846411870236,\n            2.6951942371144506\n          ],\n          \"temperature_k\": [\n            293.4319160351016,\n            293.2128752177659\n          ],\n          \"time\": 11.6\n        },\n        {\n          \"position\": [\n            0.004074218080686,\n            -0.0680553336470821,\n            2.6794768245017\n          ],\n          \"temperature_k\": [\n            293.44884468954774,\n            293.21657053887543\n          ],\n          \"time\": 11.7\n        },\n        {\n          \"position\": [\n            0.005007194858808699,\n            -0.07802546872180095,\n            2.6645178709371695\n          ],\n          \"temperature_k\": [\n            293.4622609857013,\n            293.2202089594466\n          ],\n          \"time\": 11.8\n        },\n        {\n          \"position\": [\n            0.006551269298336591,\n            -0.0898447615543748,\n            2.6284401329361295\n          ],\n          \"temperature_k\": [\n            293.47752190611106,\n            293.2238464391183\n          ],\n          \"time\": 11.9\n        },\n        {\n          \"position\": [\n            0.008390070369597944,\n            -0.09999994238163687,\n            2.5999999994240706\n          ],\n          \"temperature_k\": [\n            293.49543947971495,\n            293.22757171303124\n          ],\n          \"time\": 12.0\n        }\n      ],\n      \"rejected_candidate_retained_for_warm_start\": false,\n      \"seed_constraint_violation\": 2.842170943040401e-15,\n      \"seed_objective_j_per_k\": 1.2841028415135585,\n      \"solve_ms\": 1212.443595,\n      \"solves\": 1,\n      \"status\": \"Solve_Succeeded\",\n      \"time\": 10.0,\n      \"warm_start\": false,\n      \"warm_start_plan_time\": null,\n      \"warm_start_shift_steps\": null,\n      \"warm_start_source\": \"none\",\n      \"within_control_interval\": false\n    }\n  ],\n  \"mass_scaled_derivatives_verified\": true,\n  \"nominal_attempts\": [\n    {\n      \"accepted\": true,\n      \"accepted_solves\": 1,\n      \"action_difference_norm\": 0.06878908716828652,\n      \"applied_controller\": \"entropy_nmpc\",\n      \"available\": true,\n      \"control_decisions\": 1,\n      \"control_interval_ms\": 100.0,\n      \"converged\": true,\n      \"dynamics_residual\": 1.4070197063009715e-08,\n      \"fallback\": false,\n      \"fallback_reason\": \"\",\n      \"fallback_solves\": 0,\n      \"initial_guess_constraint_violation\": 2.842170943040401e-15,\n      \"intermediate_physical_violation\": 0.0,\n      \"intermediate_planning_violation\": 0.0,\n      \"iterations\": 99,\n      \"landing_support_decisions\": 0,\n      \"max_constraint_violation\": 7.616114228170546e-09,\n      \"model_mass_scale\": 1.0,\n      \"objective_check_error\": 2.935607312792854e-11,\n      \"objective_j_per_k\": 1.0940827584050075,\n      \"objective_reduction_j_per_k\": 0.014468619676371697,\n      \"observation_hold_decisions\": 0,\n      \"optimizer_attempted\": true,\n      \"prediction\": [\n        {\n          \"position\": [\n            0.0,\n            0.0,\n            2.5\n          ],\n          \"temperature_k\": [\n            293.15,\n            293.15\n          ],\n          \"time\": 10.0\n        },\n        {\n          \"position\": [\n            7.69058851040311e-05,\n            -0.00032295673660238456,\n            2.5006109600450532\n          ],\n          \"temperature_k\": [\n            293.1645303206567,\n            293.154125672216\n          ],\n          \"time\": 10.1\n        },\n        {\n          \"position\": [\n            0.000538798028675289,\n            0.0007347184078865728,\n            2.510543588728458\n          ],\n          \"temperature_k\": [\n            293.1821800521195,\n            293.1579831340206\n          ],\n          \"time\": 10.2\n        },\n        {\n          \"position\": [\n            0.00029383194191659923,\n            0.002955276650370827,\n            2.52919533393076\n          ],\n          \"temperature_k\": [\n            293.1946128723511,\n            293.1620176499193\n          ],\n          \"time\": 10.3\n        },\n        {\n          \"position\": [\n            -0.001268004886918174,\n            0.0015741969519753923,\n            2.531763118274029\n          ],\n          \"temperature_k\": [\n            293.21002946828384,\n            293.1659326471686\n          ],\n          \"time\": 10.4\n        },\n        {\n          \"position\": [\n            -0.004436171661939638,\n            -0.002728895928302188,\n            2.553331220442852\n          ],\n          \"temperature_k\": [\n            293.2263947144214,\n            293.16993616298566\n          ],\n          \"time\": 10.5\n        },\n        {\n          \"position\": [\n            -0.007391194186667905,\n            -0.010194915567706736,\n            2.571648026256479\n          ],\n          \"temperature_k\": [\n            293.23889083463234,\n            293.17354795287537\n          ],\n          \"time\": 10.6\n        },\n        {\n          \"position\": [\n            -0.008743748254048833,\n            -0.017820976782863103,\n            2.5844677963117983\n          ],\n          \"temperature_k\": [\n            293.2557658245014,\n            293.17737702424097\n          ],\n          \"time\": 10.7\n        },\n        {\n          \"position\": [\n            -0.007728471303772418,\n            -0.023075567957711835,\n            2.609136860289779\n          ],\n          \"temperature_k\": [\n            293.2687547306642,\n            293.1808199078737\n          ],\n          \"time\": 10.8\n        },\n        {\n          \"position\": [\n            -0.005650961328919716,\n            -0.02610268247382266,\n            2.620488102353747\n          ],\n          \"temperature_k\": [\n            293.28461696039506,\n            293.18480999018\n          ],\n          \"time\": 10.9\n        },\n        {\n          \"position\": [\n            -0.0033694823081870367,\n            -0.028516335219193084,\n            2.6422829235456518\n          ],\n          \"temperature_k\": [\n            293.29746180538234,\n            293.18841696434197\n          ],\n          \"time\": 11.0\n        },\n        {\n          \"position\": [\n            -0.0017862110270889277,\n            -0.03152359743153555,\n            2.651109074934428\n          ],\n          \"temperature_k\": [\n            293.3130285642005,\n            293.19253454261496\n          ],\n          \"time\": 11.1\n        },\n        {\n          \"position\": [\n            -0.0010199180836110483,\n            -0.03711399319817448,\n            2.6689918596246978\n          ],\n          \"temperature_k\": [\n            293.32552793491175,\n            293.19616767759254\n          ],\n          \"time\": 11.2\n        },\n        {\n          \"position\": [\n            -0.0003724381698783511,\n            -0.04406178932977809,\n            2.6725719121797393\n          ],\n          \"temperature_k\": [\n            293.3409356855383,\n            293.19990225288745\n          ],\n          \"time\": 11.3\n        },\n        {\n          \"position\": [\n            0.0004554349561776789,\n            -0.05068351070317584,\n            2.685287996657785\n          ],\n          \"temperature_k\": [\n            293.35344939216566,\n            293.20313221111826\n          ],\n          \"time\": 11.4\n        },\n        {\n          \"position\": [\n            0.0012718386168092143,\n            -0.05627788014324003,\n            2.682984422621142\n          ],\n          \"temperature_k\": [\n            293.3684418932241,\n            293.20667552363466\n          ],\n          \"time\": 11.5\n        },\n        {\n          \"position\": [\n            0.0024645357544196534,\n            -0.0620111558122293,\n            2.6862407459056095\n          ],\n          \"temperature_k\": [\n            293.38038448686865,\n            293.2098973395322\n          ],\n          \"time\": 11.6\n        },\n        {\n          \"position\": [\n            0.003056224968295426,\n            -0.06797867512316172,\n            2.671753239529898\n          ],\n          \"temperature_k\": [\n            293.39475787521167,\n            293.2134670885687\n          ],\n          \"time\": 11.7\n        },\n        {\n          \"position\": [\n            0.0037649887095499014,\n            -0.0777329195312086,\n            2.661310801373539\n          ],\n          \"temperature_k\": [\n            293.40619831691146,\n            293.2169724216742\n          ],\n          \"time\": 11.8\n        },\n        {\n          \"position\": [\n            0.005158695752966023,\n            -0.08953711523692733,\n            2.6276240960798383\n          ],\n          \"temperature_k\": [\n            293.41871962762866,\n            293.2204848847129\n          ],\n          \"time\": 11.9\n        },\n        {\n          \"position\": [\n            0.007037354970588024,\n            -0.09999987794099752,\n            2.5999999990985803\n          ],\n          \"temperature_k\": [\n            293.4330044373561,\n            293.2240528077077\n          ],\n          \"time\": 12.0\n        }\n      ],\n      \"rejected_candidate_retained_for_warm_start\": false,\n      \"seed_constraint_violation\": 2.842170943040401e-15,\n      \"seed_objective_j_per_k\": 1.1085513780813792,\n      \"solve_ms\": 2706.451729,\n      \"solves\": 1,\n      \"status\": \"Solve_Succeeded\",\n      \"time\": 10.0,\n      \"warm_start\": false,\n      \"warm_start_plan_time\": null,\n      \"warm_start_shift_steps\": null,\n      \"warm_start_source\": \"none\",\n      \"within_control_interval\": false\n    }\n  ],\n  \"observation_hold_counted_separately\": true,\n  \"observation_hold_diagnostics\": {\n    \"accepted\": false,\n    \"accepted_solves\": 0,\n    \"action_difference_norm\": null,\n    \"applied_controller\": \"trim_observation_hold\",\n    \"available\": true,\n    \"control_decisions\": 1,\n    \"control_interval_ms\": 100.0,\n    \"converged\": false,\n    \"dynamics_residual\": null,\n    \"fallback\": true,\n    \"fallback_reason\": \"Prepared trim is held for one causal observation interval before optimization\",\n    \"fallback_solves\": 0,\n    \"initial_guess_constraint_violation\": null,\n    \"intermediate_physical_violation\": null,\n    \"intermediate_planning_violation\": null,\n    \"iterations\": 0,\n    \"landing_support_decisions\": 0,\n    \"max_constraint_violation\": null,\n    \"objective_check_error\": null,\n    \"objective_j_per_k\": null,\n    \"objective_reduction_j_per_k\": null,\n    \"observation_hold_decisions\": 1,\n    \"optimizer_attempted\": false,\n    \"prediction\": [],\n    \"rejected_candidate_retained_for_warm_start\": false,\n    \"seed_constraint_violation\": null,\n    \"seed_objective_j_per_k\": null,\n    \"solve_ms\": 0.0,\n    \"solves\": 0,\n    \"status\": \"observation_hold\",\n    \"time\": 0.0,\n    \"warm_start\": false,\n    \"warm_start_plan_time\": null,\n    \"warm_start_shift_steps\": null,\n    \"warm_start_source\": \"none\",\n    \"within_control_interval\": true\n  },\n  \"overtemperature_diagnostics\": {\n    \"accepted\": false,\n    \"accepted_solves\": 1,\n    \"action_difference_norm\": 0.0,\n    \"applied_controller\": \"pid_fallback\",\n    \"available\": true,\n    \"control_decisions\": 2,\n    \"control_interval_ms\": 100.0,\n    \"converged\": false,\n    \"dynamics_residual\": 7.317697448826519,\n    \"fallback\": true,\n    \"fallback_reason\": \"Independently checked constraints or dynamics failed\",\n    \"fallback_solves\": 1,\n    \"initial_guess_constraint_violation\": 2.4465350234923506,\n    \"intermediate_physical_violation\": 2.4465233461134215,\n    \"intermediate_planning_violation\": 0.0,\n    \"iterations\": 150,\n    \"landing_support_decisions\": 0,\n    \"max_constraint_violation\": 7.317697318538029,\n    \"model_mass_scale\": 1.0,\n    \"objective_check_error\": 22.941414952433753,\n    \"objective_j_per_k\": 26.950553041119143,\n    \"objective_reduction_j_per_k\": -0.03673610286946172,\n    \"observation_hold_decisions\": 0,\n    \"optimizer_attempted\": true,\n    \"prediction\": [],\n    \"rejected_candidate_retained_for_warm_start\": false,\n    \"seed_constraint_violation\": 2.4465350234923506,\n    \"seed_objective_j_per_k\": 26.91381693824968,\n    \"solve_ms\": 3738.736786,\n    \"solves\": 2,\n    \"status\": \"Maximum_Iterations_Exceeded\",\n    \"time\": 10.0,\n    \"warm_start\": false,\n    \"warm_start_plan_time\": null,\n    \"warm_start_shift_steps\": null,\n    \"warm_start_source\": \"none\",\n    \"within_control_interval\": false\n  },\n  \"overtemperature_rejected\": true,\n  \"passed\": true,\n  \"post_reset_diagnostics\": {\n    \"accepted\": true,\n    \"accepted_solves\": 1,\n    \"action_difference_norm\": 0.06878908716828652,\n    \"applied_controller\": \"entropy_nmpc\",\n    \"available\": true,\n    \"control_decisions\": 1,\n    \"control_interval_ms\": 100.0,\n    \"converged\": true,\n    \"dynamics_residual\": 1.4070197063009715e-08,\n    \"fallback\": false,\n    \"fallback_reason\": \"\",\n    \"fallback_solves\": 0,\n    \"initial_guess_constraint_violation\": 2.842170943040401e-15,\n    \"intermediate_physical_violation\": 0.0,\n    \"intermediate_planning_violation\": 0.0,\n    \"iterations\": 99,\n    \"landing_support_decisions\": 0,\n    \"max_constraint_violation\": 7.616114228170546e-09,\n    \"model_mass_scale\": 1.0,\n    \"objective_check_error\": 2.935607312792854e-11,\n    \"objective_j_per_k\": 1.0940827584050075,\n    \"objective_reduction_j_per_k\": 0.014468619676371697,\n    \"observation_hold_decisions\": 0,\n    \"optimizer_attempted\": true,\n    \"prediction\": [\n      {\n        \"position\": [\n          0.0,\n          0.0,\n          2.5\n        ],\n        \"temperature_k\": [\n          293.15,\n          293.15\n        ],\n        \"time\": 10.0\n      },\n      {\n        \"position\": [\n          7.69058851040311e-05,\n          -0.00032295673660238456,\n          2.5006109600450532\n        ],\n        \"temperature_k\": [\n          293.1645303206567,\n          293.154125672216\n        ],\n        \"time\": 10.1\n      },\n      {\n        \"position\": [\n          0.000538798028675289,\n          0.0007347184078865728,\n          2.510543588728458\n        ],\n        \"temperature_k\": [\n          293.1821800521195,\n          293.1579831340206\n        ],\n        \"time\": 10.2\n      },\n      {\n        \"position\": [\n          0.00029383194191659923,\n          0.002955276650370827,\n          2.52919533393076\n        ],\n        \"temperature_k\": [\n          293.1946128723511,\n          293.1620176499193\n        ],\n        \"time\": 10.3\n      },\n      {\n        \"position\": [\n          -0.001268004886918174,\n          0.0015741969519753923,\n          2.531763118274029\n        ],\n        \"temperature_k\": [\n          293.21002946828384,\n          293.1659326471686\n        ],\n        \"time\": 10.4\n      },\n      {\n        \"position\": [\n          -0.004436171661939638,\n          -0.002728895928302188,\n          2.553331220442852\n        ],\n        \"temperature_k\": [\n          293.2263947144214,\n          293.16993616298566\n        ],\n        \"time\": 10.5\n      },\n      {\n        \"position\": [\n          -0.007391194186667905,\n          -0.010194915567706736,\n          2.571648026256479\n        ],\n        \"temperature_k\": [\n          293.23889083463234,\n          293.17354795287537\n        ],\n        \"time\": 10.6\n      },\n      {\n        \"position\": [\n          -0.008743748254048833,\n          -0.017820976782863103,\n          2.5844677963117983\n        ],\n        \"temperature_k\": [\n          293.2557658245014,\n          293.17737702424097\n        ],\n        \"time\": 10.7\n      },\n      {\n        \"position\": [\n          -0.007728471303772418,\n          -0.023075567957711835,\n          2.609136860289779\n        ],\n        \"temperature_k\": [\n          293.2687547306642,\n          293.1808199078737\n        ],\n        \"time\": 10.8\n      },\n      {\n        \"position\": [\n          -0.005650961328919716,\n          -0.02610268247382266,\n          2.620488102353747\n        ],\n        \"temperature_k\": [\n          293.28461696039506,\n          293.18480999018\n        ],\n        \"time\": 10.9\n      },\n      {\n        \"position\": [\n          -0.0033694823081870367,\n          -0.028516335219193084,\n          2.6422829235456518\n        ],\n        \"temperature_k\": [\n          293.29746180538234,\n          293.18841696434197\n        ],\n        \"time\": 11.0\n      },\n      {\n        \"position\": [\n          -0.0017862110270889277,\n          -0.03152359743153555,\n          2.651109074934428\n        ],\n        \"temperature_k\": [\n          293.3130285642005,\n          293.19253454261496\n        ],\n        \"time\": 11.1\n      },\n      {\n        \"position\": [\n          -0.0010199180836110483,\n          -0.03711399319817448,\n          2.6689918596246978\n        ],\n        \"temperature_k\": [\n          293.32552793491175,\n          293.19616767759254\n        ],\n        \"time\": 11.2\n      },\n      {\n        \"position\": [\n          -0.0003724381698783511,\n          -0.04406178932977809,\n          2.6725719121797393\n        ],\n        \"temperature_k\": [\n          293.3409356855383,\n          293.19990225288745\n        ],\n        \"time\": 11.3\n      },\n      {\n        \"position\": [\n          0.0004554349561776789,\n          -0.05068351070317584,\n          2.685287996657785\n        ],\n        \"temperature_k\": [\n          293.35344939216566,\n          293.20313221111826\n        ],\n        \"time\": 11.4\n      },\n      {\n        \"position\": [\n          0.0012718386168092143,\n          -0.05627788014324003,\n          2.682984422621142\n        ],\n        \"temperature_k\": [\n          293.3684418932241,\n          293.20667552363466\n        ],\n        \"time\": 11.5\n      },\n      {\n        \"position\": [\n          0.0024645357544196534,\n          -0.0620111558122293,\n          2.6862407459056095\n        ],\n        \"temperature_k\": [\n          293.38038448686865,\n          293.2098973395322\n        ],\n        \"time\": 11.6\n      },\n      {\n        \"position\": [\n          0.003056224968295426,\n          -0.06797867512316172,\n          2.671753239529898\n        ],\n        \"temperature_k\": [\n          293.39475787521167,\n          293.2134670885687\n        ],\n        \"time\": 11.7\n      },\n      {\n        \"position\": [\n          0.0037649887095499014,\n          -0.0777329195312086,\n          2.661310801373539\n        ],\n        \"temperature_k\": [\n          293.40619831691146,\n          293.2169724216742\n        ],\n        \"time\": 11.8\n      },\n      {\n        \"position\": [\n          0.005158695752966023,\n          -0.08953711523692733,\n          2.6276240960798383\n        ],\n        \"temperature_k\": [\n          293.41871962762866,\n          293.2204848847129\n        ],\n        \"time\": 11.9\n      },\n      {\n        \"position\": [\n          0.007037354970588024,\n          -0.09999987794099752,\n          2.5999999990985803\n        ],\n        \"temperature_k\": [\n          293.4330044373561,\n          293.2240528077077\n        ],\n        \"time\": 12.0\n      }\n    ],\n    \"rejected_candidate_retained_for_warm_start\": false,\n    \"seed_constraint_violation\": 2.842170943040401e-15,\n    \"seed_objective_j_per_k\": 1.1085513780813792,\n    \"solve_ms\": 2605.450667,\n    \"solves\": 1,\n    \"status\": \"Solve_Succeeded\",\n    \"time\": 10.0,\n    \"warm_start\": false,\n    \"warm_start_plan_time\": null,\n    \"warm_start_shift_steps\": null,\n    \"warm_start_source\": \"none\",\n    \"within_control_interval\": false\n  },\n  \"reset_counters_correct\": true,\n  \"selected_nominal\": {\n    \"accepted\": true,\n    \"accepted_solves\": 1,\n    \"action_difference_norm\": 0.06878908716828652,\n    \"applied_controller\": \"entropy_nmpc\",\n    \"available\": true,\n    \"control_decisions\": 1,\n    \"control_interval_ms\": 100.0,\n    \"converged\": true,\n    \"dynamics_residual\": 1.4070197063009715e-08,\n    \"fallback\": false,\n    \"fallback_reason\": \"\",\n    \"fallback_solves\": 0,\n    \"initial_guess_constraint_violation\": 2.842170943040401e-15,\n    \"intermediate_physical_violation\": 0.0,\n    \"intermediate_planning_violation\": 0.0,\n    \"iterations\": 99,\n    \"landing_support_decisions\": 0,\n    \"max_constraint_violation\": 7.616114228170546e-09,\n    \"model_mass_scale\": 1.0,\n    \"objective_check_error\": 2.935607312792854e-11,\n    \"objective_j_per_k\": 1.0940827584050075,\n    \"objective_reduction_j_per_k\": 0.014468619676371697,\n    \"observation_hold_decisions\": 0,\n    \"optimizer_attempted\": true,\n    \"prediction\": [\n      {\n        \"position\": [\n          0.0,\n          0.0,\n          2.5\n        ],\n        \"temperature_k\": [\n          293.15,\n          293.15\n        ],\n        \"time\": 10.0\n      },\n      {\n        \"position\": [\n          7.69058851040311e-05,\n          -0.00032295673660238456,\n          2.5006109600450532\n        ],\n        \"temperature_k\": [\n          293.1645303206567,\n          293.154125672216\n        ],\n        \"time\": 10.1\n      },\n      {\n        \"position\": [\n          0.000538798028675289,\n          0.0007347184078865728,\n          2.510543588728458\n        ],\n        \"temperature_k\": [\n          293.1821800521195,\n          293.1579831340206\n        ],\n        \"time\": 10.2\n      },\n      {\n        \"position\": [\n          0.00029383194191659923,\n          0.002955276650370827,\n          2.52919533393076\n        ],\n        \"temperature_k\": [\n          293.1946128723511,\n          293.1620176499193\n        ],\n        \"time\": 10.3\n      },\n      {\n        \"position\": [\n          -0.001268004886918174,\n          0.0015741969519753923,\n          2.531763118274029\n        ],\n        \"temperature_k\": [\n          293.21002946828384,\n          293.1659326471686\n        ],\n        \"time\": 10.4\n      },\n      {\n        \"position\": [\n          -0.004436171661939638,\n          -0.002728895928302188,\n          2.553331220442852\n        ],\n        \"temperature_k\": [\n          293.2263947144214,\n          293.16993616298566\n        ],\n        \"time\": 10.5\n      },\n      {\n        \"position\": [\n          -0.007391194186667905,\n          -0.010194915567706736,\n          2.571648026256479\n        ],\n        \"temperature_k\": [\n          293.23889083463234,\n          293.17354795287537\n        ],\n        \"time\": 10.6\n      },\n      {\n        \"position\": [\n          -0.008743748254048833,\n          -0.017820976782863103,\n          2.5844677963117983\n        ],\n        \"temperature_k\": [\n          293.2557658245014,\n          293.17737702424097\n        ],\n        \"time\": 10.7\n      },\n      {\n        \"position\": [\n          -0.007728471303772418,\n          -0.023075567957711835,\n          2.609136860289779\n        ],\n        \"temperature_k\": [\n          293.2687547306642,\n          293.1808199078737\n        ],\n        \"time\": 10.8\n      },\n      {\n        \"position\": [\n          -0.005650961328919716,\n          -0.02610268247382266,\n          2.620488102353747\n        ],\n        \"temperature_k\": [\n          293.28461696039506,\n          293.18480999018\n        ],\n        \"time\": 10.9\n      },\n      {\n        \"position\": [\n          -0.0033694823081870367,\n          -0.028516335219193084,\n          2.6422829235456518\n        ],\n        \"temperature_k\": [\n          293.29746180538234,\n          293.18841696434197\n        ],\n        \"time\": 11.0\n      },\n      {\n        \"position\": [\n          -0.0017862110270889277,\n          -0.03152359743153555,\n          2.651109074934428\n        ],\n        \"temperature_k\": [\n          293.3130285642005,\n          293.19253454261496\n        ],\n        \"time\": 11.1\n      },\n      {\n        \"position\": [\n          -0.0010199180836110483,\n          -0.03711399319817448,\n          2.6689918596246978\n        ],\n        \"temperature_k\": [\n          293.32552793491175,\n          293.19616767759254\n        ],\n        \"time\": 11.2\n      },\n      {\n        \"position\": [\n          -0.0003724381698783511,\n          -0.04406178932977809,\n          2.6725719121797393\n        ],\n        \"temperature_k\": [\n          293.3409356855383,\n          293.19990225288745\n        ],\n        \"time\": 11.3\n      },\n      {\n        \"position\": [\n          0.0004554349561776789,\n          -0.05068351070317584,\n          2.685287996657785\n        ],\n        \"temperature_k\": [\n          293.35344939216566,\n          293.20313221111826\n        ],\n        \"time\": 11.4\n      },\n      {\n        \"position\": [\n          0.0012718386168092143,\n          -0.05627788014324003,\n          2.682984422621142\n        ],\n        \"temperature_k\": [\n          293.3684418932241,\n          293.20667552363466\n        ],\n        \"time\": 11.5\n      },\n      {\n        \"position\": [\n          0.0024645357544196534,\n          -0.0620111558122293,\n          2.6862407459056095\n        ],\n        \"temperature_k\": [\n          293.38038448686865,\n          293.2098973395322\n        ],\n        \"time\": 11.6\n      },\n      {\n        \"position\": [\n          0.003056224968295426,\n          -0.06797867512316172,\n          2.671753239529898\n        ],\n        \"temperature_k\": [\n          293.39475787521167,\n          293.2134670885687\n        ],\n        \"time\": 11.7\n      },\n      {\n        \"position\": [\n          0.0037649887095499014,\n          -0.0777329195312086,\n          2.661310801373539\n        ],\n        \"temperature_k\": [\n          293.40619831691146,\n          293.2169724216742\n        ],\n        \"time\": 11.8\n      },\n      {\n        \"position\": [\n          0.005158695752966023,\n          -0.08953711523692733,\n          2.6276240960798383\n        ],\n        \"temperature_k\": [\n          293.41871962762866,\n          293.2204848847129\n        ],\n        \"time\": 11.9\n      },\n      {\n        \"position\": [\n          0.007037354970588024,\n          -0.09999987794099752,\n          2.5999999990985803\n        ],\n        \"temperature_k\": [\n          293.4330044373561,\n          293.2240528077077\n        ],\n        \"time\": 12.0\n      }\n    ],\n    \"rejected_candidate_retained_for_warm_start\": false,\n    \"seed_constraint_violation\": 2.842170943040401e-15,\n    \"seed_objective_j_per_k\": 1.1085513780813792,\n    \"solve_ms\": 2706.451729,\n    \"solves\": 1,\n    \"status\": \"Solve_Succeeded\",\n    \"time\": 10.0,\n    \"warm_start\": false,\n    \"warm_start_plan_time\": null,\n    \"warm_start_shift_steps\": null,\n    \"warm_start_source\": \"none\",\n    \"within_control_interval\": false\n  },\n  \"test\": \"Native entropy optimizer contribution, feasibility, rejection and reset\",\n  \"timing_note\": \"Wall times are diagnostic only; this test imposes no real-time success condition\"\n}\n"
+}

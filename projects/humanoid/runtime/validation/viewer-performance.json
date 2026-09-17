@@ -1,0 +1,26 @@
+{
+  "time": 20.79999999999935,
+  "distance": 9.592834889257137,
+  "alternating_count": 50,
+  "fall": false,
+  "playing": true,
+  "viewer_performance": {
+    "catchup_steps": 1,
+    "lag_ms": 0.0,
+    "realtime_factor": 0.9553198625695336,
+    "render_fps": 8.773345676663844,
+    "render_frame_ms": 50.091701,
+    "render_height": 426,
+    "render_width": 640
+  },
+  "timing_ms": {
+    "draw": 45.778611,
+    "inference": 1.226386,
+    "jpeg_encode": 0.815211,
+    "physics": 0.956088,
+    "readback": 2.929267,
+    "render_rgb": 49.250729,
+    "scene_update": 0.014525,
+    "step_total": 2.18674
+  }
+}

@@ -1,0 +1,438 @@
+{
+  "verified_at_utc": "2026-09-17T11:51:37.4018852Z",
+  "source_root": "projects/helicopter; paths are relative to this project, including ../../README.md",
+  "native_provenance": {
+    "model_source_sha256": "076fba9b8d055319bac2e8679e8bdad80547a45cd54298ad6cdd38a4ed8bc7f4",
+    "evaluator_source_sha256": "759fda0aa1c2a6f1c6967f88dd46e55c06361c4ab440d61b86e9028aad54e162"
+  },
+  "sources": [
+    {
+      "path": "../../README.md",
+      "sha256": "08f7a6305b9e19cf0f940dddbe501c4bcc54e5651f18c0449087f769b2e4d1fd"
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "2c9bc6dfd7c7fb0db023e99bbe3d0680e8e42e58d0ed0d007c9964a96a8a53b7"
+    },
+    {
+      "path": "CMakeLists.txt",
+      "sha256": "c991078507cee3dc8414bb0de74bb5cbd30b4baf4f033664eec382abe5219ae7"
+    },
+    {
+      "path": "doc/.gitignore",
+      "sha256": "a17fd70da61efabdffdf48b03a4064311ff7e5b6ac78eb775ba91db90ffeacfc"
+    },
+    {
+      "path": "doc/build-record.json",
+      "sha256": "307a4fa498a80b8117e23e6d05f6779ba142c7ea54f1fac6c796229f53794272"
+    },
+    {
+      "path": "doc/build.ps1",
+      "sha256": "72b454c4fb3398d9a4a9c7329117151e9a940a7b38bf8510729501b9719438d6"
+    },
+    {
+      "path": "doc/build.sh",
+      "sha256": "711e387829791e35250c2817546078aa8c98aee710cd1e0704fc7395da5f4a51"
+    },
+    {
+      "path": "doc/helicopter-entropy-optimal-control.pdf",
+      "sha256": "bf16c9e828e53ddc0a8a8bab2a854d89331211e2fc59aa7f119fc8a1d8ba9efa"
+    },
+    {
+      "path": "doc/helicopter-entropy-optimal-control.tex",
+      "sha256": "81d12666e1cc2ae2c6cfc7ced6f0251df31afcba255ef95a24493f8766f8d859"
+    },
+    {
+      "path": "doc/ieee-preamble.tex",
+      "sha256": "b689c665e241847c0cbcc3c36225a2a8b11c254b75c978ac3a185a0131100973"
+    },
+    {
+      "path": "doc/README.md",
+      "sha256": "3ba622e276c34584ec1d9f25a06ef5787a6eb742788a7716b875032ce3451d6a"
+    },
+    {
+      "path": "doc/references.bib",
+      "sha256": "38e9394b38f1b782ea5a917750d287121c705b70c641702feaf18a42d1da732f"
+    },
+    {
+      "path": "doc/vendor/PROVENANCE.md",
+      "sha256": "ff45cea1f8cd35fb3dfba5e62fa32bfcecf1a3fa566ce4cf4b08e22e922d3379"
+    },
+    {
+      "path": "Dockerfile",
+      "sha256": "fddd307faa560ffaf347dfcf876180cd5976ae11baaabbed17c0f9f5f0bafb92"
+    },
+    {
+      "path": "docs/ENTROPY_CONTROL_CONTRACT.md",
+      "sha256": "f167addb2353846bf545fbd44c8278b6ac613ee8efa304d15c54af64bc4ea373"
+    },
+    {
+      "path": "helicopter.ps1",
+      "sha256": "a0365725100e759f4ab0ed605fdad669fe3dbe31cbd5cae03f0b2cff16b67c22"
+    },
+    {
+      "path": "include/entropy_controller.hpp",
+      "sha256": "146ece11f1d415c9d1516674de2fc8b9cee055ca34b12f09c84a5fd55020d0ac"
+    },
+    {
+      "path": "include/flight_constraints.hpp",
+      "sha256": "a1efcaab6dc151e24aa315dd4cff4454429e02ad2bb029a4c18a37c6d3596285"
+    },
+    {
+      "path": "include/helicopter.hpp",
+      "sha256": "a6390dff4b0c6a0af91b3406f9cfee3bb3f8251ff48066393f7c63fdd60ffd1e"
+    },
+    {
+      "path": "include/mass_estimator.hpp",
+      "sha256": "601bc1d7de5bc8648bb21edd18d7608c4022278b9b74b7c5bf0f1462b0e1272d"
+    },
+    {
+      "path": "include/mass_scaled_dynamics.hpp",
+      "sha256": "3966f2029741a8efa3418a1877c2bd6f32131cff4745bff6976510683a28e9fd"
+    },
+    {
+      "path": "include/optimizer_stage.hpp",
+      "sha256": "d7fa025f9d8e8c9975ff54d2efdb3e9b655f2d5e85e431355c3765ac31997647"
+    },
+    {
+      "path": "include/rotor_model.hpp",
+      "sha256": "3497efc0d62ef08523fcaf6fd34da1fbdd7d8e7106f0384a39c2403778f85e6a"
+    },
+    {
+      "path": "README.md",
+      "sha256": "e21458384354ae6dcbf7413963a8b45ca50ce4ab26331e66338d1bfa5d1fb46e"
+    },
+    {
+      "path": "run.sh",
+      "sha256": "38c1dfac30e8d8b2eb4e62522fb10f7b5e3241a0fa87b83a4105bfd1bf31eefd"
+    },
+    {
+      "path": "setup.sh",
+      "sha256": "9329d23664ba9ab5ad37faadb51112243d54c13f833593e9f976bb711a1fa191"
+    },
+    {
+      "path": "src/entropy_controller.cpp",
+      "sha256": "cf56502e480b26a96d06c1d0dfa273deb418a3f3711d418545d71f8573fc7758"
+    },
+    {
+      "path": "src/gpu_check.cpp",
+      "sha256": "180d932aad73583e577aa4f7b9b963ff94eb07174e15c79fc25e2d81f632d777"
+    },
+    {
+      "path": "src/rotor_model.cpp",
+      "sha256": "16ad4feb819d6327729176cdb60d5ad68b7909a79fe1e7e85d60ca25bb494b35"
+    },
+    {
+      "path": "src/server.cpp",
+      "sha256": "38c0ff9bf1f7323284b968cc8bde720947a4502931f2eb95d12a7d3f61be5366"
+    },
+    {
+      "path": "src/simulation.cpp",
+      "sha256": "f5e840a31b1dd8a14e4d4a558c0216e6ed096c88111e8a2726f1f76161fdcafc"
+    },
+    {
+      "path": "tests/check-service.ps1",
+      "sha256": "f877dbeccdd48c7c98df8b2e72e65b265621ab83b0d05ef1f499a807f61c905e"
+    },
+    {
+      "path": "tests/evaluate.cpp",
+      "sha256": "759fda0aa1c2a6f1c6967f88dd46e55c06361c4ab440d61b86e9028aad54e162"
+    },
+    {
+      "path": "tests/mass_estimator.cpp",
+      "sha256": "45aa3a3e22757dfbeb73a639ea3e3e340e4d776184ed2de66f0649d9e169bc63"
+    },
+    {
+      "path": "tests/optimizer.cpp",
+      "sha256": "a8ce73ff1d9afa6cda8536268fe037fa83b141e8fc296b5d55df52198a8efda3"
+    },
+    {
+      "path": "tests/thermodynamics.cpp",
+      "sha256": "a5b941e401fed1501b0d8665fa6171a5ee8a4036b70b6cdd074d691a8006f05c"
+    },
+    {
+      "path": "web/app.js",
+      "sha256": "c5526695764283dccdb6dd0f9213e0299f81132880a953c01ba2a99f2b335bdb"
+    },
+    {
+      "path": "web/charts.js",
+      "sha256": "a1047d896c4c7219b985aee6ac9356b2ca7956aa8831e299f66c62a75ca23397"
+    },
+    {
+      "path": "web/evidence.js",
+      "sha256": "a03f27ac0afc1a20fcc9b42f2ca2325003fd1986b2f40a361639062005ab71b7"
+    },
+    {
+      "path": "web/flight-view.js",
+      "sha256": "488edd44b1441e97b63d46649af4839a7f9b13dfeeea9893bb605be79a5f676f"
+    },
+    {
+      "path": "web/index.html",
+      "sha256": "05dc2900a3559c998dd969f1cbaf1d41a93d5a552f4fda04bf95e3a9ceac3124"
+    },
+    {
+      "path": "web/optimization.js",
+      "sha256": "f2e06cbd18501a0d17644db5abae2d65cabfaa79a3b188a77a74b50febe9ae83"
+    },
+    {
+      "path": "web/parameters.js",
+      "sha256": "32c19fa1261af1ca5a2551c75208d7425f2e4f629e77e70ed2a15c815fab7f03"
+    },
+    {
+      "path": "web/styles.css",
+      "sha256": "5222a147eb91f9805305c872f95d2fbf39a79d1435bb33ea22ab48f74f9a7521"
+    }
+  ],
+  "evidence_inputs": [
+    {
+      "path": "artifacts/evaluation.json",
+      "sha256": "93320c47b5aa93d79fe0f45ec525f1b561ae04f428850c753bdd1922a5f8a681",
+      "last_write_time_utc": "2026-09-17T11:38:34.4702390Z",
+      "bytes": 6062892
+    },
+    {
+      "path": "artifacts/http-check.json",
+      "sha256": "ecf3ad437389c0f7a52f203591371106c71cfdfd56f0c4c193b0f785c1f16e5d",
+      "last_write_time_utc": "2026-09-17T11:40:00.4175847Z",
+      "bytes": 1743
+    },
+    {
+      "path": "build/ui/qa.json",
+      "sha256": "82fabb3a7d7a4680ec0a8375bba0489b3b55024e2a65ce77b4113f41488e9260",
+      "last_write_time_utc": "2026-09-17T11:49:49.2491326Z",
+      "bytes": 16561
+    },
+    {
+      "path": "artifacts/ui-check.json",
+      "sha256": "82fabb3a7d7a4680ec0a8375bba0489b3b55024e2a65ce77b4113f41488e9260",
+      "last_write_time_utc": "2026-09-17T11:49:49.2491326Z",
+      "bytes": 16561
+    },
+    {
+      "path": "artifacts/gpu-check.json",
+      "sha256": "ff6cd1c17f30a9a77f6528e3c8fc597b541bb549dda7c7a996237cbf1f2a0500",
+      "last_write_time_utc": "2026-09-17T11:44:23.1702142Z",
+      "bytes": 257
+    },
+    {
+      "path": "artifacts/telemetry-check.json",
+      "sha256": "cc535a20c1a372720c7d1791e9e20c6db441aed805566832801c2cc6c7e1ce77",
+      "last_write_time_utc": "2026-09-17T11:49:25.6507357Z",
+      "bytes": 747
+    },
+    {
+      "path": "artifacts/debian-packages.tsv",
+      "sha256": "a3be93af869bb541ed7f0f808d32fa5d995166a9bb3e872c146ce5a32aae5631",
+      "last_write_time_utc": "2026-09-17T11:03:01.1714787Z",
+      "bytes": 4751
+    },
+    {
+      "path": "build/native/optimizer-margin.json",
+      "sha256": "674b9be0e41099aa8a3fe70bed77c662b3d5ce71bc2e270e29c9dd4831cbfbb1",
+      "last_write_time_utc": "2026-09-17T11:22:34.4816919Z",
+      "bytes": 40085
+    },
+    {
+      "path": "build/native/merger-margin.json",
+      "sha256": "3072bea7f28f06ec7e4a470d9468d90b19eb64a80eaeedf44e5c2c89d9e167e0",
+      "last_write_time_utc": "2026-09-17T11:17:36.0163401Z",
+      "bytes": 2041
+    },
+    {
+      "path": "build/native/thermodynamics-margin.txt",
+      "sha256": "3b2aad5f7c5b2430282488e430aa474dcead6cec74f2390889ceb3df5a348637",
+      "last_write_time_utc": "2026-09-17T11:17:35.9510644Z",
+      "bytes": 296
+    },
+    {
+      "path": "build/native/mass-estimator-margin.txt",
+      "sha256": "4331c6dc493c03ceaa83cefc225d45d7b3607eea20d92a08a3d750abae76329e",
+      "last_write_time_utc": "2026-09-17T11:17:35.9778257Z",
+      "bytes": 334
+    },
+    {
+      "path": "artifacts/runtime-inspection.json",
+      "sha256": "9079bb7eed9a804412714b0bf29e3130edc6b9618abcc075458f89694165d865",
+      "last_write_time_utc": "2026-09-17T11:44:22.7942395Z",
+      "bytes": 4378
+    }
+  ],
+  "capture_script": {
+    "path": "build/capture-final-evidence.ps1",
+    "sha256": "b2c69a172648482bc81ba28bf932d2c0f56424d9a859efad077b55510a3a6f8e"
+  },
+  "browser_qa_script": {
+    "path": "build/ui/qa.cjs",
+    "sha256": "04754b0991c7c1e6e3c44058196934f67742896edb22f646fbac41a652f002d7"
+  },
+  "validation": [
+    "All eleven declared 70-second native trials passed: five NMPC, five enabled PID, one disabled negative control.",
+    "Every NMPC trial passed the unchanged 90% all-decisions participation, objective-contribution and feasibility gates.",
+    "Current model and evaluator source hashes match the final report, HTTP evidence and read-only browser QA.",
+    "HTTP evidence inspected both controller modes; browser QA passed without browser/network errors or simulation mutation attempts.",
+    "Existing optimizer, merger-structure, thermodynamic and causal mass-estimator outputs were preserved and validated; no tests were rerun by capture."
+  ],
+  "comparisons": [
+    {
+      "scenario": "nominal",
+      "comparable": true,
+      "savings_demonstrated": true
+    },
+    {
+      "scenario": "alternate wind phase",
+      "comparable": true,
+      "savings_demonstrated": true
+    },
+    {
+      "scenario": "extra gusts",
+      "comparable": true,
+      "savings_demonstrated": true
+    },
+    {
+      "scenario": "mass minus 20 percent",
+      "comparable": true,
+      "savings_demonstrated": true
+    },
+    {
+      "scenario": "mass plus 20 percent with gust",
+      "comparable": true,
+      "savings_demonstrated": true
+    }
+  ],
+  "http_checks": [
+    "native physical model metadata",
+    "saved paired evaluation passes and matches compiled source",
+    "PID and entropy mode switches reset state and history",
+    "ordinary reset preserves each controller mode",
+    "adaptive wait for at least four native samples",
+    "ordered finite physical and thermodynamic telemetry",
+    "acceptance and fallback remain distinct",
+    "only accepted nonfallback predictions are exposed",
+    "pause freezes time and history",
+    "malformed controls rejected",
+    "external origin rejected",
+    "original controller restored in a fresh running mission"
+  ],
+  "browser_checks": [
+    "/api/model returns successful HTTP",
+    "/healthz returns successful HTTP",
+    "/api/state returns successful HTTP",
+    "/api/telemetry returns successful HTTP",
+    "/api/evaluation returns successful HTTP",
+    "Native service reports healthy",
+    "Saved validation is source verified and distinct from live state",
+    "Complete native evaluation passes",
+    "All eleven declared full-flight trials pass",
+    "Five NMPC-mode full-flight trials are present",
+    "Five enabled PID comparisons and disabled baseline are present",
+    "Five paired comparisons are available",
+    "model_source_sha256 agrees with the live executable",
+    "evaluator_source_sha256 agrees with the live executable",
+    "CPU control and browser WebGL execution are explicit",
+    "Native history is complete for the inspected run",
+    "History timestamps are finite and ordered",
+    "Estimated and true simulated mass are separately available",
+    "History contains both mass-estimate and simulated-plant series",
+    "Native metadata declares the common estimator used by both controllers",
+    "Inertia scaling is stated as an assumption",
+    "Native controller scope distinguishes airborne NMPC from PID contact support",
+    "Estimator scope identifies simulated observations",
+    "At least eighteen history charts are constructed",
+    "All six energy and entropy charts contain native data",
+    "All six optimizer/decision charts are available",
+    "Decision graph distinguishes the initial trim hold",
+    "Decision graph distinguishes planned PID landing",
+    "Optimizer timing chart compares measured solve duration with the control interval",
+    "Constraint chart does not show rounded negative zero",
+    "Tiny nonzero constraint readout uses scientific notation",
+    "Tiny constraint axis retains a scientific scale",
+    "Current complete validation is shown without a stale-report warning",
+    "WebGL flight view renders without a visible error",
+    "Desktop page has no horizontal document overflow",
+    "Full estimator metadata is inspectable",
+    "Mass inspector distinguishes an estimate from the simulated plant reference",
+    "UI identifies shared estimator use",
+    "UI discloses PID contact support in the model explanation",
+    "Savings comparison explicitly covers the entire hybrid mission",
+    "UI retains the simulated-vehicle calibration limitation",
+    "All six flight plots are available",
+    "Mass graph has separately named estimated and true plant series",
+    "Mobile page has no horizontal document overflow",
+    "Wide validation tables scroll inside their own containers",
+    "/api/state returns successful HTTP",
+    "Read-only browser QA preserved run identity and selected controller",
+    "No simulation mutation was attempted",
+    "No JavaScript or browser console errors",
+    "No failed browser network responses or requests"
+  ],
+  "browser_screenshots": [
+    {
+      "path": "build/ui/desktop.png",
+      "sha256": "32cbee7b711a2796b877f0fddb70e3d5d6253d63f903700ef06c93265b5d0606"
+    },
+    {
+      "path": "build/ui/energy.png",
+      "sha256": "b48b3c8d80ac063b6dc6c67cae17a2d985420fad12ddf0cb717ce857c29dad69"
+    },
+    {
+      "path": "build/ui/optimizer.png",
+      "sha256": "08540ba328a2ebfee51c1bd91f9f192db8b88ed2dd7df068f023b643e4241f8d"
+    },
+    {
+      "path": "build/ui/optimizer-details.png",
+      "sha256": "3a21ce835d03f2f9a6ce88efb1d7f4e6bf730e41eab1fd40dc6d47d9812fb1be"
+    },
+    {
+      "path": "build/ui/model.png",
+      "sha256": "c3b7016d5e785adc3c3c233b24d47d685592a493d397c33447964277d89279a0"
+    },
+    {
+      "path": "build/ui/mass-inspector.png",
+      "sha256": "556f9c049f5c14a3bb298258885908c09bfea4c8b3ad18f3e0640b58a592fe6c"
+    },
+    {
+      "path": "build/ui/mass-graph.png",
+      "sha256": "c74d5d77c2b8991f73e7c8e4b3fcc7b2fa6e33cf7db2b69c672b67a505ce4975"
+    },
+    {
+      "path": "build/ui/flight.png",
+      "sha256": "8d8f35ad8f77249acad9d7e28111cf54cc8f7545bb53b49acce6d9054f8ab804"
+    },
+    {
+      "path": "build/ui/mobile.png",
+      "sha256": "6e1bdf64a5e51da4db91a70adc8427eb2a84c99c3afbd2b1414677be8ace393d"
+    }
+  ],
+  "limitations": [
+    "Native fingerprints bind model/controller and evaluator source; other listed files are a captured source inventory.",
+    "Unit native outputs have no embedded provenance or recorded exit status; association uses this final build context and relevant file timestamps.",
+    "Report-merger fixtures are structural tests, not flight validation. A passing suite does not imply savings, hardware validity, or real-time operation.",
+    "No GPU or runtime-package claim is inferred from older artifacts."
+  ],
+  "container_id": "fbde3ff28fe4bfdbad01f3858dc8a01dd5170d77c50c5b4fea56072bc36fd984",
+  "image_id": "sha256:deb22836ff460f4fd7567bd8dd581013ab9bc66954d16db2a4dbd8dec8902ef2",
+  "runtime_inspection": {
+    "path": "artifacts/runtime-inspection.json",
+    "sha256": "9079bb7eed9a804412714b0bf29e3130edc6b9618abcc075458f89694165d865",
+    "last_write_time_utc": "2026-09-17T11:44:22.7942395Z",
+    "bytes": 4378
+  },
+  "unit_wrappers": [
+    {
+      "path": "artifacts/optimizer-check.json",
+      "sha256": "a69806425a259117910aaba82b2e360cb993475d34876c646a0d003b959ee99b"
+    },
+    {
+      "path": "artifacts/report-integrity-check.json",
+      "sha256": "1201dd1ba1056bec34464a635870433e09168d7ab03f860902f030ac455f64fb"
+    },
+    {
+      "path": "artifacts/thermodynamics-check.json",
+      "sha256": "1c5669fbf4290989bd1e264ed7b4231535339c2e8b12615556ca93bc0211d4c1"
+    },
+    {
+      "path": "artifacts/mass-estimator-check.json",
+      "sha256": "9111a97649a6d6bba2a51c331067332895f0074eb026dffc955aaa390efe2a7b"
+    }
+  ]
+}

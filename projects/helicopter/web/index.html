@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#243f3a">
+  <title>Helicopter · Flight Lab</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="/styles.css">
+  <script type="module" src="/app.js"></script>
+</head>
+<body>
+  <main class="lab">
+    <header class="header">
+      <div class="identity"><span class="brand-mark" aria-hidden="true">H</span><div><h1>Helicopter flight lab</h1><p>Reference helicopter simulation · parameters are not flight-calibrated</p></div></div>
+      <div class="connection"><span id="connection-dot" class="status-dot"></span><span id="connection-label">Connecting…</span></div>
+    </header>
+
+    <section class="controller-bar" aria-label="Active controller">
+      <div><span class="controller-label">Active controller</span><strong id="controller-name">Waiting for controller state</strong><span id="controller-badge" class="badge">Not identified</span></div>
+      <label for="controller-mode">Switch &amp; restart <select id="controller-mode" disabled><option value="" selected disabled>Select controller</option><option value="hinf">Minimum-entropy H∞</option><option value="pid">PID baseline</option></select></label>
+    </section>
+    <p class="fallback-banner" id="fallback-banner" role="status" hidden></p>
+    <p class="fallback-banner warning" id="plant-limit-banner" role="status" hidden></p>
+    <p class="fallback-banner warning" id="validation-banner" role="status" hidden></p>
+    <section class="toolbar" aria-label="Simulation controls">
+      <div class="actions"><button type="button" id="play-button" class="button primary" disabled><span id="play-icon" aria-hidden="true">▶</span><span id="play-label">Play</span></button><button type="button" id="reset-button" class="button" disabled>↻ <span>Restart</span></button><button type="button" id="gust-button" class="button" disabled>≋ <span>Add gust</span></button></div>
+      <div class="run-info" title="Simulation time; computation can make playback slower than wall time."><strong id="phase">Waiting for simulator</strong><span id="elapsed">0.0</span><span class="muted">/ <span id="duration">70.0</span> s</span><span id="run-label" class="badge">Run —</span></div>
+      <a class="text-link" href="/api/telemetry" download="helicopter-telemetry.json">Download data ↓</a>
+    </section>
+    <p class="error-banner" id="request-error" role="alert" hidden></p>
+    <progress id="mission-progress" value="0" max="70" aria-label="Mission progress"></progress>
+
+    <section class="optimization-strip" aria-label="Offline robust-control design and live execution">
+      <div><span>Design γ</span><strong id="design-gamma">—</strong></div>
+      <div><span>H∞ upper bound · linear model</span><strong id="design-bound">—</strong></div>
+      <div><span>Design H₂ norm</span><strong id="design-h2">—</strong></div>
+      <div><span>Spectral entropy · design</span><strong id="design-entropy">—</strong></div>
+      <div><span>Dynamic update / interval · ms</span><strong id="update-time">—</strong></div>
+      <div><span>Live operating scope</span><strong id="scope-summary">—</strong></div>
+    </section>
+    <p class="method-note">Minimum-entropy H∞ controls the weighted disturbance-to-error transfer. The design quantities above are not thermodynamic entropy or live energy savings.</p>
+
+    <div class="flight-workspace">
+      <section class="viewport-card" aria-label="3D helicopter flight">
+        <div class="view-toolbar"><h2>Flight view</h2><div class="legend"><span><i class="orange"></i>Actual path</span><span><i class="green dashed"></i>Reference</span></div><button id="camera-button" class="subtle-button" type="button">Reset view</button></div>
+        <div class="scene" id="scene"><div class="scene-status" id="flight-label">Waiting for flight data</div><div id="render-error" class="render-error" role="alert" hidden></div><div class="camera-hint">Drag to orbit · Scroll to zoom</div><div class="coordinate-hint">World: +Z up · metres</div></div>
+        <div class="mission-caption" id="mission-name">Takeoff → hover → waypoints → gust recovery → return → land</div>
+      </section>
+
+      <aside class="live-panel" aria-label="Current simulation state">
+        <div class="panel-heading"><h2>Live state</h2><span id="state-age" class="muted">—</span></div>
+        <div class="metrics"><div><span>Altitude</span><strong><span id="altitude">—</span><small> m</small></strong></div><div><span>Position error</span><strong><span id="error">—</span><small> m</small></strong></div><div><span>Speed</span><strong><span id="speed">—</span><small> m/s</small></strong></div></div>
+        <table class="state-table"><thead><tr><th>Variable</th><th>X / roll</th><th>Y / pitch</th><th>Z / yaw</th></tr></thead><tbody><tr><th>Position <small>m</small></th><td id="position-0">—</td><td id="position-1">—</td><td id="position-2">—</td></tr><tr><th>Reference <small>m</small></th><td id="reference-0">—</td><td id="reference-1">—</td><td id="reference-2">—</td></tr><tr><th>Velocity <small>m/s</small></th><td id="velocity-0">—</td><td id="velocity-1">—</td><td id="velocity-2">—</td></tr><tr><th>Attitude <small>deg</small></th><td id="attitude-0">—</td><td id="attitude-1">—</td><td id="attitude-2">—</td></tr><tr><th>Wind <small>m/s</small></th><td id="wind-0">—</td><td id="wind-1">—</td><td id="wind-2">—</td></tr></tbody></table>
+        <div class="solution-preview"><div class="panel-heading"><h3>Applied control solution</h3><span id="solution-time" class="muted">—</span></div><dl><div><dt>Applied force + drag <small>world N</small></dt><dd id="applied-force">—</dd></div><div><dt>Rotor torque <small>body N·m</small></dt><dd id="applied-torque">—</dd></div><div><dt>Thrust <small>command → applied N</small></dt><dd id="thrust">—</dd></div></dl><p id="solution-status" class="muted">Waiting for the first control step.</p></div>
+      </aside>
+    </div>
+
+    <section class="plots-section" aria-labelledby="plots-title">
+      <div class="section-heading"><div><h2 id="plots-title">Run history</h2><p id="history-status">Loading the current run from the simulator…</p></div><div class="history-tools"><span id="hover-time">Move over a plot to inspect</span><label for="signal-channel" id="signal-channel-label" hidden>Signal view <select id="signal-channel"><option value="physical">Physical sensors</option><option value="controller">Controller reconstruction</option></select></label><label for="control-channel" id="control-channel-label" hidden>Flight detail <select id="control-channel"><option value="collective">Collective</option><option value="cyclic_long">Pitch cyclic</option><option value="cyclic_lat">Roll cyclic</option><option value="tail">Tail rotor</option><option value="thrust">Thrust</option><option value="wind">Wind</option><option value="inflow">Induced inflow</option><option value="flap">Rotor flapping</option><option value="mass">Mass estimation</option></select></label></div></div>
+      <div class="chart-tabs" role="group" aria-label="History plot category"><button type="button" data-chart-group="flight" aria-pressed="false">Flight tracking</button><button type="button" data-chart-group="controller" aria-pressed="true">Dynamic control</button><button type="button" data-chart-group="signals" aria-pressed="false">Sensor signals</button><button type="button" data-chart-group="thermodynamics" aria-pressed="false">Physical telemetry</button></div><p class="chart-scope" id="chart-scope">Live controller measurements. The local-region indicator is a diagnostic, not a nonlinear guarantee.</p>
+      <div class="plots-grid" id="plots-grid"></div>
+    </section>
+
+    <details class="details-panel" id="design-panel" open>
+      <summary><span><strong>Minimum-entropy H∞ design</strong><span class="summary-description">Offline synthesis · weighted disturbances → performance errors</span></span><span class="summary-end">Inspect design <span aria-hidden="true">⌄</span></span></summary>
+      <div class="details-content"><p class="model-note"><span id="design-status" class="badge unverified">Design verification not reported</span></p><p class="model-note" id="design-method">Waiting for native design metadata.</p><p class="explanation" id="design-scope"></p><div class="plots-grid design-plots" id="design-plots"></div><p class="model-note" id="entropy-definition"></p><p class="model-note" id="norm-method"></p><div class="model-grid"><section><h3>Selected linear design</h3><table class="data-table"><tbody id="design-values"></tbody></table></section><section><h3>Assumptions and scope</h3><p class="explanation" id="design-assumptions"></p><h3 class="spaced">Design and controller matrices</h3><div id="design-matrices"></div></section></div><details class="metadata-details"><summary>γ design sweep</summary><div class="table-scroll"><table class="validation-table"><thead><tr><th>γ</th><th>Feasible</th><th>Stable</th><th>H∞ upper bound</th><th>Sampled peak</th><th>H₂ norm</th><th>Spectral entropy</th><th>Reason</th></tr></thead><tbody id="design-sweep-rows"></tbody></table></div></details><details class="metadata-details"><summary>Full native design record</summary><pre id="design-json">Not reported.</pre></details></div>
+    </details>
+
+    <details class="details-panel" id="controller-panel">
+      <summary><span><strong>Dynamic controller &amp; measurements</strong><span class="summary-description" id="control-description">Native controller states, signals and timing</span></span><span class="summary-end">Inspect control <span aria-hidden="true">⌄</span></span></summary>
+      <div class="details-content"><p id="control-status" class="model-note">Waiting for native controller telemetry.</p><p id="local-scope-status" class="model-note"></p><div class="model-grid"><section><h3>Latest control interval</h3><table class="data-table"><tbody id="controller-values"></tbody></table></section><section><h3>Dynamic controller state</h3><table class="data-table"><tbody id="controller-state-values"></tbody></table></section></div><p id="state-estimation-scope" class="model-note"></p><div class="model-grid"><section><h3>Scaled controller coordinates</h3><table class="data-table"><tbody id="controller-scaled-values"></tbody></table></section><section><h3>Controller measurements</h3><table class="data-table"><tbody id="measurement-values"></tbody></table><h3 class="spaced">Controller reconstruction of measurements</h3><table class="data-table"><tbody id="reconstruction-values"></tbody></table></section></div><details class="metadata-details"><summary>Full native controller diagnostics</summary><pre id="controller-json">Not reported.</pre></details></div>
+    </details>
+
+    <details class="details-panel" id="thermal-panel">
+      <summary><span><strong>Secondary physical telemetry</strong><span class="summary-description">Motor heat, energy and physical entropy · not the H∞ objective</span></span><span class="summary-end">Inspect plant <span aria-hidden="true">⌄</span></span></summary>
+      <div class="details-content"><p class="model-note">Thermal entropy in J/K and electrical energy are measured from the simulated plant. They are separate from the minimum-entropy H∞ spectral objective; no energy advantage is claimed.</p><table class="data-table"><tbody id="thermal-values"></tbody></table><p class="model-limitations" id="entropy-accounting-note">Energy accounting uses the native plant boundary and includes separately reported contact work.</p></div>
+    </details>
+
+
+    <details class="details-panel" id="model-panel">
+      <summary><span><strong>Model &amp; controller</strong><span class="summary-description">State variables, equations, parameters and applied forces</span></span><span class="summary-end">Inspect model <span aria-hidden="true">⌄</span></span></summary>
+      <div class="details-content">
+        <p class="model-note" id="model-status">Loading model metadata…</p>
+<div class="model-grid"><section><h3>Control calculation</h3><p class="explanation" id="controller-explanation">The active control algorithm and its physical assumptions are supplied by the native model metadata.</p><div id="equations" class="equations"></div><h3 class="spaced">Last applied solution</h3><p class="muted">The force and torque below describe the completed physics step; the current state is one step later.</p><table class="data-table"><tbody id="solution-values"></tbody></table></section><section><h3>Physical model &amp; gains</h3><div class="parameter-scroll"><table class="data-table"><tbody id="model-parameters"></tbody></table></div></section></div>
+        <h3 class="spaced">State definition</h3><div class="state-definition"><p id="coordinate-convention">World axes: X/Y horizontal, Z up. Body axes: X forward, Y left, Z up. Quaternion order: w, x, y, z.</p><dl><div><dt>Quaternion q <small>w, x, y, z · unitless</small></dt><dd id="quaternion-value">—</dd></div><div><dt>Body rate ω <small>p, q, r · rad/s</small></dt><dd id="body-rates-value">—</dd></div><div><dt>Actuators <small>collective, pitch, roll, tail · normalized</small></dt><dd id="actuators-value">—</dd></div><div><dt>Pitch commands <small>main, long, lat, tail · rad</small></dt><dd id="input-radians">—</dd></div><div><dt>Actual pitch <small>main, long, lat, tail · rad</small></dt><dd id="pitch-radians">—</dd></div><div><dt>Induced inflow <small>main, tail · m/s</small></dt><dd id="inflow-value">—</dd></div><div><dt>Rotor flap <small>longitudinal, lateral · rad</small></dt><dd id="flap-value">—</dd></div></dl></div>
+        <section class="estimation-inspector"><h3 class="spaced">Diagnostic mass estimate</h3><p id="mass-estimate-status" class="model-note">Waiting for native estimator telemetry.</p><div class="state-definition"><dl><div><dt>Estimated mass</dt><dd id="estimated-mass">Unavailable</dd></div><div><dt>Estimated mass / nominal mass</dt><dd id="estimated-mass-scale">Unavailable</dd></div><div><dt>Simulated plant mass <small>diagnostic reference</small></dt><dd id="plant-mass-reference">Unavailable</dd></div><div><dt>Accepted estimation samples</dt><dd id="mass-estimate-samples">Unavailable</dd></div></dl><dl><div><dt>Method</dt><dd id="mass-estimate-method">Not reported</dd></div><div><dt>Signals used</dt><dd id="mass-estimate-signals">Not reported</dd></div><div><dt>Mass / inertia assumption</dt><dd id="mass-inertia-assumption">Not reported</dd></div><div><dt>Controller use</dt><dd id="mass-estimate-sharing">Not reported</dd></div></dl></div></section><p class="model-limitations" id="model-limitations">This is a simulated control demonstration. It does not establish readiness for a physical helicopter.</p>
+        <details class="metadata-details"><summary>Full model metadata</summary><pre id="model-json">Loading…</pre></details>
+      </div>
+    </details>
+
+    <details class="details-panel" id="validation-panel" open>
+      <summary><span><strong>Saved validation results</strong><span class="summary-description" id="validation-description">Loading evaluated scenarios…</span></span><span class="summary-end"><span id="validation-badge" class="badge">Awaiting report</span><span aria-hidden="true">⌄</span></span></summary>
+      <div class="details-content"><p id="validation-status" class="model-note">These results come from the saved evaluation, independently of the live run.</p><div class="table-scroll"><table class="validation-table"><thead><tr><th>Scenario</th><th>Applied method</th><th>Test</th><th>Flight</th><th>RMS error <small>m</small></th><th>Peak error <small>m</small></th><th>End error <small>m</small></th><th>Max tilt <small>°</small></th><th>Saturation <small>%</small></th><th>Physical violations <small>steps</small></th><th>Controller checks</th><th>H∞ participation <small>% of intervals</small></th><th>Max update <small>ms</small></th><th>Local-region exits <small>steps</small></th><th>Evaluation time <small>wall s</small></th></tr></thead><tbody id="validation-rows"></tbody></table></div><section id="comparison-results" class="comparison-results" hidden></section><p class="model-note" id="saved-design-status"></p><p class="muted" id="validation-thresholds"></p><p class="baseline-note">The disabled-controller baseline passes its test only when the aircraft fails to fly as expected. “Test pass” and “flight complete” are separate outcomes.</p><details class="metadata-details"><summary>Saved report and provenance</summary><pre id="validation-json">Loading…</pre></details></div>
+    </details>
+    <div class="runtime"><span>C++ / MuJoCo · physics and controller on CPU</span><span id="gpu-name">Checking GPU device access…</span></div>
+  </main>
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,28 @@
+:root{color-scheme:dark;--bg:#111416;--panel:#181c1f;--line:#30363b;--text:#e5e9ec;--muted:#9ba6ae;--accent:#8bc5af}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:13px/1.45 system-ui,sans-serif}
+main{max-width:1100px;margin:auto;padding:20px 24px}
+header,header>div,h2,.progress-label,footer{display:flex;align-items:center;justify-content:space-between;gap:12px}
+header{margin-bottom:16px}h1{font-size:20px;font-weight:600;line-height:1.2;margin:0}h1 span{font-weight:400;color:var(--muted)}
+header>div{font-size:11px;color:var(--muted)}.status{color:var(--accent);font-size:12px;font-weight:600}.status[data-error=true]{color:#edab9e}
+.workspace{display:grid;grid-template-columns:354px minmax(0,1fr);gap:16px}
+.panel{border:1px solid var(--line);background:var(--panel);padding:16px;border-radius:4px;min-width:0}
+h2{font-size:13px;font-weight:600;margin:0 0 12px}h2>span:last-child{font-size:11px;font-weight:400;color:var(--muted);text-align:right}
+.screen{background:#050607;height:420px;position:relative;display:flex;align-items:center;justify-content:center}
+#frame{height:100%;max-width:100%;object-fit:contain;image-rendering:pixelated}#loading{position:absolute;color:var(--muted)}
+.mono,dd,.progress-label,progress{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-variant-numeric:tabular-nums}
+.mono{font-size:11px;color:var(--muted);overflow-wrap:anywhere}.run{margin:0 0 22px}.playback .mono{margin:10px 0 0}
+dl{margin:0}dt{color:var(--muted);font-size:11px}dd{margin:0}
+.playback-values{display:flex;justify-content:space-between;margin-top:12px}.playback-values>div{display:flex;gap:10px;align-items:baseline}.playback-values dd{font-size:15px}
+.progress-label{font-size:12px}.progress-label strong{font-weight:500;color:var(--accent)}progress{width:100%;height:4px;display:block;margin:10px 0 22px;border:0;background:var(--line);accent-color:var(--accent)}progress::-webkit-progress-bar{background:var(--line)}progress::-webkit-progress-value{background:var(--accent)}
+.metrics,.evaluation-values{display:grid;grid-template-columns:1fr 1fr;gap:18px 22px}.metrics dd{font-size:26px;line-height:1.35;margin-top:4px}.metrics{padding-bottom:20px;border-bottom:1px solid var(--line)}
+.rows{margin-top:12px}.rows>div{display:flex;justify-content:space-between;align-items:baseline;gap:14px;padding:7px 0}.rows dd{text-align:right;font-size:12px}.rows dt{font-size:12px}
+.evaluation,.configuration,.game-results{margin-top:16px}.evaluation-values{grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}.evaluation-values dd{font-size:20px;margin-top:4px}.note{font-size:11px;color:var(--muted);margin:12px 0 0}
+.game-results table{width:100%;border-collapse:collapse;text-align:left;font-size:11px}.game-results th{font-weight:400;color:var(--muted)}.game-results td,.game-results th{padding:7px 8px 7px 0;border-bottom:1px solid var(--line)}.game-results td{font-variant-numeric:tabular-nums}.game-results tr:last-child td{border-bottom:0}
+.table-scroll{overflow-x:auto}.table-scroll table{min-width:620px}
+.config-values{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:14px 20px}.config-values dd{font-size:12px;margin-top:4px}
+details{border-top:1px solid var(--line);margin-top:16px;padding-top:10px}summary{font-size:11px;color:var(--muted);cursor:pointer}.provenance dd{overflow-wrap:anywhere;max-width:75%;font-size:10px}
+footer{font-size:11px;color:var(--muted);margin-top:14px}a{color:var(--muted)}a:hover{color:var(--text)}
+#error{border:1px solid #815e54;background:#2c211d;color:#edab9e;padding:10px;font-size:12px;margin:0 0 16px}.hidden{display:none}
+@media(max-width:800px){main{padding:16px}.workspace{grid-template-columns:300px minmax(0,1fr);gap:12px}.screen{height:350px}.panel{padding:12px}.metrics{gap:14px}.metrics dd{font-size:22px}.rows>div{display:block}.rows dd{text-align:left;margin-top:3px}.config-values{grid-template-columns:repeat(4,minmax(0,1fr))}}
+@media(max-width:620px){.workspace{grid-template-columns:1fr}.screen{height:336px}.rows>div{display:flex}.rows dd{text-align:right;margin:0}.evaluation-values,.config-values{grid-template-columns:1fr 1fr}.provenance>div{display:block}.provenance dd{max-width:100%;text-align:left}.playback{max-width:100%}header>div{gap:8px}#updated{display:none}footer{align-items:flex-start;font-size:10px}}

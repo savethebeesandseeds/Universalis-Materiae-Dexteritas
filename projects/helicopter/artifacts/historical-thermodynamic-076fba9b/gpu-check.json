@@ -1,0 +1,9 @@
+{
+  "device": "NVIDIA RTX A2000 8GB Laptop GPU",
+  "device_count": 1,
+  "driver_version": 13020,
+  "expected": 5.0,
+  "kernel_result": 5.0,
+  "passed": true,
+  "scope": "CUDA arithmetic smoke test; flight physics and feedback control run on CPU"
+}

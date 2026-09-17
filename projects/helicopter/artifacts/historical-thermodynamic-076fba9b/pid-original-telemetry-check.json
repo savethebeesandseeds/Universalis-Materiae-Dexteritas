@@ -1,0 +1,10 @@
+{
+  "checked_at_utc": "2026-09-16T14:13:50.6150570Z",
+  "passed": true,
+  "sample_count": 701,
+  "first_time": 0.0,
+  "last_time": 70.0,
+  "history_complete": true,
+  "step_seconds": 0.01,
+  "sample_period_seconds": 0.1
+}

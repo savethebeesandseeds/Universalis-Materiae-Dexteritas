@@ -1,0 +1,17 @@
+{
+  "checked_at_utc": "2026-09-16T14:11:53.0518921Z",
+  "passed": true,
+  "source_verified": true,
+  "model_source_sha256": "21ff06bbeaf4460b6241f4ba3636d079126b78bcc13e7d7d8af7035dbfae9d6b",
+  "checks": [
+    "native model metadata",
+    "saved evaluation matches compiled source",
+    "mission reset identity",
+    "history starts at t=0",
+    "ordered finite telemetry vectors",
+    "pause freezes time and history",
+    "invalid action rejected",
+    "external origin rejected",
+    "reset clears old history"
+  ]
+}

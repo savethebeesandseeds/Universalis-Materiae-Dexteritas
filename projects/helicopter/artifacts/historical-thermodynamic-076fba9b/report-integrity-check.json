@@ -1,0 +1,81 @@
+{
+  "captured_at_utc": "2026-09-17T11:51:37.4018852Z",
+  "model_source_sha256": "076fba9b8d055319bac2e8679e8bdad80547a45cd54298ad6cdd38a4ed8bc7f4",
+  "evaluator_source_sha256": "759fda0aa1c2a6f1c6967f88dd46e55c06361c4ab440d61b86e9028aad54e162",
+  "native_output": {
+    "path": "build/native/merger-margin.json",
+    "sha256": "3072bea7f28f06ec7e4a470d9468d90b19eb64a80eaeedf44e5c2c89d9e167e0",
+    "last_write_time_utc": "2026-09-17T11:17:36.0163401Z",
+    "bytes": 2041
+  },
+  "provenance_binding": "Associated with the source-matched final evaluation after relevant-source/output timestamp checks; this native output does not embed a source fingerprint.",
+  "capture_scope": "Existing output preserved; capture does not rerun the executable or infer a process exit code.",
+  "report": {
+    "checks": [
+      {
+        "name": "incomplete coverage",
+        "passed": true,
+        "rejection": "Missing required trial in merge: nominal/entropy"
+      },
+      {
+        "name": "duplicate trial",
+        "passed": true,
+        "rejection": "Duplicate trial in merge: nominal/pid"
+      },
+      {
+        "name": "stale source",
+        "passed": true,
+        "rejection": "Report model/source mismatch (stale or different build): synthetic-stale"
+      },
+      {
+        "name": "scenario specification mismatch",
+        "passed": true,
+        "rejection": "Scenario specification mismatch in nominal/pid: mass_scale"
+      },
+      {
+        "actual_attempt_mean_ms": 10,
+        "eight_of_ten_passes": false,
+        "name": "initial observation and planned landing remain in participation denominator",
+        "nine_of_ten_passes": true,
+        "passed": true
+      },
+      {
+        "name": "corrupt landing counter rejected",
+        "passed": true
+      },
+      {
+        "name": "observation hold is permitted only once at the initial decision",
+        "passed": true
+      },
+      {
+        "name": "observation hold has no optimizer candidate or objective",
+        "passed": true
+      },
+      {
+        "name": "optimizer parameter must match prior observed estimate",
+        "passed": true
+      },
+      {
+        "name": "future mass estimate cannot inform an earlier decision",
+        "passed": true,
+        "rejection": "Optimizer decision used an estimate unavailable at its decision time"
+      },
+      {
+        "name": "reported mass must match cumulative least squares",
+        "passed": true,
+        "rejection": "Parameter-estimation maximum omits a checkpoint discrepancy"
+      },
+      {
+        "name": "rejected samples cannot change identification statistics",
+        "passed": true,
+        "rejection": "Rejected samples changed parameter-estimation statistics"
+      }
+    ],
+    "note": "Structural tests only; these fixtures are not simulated-flight evidence",
+    "passed": true,
+    "synthetic_fixtures": true,
+    "test": "Native report merger rejection paths",
+    "validation_evidence": false
+  },
+  "native_stdout": "{\n  \"checks\": [\n    {\n      \"name\": \"incomplete coverage\",\n      \"passed\": true,\n      \"rejection\": \"Missing required trial in merge: nominal/entropy\"\n    },\n    {\n      \"name\": \"duplicate trial\",\n      \"passed\": true,\n      \"rejection\": \"Duplicate trial in merge: nominal/pid\"\n    },\n    {\n      \"name\": \"stale source\",\n      \"passed\": true,\n      \"rejection\": \"Report model/source mismatch (stale or different build): synthetic-stale\"\n    },\n    {\n      \"name\": \"scenario specification mismatch\",\n      \"passed\": true,\n      \"rejection\": \"Scenario specification mismatch in nominal/pid: mass_scale\"\n    },\n    {\n      \"actual_attempt_mean_ms\": 10,\n      \"eight_of_ten_passes\": false,\n      \"name\": \"initial observation and planned landing remain in participation denominator\",\n      \"nine_of_ten_passes\": true,\n      \"passed\": true\n    },\n    {\n      \"name\": \"corrupt landing counter rejected\",\n      \"passed\": true\n    },\n    {\n      \"name\": \"observation hold is permitted only once at the initial decision\",\n      \"passed\": true\n    },\n    {\n      \"name\": \"observation hold has no optimizer candidate or objective\",\n      \"passed\": true\n    },\n    {\n      \"name\": \"optimizer parameter must match prior observed estimate\",\n      \"passed\": true\n    },\n    {\n      \"name\": \"future mass estimate cannot inform an earlier decision\",\n      \"passed\": true,\n      \"rejection\": \"Optimizer decision used an estimate unavailable at its decision time\"\n    },\n    {\n      \"name\": \"reported mass must match cumulative least squares\",\n      \"passed\": true,\n      \"rejection\": \"Parameter-estimation maximum omits a checkpoint discrepancy\"\n    },\n    {\n      \"name\": \"rejected samples cannot change identification statistics\",\n      \"passed\": true,\n      \"rejection\": \"Rejected samples changed parameter-estimation statistics\"\n    }\n  ],\n  \"note\": \"Structural tests only; these fixtures are not simulated-flight evidence\",\n  \"passed\": true,\n  \"synthetic_fixtures\": true,\n  \"test\": \"Native report merger rejection paths\",\n  \"validation_evidence\": false\n}\n"
+}

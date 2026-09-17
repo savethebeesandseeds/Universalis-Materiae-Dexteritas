@@ -1,0 +1,10 @@
+{
+  "checked_at_utc": "2026-09-17T12:57:13.4302482Z",
+  "passed": true,
+  "test": "helicopter-mass-estimator-test",
+  "output": "PASS mass identified from causal force and velocity observations\nPASS hover information and accumulated least squares\nPASS contact, invalid, uninformative and out-of-range samples rejected\nPASS reset and no shared scenario or plant-mass input\nPASS common inertia scale preserves Euler gyroscopic term\n5/5 mass-estimator checks passed",
+  "provenance": {
+    "evaluator_source_sha256": "6e137e04adcbb9be605347e3ac7e96f05cec38378c8c2cc6b27812882ce1b172",
+    "model_source_sha256": "754f6b14a84a1713ccf0c3a4a76ac1dc768bb6c85cbf65fed95583658e58eb2d"
+  }
+}

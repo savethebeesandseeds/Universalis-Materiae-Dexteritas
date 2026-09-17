@@ -1,0 +1,54 @@
+{
+  "verified_at": "2026-09-16T16:35:59.0304140+02:00",
+  "id": "0ee55590b050c97bea3b2b37288813f9edcc0d597471c73e1b947280e18a2ebc",
+  "name": "/humanoid-mujoco-native",
+  "image_id": "sha256:603dfd694bbd1eea2002b555a737b5289165cd10f5654d76b57f10a8905d823c",
+  "command": [
+    "bash",
+    "/workspace/run.sh"
+  ],
+  "mounts": [
+    {
+      "Type": "bind",
+      "Source": "C:\\Work\\Universalis-Materiae-Dexteritas\\projects\\humanoid",
+      "Destination": "/workspace",
+      "Mode": "",
+      "RW": true,
+      "Propagation": "rprivate"
+    }
+  ],
+  "ports": {
+    "8080/tcp": [
+      {
+        "HostIp": "127.0.0.1",
+        "HostPort": "43871"
+      }
+    ]
+  },
+  "restart": {
+    "Name": "no",
+    "MaximumRetryCount": 0
+  },
+  "gpu": [
+    {
+      "Driver": "",
+      "Count": -1,
+      "DeviceIDs": null,
+      "Capabilities": [
+        [
+          "gpu"
+        ]
+      ],
+      "Options": {}
+    }
+  ],
+  "labels": {
+    "io.waajacu.configuration": "293efd248b7ebb6d48218dc8050c523cc206cd6c47260307cf4753a77965a75d",
+    "io.waajacu.managed": "true",
+    "io.waajacu.project": "humanoid",
+    "io.waajacu.project-root": "C:\\Work\\Universalis-Materiae-Dexteritas\\projects\\humanoid"
+  },
+  "init": true,
+  "shm": 1073741824,
+  "state": "running"
+}

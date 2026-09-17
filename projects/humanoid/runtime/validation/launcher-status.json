@@ -1,0 +1,82 @@
+{
+  "Id": "0ee55590b050c97bea3b2b37288813f9edcc0d597471c73e1b947280e18a2ebc",
+  "Image": "sha256:603dfd694bbd1eea2002b555a737b5289165cd10f5654d76b57f10a8905d823c",
+  "State": {
+    "Status": "running",
+    "Running": true,
+    "Paused": false,
+    "Restarting": false,
+    "OOMKilled": false,
+    "Dead": false,
+    "Pid": 60371,
+    "ExitCode": 0,
+    "Error": "",
+    "StartedAt": "2026-09-16T14:31:21.412318673Z",
+    "FinishedAt": "2026-09-16T14:31:21.155987177Z",
+    "Health": {
+      "Status": "healthy",
+      "FailingStreak": 0,
+      "Log": [
+        {
+          "Start": "2026-09-16T14:39:01.911818346Z",
+          "End": "2026-09-16T14:39:02.17371844Z",
+          "ExitCode": 0,
+          "Output": "{\"inference_device\":\"cuda\",\"physics_device\":\"cpu\",\"playing\":false,\"policy\":\"pretrained\",\"ready\":true,\"time\":2.7799999999999154}"
+        },
+        {
+          "Start": "2026-09-16T14:39:12.173184163Z",
+          "End": "2026-09-16T14:39:12.433531665Z",
+          "ExitCode": 0,
+          "Output": "{\"inference_device\":\"cuda\",\"physics_device\":\"cpu\",\"playing\":false,\"policy\":\"pretrained\",\"ready\":true,\"time\":2.7799999999999154}"
+        },
+        {
+          "Start": "2026-09-16T14:39:22.434686923Z",
+          "End": "2026-09-16T14:39:22.574883159Z",
+          "ExitCode": 0,
+          "Output": "{\"inference_device\":\"cuda\",\"physics_device\":\"cpu\",\"playing\":false,\"policy\":\"pretrained\",\"ready\":true,\"time\":2.7799999999999154}"
+        },
+        {
+          "Start": "2026-09-16T14:39:32.577001832Z",
+          "End": "2026-09-16T14:39:32.895711852Z",
+          "ExitCode": 0,
+          "Output": "{\"inference_device\":\"cuda\",\"physics_device\":\"cpu\",\"playing\":false,\"policy\":\"pretrained\",\"ready\":true,\"time\":2.7799999999999154}"
+        },
+        {
+          "Start": "2026-09-16T14:39:42.893930238Z",
+          "End": "2026-09-16T14:39:43.084638546Z",
+          "ExitCode": 0,
+          "Output": "{\"inference_device\":\"cuda\",\"physics_device\":\"cpu\",\"playing\":false,\"policy\":\"pretrained\",\"ready\":true,\"time\":2.7799999999999154}"
+        }
+      ]
+    }
+  },
+  "Mounts": [
+    {
+      "Type": "bind",
+      "Source": "C:\\Work\\Universalis-Materiae-Dexteritas\\projects\\humanoid",
+      "Destination": "/workspace",
+      "Mode": "",
+      "RW": true,
+      "Propagation": "rprivate"
+    }
+  ],
+  "Ports": {
+    "8080/tcp": [
+      {
+        "HostIp": "127.0.0.1",
+        "HostPort": "43871"
+      }
+    ]
+  },
+  "GPU": {
+    "Driver": "",
+    "Count": -1,
+    "DeviceIDs": null,
+    "Capabilities": [
+      [
+        "gpu"
+      ]
+    ],
+    "Options": {}
+  }
+}

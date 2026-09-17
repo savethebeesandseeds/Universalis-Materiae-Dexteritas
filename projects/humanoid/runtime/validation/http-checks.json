@@ -1,0 +1,26 @@
+[
+  {
+    "check": "invalid action",
+    "status": 400,
+    "expected": 400,
+    "pass": true
+  },
+  {
+    "check": "invalid speed",
+    "status": 400,
+    "expected": 400,
+    "pass": true
+  },
+  {
+    "check": "invalid content type",
+    "status": 415,
+    "expected": 415,
+    "pass": true
+  },
+  {
+    "check": "foreign origin",
+    "status": 403,
+    "expected": 403,
+    "pass": true
+  }
+]

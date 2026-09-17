@@ -1,0 +1,20 @@
+{
+  "checked_at_utc": "2026-09-17T11:49:25.6224948Z",
+  "passed": true,
+  "scope": "Read-only inspection of native history for this live run; not a replacement for the saved paired evaluation",
+  "run_id": 7,
+  "controller_mode": "entropy_nmpc",
+  "sample_count": 701,
+  "first_time": 0.0,
+  "last_time": 70.0,
+  "history_complete": true,
+  "finished": true,
+  "history_covers_full_70_second_mission": true,
+  "step_seconds": 0.01,
+  "sample_period_seconds": 0.1,
+  "finite_strictly_ordered_timestamps": true,
+  "provenance": {
+    "evaluator_source_sha256": "759fda0aa1c2a6f1c6967f88dd46e55c06361c4ab440d61b86e9028aad54e162",
+    "model_source_sha256": "076fba9b8d055319bac2e8679e8bdad80547a45cd54298ad6cdd38a4ed8bc7f4"
+  }
+}

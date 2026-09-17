@@ -1,0 +1,50 @@
+{
+  "checked_at_utc": "2026-09-17T12:57:44.5896348Z",
+  "passed": true,
+  "source_verified": true,
+  "saved_evaluation_passed": true,
+  "hinf_trials_passed": true,
+  "pid_trials_passed": true,
+  "complete_evaluation": true,
+  "model_source_sha256": "754f6b14a84a1713ccf0c3a4a76ac1dc768bb6c85cbf65fed95583658e58eb2d",
+  "evaluator_source_sha256": "6e137e04adcbb9be605347e3ac7e96f05cec38378c8c2cc6b27812882ce1b172",
+  "history_wait_budget_seconds": 30,
+  "original_controller_mode": "minimum_entropy_hinf",
+  "final_controller_mode": "minimum_entropy_hinf",
+  "mode_checks": [
+    {
+      "mode": "pid_baseline",
+      "run_id": 3,
+      "samples": 5,
+      "history_wait_seconds": 0.401,
+      "paused_simulation_time": 0.48000000000000026,
+      "controller_status": "pid_baseline",
+      "applied_decisions_observed": 0,
+      "fallback_decisions_observed": 0
+    },
+    {
+      "mode": "minimum_entropy_hinf",
+      "run_id": 5,
+      "samples": 4,
+      "history_wait_seconds": 0.348,
+      "paused_simulation_time": 0.37000000000000016,
+      "controller_status": "central_controller_update",
+      "applied_decisions_observed": 27,
+      "fallback_decisions_observed": 0
+    }
+  ],
+  "checks": [
+    "native physical model metadata",
+    "saved paired evaluation matches source and reports both passing and failing trials honestly",
+    "PID and minimum-entropy H-infinity mode switches reset state and history",
+    "ordinary reset preserves each controller mode",
+    "adaptive wait for at least four native samples",
+    "ordered finite physical and thermodynamic telemetry",
+    "H-infinity, hold, landing support and fallback decisions remain distinct",
+    "offline gain and sampled stability certificates are exposed",
+    "pause freezes time and history",
+    "malformed controls rejected",
+    "external origin rejected",
+    "original controller restored in a fresh running mission"
+  ]
+}

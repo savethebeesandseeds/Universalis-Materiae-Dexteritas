@@ -1,0 +1,33 @@
+{
+  "verified_utc": "2026-09-17T08:55:22.1473067Z",
+  "container_id": "0ee55590b050c97bea3b2b37288813f9edcc0d597471c73e1b947280e18a2ebc",
+  "url": "http://127.0.0.1:43871/",
+  "checkpoint_sha256": "a77e672689271cf91907be2a2d058bb3e3cd2b865629d440041ba531e91ed1bc",
+  "policy": "distilled",
+  "time": 23.819999999997677,
+  "distance": 10.800566015842143,
+  "alternating_count": 59,
+  "fall": false,
+  "playing": true,
+  "inference_device": "cuda",
+  "viewer_performance": {
+    "catchup_steps": 1,
+    "lag_ms": 0.0,
+    "realtime_factor": 0.9707986315127828,
+    "render_fps": 9.707986315133208,
+    "render_frame_ms": 29.484498,
+    "render_height": 426,
+    "render_width": 640
+  },
+  "evaluation_summary": {
+    "trained": {
+      "passed": 4,
+      "trials": 5
+    },
+    "zero": {
+      "passed": 0,
+      "trials": 5
+    }
+  },
+  "browser_review": "Full-body native MuJoCo camera and imitation controller/evaluation selection verified"
+}

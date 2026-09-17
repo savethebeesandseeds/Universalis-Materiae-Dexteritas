@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Atari / Pong</title>
+  <link rel="stylesheet" href="/style.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+<main>
+  <header><h1>Atari <span id="game-title">/ Pong</span></h1><div><span id="state" class="status">Connecting</span><span id="updated">—</span></div></header>
+  <p id="error" role="status" hidden></p>
+  <div class="workspace">
+    <section class="panel playback" aria-labelledby="playback-title">
+      <h2 id="playback-title">Playback <span>CPU · target 15 decisions/s</span></h2>
+      <div class="screen"><img id="frame" alt="Live Atari Pong game"><span id="loading">Loading frame…</span></div>
+      <dl class="playback-values"><div><dt>Game return</dt><dd id="play-score">—</dd></div><div><dt>Episode</dt><dd id="play-episode">—</dd></div></dl>
+      <p id="policy" class="mono">Waiting for checkpoint</p>
+    </section>
+    <section class="panel training" aria-labelledby="training-title">
+      <h2 id="training-title">Training <span id="device">—</span></h2>
+      <p id="run" class="mono run">No run</p>
+      <div class="progress-label"><span id="budget">— / — decisions</span><strong id="percent">—</strong></div>
+      <progress id="progress" max="1" value="0" aria-label="Training decision budget"></progress>
+      <dl class="metrics">
+        <div><dt>Decisions / s</dt><dd id="fps">—</dd></div>
+        <div><dt id="mean-label" title="Mean over the learner's current episode block; resets after at least 100 completed games.">Train return · current block</dt><dd id="mean">—</dd></div>
+        <div><dt>PPO updates · session</dt><dd id="updates">—</dd></div>
+        <div><dt>Completed games · session</dt><dd id="episodes">—</dd></div>
+      </dl>
+      <dl class="rows">
+        <div><dt>Session decisions</dt><dd id="session-steps">—</dd></div>
+        <div><dt>Training elapsed / time cap</dt><dd id="elapsed">—</dd></div>
+        <div><dt>Estimated training remaining</dt><dd id="eta">—</dd></div>
+        <div><dt id="checkpoint-label">Saved checkpoint · total decisions</dt><dd id="checkpoint">—</dd></div>
+        <div><dt>Latest PPO loss</dt><dd id="loss">—</dd></div>
+      </dl>
+    </section>
+  </div>
+  <section id="shared-panel" class="panel game-results" hidden aria-labelledby="shared-title">
+    <h2 id="shared-title">Shared learning <span>Equal samples and loss weight per game</span></h2>
+    <div class="table-scroll"><table><thead><tr><th>Game</th><th>New decisions / target</th><th>Training return</th><th>Before mean</th><th>After mean</th><th>Change</th><th>Capped · before / after</th><th>Criterion</th></tr></thead><tbody id="shared-results"></tbody></table></div>
+    <p class="note">The viewer follows Pong. Before and after use paired evaluation seeds. Capped episodes prevent a full-game comparison; each game's criterion is checked separately.</p>
+  </section>
+  <section class="panel evaluation" aria-labelledby="evaluation-title">
+    <h2 id="evaluation-title"><span id="evaluation-label">Final evaluation</span><span id="verdict">Pending</span></h2>
+    <dl class="evaluation-values">
+      <div><dt>Completed games</dt><dd id="eval-games">— / 20</dd></div>
+      <div><dt id="eval-positive-label">Wins · required ≥16</dt><dd id="eval-wins">—</dd></div>
+      <div><dt id="eval-mean-label">Mean return · required &gt;0</dt><dd id="eval-mean">—</dd></div>
+      <div><dt>Truncations · required 0</dt><dd id="eval-truncated">—</dd></div>
+    </dl>
+    <p id="evaluation-note" class="note">Runs after training. Frozen policy, 20 fresh-seed full games.</p>
+  </section>
+  <section class="panel game-results" aria-labelledby="game-results-title">
+    <h2 id="game-results-title">Recorded results <span>Preserved Pong proof · latest independent pilots</span></h2>
+    <table><thead><tr><th>Game</th><th>Target</th><th>Result</th><th>Games</th></tr></thead><tbody id="game-results"></tbody></table>
+  </section>
+  <section class="panel configuration" aria-labelledby="config-title">
+    <h2 id="config-title">Configuration <span id="runtime">C++20 · ALE · LibTorch</span></h2>
+    <dl id="config-values" class="config-values"></dl>
+    <details><summary>Checkpoint provenance</summary><dl class="rows provenance"><div><dt>Parent decisions</dt><dd id="parent-steps">—</dd></div><div><dt>Parent checkpoint SHA-256</dt><dd id="parent-hash">—</dd></div><div><dt>Source pretraining decisions</dt><dd id="source-steps">—</dd></div><div><dt>Transferred source SHA-256</dt><dd id="source-hash">—</dd></div><div><dt>ROM SHA-256</dt><dd id="rom-hash">—</dd></div><div><dt>Evaluated checkpoint SHA-256</dt><dd id="eval-hash">—</dd></div></dl></details>
+  </section>
+  <section id="experiment-panel" class="panel game-results" hidden aria-labelledby="experiment-title">
+    <h2 id="experiment-title">Independent experiments <span>20 evaluation episodes per checkpoint</span></h2>
+    <div class="table-scroll"><table><thead><tr><th>Game</th><th>Initialization</th><th>Decisions</th><th>Mean return</th><th>Frame caps</th><th>Training time</th><th>Target</th></tr></thead><tbody id="experiment-results"></tbody></table></div>
+    <p class="note">Equal target budgets and seeds. Pong feature pretraining: 3,031,808 additional source decisions. One training seed per comparison.</p>
+  </section>
+  <section id="comparison-panel" class="panel game-results" hidden aria-labelledby="comparison-title">
+    <h2 id="comparison-title">Feature transfer <span>Matched training and evaluation seeds</span></h2>
+    <div class="table-scroll"><table><thead><tr><th>Game</th><th>Scratch mean</th><th>Pong features mean</th><th>Change</th><th>Capped · scratch / transfer</th><th>Comparison</th></tr></thead><tbody id="comparison-results"></tbody></table></div>
+    <p id="comparison-note" class="note"></p>
+  </section>
+  <footer><span>Atari 2600 · ALE / Stella</span><span>Status polling: 2 s · <a href="/api/status" target="_blank" rel="noopener">JSON</a></span></footer>
+</main>
+</body>
+</html>

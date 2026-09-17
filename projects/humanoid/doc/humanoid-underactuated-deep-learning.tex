@@ -1,0 +1,111 @@
+\input{ieee-preamble}
+\hypersetup{
+  pdftitle={Underactuated Humanoid Locomotion},
+  pdfauthor={Santiago Restrepo},
+  pdfsubject={Simulation-first approach to learned humanoid walking and underactuation},
+  pdfkeywords={humanoid, locomotion, underactuation, MuJoCo, C++, imitation, PPO}
+}
+
+\title{Underactuated Humanoid Locomotion}
+\author{\IEEEauthorblockN{Santiago Restrepo}
+\IEEEauthorblockA{\href{mailto:contact@waajacu.com}{contact@waajacu.com}\quad
+\url{https://waajacu.com/}\\[3pt]
+\textit{Learning-based control method for bipedal walking}}}
+\date{}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This brief describes a simulation-first approach to humanoid walking and
+underactuated motion. A published walking controller provides a baseline for
+local policy development through imitation and reinforcement learning.
+Physical diagnostics and visual inspection guide bounded experiments. The
+immediate task is recognizable walking; deliberately passive joints follow.
+\end{abstract}
+
+\begin{IEEEkeywords}
+Humanoid locomotion, underactuation, simulation, reinforcement learning.
+\end{IEEEkeywords}
+
+\balance
+\section{Model and Execute the Dynamics}
+Use a free base, actuated legs, and fixed upper-body joints. For configuration
+$q$ and generalized velocity $v$, the dynamics are~\cite{tedrakeContact}
+\begin{equation}
+\begin{aligned}
+M(q)\dot v+h(q,v)&=B\tau+J_c^{\mathsf T}\lambda,\\
+\dot q&=N(q)v.
+\end{aligned}
+\end{equation}
+$M$ is inertia, $h$ includes gravity and velocity terms, $B$ maps motor
+torques $\tau$, $J_c^{\mathsf T}$ maps contact forces $\lambda$, and $N$
+handles orientation kinematics. The base is unactuated; contact changes control
+authority. Fixed flat-foot support can be fully actuated in reduced coordinates.
+
+Native C++ connects MuJoCo contact and friction dynamics to LibTorch learning
+and inference. Physics runs on the CPU; neural computation uses CUDA. A browser
+shows live simulation frames and motion/contact diagnostics.
+
+\section{Establish the Walking Baseline}
+Replay the published Unitree controller~\cite{unitreeGym} with its documented
+observation and action interface. Preserve it as a reference alongside a
+zero-torque control. The local PPO actor receives command $c$ and causal history
+$H$ of angular velocity, projected gravity, joint states, and prior actions:
+\begin{equation}
+\begin{aligned}
+a_t&\sim\pi_\theta(\,\cdot\mid H_t,c_t),\\
+q_{\mathrm{des}}&=q_{\mathrm{nom}}+D\tanh(a_t),\\
+\tau&=\operatorname{sat}[K_p(q_{\mathrm{des}}-q_a)-K_dv_a].
+\end{aligned}
+\end{equation}
+$\theta$ denotes policy parameters and $D$ bounds nominal-pose offsets.
+Joint states $q_a$, $v_a$ drive faster proportional-derivative (PD) feedback;
+$\operatorname{sat}$ enforces motor limits. Preserve preprocessing and action
+transformations when exporting and evaluating each policy.
+
+An asymmetric critic receives additional simulator state during training.
+The actor uses observable history without privileged critic signals.
+
+\section{Develop and Adapt Local Policies}
+Imitation trains a student from the reference controller's action labels.
+Independent reinforcement learning starts from random weights without teacher
+labels. Proximal policy optimization (PPO)~\cite{schulman2017} collects parallel
+rollouts, estimates advantages, and applies clipped updates to optimize
+\begin{equation}
+\max_\theta J(\theta)=\mathbb E_{\pi_\theta}
+\left[\sum_{t=0}^{T-1}\gamma^t r_t\right].
+\end{equation}
+$T$ is the horizon and $\gamma$ the discount factor. Fit return targets and
+bootstrap at nonterminal truncations. Reward forward tracking, uprightness,
+and alternating support; penalize falls, slip, effort, and abrupt actions.
+Revise rewards using physical diagnostics: contact events alone need not
+represent useful steps.
+
+Use an existing walker as a starting point for adaptation. Record whether a
+candidate is pretrained, teacher-assisted, trained from random weights, or
+resumed; these support different learning claims.
+
+\section{Verify Motion Within a Fixed Budget}
+Fix the task and budget before training. Freeze candidate weights and evaluate
+continuous flat-ground trials from independently reset initial conditions.
+Stop on a fall or the horizon without automatic resets. Inspect foot lifting,
+load transfer, alternation, displacement, and slip alongside rendered motion.
+Distinguish walking from pivoting, sliding, or repeated same-leg lifts.
+
+Archive configurations, checkpoint hashes, training histories, and evaluations.
+Stop at the criterion or budget; further training requires a separate decision.
+Finite demonstrations do not establish general stability.
+
+\section{Extend Toward Passive-Joint Motion}
+Once walking is established, compare the unchanged reference with a movable
+joint whose motor torque is disabled. Verify actual actuator effort. Adaptation
+can then target compensation through remaining joints and contact dynamics.
+Hardware transfer and broader robustness remain future work.
+
+\begingroup
+\raggedright
+\bibliographystyle{IEEEtran}
+\bibliography{references}
+\endgroup
+\end{document}

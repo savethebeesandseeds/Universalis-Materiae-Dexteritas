@@ -1,0 +1,6 @@
+PASS energy, entropy, wind, and terminal balances
+PASS analytic passive cooling and terminal storage
+PASS hover, spinning rotors, and cyclic mechanical work
+PASS independent finite-difference energy derivative
+PASS non-regenerative braking and resistance feedback
+5/5 thermodynamic checks passed

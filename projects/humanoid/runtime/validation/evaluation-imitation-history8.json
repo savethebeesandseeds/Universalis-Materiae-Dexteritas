@@ -1,0 +1,2177 @@
+{
+  "experiment": {
+    "command_x": 0.5,
+    "fall_definition": "pelvis height <0.45m OR pelvis up-axis cosine <0.5; trial then stops",
+    "limitations": [
+      "Initial-condition trials of one caller-selected checkpoint, not independently trained seeds.",
+      "Foot-contact telemetry supports visual gait inspection; absence of slipping is not established.",
+      "A finite flat-ground rollout is not a stability proof or evidence of hardware safety.",
+      "This evaluator measures checkpoint behavior; training provenance must be established separately."
+    ],
+    "requested_seconds_per_trial": 20.0,
+    "seed_definition": "seed 0 canonical; others mt19937_64 uniform +/-0.005 rad initial leg-joint noise; exact vector recorded",
+    "step_definition": "foot-floor touchdown after >=60ms absence; simultaneous landings do not alternate",
+    "success_criteria": "full duration without fall; distance >=50% commanded; >=5 touchdowns per foot; >=8 alternations; <=10% airborne samples",
+    "trials_per_policy": 5,
+    "zero_baseline": "All 12 motor torques zero; no PD, policy, or external support"
+  },
+  "provenance": {
+    "active_policy_path": "/workspace/artifacts/imitation/native-dagger-history8-seed1-r2/round-19/policy.pt",
+    "active_policy_sha256": "a77e672689271cf91907be2a2d058bb3e3cd2b865629d440041ba531e91ed1bc",
+    "asset_manifest_scope": "config, policy, and every XML/STL/OBJ in the G1 model resource directory",
+    "asset_manifest_sha256": "e324f940914385be1887db59f2eaf049a148000cc3934812b33cb1e30b73cb6f",
+    "asset_sha256": {
+      "deploy/deploy_mujoco/configs/g1.yaml": "73044e7d355c61915695c16d6e09eb3efef46eec1e3d708fd3eb9157dfe3bbbb",
+      "deploy/pre_train/g1/motion.pt": "cf668f75b90d1abf73d2b87612a6e76bccc61ff7e083b63582d3f6aaa3c1759d",
+      "resources/robots/g1_description/g1_12dof.xml": "747ede40aa726b7352bae8353e95d0d0f908cec2257a27cbd78bc6e5a2d5a314",
+      "resources/robots/g1_description/g1_23dof.xml": "aaca282f79cc4cdd20fafa27656e766e35eb1455edb6f341165e27b137a036b6",
+      "resources/robots/g1_description/g1_23dof_rev_1_0.xml": "8ca62fcccdca91a431ca04f1a42f9c2fda241fdd5e13411168dc82de00f978de",
+      "resources/robots/g1_description/g1_29dof.xml": "dfcfd8b41d0980695d0e75d76fdfd9965f71431a1c67afc31c8dbe730eb66c72",
+      "resources/robots/g1_description/g1_29dof_lock_waist.xml": "59791f27960982d9eb6164309fcd235561258181dd0ca510988a3f37444e59e4",
+      "resources/robots/g1_description/g1_29dof_lock_waist_rev_1_0.xml": "cc65e483cbe1f2a74d8e66e32f44e5ecc758a6ab163f2e9deaaf84c5602113e3",
+      "resources/robots/g1_description/g1_29dof_rev_1_0.xml": "165fa7a5275745e45fa25e1bc78010c1055d81bb81c013b3c7bc8b9347a3b9c3",
+      "resources/robots/g1_description/g1_29dof_with_hand.xml": "7b73b894c01c0be42eb8b7091ef9a3f94050b8243ebb25b4f2d3f387817b57bc",
+      "resources/robots/g1_description/g1_29dof_with_hand_rev_1_0.xml": "77c98e7d34e428c6cdbd1e0d665e989cbc43bf17abb8a7c048494b4bc51ead88",
+      "resources/robots/g1_description/g1_dual_arm.xml": "741aa797dd1a58298f76da6980503fc9f47036ed21725742cbd4121eed230141",
+      "resources/robots/g1_description/meshes/head_link.STL": "005fb67fbd3eff94aa8bf4a6e83238174e9f91b6721f7111594322f223724411",
+      "resources/robots/g1_description/meshes/left_ankle_pitch_link.STL": "d49e3abc6f5b12e532062cd575b87b5ef40cd2a3fc18f54a1ca5bba4f773d51d",
+      "resources/robots/g1_description/meshes/left_ankle_roll_link.STL": "c4092af943141d4d9f74232f3cfa345afc6565f46a077793b8ae0e68b39dc33f",
+      "resources/robots/g1_description/meshes/left_elbow_link.STL": "fa752198accd104d5c4c3a01382e45165b944fbbc5acce085059223324e5bed3",
+      "resources/robots/g1_description/meshes/left_hand_index_0_link.STL": "6b35f2f77211d5a366f0b9a4e47c4ee35e536731266f1a34e9efa12db579b892",
+      "resources/robots/g1_description/meshes/left_hand_index_1_link.STL": "9e315ebc8a7a0cb98e033985b586b20d81cf8aa761181ae61ce56fcb14077a06",
+      "resources/robots/g1_description/meshes/left_hand_middle_0_link.STL": "6b35f2f77211d5a366f0b9a4e47c4ee35e536731266f1a34e9efa12db579b892",
+      "resources/robots/g1_description/meshes/left_hand_middle_1_link.STL": "9e315ebc8a7a0cb98e033985b586b20d81cf8aa761181ae61ce56fcb14077a06",
+      "resources/robots/g1_description/meshes/left_hand_palm_link.STL": "23a486b75bd78a9bf03cec25d84d87f97f3dae038cf21a743b6d469b337e4004",
+      "resources/robots/g1_description/meshes/left_hand_thumb_0_link.STL": "a90c721661c0622685488a3c74d1e122c7da89242d3a1daef75edb83422d05e0",
+      "resources/robots/g1_description/meshes/left_hand_thumb_1_link.STL": "445c54a45bc13ce36001556f66bc0f49c83cb40321205ae4d676bb2874325684",
+      "resources/robots/g1_description/meshes/left_hand_thumb_2_link.STL": "3d8dbe5085acfc213d21aa8b0782e89cd79084e9678f3a85fc7b04a86b029db5",
+      "resources/robots/g1_description/meshes/left_hip_pitch_link.STL": "4725168105ee768ee31638ef22b53f6be2d7641bfd7cfefe803488d884776fa4",
+      "resources/robots/g1_description/meshes/left_hip_roll_link.STL": "91f25922ee8a7c3152790051bebad17b4d9cd243569c38fe340285ff93a97acf",
+      "resources/robots/g1_description/meshes/left_hip_yaw_link.STL": "a16d88aa6ddac8083aa7ad55ed317bea44b1fa003d314fba88965b7ed0f3b55b",
+      "resources/robots/g1_description/meshes/left_knee_link.STL": "8d92b9e3d3a636761150bb8025e32514c4602b91c7028d523ee42b3e632de477",
+      "resources/robots/g1_description/meshes/left_rubber_hand.STL": "cff2221a690fa69303f61fce68f2d155c1517b52efb6ca9262dd56e0bc6e70fe",
+      "resources/robots/g1_description/meshes/left_shoulder_pitch_link.STL": "f0d1cfd02fcf0d42f95e678eeca33da3afbcc366ffba5c052847773ec4f31d52",
+      "resources/robots/g1_description/meshes/left_shoulder_roll_link.STL": "fb9df21687773522598dc384f1a2945c7519f11cbc8bd372a49170316d6eee88",
+      "resources/robots/g1_description/meshes/left_shoulder_yaw_link.STL": "1aa97e9748e924336567992181f78c7cd0652fd52a4afcca3df6b2ef6f9e712e",
+      "resources/robots/g1_description/meshes/left_wrist_pitch_link.STL": "b251d8e05047f695d0f536cd78c11973cfa4e78d08cfe82759336cc3471de3a9",
+      "resources/robots/g1_description/meshes/left_wrist_roll_link.STL": "edc387c9a0ba8c2237e9b296d32531426fabeb6f53e58df45c76106bca74148c",
+      "resources/robots/g1_description/meshes/left_wrist_roll_rubber_hand.STL": "e81030abd023bd9e4a308ef376d814a2c12d684d8a7670c335bbd5cd7809c909",
+      "resources/robots/g1_description/meshes/left_wrist_yaw_link.STL": "83f8fb3a726bf9613d65dd14f0f447cb918c3c95b3938042a0c9c09749267d3b",
+      "resources/robots/g1_description/meshes/logo_link.STL": "8571a0a19bc4916fa55f91449f51d5fdefd751000054865a842449429d5f155b",
+      "resources/robots/g1_description/meshes/pelvis.STL": "5ba6bbc888e630550140d3c26763f10206da8c8bd30ed886b8ede41c61f57a31",
+      "resources/robots/g1_description/meshes/pelvis_contour_link.STL": "5cc5c2c7a312329e3feeb2b03d3fc09fc29705bd01864f6767e51be959662420",
+      "resources/robots/g1_description/meshes/right_ankle_pitch_link.STL": "15be426539ec1be70246d4d82a168806db64a41301af8b35c197a33348c787a9",
+      "resources/robots/g1_description/meshes/right_ankle_roll_link.STL": "4b66222ea56653e627711b56d0a8949b4920da5df091da0ceb343f54e884e3a5",
+      "resources/robots/g1_description/meshes/right_elbow_link.STL": "1be925d7aa268bb8fddf5362b9173066890c7d32092c05638608126e59d1e2ab",
+      "resources/robots/g1_description/meshes/right_hand_index_0_link.STL": "12ab4300c95e437e834f9aef772b3b431c671bf34338930b52ad11aef73bbd0d",
+      "resources/robots/g1_description/meshes/right_hand_index_1_link.STL": "c9c34efce4563cacdcfd29fc838a982976d40f5442c71219811dcbbf3923a33d",
+      "resources/robots/g1_description/meshes/right_hand_middle_0_link.STL": "12ab4300c95e437e834f9aef772b3b431c671bf34338930b52ad11aef73bbd0d",
+      "resources/robots/g1_description/meshes/right_hand_middle_1_link.STL": "c9c34efce4563cacdcfd29fc838a982976d40f5442c71219811dcbbf3923a33d",
+      "resources/robots/g1_description/meshes/right_hand_palm_link.STL": "86c0b231cc44477d64a6493e5a427ba16617a00738112dd187c652675b086fb9",
+      "resources/robots/g1_description/meshes/right_hand_thumb_0_link.STL": "544298d0ea1088f5b276a10cc6a6a9e533efdd91594955fdc956c46211d07f83",
+      "resources/robots/g1_description/meshes/right_hand_thumb_1_link.STL": "0a9a820da8dd10f298778b714f1364216e8a5976f4fd3a05689ea26327d44bf6",
+      "resources/robots/g1_description/meshes/right_hand_thumb_2_link.STL": "3f1bfb37668e8f61801c8d25f171fa1949e08666be86c67acad7e0079937cc45",
+      "resources/robots/g1_description/meshes/right_hip_pitch_link.STL": "e4f3c99d7f4a7d34eadbef9461fc66e3486cb5442db1ec50c86317d459f1a9c6",
+      "resources/robots/g1_description/meshes/right_hip_roll_link.STL": "4c254ef66a356f492947f360dd931965477b631e3fcc841f91ccc46d945d54f6",
+      "resources/robots/g1_description/meshes/right_hip_yaw_link.STL": "e479c2936ca2057e9eb2f7dff6c189b7419d7b8484dea0b298cbb36a2a6aa668",
+      "resources/robots/g1_description/meshes/right_knee_link.STL": "63c4008449c9bbe701a6e2b557b7a252e90cf3a5abcf54cee46862b9a69f8ec8",
+      "resources/robots/g1_description/meshes/right_rubber_hand.STL": "99533b778bca6246144fa511bb9d4e555e075c641f2a0251e04372869cd99d67",
+      "resources/robots/g1_description/meshes/right_shoulder_pitch_link.STL": "24cdb387e0128dfe602770a81c56cdce3a0181d34d039a11d1aaf8819b7b8c02",
+      "resources/robots/g1_description/meshes/right_shoulder_roll_link.STL": "962b97c48f9ce9e8399f45dd9522e0865d19aa9fd299406b2d475a8fc4a53e81",
+      "resources/robots/g1_description/meshes/right_shoulder_yaw_link.STL": "a0b76489271da0c72461a344c9ffb0f0c6e64f019ea5014c1624886c442a2fe5",
+      "resources/robots/g1_description/meshes/right_wrist_pitch_link.STL": "d22f8f3b3127f15a63e5be1ee273cd5075786c3142f1c3d9f76cbf43d2a26477",
+      "resources/robots/g1_description/meshes/right_wrist_roll_link.STL": "a7ee9212ff5b94d6cb7f52bb1bbf3f352194d5b598acff74f4c77d340c5b344f",
+      "resources/robots/g1_description/meshes/right_wrist_roll_rubber_hand.STL": "0729aff1ac4356f9314de13a46906267642e58bc47f0d8a7f17f6590a6242ccf",
+      "resources/robots/g1_description/meshes/right_wrist_yaw_link.STL": "bc9dece2d12509707e0057ba2e48df8f3d56db0c79410212963a25e8a50f61a6",
+      "resources/robots/g1_description/meshes/torso_constraint_L_link.STL": "82be7f93e85b3d303a1d1e1847e2c916939bd61c424ed1ebd28691ec33909dd1",
+      "resources/robots/g1_description/meshes/torso_constraint_L_rod_link.STL": "c10de1effa7ea797ac268006aa2a739036c7e1f326b2012d711ee2c20c5a6e96",
+      "resources/robots/g1_description/meshes/torso_constraint_R_link.STL": "54ded433a3a0c76027365856fdbd55215643de88846f7d436598a4071e682725",
+      "resources/robots/g1_description/meshes/torso_constraint_R_rod_link.STL": "cb83fd38a9f06c99e3f301c70f12d94ae770a8f0cf9501f83580a27f908990b4",
+      "resources/robots/g1_description/meshes/torso_link.STL": "e96d023f0368a4e3450b86ca5d4f10227d8141156a373e7da8cb3c93266523e0",
+      "resources/robots/g1_description/meshes/torso_link_23dof_rev_1_0.STL": "3cd0d56fde14b73c1623304684805029971c4f84b596f9914e823ca70a107fd2",
+      "resources/robots/g1_description/meshes/torso_link_rev_1_0.STL": "11ddb46f2098efbbd8816b1d65893632d8e78be936376c7cdcd6771899ccc723",
+      "resources/robots/g1_description/meshes/waist_constraint_L.STL": "8ebafdcb4de6871113f0ca2c356618d6e46b1d50f6c0bf9e37f47b9d8e100d99",
+      "resources/robots/g1_description/meshes/waist_constraint_R.STL": "791902a291ffbd35ab97383b7b44ea5d975de7c80eef838797c970790b382ca9",
+      "resources/robots/g1_description/meshes/waist_roll_link.STL": "34f0aa73f41131230be4d25876c944fdf6c24d62553f199ff8b980c15e8913df",
+      "resources/robots/g1_description/meshes/waist_roll_link_rev_1_0.STL": "b67c347a05abc3e8ddae600d98a082bee273bb39f8e651647708b0a7140a8a97",
+      "resources/robots/g1_description/meshes/waist_support_link.STL": "1fae9e1bb609848a1667d32eed8d6083ae443538a306843056a2a660f1b2926a",
+      "resources/robots/g1_description/meshes/waist_yaw_link.STL": "2883f20e03f09b669b5b4ce10677ee6b5191c0934b584d7cbaef2d0662856ffb",
+      "resources/robots/g1_description/meshes/waist_yaw_link_rev_1_0.STL": "ec6db442b11f25eed898b5add07940c85d804f300de24dcbd264ccd8be7d554c",
+      "resources/robots/g1_description/scene.xml": "482d49902ca2b9fdc49d84ef5d8779fa69d66bc53ef440b4bf50079d1bac9995"
+    },
+    "control_dt": 0.02,
+    "cudnn_enabled": false,
+    "dimensions": {
+      "nq": 19,
+      "nu": 12,
+      "nv": 18
+    },
+    "evaluated_policy": {
+      "kind": "explicit local checkpoint",
+      "path": "/workspace/artifacts/imitation/native-dagger-history8-seed1-r2/round-19/policy.pt",
+      "published_reference_weights_used": false,
+      "sha256": "a77e672689271cf91907be2a2d058bb3e3cd2b865629d440041ba531e91ed1bc"
+    },
+    "executable_sha256": "0eb0d655f18f8fa2291f842f3f7a9d6a11bd480e5b1d6d2ff70280a5deaea08b",
+    "inference_device": "cuda",
+    "model_limitations": "12 actuated leg joints; upper-body joints are fixed; level ground only",
+    "physics_device": "cpu",
+    "policy_training": "Caller-supplied local TorchScript checkpoint; consult its training run manifest for training provenance",
+    "render_backend": "OSMesa CPU OpenGL",
+    "render_settings": {
+      "collision_visuals": false,
+      "height": 640,
+      "multisamples": 0,
+      "reflections": false,
+      "shadows": false,
+      "width": 960
+    },
+    "simulation_code_sha256": "8d373d63983ddd384ea6966940d7d2715b0f87fd5e26ff325b58595479066844",
+    "simulation_dt": 0.002,
+    "source": "https://github.com/unitreerobotics/unitree_rl_gym",
+    "source_commit": "276801e46c5d433564f24658bac64f254b7d2d4b",
+    "source_contract": "deploy/deploy_mujoco/deploy_mujoco.py and configs/g1.yaml",
+    "source_scope": "Unitree robot-model assets and controller observation/action contract",
+    "versions": {
+      "compiler": "12.2.0",
+      "language": "C++17",
+      "libtorch": "2.7.1",
+      "mujoco": "3.3.2"
+    }
+  },
+  "results": [
+    {
+      "airborne_fraction": 0.0,
+      "alternating_count": 49,
+      "applied_action_diagnostics": {
+        "action_values": 12000,
+        "control_intervals": 1000,
+        "interpretation": "near_one_fraction counts |normalized action| >=0.95; this is not saturation for an unbounded published policy",
+        "joint_order": [
+          "left_hip_pitch_joint",
+          "left_hip_roll_joint",
+          "left_hip_yaw_joint",
+          "left_knee_joint",
+          "left_ankle_pitch_joint",
+          "left_ankle_roll_joint",
+          "right_hip_pitch_joint",
+          "right_hip_roll_joint",
+          "right_hip_yaw_joint",
+          "right_knee_joint",
+          "right_ankle_pitch_joint",
+          "right_ankle_roll_joint"
+        ],
+        "joint_position_offset_scale_rad": 0.25,
+        "max_abs_normalized_action": 2.8331847190856934,
+        "near_one_fraction": 0.2295,
+        "near_one_threshold": 0.95,
+        "per_joint_max_abs": [
+          1.3529624938964844,
+          1.0435378551483154,
+          0.7828094959259033,
+          2.245004415512085,
+          2.391252040863037,
+          1.1155152320861816,
+          1.3830732107162476,
+          1.161949872970581,
+          0.6292306780815125,
+          2.3462114334106445,
+          2.8331847190856934,
+          1.028271198272705
+        ],
+        "scope": "One sample per joint per applied PD control interval since reset; zero-torque control excluded"
+      },
+      "command_x": 0.5,
+      "distance": 9.124729795231872,
+      "fall": false,
+      "fall_time": null,
+      "feet_contacts": {
+        "left": false,
+        "right": true
+      },
+      "height_reference": "pelvis floating-base origin above z=0 ground",
+      "inference_device": "cuda",
+      "initial_joint_noise_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "left_steps": 25,
+      "max_flight_time": 0.0,
+      "mean_speed": 0.4562364897615983,
+      "min_height": 0.7616624346337064,
+      "min_upright": 0.9974654577320474,
+      "path_distance": 9.462055243714369,
+      "physics_device": "cpu",
+      "policy": "trained",
+      "policy_origin": "locally trained TorchScript",
+      "position": [
+        9.124729795231872,
+        -1.8748841898872142,
+        0.7708624285763584
+      ],
+      "right_steps": 25,
+      "seed": 0,
+      "speed": 0.47227243072948916,
+      "speed_tracking_rmse": 0.06621555097594795,
+      "time": 19.999999999999794,
+      "timing_ms": {
+        "draw": 0.0,
+        "inference": 0.623279,
+        "jpeg_encode": 0.0,
+        "physics": 0.9343020000000001,
+        "readback": 0.0,
+        "render_rgb": 0.0,
+        "scene_update": 0.0,
+        "step_total": 1.560072
+      },
+      "torso_height": 0.7708624285763584,
+      "touchdown_events": [
+        {
+          "side": "left",
+          "time": 0.1400000000000001
+        },
+        {
+          "side": "right",
+          "time": 0.4000000000000003
+        },
+        {
+          "side": "left",
+          "time": 0.8400000000000006
+        },
+        {
+          "side": "right",
+          "time": 1.2400000000000009
+        },
+        {
+          "side": "left",
+          "time": 1.6200000000000012
+        },
+        {
+          "side": "right",
+          "time": 2.019999999999999
+        },
+        {
+          "side": "left",
+          "time": 2.419999999999955
+        },
+        {
+          "side": "right",
+          "time": 2.819999999999911
+        },
+        {
+          "side": "left",
+          "time": 3.219999999999867
+        },
+        {
+          "side": "right",
+          "time": 3.619999999999823
+        },
+        {
+          "side": "left",
+          "time": 4.019999999999779
+        },
+        {
+          "side": "right",
+          "time": 4.419999999999735
+        },
+        {
+          "side": "left",
+          "time": 4.819999999999691
+        },
+        {
+          "side": "right",
+          "time": 5.219999999999647
+        },
+        {
+          "side": "left",
+          "time": 5.619999999999603
+        },
+        {
+          "side": "right",
+          "time": 6.019999999999559
+        },
+        {
+          "side": "left",
+          "time": 6.419999999999515
+        },
+        {
+          "side": "right",
+          "time": 6.819999999999471
+        },
+        {
+          "side": "left",
+          "time": 7.219999999999427
+        },
+        {
+          "side": "right",
+          "time": 7.619999999999383
+        },
+        {
+          "side": "left",
+          "time": 8.019999999999348
+        },
+        {
+          "side": "right",
+          "time": 8.419999999999481
+        },
+        {
+          "side": "left",
+          "time": 8.819999999999615
+        },
+        {
+          "side": "right",
+          "time": 9.219999999999748
+        },
+        {
+          "side": "left",
+          "time": 9.619999999999882
+        },
+        {
+          "side": "right",
+          "time": 10.020000000000016
+        },
+        {
+          "side": "left",
+          "time": 10.440000000000156
+        },
+        {
+          "side": "right",
+          "time": 10.820000000000283
+        },
+        {
+          "side": "left",
+          "time": 11.220000000000416
+        },
+        {
+          "side": "right",
+          "time": 11.62000000000055
+        },
+        {
+          "side": "left",
+          "time": 12.04000000000069
+        },
+        {
+          "side": "right",
+          "time": 12.420000000000817
+        },
+        {
+          "side": "left",
+          "time": 12.82000000000095
+        },
+        {
+          "side": "right",
+          "time": 13.220000000001084
+        },
+        {
+          "side": "left",
+          "time": 13.640000000001224
+        },
+        {
+          "side": "right",
+          "time": 14.020000000001351
+        },
+        {
+          "side": "left",
+          "time": 14.420000000001485
+        },
+        {
+          "side": "right",
+          "time": 14.820000000001619
+        },
+        {
+          "side": "left",
+          "time": 15.240000000001759
+        },
+        {
+          "side": "right",
+          "time": 15.620000000001886
+        },
+        {
+          "side": "left",
+          "time": 16.020000000002
+        },
+        {
+          "side": "right",
+          "time": 16.420000000001778
+        },
+        {
+          "side": "left",
+          "time": 16.840000000001545
+        },
+        {
+          "side": "right",
+          "time": 17.220000000001335
+        },
+        {
+          "side": "left",
+          "time": 17.620000000001113
+        },
+        {
+          "side": "right",
+          "time": 18.02000000000089
+        },
+        {
+          "side": "left",
+          "time": 18.44000000000066
+        },
+        {
+          "side": "right",
+          "time": 18.820000000000448
+        },
+        {
+          "side": "left",
+          "time": 19.220000000000226
+        },
+        {
+          "side": "right",
+          "time": 19.620000000000005
+        }
+      ],
+      "upright": 0.9996594648535635,
+      "velocity": [
+        0.47227243072948916,
+        -0.05478705732559355,
+        -0.08885221609684907
+      ],
+      "walking_criteria_pass": true
+    },
+    {
+      "airborne_fraction": 0.0024009603841534245,
+      "alternating_count": 41,
+      "applied_action_diagnostics": {
+        "action_values": 9996,
+        "control_intervals": 833,
+        "interpretation": "near_one_fraction counts |normalized action| >=0.95; this is not saturation for an unbounded published policy",
+        "joint_order": [
+          "left_hip_pitch_joint",
+          "left_hip_roll_joint",
+          "left_hip_yaw_joint",
+          "left_knee_joint",
+          "left_ankle_pitch_joint",
+          "left_ankle_roll_joint",
+          "right_hip_pitch_joint",
+          "right_hip_roll_joint",
+          "right_hip_yaw_joint",
+          "right_knee_joint",
+          "right_ankle_pitch_joint",
+          "right_ankle_roll_joint"
+        ],
+        "joint_position_offset_scale_rad": 0.25,
+        "max_abs_normalized_action": 2.9955949783325195,
+        "near_one_fraction": 0.25240096038415366,
+        "near_one_threshold": 0.95,
+        "per_joint_max_abs": [
+          2.20737361907959,
+          1.2161757946014404,
+          0.88620525598526,
+          2.2538483142852783,
+          2.4221365451812744,
+          1.6178998947143555,
+          2.534877300262451,
+          1.2154697179794312,
+          1.0223475694656372,
+          2.4763576984405518,
+          2.9955949783325195,
+          1.5274518728256226
+        ],
+        "scope": "One sample per joint per applied PD control interval since reset; zero-torque control excluded"
+      },
+      "command_x": 0.5,
+      "distance": 6.846600823930417,
+      "fall": true,
+      "fall_time": 16.660000000001645,
+      "feet_contacts": {
+        "left": true,
+        "right": false
+      },
+      "height_reference": "pelvis floating-base origin above z=0 ground",
+      "inference_device": "cuda",
+      "initial_joint_noise_rad": [
+        -0.0036612335598746725,
+        -0.003635929636338028,
+        -0.00048785096155461866,
+        -0.004789757715832729,
+        -0.0014910188621708041,
+        0.004113580479111769,
+        -0.0002924786750976762,
+        -0.004255749599288333,
+        0.0006984714870209661,
+        0.0013523121831373608,
+        -0.004105468063553455,
+        0.0005617889912237998
+      ],
+      "left_steps": 23,
+      "max_flight_time": 0.04,
+      "mean_speed": 0.4109604336092281,
+      "min_height": 0.4148002925625337,
+      "min_upright": 0.5620730813047955,
+      "path_distance": 7.8015948515418785,
+      "physics_device": "cpu",
+      "policy": "trained",
+      "policy_origin": "locally trained TorchScript",
+      "position": [
+        6.846600823930417,
+        -2.618359603840702,
+        0.4148002925625337
+      ],
+      "right_steps": 21,
+      "seed": 1,
+      "speed": 0.6596078618827583,
+      "speed_tracking_rmse": 0.11194648572640489,
+      "time": 16.660000000001645,
+      "timing_ms": {
+        "draw": 0.0,
+        "inference": 0.875568,
+        "jpeg_encode": 0.0,
+        "physics": 1.063614,
+        "readback": 0.0,
+        "render_rgb": 0.0,
+        "scene_update": 0.0,
+        "step_total": 1.94312
+      },
+      "torso_height": 0.4148002925625337,
+      "touchdown_events": [
+        {
+          "side": "left",
+          "time": 0.1400000000000001
+        },
+        {
+          "side": "right",
+          "time": 0.4000000000000003
+        },
+        {
+          "side": "left",
+          "time": 0.8400000000000006
+        },
+        {
+          "side": "right",
+          "time": 1.2400000000000009
+        },
+        {
+          "side": "left",
+          "time": 1.6200000000000012
+        },
+        {
+          "side": "right",
+          "time": 2.0000000000000013
+        },
+        {
+          "side": "left",
+          "time": 2.439999999999953
+        },
+        {
+          "side": "right",
+          "time": 2.819999999999911
+        },
+        {
+          "side": "left",
+          "time": 3.219999999999867
+        },
+        {
+          "side": "right",
+          "time": 3.599999999999825
+        },
+        {
+          "side": "left",
+          "time": 4.039999999999777
+        },
+        {
+          "side": "right",
+          "time": 4.419999999999735
+        },
+        {
+          "side": "left",
+          "time": 4.839999999999689
+        },
+        {
+          "side": "right",
+          "time": 5.219999999999647
+        },
+        {
+          "side": "left",
+          "time": 5.639999999999601
+        },
+        {
+          "side": "right",
+          "time": 6.019999999999559
+        },
+        {
+          "side": "left",
+          "time": 6.419999999999515
+        },
+        {
+          "side": "right",
+          "time": 6.819999999999471
+        },
+        {
+          "side": "left",
+          "time": 7.239999999999425
+        },
+        {
+          "side": "right",
+          "time": 7.619999999999383
+        },
+        {
+          "side": "left",
+          "time": 8.039999999999354
+        },
+        {
+          "side": "right",
+          "time": 8.419999999999481
+        },
+        {
+          "side": "left",
+          "time": 8.839999999999621
+        },
+        {
+          "side": "right",
+          "time": 9.219999999999748
+        },
+        {
+          "side": "left",
+          "time": 9.619999999999882
+        },
+        {
+          "side": "right",
+          "time": 10.000000000000009
+        },
+        {
+          "side": "left",
+          "time": 10.440000000000156
+        },
+        {
+          "side": "right",
+          "time": 10.820000000000283
+        },
+        {
+          "side": "left",
+          "time": 11.240000000000423
+        },
+        {
+          "side": "right",
+          "time": 11.62000000000055
+        },
+        {
+          "side": "left",
+          "time": 12.04000000000069
+        },
+        {
+          "side": "right",
+          "time": 12.420000000000817
+        },
+        {
+          "side": "left",
+          "time": 12.82000000000095
+        },
+        {
+          "side": "right",
+          "time": 13.200000000001078
+        },
+        {
+          "side": "left",
+          "time": 13.620000000001218
+        },
+        {
+          "side": "right",
+          "time": 14.000000000001345
+        },
+        {
+          "side": "left",
+          "time": 14.440000000001492
+        },
+        {
+          "side": "right",
+          "time": 14.820000000001619
+        },
+        {
+          "side": "left",
+          "time": 15.220000000001752
+        },
+        {
+          "side": "right",
+          "time": 15.600000000001879
+        },
+        {
+          "side": "left",
+          "time": 16.00000000000201
+        },
+        {
+          "side": "left",
+          "time": 16.280000000001856
+        },
+        {
+          "side": "left",
+          "time": 16.520000000001723
+        },
+        {
+          "side": "right",
+          "time": 16.54000000000171
+        }
+      ],
+      "upright": 0.5620730813047955,
+      "velocity": [
+        0.6596078618827583,
+        -1.6079694326727791,
+        -1.8664530295043595
+      ],
+      "walking_criteria_pass": false
+    },
+    {
+      "airborne_fraction": 0.0,
+      "alternating_count": 49,
+      "applied_action_diagnostics": {
+        "action_values": 12000,
+        "control_intervals": 1000,
+        "interpretation": "near_one_fraction counts |normalized action| >=0.95; this is not saturation for an unbounded published policy",
+        "joint_order": [
+          "left_hip_pitch_joint",
+          "left_hip_roll_joint",
+          "left_hip_yaw_joint",
+          "left_knee_joint",
+          "left_ankle_pitch_joint",
+          "left_ankle_roll_joint",
+          "right_hip_pitch_joint",
+          "right_hip_roll_joint",
+          "right_hip_yaw_joint",
+          "right_knee_joint",
+          "right_ankle_pitch_joint",
+          "right_ankle_roll_joint"
+        ],
+        "joint_position_offset_scale_rad": 0.25,
+        "max_abs_normalized_action": 2.798126459121704,
+        "near_one_fraction": 0.22916666666666666,
+        "near_one_threshold": 0.95,
+        "per_joint_max_abs": [
+          1.3301409482955933,
+          1.0322890281677246,
+          0.7827117443084717,
+          2.238102912902832,
+          2.3912408351898193,
+          1.0882574319839478,
+          1.3551418781280518,
+          1.130549430847168,
+          0.6351102590560913,
+          2.3440568447113037,
+          2.798126459121704,
+          1.0141394138336182
+        ],
+        "scope": "One sample per joint per applied PD control interval since reset; zero-torque control excluded"
+      },
+      "command_x": 0.5,
+      "distance": 9.119345433405917,
+      "fall": false,
+      "fall_time": null,
+      "feet_contacts": {
+        "left": false,
+        "right": true
+      },
+      "height_reference": "pelvis floating-base origin above z=0 ground",
+      "inference_device": "cuda",
+      "initial_joint_noise_rad": [
+        0.004036040261939942,
+        0.0035023613957580997,
+        0.0028382046540214806,
+        0.0042531710011540795,
+        -0.0024709633582559406,
+        -0.0036411417546213837,
+        -0.002754593437253769,
+        -0.0040034966474475865,
+        -0.004779122613296789,
+        0.001858428696521656,
+        0.001540849722771089,
+        0.004683951725519273
+      ],
+      "left_steps": 25,
+      "max_flight_time": 0.0,
+      "mean_speed": 0.45596727167030054,
+      "min_height": 0.7622903486553669,
+      "min_upright": 0.9974772292883752,
+      "path_distance": 9.476903233840845,
+      "physics_device": "cpu",
+      "policy": "trained",
+      "policy_origin": "locally trained TorchScript",
+      "position": [
+        9.119345433405917,
+        -1.9555492176069413,
+        0.7697501071718997
+      ],
+      "right_steps": 25,
+      "seed": 2,
+      "speed": 0.48200541154099624,
+      "speed_tracking_rmse": 0.06633961834801734,
+      "time": 19.999999999999794,
+      "timing_ms": {
+        "draw": 0.0,
+        "inference": 0.960287,
+        "jpeg_encode": 0.0,
+        "physics": 1.098368,
+        "readback": 0.0,
+        "render_rgb": 0.0,
+        "scene_update": 0.0,
+        "step_total": 2.062052
+      },
+      "torso_height": 0.7697501071718997,
+      "touchdown_events": [
+        {
+          "side": "left",
+          "time": 0.1400000000000001
+        },
+        {
+          "side": "right",
+          "time": 0.4000000000000003
+        },
+        {
+          "side": "left",
+          "time": 0.8400000000000006
+        },
+        {
+          "side": "right",
+          "time": 1.2400000000000009
+        },
+        {
+          "side": "left",
+          "time": 1.6200000000000012
+        },
+        {
+          "side": "right",
+          "time": 2.0000000000000013
+        },
+        {
+          "side": "left",
+          "time": 2.419999999999955
+        },
+        {
+          "side": "right",
+          "time": 2.819999999999911
+        },
+        {
+          "side": "left",
+          "time": 3.219999999999867
+        },
+        {
+          "side": "right",
+          "time": 3.619999999999823
+        },
+        {
+          "side": "left",
+          "time": 4.019999999999779
+        },
+        {
+          "side": "right",
+          "time": 4.419999999999735
+        },
+        {
+          "side": "left",
+          "time": 4.839999999999689
+        },
+        {
+          "side": "right",
+          "time": 5.219999999999647
+        },
+        {
+          "side": "left",
+          "time": 5.619999999999603
+        },
+        {
+          "side": "right",
+          "time": 6.019999999999559
+        },
+        {
+          "side": "left",
+          "time": 6.439999999999513
+        },
+        {
+          "side": "right",
+          "time": 6.819999999999471
+        },
+        {
+          "side": "left",
+          "time": 7.219999999999427
+        },
+        {
+          "side": "right",
+          "time": 7.619999999999383
+        },
+        {
+          "side": "left",
+          "time": 8.019999999999348
+        },
+        {
+          "side": "right",
+          "time": 8.419999999999481
+        },
+        {
+          "side": "left",
+          "time": 8.839999999999621
+        },
+        {
+          "side": "right",
+          "time": 9.219999999999748
+        },
+        {
+          "side": "left",
+          "time": 9.619999999999882
+        },
+        {
+          "side": "right",
+          "time": 10.020000000000016
+        },
+        {
+          "side": "left",
+          "time": 10.440000000000156
+        },
+        {
+          "side": "right",
+          "time": 10.820000000000283
+        },
+        {
+          "side": "left",
+          "time": 11.240000000000423
+        },
+        {
+          "side": "right",
+          "time": 11.62000000000055
+        },
+        {
+          "side": "left",
+          "time": 12.020000000000683
+        },
+        {
+          "side": "right",
+          "time": 12.420000000000817
+        },
+        {
+          "side": "left",
+          "time": 12.840000000000957
+        },
+        {
+          "side": "right",
+          "time": 13.220000000001084
+        },
+        {
+          "side": "left",
+          "time": 13.620000000001218
+        },
+        {
+          "side": "right",
+          "time": 14.020000000001351
+        },
+        {
+          "side": "left",
+          "time": 14.440000000001492
+        },
+        {
+          "side": "right",
+          "time": 14.820000000001619
+        },
+        {
+          "side": "left",
+          "time": 15.220000000001752
+        },
+        {
+          "side": "right",
+          "time": 15.620000000001886
+        },
+        {
+          "side": "left",
+          "time": 16.04000000000199
+        },
+        {
+          "side": "right",
+          "time": 16.420000000001778
+        },
+        {
+          "side": "left",
+          "time": 16.820000000001556
+        },
+        {
+          "side": "right",
+          "time": 17.220000000001335
+        },
+        {
+          "side": "left",
+          "time": 17.640000000001102
+        },
+        {
+          "side": "right",
+          "time": 18.02000000000089
+        },
+        {
+          "side": "left",
+          "time": 18.42000000000067
+        },
+        {
+          "side": "right",
+          "time": 18.820000000000448
+        },
+        {
+          "side": "left",
+          "time": 19.240000000000215
+        },
+        {
+          "side": "right",
+          "time": 19.620000000000005
+        }
+      ],
+      "upright": 0.9996912952653437,
+      "velocity": [
+        0.48200541154099624,
+        -0.06334518140033968,
+        -0.10467158144646031
+      ],
+      "walking_criteria_pass": true
+    },
+    {
+      "airborne_fraction": 0.0,
+      "alternating_count": 49,
+      "applied_action_diagnostics": {
+        "action_values": 12000,
+        "control_intervals": 1000,
+        "interpretation": "near_one_fraction counts |normalized action| >=0.95; this is not saturation for an unbounded published policy",
+        "joint_order": [
+          "left_hip_pitch_joint",
+          "left_hip_roll_joint",
+          "left_hip_yaw_joint",
+          "left_knee_joint",
+          "left_ankle_pitch_joint",
+          "left_ankle_roll_joint",
+          "right_hip_pitch_joint",
+          "right_hip_roll_joint",
+          "right_hip_yaw_joint",
+          "right_knee_joint",
+          "right_ankle_pitch_joint",
+          "right_ankle_roll_joint"
+        ],
+        "joint_position_offset_scale_rad": 0.25,
+        "max_abs_normalized_action": 2.847813129425049,
+        "near_one_fraction": 0.23125,
+        "near_one_threshold": 0.95,
+        "per_joint_max_abs": [
+          1.358238935470581,
+          1.0458667278289795,
+          0.7787405252456665,
+          2.24989652633667,
+          2.394145965576172,
+          1.1264019012451172,
+          1.3568425178527832,
+          1.1680946350097656,
+          0.6187654733657837,
+          2.3440608978271484,
+          2.847813129425049,
+          1.0415050983428955
+        ],
+        "scope": "One sample per joint per applied PD control interval since reset; zero-torque control excluded"
+      },
+      "command_x": 0.5,
+      "distance": 9.130432097354014,
+      "fall": false,
+      "fall_time": null,
+      "feet_contacts": {
+        "left": false,
+        "right": true
+      },
+      "height_reference": "pelvis floating-base origin above z=0 ground",
+      "inference_device": "cuda",
+      "initial_joint_noise_rad": [
+        0.0005876598962317901,
+        -0.003042362452388382,
+        0.0009024127156131581,
+        -0.0015363109078827455,
+        0.0005979563654389865,
+        -0.0013869731034155835,
+        0.002372440819543507,
+        -0.0007734278305338901,
+        0.002047249621887324,
+        -0.003338643796859276,
+        -0.003874199701584798,
+        0.0009129621770039339
+      ],
+      "left_steps": 25,
+      "max_flight_time": 0.0,
+      "mean_speed": 0.4565216048677054,
+      "min_height": 0.7618208023137779,
+      "min_upright": 0.9973625253223612,
+      "path_distance": 9.473913150782181,
+      "physics_device": "cpu",
+      "policy": "trained",
+      "policy_origin": "locally trained TorchScript",
+      "position": [
+        9.130432097354014,
+        -1.8933939558519364,
+        0.7695421872671591
+      ],
+      "right_steps": 25,
+      "seed": 3,
+      "speed": 0.47925701779879043,
+      "speed_tracking_rmse": 0.06582077688930105,
+      "time": 19.999999999999794,
+      "timing_ms": {
+        "draw": 0.0,
+        "inference": 1.123811,
+        "jpeg_encode": 0.0,
+        "physics": 1.412863,
+        "readback": 0.0,
+        "render_rgb": 0.0,
+        "scene_update": 0.0,
+        "step_total": 2.541164
+      },
+      "torso_height": 0.7695421872671591,
+      "touchdown_events": [
+        {
+          "side": "left",
+          "time": 0.1400000000000001
+        },
+        {
+          "side": "right",
+          "time": 0.4000000000000003
+        },
+        {
+          "side": "left",
+          "time": 0.8400000000000006
+        },
+        {
+          "side": "right",
+          "time": 1.2400000000000009
+        },
+        {
+          "side": "left",
+          "time": 1.6200000000000012
+        },
+        {
+          "side": "right",
+          "time": 2.0000000000000013
+        },
+        {
+          "side": "left",
+          "time": 2.419999999999955
+        },
+        {
+          "side": "right",
+          "time": 2.819999999999911
+        },
+        {
+          "side": "left",
+          "time": 3.219999999999867
+        },
+        {
+          "side": "right",
+          "time": 3.619999999999823
+        },
+        {
+          "side": "left",
+          "time": 4.019999999999779
+        },
+        {
+          "side": "right",
+          "time": 4.419999999999735
+        },
+        {
+          "side": "left",
+          "time": 4.819999999999691
+        },
+        {
+          "side": "right",
+          "time": 5.219999999999647
+        },
+        {
+          "side": "left",
+          "time": 5.619999999999603
+        },
+        {
+          "side": "right",
+          "time": 6.019999999999559
+        },
+        {
+          "side": "left",
+          "time": 6.419999999999515
+        },
+        {
+          "side": "right",
+          "time": 6.819999999999471
+        },
+        {
+          "side": "left",
+          "time": 7.219999999999427
+        },
+        {
+          "side": "right",
+          "time": 7.619999999999383
+        },
+        {
+          "side": "left",
+          "time": 8.019999999999348
+        },
+        {
+          "side": "right",
+          "time": 8.419999999999481
+        },
+        {
+          "side": "left",
+          "time": 8.819999999999615
+        },
+        {
+          "side": "right",
+          "time": 9.219999999999748
+        },
+        {
+          "side": "left",
+          "time": 9.619999999999882
+        },
+        {
+          "side": "right",
+          "time": 10.020000000000016
+        },
+        {
+          "side": "left",
+          "time": 10.42000000000015
+        },
+        {
+          "side": "right",
+          "time": 10.820000000000283
+        },
+        {
+          "side": "left",
+          "time": 11.240000000000423
+        },
+        {
+          "side": "right",
+          "time": 11.62000000000055
+        },
+        {
+          "side": "left",
+          "time": 12.04000000000069
+        },
+        {
+          "side": "right",
+          "time": 12.420000000000817
+        },
+        {
+          "side": "left",
+          "time": 12.840000000000957
+        },
+        {
+          "side": "right",
+          "time": 13.220000000001084
+        },
+        {
+          "side": "left",
+          "time": 13.620000000001218
+        },
+        {
+          "side": "right",
+          "time": 14.020000000001351
+        },
+        {
+          "side": "left",
+          "time": 14.440000000001492
+        },
+        {
+          "side": "right",
+          "time": 14.820000000001619
+        },
+        {
+          "side": "left",
+          "time": 15.220000000001752
+        },
+        {
+          "side": "right",
+          "time": 15.620000000001886
+        },
+        {
+          "side": "left",
+          "time": 16.04000000000199
+        },
+        {
+          "side": "right",
+          "time": 16.420000000001778
+        },
+        {
+          "side": "left",
+          "time": 16.820000000001556
+        },
+        {
+          "side": "right",
+          "time": 17.220000000001335
+        },
+        {
+          "side": "left",
+          "time": 17.640000000001102
+        },
+        {
+          "side": "right",
+          "time": 18.02000000000089
+        },
+        {
+          "side": "left",
+          "time": 18.42000000000067
+        },
+        {
+          "side": "right",
+          "time": 18.820000000000448
+        },
+        {
+          "side": "left",
+          "time": 19.240000000000215
+        },
+        {
+          "side": "right",
+          "time": 19.620000000000005
+        }
+      ],
+      "upright": 0.9996870444439805,
+      "velocity": [
+        0.47925701779879043,
+        -0.059089924152332184,
+        -0.10386669065117919
+      ],
+      "walking_criteria_pass": true
+    },
+    {
+      "airborne_fraction": 0.0,
+      "alternating_count": 49,
+      "applied_action_diagnostics": {
+        "action_values": 12000,
+        "control_intervals": 1000,
+        "interpretation": "near_one_fraction counts |normalized action| >=0.95; this is not saturation for an unbounded published policy",
+        "joint_order": [
+          "left_hip_pitch_joint",
+          "left_hip_roll_joint",
+          "left_hip_yaw_joint",
+          "left_knee_joint",
+          "left_ankle_pitch_joint",
+          "left_ankle_roll_joint",
+          "right_hip_pitch_joint",
+          "right_hip_roll_joint",
+          "right_hip_yaw_joint",
+          "right_knee_joint",
+          "right_ankle_pitch_joint",
+          "right_ankle_roll_joint"
+        ],
+        "joint_position_offset_scale_rad": 0.25,
+        "max_abs_normalized_action": 2.8935441970825195,
+        "near_one_fraction": 0.2345,
+        "near_one_threshold": 0.95,
+        "per_joint_max_abs": [
+          1.3887686729431152,
+          1.05328369140625,
+          0.8089412450790405,
+          2.281648874282837,
+          2.3792335987091064,
+          1.1641567945480347,
+          1.3482979536056519,
+          1.1733694076538086,
+          0.6455627679824829,
+          2.3605828285217285,
+          2.8935441970825195,
+          1.0929596424102783
+        ],
+        "scope": "One sample per joint per applied PD control interval since reset; zero-torque control excluded"
+      },
+      "command_x": 0.5,
+      "distance": 8.814787144676698,
+      "fall": false,
+      "fall_time": null,
+      "feet_contacts": {
+        "left": false,
+        "right": true
+      },
+      "height_reference": "pelvis floating-base origin above z=0 ground",
+      "inference_device": "cuda",
+      "initial_joint_noise_rad": [
+        0.0028554828992887306,
+        -0.0004617025548028326,
+        0.0009425062967119103,
+        -0.004376901335669649,
+        0.000479822396212793,
+        -0.004436135968350156,
+        0.0034120857888846187,
+        -0.004614123461126586,
+        0.0025656683801593225,
+        0.002750248990803664,
+        0.0017478905907244687,
+        -0.0005227195881384646
+      ],
+      "left_steps": 25,
+      "max_flight_time": 0.0,
+      "mean_speed": 0.44073935723383945,
+      "min_height": 0.7619472175740009,
+      "min_upright": 0.99641984341103,
+      "path_distance": 9.202915982456583,
+      "physics_device": "cpu",
+      "policy": "trained",
+      "policy_origin": "locally trained TorchScript",
+      "position": [
+        8.814787144676698,
+        -1.972901203871769,
+        0.7700190446393369
+      ],
+      "right_steps": 25,
+      "seed": 4,
+      "speed": 0.4771760638808112,
+      "speed_tracking_rmse": 0.0757290350862418,
+      "time": 19.999999999999794,
+      "timing_ms": {
+        "draw": 0.0,
+        "inference": 1.034081,
+        "jpeg_encode": 0.0,
+        "physics": 1.075116,
+        "readback": 0.0,
+        "render_rgb": 0.0,
+        "scene_update": 0.0,
+        "step_total": 2.11289
+      },
+      "torso_height": 0.7700190446393369,
+      "touchdown_events": [
+        {
+          "side": "left",
+          "time": 0.1400000000000001
+        },
+        {
+          "side": "right",
+          "time": 0.4000000000000003
+        },
+        {
+          "side": "left",
+          "time": 0.8400000000000006
+        },
+        {
+          "side": "right",
+          "time": 1.2200000000000009
+        },
+        {
+          "side": "left",
+          "time": 1.6200000000000012
+        },
+        {
+          "side": "right",
+          "time": 2.0000000000000013
+        },
+        {
+          "side": "left",
+          "time": 2.439999999999953
+        },
+        {
+          "side": "right",
+          "time": 2.819999999999911
+        },
+        {
+          "side": "left",
+          "time": 3.219999999999867
+        },
+        {
+          "side": "right",
+          "time": 3.619999999999823
+        },
+        {
+          "side": "left",
+          "time": 4.019999999999779
+        },
+        {
+          "side": "right",
+          "time": 4.419999999999735
+        },
+        {
+          "side": "left",
+          "time": 4.819999999999691
+        },
+        {
+          "side": "right",
+          "time": 5.219999999999647
+        },
+        {
+          "side": "left",
+          "time": 5.639999999999601
+        },
+        {
+          "side": "right",
+          "time": 6.019999999999559
+        },
+        {
+          "side": "left",
+          "time": 6.419999999999515
+        },
+        {
+          "side": "right",
+          "time": 6.819999999999471
+        },
+        {
+          "side": "left",
+          "time": 7.239999999999425
+        },
+        {
+          "side": "right",
+          "time": 7.619999999999383
+        },
+        {
+          "side": "left",
+          "time": 8.019999999999348
+        },
+        {
+          "side": "right",
+          "time": 8.419999999999481
+        },
+        {
+          "side": "left",
+          "time": 8.819999999999615
+        },
+        {
+          "side": "right",
+          "time": 9.219999999999748
+        },
+        {
+          "side": "left",
+          "time": 9.619999999999882
+        },
+        {
+          "side": "right",
+          "time": 10.020000000000016
+        },
+        {
+          "side": "left",
+          "time": 10.42000000000015
+        },
+        {
+          "side": "right",
+          "time": 10.820000000000283
+        },
+        {
+          "side": "left",
+          "time": 11.220000000000416
+        },
+        {
+          "side": "right",
+          "time": 11.62000000000055
+        },
+        {
+          "side": "left",
+          "time": 12.020000000000683
+        },
+        {
+          "side": "right",
+          "time": 12.420000000000817
+        },
+        {
+          "side": "left",
+          "time": 12.82000000000095
+        },
+        {
+          "side": "right",
+          "time": 13.220000000001084
+        },
+        {
+          "side": "left",
+          "time": 13.620000000001218
+        },
+        {
+          "side": "right",
+          "time": 14.020000000001351
+        },
+        {
+          "side": "left",
+          "time": 14.420000000001485
+        },
+        {
+          "side": "right",
+          "time": 14.820000000001619
+        },
+        {
+          "side": "left",
+          "time": 15.240000000001759
+        },
+        {
+          "side": "right",
+          "time": 15.620000000001886
+        },
+        {
+          "side": "left",
+          "time": 16.020000000002
+        },
+        {
+          "side": "right",
+          "time": 16.420000000001778
+        },
+        {
+          "side": "left",
+          "time": 16.840000000001545
+        },
+        {
+          "side": "right",
+          "time": 17.220000000001335
+        },
+        {
+          "side": "left",
+          "time": 17.620000000001113
+        },
+        {
+          "side": "right",
+          "time": 18.02000000000089
+        },
+        {
+          "side": "left",
+          "time": 18.44000000000066
+        },
+        {
+          "side": "right",
+          "time": 18.820000000000448
+        },
+        {
+          "side": "left",
+          "time": 19.220000000000226
+        },
+        {
+          "side": "right",
+          "time": 19.620000000000005
+        }
+      ],
+      "upright": 0.9996141964363207,
+      "velocity": [
+        0.4771760638808112,
+        -0.08585123884915812,
+        -0.08836912481518305
+      ],
+      "walking_criteria_pass": true
+    },
+    {
+      "airborne_fraction": 0.0,
+      "alternating_count": 0,
+      "applied_action_diagnostics": {
+        "action_values": 0,
+        "control_intervals": 0,
+        "interpretation": "near_one_fraction counts |normalized action| >=0.95; this is not saturation for an unbounded published policy",
+        "joint_order": [
+          "left_hip_pitch_joint",
+          "left_hip_roll_joint",
+          "left_hip_yaw_joint",
+          "left_knee_joint",
+          "left_ankle_pitch_joint",
+          "left_ankle_roll_joint",
+          "right_hip_pitch_joint",
+          "right_hip_roll_joint",
+          "right_hip_yaw_joint",
+          "right_knee_joint",
+          "right_ankle_pitch_joint",
+          "right_ankle_roll_joint"
+        ],
+        "joint_position_offset_scale_rad": 0.25,
+        "max_abs_normalized_action": 0.0,
+        "near_one_fraction": null,
+        "near_one_threshold": 0.95,
+        "per_joint_max_abs": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scope": "One sample per joint per applied PD control interval since reset; zero-torque control excluded"
+      },
+      "command_x": 0.5,
+      "distance": -0.06946839375242908,
+      "fall": true,
+      "fall_time": 0.5600000000000004,
+      "feet_contacts": {
+        "left": true,
+        "right": true
+      },
+      "height_reference": "pelvis floating-base origin above z=0 ground",
+      "inference_device": "cuda",
+      "initial_joint_noise_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "left_steps": 0,
+      "max_flight_time": 0.0,
+      "mean_speed": -0.12405070312933755,
+      "min_height": 0.7189174348714216,
+      "min_upright": 0.49665405561065135,
+      "path_distance": 0.0726211767461281,
+      "physics_device": "cpu",
+      "policy": "zero",
+      "policy_origin": "zero motor torques",
+      "position": [
+        -0.06946839375242908,
+        2.4601661754548254e-08,
+        0.7189174348714216
+      ],
+      "right_steps": 0,
+      "seed": 0,
+      "speed": -0.31708174544495016,
+      "speed_tracking_rmse": 0.6427179794751534,
+      "time": 0.5600000000000004,
+      "timing_ms": {
+        "draw": 0.0,
+        "inference": 0.0,
+        "jpeg_encode": 0.0,
+        "physics": 1.12163,
+        "readback": 0.0,
+        "render_rgb": 0.0,
+        "scene_update": 0.0,
+        "step_total": 1.122378
+      },
+      "torso_height": 0.7189174348714216,
+      "touchdown_events": [],
+      "upright": 0.49665405561065135,
+      "velocity": [
+        -0.31708174544495016,
+        -1.3377238439454475e-07,
+        -0.6759324025745599
+      ],
+      "walking_criteria_pass": false
+    },
+    {
+      "airborne_fraction": 0.0,
+      "alternating_count": 0,
+      "applied_action_diagnostics": {
+        "action_values": 0,
+        "control_intervals": 0,
+        "interpretation": "near_one_fraction counts |normalized action| >=0.95; this is not saturation for an unbounded published policy",
+        "joint_order": [
+          "left_hip_pitch_joint",
+          "left_hip_roll_joint",
+          "left_hip_yaw_joint",
+          "left_knee_joint",
+          "left_ankle_pitch_joint",
+          "left_ankle_roll_joint",
+          "right_hip_pitch_joint",
+          "right_hip_roll_joint",
+          "right_hip_yaw_joint",
+          "right_knee_joint",
+          "right_ankle_pitch_joint",
+          "right_ankle_roll_joint"
+        ],
+        "joint_position_offset_scale_rad": 0.25,
+        "max_abs_normalized_action": 0.0,
+        "near_one_fraction": null,
+        "near_one_threshold": 0.95,
+        "per_joint_max_abs": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scope": "One sample per joint per applied PD control interval since reset; zero-torque control excluded"
+      },
+      "command_x": 0.5,
+      "distance": -0.08062905324285359,
+      "fall": true,
+      "fall_time": 0.5600000000000004,
+      "feet_contacts": {
+        "left": true,
+        "right": true
+      },
+      "height_reference": "pelvis floating-base origin above z=0 ground",
+      "inference_device": "cuda",
+      "initial_joint_noise_rad": [
+        -0.0036612335598746725,
+        -0.003635929636338028,
+        -0.00048785096155461866,
+        -0.004789757715832729,
+        -0.0014910188621708041,
+        0.004113580479111769,
+        -0.0002924786750976762,
+        -0.004255749599288333,
+        0.0006984714870209661,
+        0.0013523121831373608,
+        -0.004105468063553455,
+        0.0005617889912237998
+      ],
+      "left_steps": 0,
+      "max_flight_time": 0.0,
+      "mean_speed": -0.1439804522193813,
+      "min_height": 0.7083612504652852,
+      "min_upright": 0.4395683443592655,
+      "path_distance": 0.0825114755384772,
+      "physics_device": "cpu",
+      "policy": "zero",
+      "policy_origin": "zero motor torques",
+      "position": [
+        -0.08062905324285359,
+        0.0052866574974945995,
+        0.7083612504652852
+      ],
+      "right_steps": 0,
+      "seed": 1,
+      "speed": -0.33200745941893905,
+      "speed_tracking_rmse": 0.6641172084483157,
+      "time": 0.5600000000000004,
+      "timing_ms": {
+        "draw": 0.0,
+        "inference": 0.0,
+        "jpeg_encode": 0.0,
+        "physics": 1.246319,
+        "readback": 0.0,
+        "render_rgb": 0.0,
+        "scene_update": 0.0,
+        "step_total": 1.247454
+      },
+      "torso_height": 0.7083612504652852,
+      "touchdown_events": [],
+      "upright": 0.4395683443592655,
+      "velocity": [
+        -0.33200745941893905,
+        0.020229038343975676,
+        -0.7410545856026658
+      ],
+      "walking_criteria_pass": false
+    },
+    {
+      "airborne_fraction": 0.0,
+      "alternating_count": 0,
+      "applied_action_diagnostics": {
+        "action_values": 0,
+        "control_intervals": 0,
+        "interpretation": "near_one_fraction counts |normalized action| >=0.95; this is not saturation for an unbounded published policy",
+        "joint_order": [
+          "left_hip_pitch_joint",
+          "left_hip_roll_joint",
+          "left_hip_yaw_joint",
+          "left_knee_joint",
+          "left_ankle_pitch_joint",
+          "left_ankle_roll_joint",
+          "right_hip_pitch_joint",
+          "right_hip_roll_joint",
+          "right_hip_yaw_joint",
+          "right_knee_joint",
+          "right_ankle_pitch_joint",
+          "right_ankle_roll_joint"
+        ],
+        "joint_position_offset_scale_rad": 0.25,
+        "max_abs_normalized_action": 0.0,
+        "near_one_fraction": null,
+        "near_one_threshold": 0.95,
+        "per_joint_max_abs": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scope": "One sample per joint per applied PD control interval since reset; zero-torque control excluded"
+      },
+      "command_x": 0.5,
+      "distance": -0.06318070256872226,
+      "fall": true,
+      "fall_time": 0.5800000000000004,
+      "feet_contacts": {
+        "left": true,
+        "right": true
+      },
+      "height_reference": "pelvis floating-base origin above z=0 ground",
+      "inference_device": "cuda",
+      "initial_joint_noise_rad": [
+        0.004036040261939942,
+        0.0035023613957580997,
+        0.0028382046540214806,
+        0.0042531710011540795,
+        -0.0024709633582559406,
+        -0.0036411417546213837,
+        -0.002754593437253769,
+        -0.0040034966474475865,
+        -0.004779122613296789,
+        0.001858428696521656,
+        0.001540849722771089,
+        0.004683951725519273
+      ],
+      "left_steps": 0,
+      "max_flight_time": 0.0,
+      "mean_speed": -0.10893224580814174,
+      "min_height": 0.7178431378793827,
+      "min_upright": 0.47091017904219407,
+      "path_distance": 0.06782471105808421,
+      "physics_device": "cpu",
+      "policy": "zero",
+      "policy_origin": "zero motor torques",
+      "position": [
+        -0.06318070256872226,
+        -0.0004472264574292202,
+        0.7178431378793827
+      ],
+      "right_steps": 0,
+      "seed": 2,
+      "speed": -0.2834511401652152,
+      "speed_tracking_rmse": 0.6253540692446837,
+      "time": 0.5800000000000004,
+      "timing_ms": {
+        "draw": 0.0,
+        "inference": 0.0,
+        "jpeg_encode": 0.0,
+        "physics": 1.134201,
+        "readback": 0.0,
+        "render_rgb": 0.0,
+        "scene_update": 0.0,
+        "step_total": 1.134948
+      },
+      "torso_height": 0.7178431378793827,
+      "touchdown_events": [],
+      "upright": 0.47091017904219407,
+      "velocity": [
+        -0.2834511401652152,
+        -0.004351909160605539,
+        -0.6815267578127457
+      ],
+      "walking_criteria_pass": false
+    },
+    {
+      "airborne_fraction": 0.0,
+      "alternating_count": 0,
+      "applied_action_diagnostics": {
+        "action_values": 0,
+        "control_intervals": 0,
+        "interpretation": "near_one_fraction counts |normalized action| >=0.95; this is not saturation for an unbounded published policy",
+        "joint_order": [
+          "left_hip_pitch_joint",
+          "left_hip_roll_joint",
+          "left_hip_yaw_joint",
+          "left_knee_joint",
+          "left_ankle_pitch_joint",
+          "left_ankle_roll_joint",
+          "right_hip_pitch_joint",
+          "right_hip_roll_joint",
+          "right_hip_yaw_joint",
+          "right_knee_joint",
+          "right_ankle_pitch_joint",
+          "right_ankle_roll_joint"
+        ],
+        "joint_position_offset_scale_rad": 0.25,
+        "max_abs_normalized_action": 0.0,
+        "near_one_fraction": null,
+        "near_one_threshold": 0.95,
+        "per_joint_max_abs": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scope": "One sample per joint per applied PD control interval since reset; zero-torque control excluded"
+      },
+      "command_x": 0.5,
+      "distance": -0.07171653542400372,
+      "fall": true,
+      "fall_time": 0.5600000000000004,
+      "feet_contacts": {
+        "left": false,
+        "right": true
+      },
+      "height_reference": "pelvis floating-base origin above z=0 ground",
+      "inference_device": "cuda",
+      "initial_joint_noise_rad": [
+        0.0005876598962317901,
+        -0.003042362452388382,
+        0.0009024127156131581,
+        -0.0015363109078827455,
+        0.0005979563654389865,
+        -0.0013869731034155835,
+        0.002372440819543507,
+        -0.0007734278305338901,
+        0.002047249621887324,
+        -0.003338643796859276,
+        -0.003874199701584798,
+        0.0009129621770039339
+      ],
+      "left_steps": 0,
+      "max_flight_time": 0.0,
+      "mean_speed": -0.12806524182857798,
+      "min_height": 0.716013172731644,
+      "min_upright": 0.477214680736594,
+      "path_distance": 0.07453264562960348,
+      "physics_device": "cpu",
+      "policy": "zero",
+      "policy_origin": "zero motor torques",
+      "position": [
+        -0.07171653542400372,
+        0.0029261853018357673,
+        0.716013172731644
+      ],
+      "right_steps": 0,
+      "seed": 3,
+      "speed": -0.3159346076685307,
+      "speed_tracking_rmse": 0.6465577971173159,
+      "time": 0.5600000000000004,
+      "timing_ms": {
+        "draw": 0.0,
+        "inference": 0.0,
+        "jpeg_encode": 0.0,
+        "physics": 1.030353,
+        "readback": 0.0,
+        "render_rgb": 0.0,
+        "scene_update": 0.0,
+        "step_total": 1.031121
+      },
+      "torso_height": 0.716013172731644,
+      "touchdown_events": [],
+      "upright": 0.477214680736594,
+      "velocity": [
+        -0.3159346076685307,
+        0.00809394622803096,
+        -0.693434509452809
+      ],
+      "walking_criteria_pass": false
+    },
+    {
+      "airborne_fraction": 0.0,
+      "alternating_count": 0,
+      "applied_action_diagnostics": {
+        "action_values": 0,
+        "control_intervals": 0,
+        "interpretation": "near_one_fraction counts |normalized action| >=0.95; this is not saturation for an unbounded published policy",
+        "joint_order": [
+          "left_hip_pitch_joint",
+          "left_hip_roll_joint",
+          "left_hip_yaw_joint",
+          "left_knee_joint",
+          "left_ankle_pitch_joint",
+          "left_ankle_roll_joint",
+          "right_hip_pitch_joint",
+          "right_hip_roll_joint",
+          "right_hip_yaw_joint",
+          "right_knee_joint",
+          "right_ankle_pitch_joint",
+          "right_ankle_roll_joint"
+        ],
+        "joint_position_offset_scale_rad": 0.25,
+        "max_abs_normalized_action": 0.0,
+        "near_one_fraction": null,
+        "near_one_threshold": 0.95,
+        "per_joint_max_abs": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scope": "One sample per joint per applied PD control interval since reset; zero-torque control excluded"
+      },
+      "command_x": 0.5,
+      "distance": -0.06505126979060125,
+      "fall": true,
+      "fall_time": 0.5800000000000004,
+      "feet_contacts": {
+        "left": true,
+        "right": true
+      },
+      "height_reference": "pelvis floating-base origin above z=0 ground",
+      "inference_device": "cuda",
+      "initial_joint_noise_rad": [
+        0.0028554828992887306,
+        -0.0004617025548028326,
+        0.0009425062967119103,
+        -0.004376901335669649,
+        0.000479822396212793,
+        -0.004436135968350156,
+        0.0034120857888846187,
+        -0.004614123461126586,
+        0.0025656683801593225,
+        0.002750248990803664,
+        0.0017478905907244687,
+        -0.0005227195881384646
+      ],
+      "left_steps": 0,
+      "max_flight_time": 0.0,
+      "mean_speed": -0.1121573617079331,
+      "min_height": 0.714874114105126,
+      "min_upright": 0.44904328208009076,
+      "path_distance": 0.0693443091246457,
+      "physics_device": "cpu",
+      "policy": "zero",
+      "policy_origin": "zero motor torques",
+      "position": [
+        -0.06505126979060125,
+        0.003631612346065227,
+        0.714874114105126
+      ],
+      "right_steps": 0,
+      "seed": 4,
+      "speed": -0.28118488102408834,
+      "speed_tracking_rmse": 0.6286840821731103,
+      "time": 0.5800000000000004,
+      "timing_ms": {
+        "draw": 0.0,
+        "inference": 0.0,
+        "jpeg_encode": 0.0,
+        "physics": 1.333237,
+        "readback": 0.0,
+        "render_rgb": 0.0,
+        "scene_update": 0.0,
+        "step_total": 1.335141
+      },
+      "torso_height": 0.714874114105126,
+      "touchdown_events": [],
+      "upright": 0.44904328208009076,
+      "velocity": [
+        -0.28118488102408834,
+        0.013575626096147972,
+        -0.6933266583787533
+      ],
+      "walking_criteria_pass": false
+    }
+  ],
+  "schema_version": 1,
+  "summary": {
+    "trained": {
+      "passed": 4,
+      "trials": 5
+    },
+    "zero": {
+      "passed": 0,
+      "trials": 5
+    }
+  },
+  "wall_seconds": 15.151591413
+}

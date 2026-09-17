@@ -1,0 +1,116 @@
+\input{ieee-preamble}
+\hypersetup{
+  pdftitle={Transfer and Shared Learning for Atari Control},
+  pdfauthor={Santiago Restrepo},
+  pdfsubject={Pixel-based control, feature transfer, and balanced shared reinforcement learning},
+  pdfkeywords={Atari, reinforcement learning, transfer learning, multi-task learning, continual learning}
+}
+
+\title{Transfer and Shared Learning for Atari Control}
+\author{\IEEEauthorblockN{Santiago Restrepo}
+\IEEEauthorblockA{\href{mailto:contact@waajacu.com}{contact@waajacu.com}\quad
+\url{https://waajacu.com/}\\[3pt]
+\textit{Shared perception, specialized control, and measurable retention}}}
+\date{}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This approach learns Atari control from pixels through policy
+optimization, feature transfer, and balanced practice across games.
+A shared visual encoder supports specialized policies. The design
+separates perception from control, isolates the effect of transferred
+knowledge, and checks retention explicitly. Native parallel simulation,
+independent playback, and preserved experiment evidence make the
+learning process efficient and inspectable.
+\end{abstract}
+
+\begin{IEEEkeywords}
+Atari, reinforcement learning, transfer learning, shared representation.
+\end{IEEEkeywords}
+
+\balance
+\section{Learn Control from Visual Experience}
+The Arcade Learning Environment (ALE) supplies screens, actions, and
+game rewards~\cite{machado2018}. Grayscale conversion, resizing, and
+temporal pooling produce compact observations. Stacking recent screens
+exposes motion to a convolutional encoder without object coordinates
+or handwritten gameplay rules. A registry records each game's ROM
+identity, action count, and evaluation criterion.
+
+The shared encoder feeds a game-specific actor and critic:
+\begin{equation}
+z_t=f_\theta(o_t),\qquad
+a_t\sim\pi_{\phi_g}(\,\cdot\mid z_t),\qquad
+v_t=V_{\psi_g}(z_t).
+\end{equation}
+Here $o_t$ is the screen stack, $g$ selects the game's heads, and $v_t$
+estimates future discounted training reward. Shared visual features
+remain separate from game-specific action meanings.
+
+\section{Improve Policies with Game Rewards}
+Proximal Policy Optimization (PPO) alternates on-policy interaction
+with minibatch learning~\cite{schulman2017}. Actions are sampled from
+the actor. Generalized advantage estimation uses rewards and critic
+predictions to identify better-than-expected actions. A clipped policy
+objective discourages excessive changes, critic regression improves
+prediction, and an entropy incentive encourages exploration.
+
+Rewards accumulate over repeated actions and are clipped for learning;
+evaluation retains raw returns. Success thresholds are evaluation
+criteria, not reward bonuses. Life loss preserves episode continuity.
+Time-limit truncation bootstraps from the critic rather than being
+treated as a natural terminal outcome.
+
+\section{Isolate the Effect of Feature Transfer}
+Initialize a target encoder from a learned source policy. Create fresh
+target actor and critic heads and a fresh optimizer, then fine-tune
+the complete network. This reuses perception without importing
+incompatible actions or source optimizer history.
+
+Compare against learning from scratch with matched target interaction
+budgets, seeds, initial heads, and evaluation conditions. Account for
+source pretraining separately. This isolates whether visual reuse
+helps adaptation instead of assuming that transferred weights help.
+
+\section{Balanced Shared Learning and Retention}
+To add a game, restore the shared encoder and existing actor--critic
+heads, initialize new heads, and start a fresh joint optimizer.
+Collect fresh experience from earlier games alongside the new game,
+keeping their objectives active throughout adaptation.
+
+Balance environments and minibatches across games, normalize
+advantages within each game, and weight game losses equally. This
+limits domination by interaction volume or advantage scale while
+allowing every task to update shared features. Compare each policy
+before and after adaptation: continued practice supports retention,
+but conflicting gradients can still cause forgetting.
+
+\section{Efficient and Inspectable Execution}
+Native C++ workers advance emulators on the CPU; batched inference and
+optimization use the GPU through LibTorch. Independent browser
+playback loads saved policies without pacing training. A reproducible
+Debian environment separates dependency installation from lifecycle
+and experiment commands.
+
+Preserve joint checkpoints, game-specific inference exports, settings,
+and source lineage. Atomic checkpoint publication lets concurrent
+readers access complete artifacts without coupling playback to
+the learner's mutable state.
+
+\section{Make Evaluation a Design Contract}
+Freeze policies and use consistent preprocessing, sticky actions,
+reset rules, and full-game termination. Evaluation selects the most
+probable action. Pair seeds for retention comparisons and reserve
+separate seeds for final confirmation. Distinguish natural endings
+from capped episodes; assess each game's criterion independently.
+Preserve hashes and episode traces so each claim identifies its
+policy, training lineage, and evaluation protocol.
+
+\begingroup
+\raggedright
+\bibliographystyle{IEEEtran}
+\bibliography{references}
+\endgroup
+\end{document}

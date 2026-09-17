@@ -1,0 +1,16 @@
+*
+!Dockerfile
+!setup.sh
+!runtime/
+runtime/*
+!runtime/unitree_rl_gym-276801e.tar.gz
+!runtime/mujoco-3.3.2-linux-x86_64.tar.gz
+!runtime/libtorch-cxx11-abi-shared-with-deps-2.7.1+cu126.zip
+!runtime/dependencies.sha256
+!CMakeLists.txt
+!include/
+!include/**
+!src/
+!src/**
+!training/
+!training/**

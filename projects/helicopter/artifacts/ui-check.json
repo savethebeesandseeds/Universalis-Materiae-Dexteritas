@@ -1,0 +1,323 @@
+{
+  "checked_at_utc": "2026-09-17T12:58:24.815Z",
+  "method": "minimum_entropy_hinf",
+  "read_only": true,
+  "passed": true,
+  "checks": [
+    "/api/state succeeds",
+    "/healthz succeeds",
+    "/api/model succeeds",
+    "/api/evaluation succeeds",
+    "/api/telemetry succeeds",
+    "Native service is healthy",
+    "Live service identifies minimum-entropy H∞ mode",
+    "Schema and method identify the corrected H∞ implementation",
+    "Saved evaluation is source verified and distinct from live flight",
+    "Complete current-method evaluation is present",
+    "All seven declared H∞ full-flight trials pass",
+    "Saved aggregate design and H∞ results agree with the passing records",
+    "Saved PID aggregate honestly matches the individual PID tests",
+    "Overall suite outcome includes PID failures and replay checks",
+    "Both H∞ and enabled PID flights are represented",
+    "Saved evaluation includes paired flight comparisons",
+    "model_source_sha256 matches the live executable",
+    "evaluator_source_sha256 matches the live executable",
+    "Live model matches the explicitly requested final source fingerprint",
+    "Offline numerical design and stability checks pass",
+    "Numerical H∞ upper bound does not exceed design γ",
+    "Sampled peak is distinguished from and consistent with the upper bound",
+    "H₂ and mathematical entropy values are available",
+    "Offline frequency response and γ sweep are available",
+    "Generalized plant, dynamic controller and both Riccati solutions are inspectable",
+    "History belongs to the complete inspected run",
+    "History timestamps are ordered",
+    "Physical sensor/reference pairs share an explicit timestamp",
+    "Physics, controller and GPU-rendering scopes remain explicit",
+    "Twenty-four live history charts are constructed",
+    "Four offline design plots are available",
+    "Design badge identifies numerical linear checks",
+    "Spectral and physical entropy are explicitly distinguished",
+    "Linear-certificate limitations are visible",
+    "Dynamic control charts contain native run data",
+    "Six physical sensor plots compare aligned noisy and true signals",
+    "Sensor plots identify the true reference as a diagnostic",
+    "Controller-channel plots distinguish measured errors from reconstruction",
+    "Controller reconstruction is not labeled an unbiased state estimate",
+    "Secondary physical telemetry charts contain native data",
+    "Physical charts disclaim an H∞ optimization objective",
+    "Flight tracking charts are available",
+    "Online dynamic feedback is distinguished from offline synthesis",
+    "Native controller-coordinate interpretation is visible",
+    "Prose controller-limit metadata renders once instead of as character rows",
+    "Simulated-vehicle calibration limitation remains visible",
+    "Validation badge matches the overall and controller-specific saved outcomes",
+    "Overall failures remain visibly warned; fully passing reports have no warning",
+    "PID comparison makes no energy-advantage claim",
+    "WebGL flight view renders",
+    "Desktop has no horizontal document overflow",
+    "Mobile has no horizontal document overflow",
+    "Wide tables scroll within their containers",
+    "/api/state succeeds",
+    "Read-only browser QA preserves run identity and selected mode",
+    "No simulation mutation was attempted",
+    "No JavaScript or console errors",
+    "No failed network requests"
+  ],
+  "screenshots": [
+    "C:\\Work\\Universalis-Materiae-Dexteritas\\projects\\helicopter\\build\\ui\\hinf\\desktop.png",
+    "C:\\Work\\Universalis-Materiae-Dexteritas\\projects\\helicopter\\build\\ui\\hinf\\controller.png",
+    "C:\\Work\\Universalis-Materiae-Dexteritas\\projects\\helicopter\\build\\ui\\hinf\\design.png",
+    "C:\\Work\\Universalis-Materiae-Dexteritas\\projects\\helicopter\\build\\ui\\hinf\\sensors.png",
+    "C:\\Work\\Universalis-Materiae-Dexteritas\\projects\\helicopter\\build\\ui\\hinf\\reconstruction.png",
+    "C:\\Work\\Universalis-Materiae-Dexteritas\\projects\\helicopter\\build\\ui\\hinf\\physical.png",
+    "C:\\Work\\Universalis-Materiae-Dexteritas\\projects\\helicopter\\build\\ui\\hinf\\controller-details.png",
+    "C:\\Work\\Universalis-Materiae-Dexteritas\\projects\\helicopter\\build\\ui\\hinf\\model.png",
+    "C:\\Work\\Universalis-Materiae-Dexteritas\\projects\\helicopter\\build\\ui\\hinf\\mobile.png"
+  ],
+  "page_errors": [],
+  "console_errors": [],
+  "network_errors": [],
+  "blocked_mutations": [],
+  "native": {
+    "run_id": 7,
+    "time": 41.26000000000036,
+    "controller_mode": "minimum_entropy_hinf",
+    "applied_controller": "minimum_entropy_hinf",
+    "running": true,
+    "history_samples": 413,
+    "provenance": {
+      "evaluator_source_sha256": "6e137e04adcbb9be605347e3ac7e96f05cec38378c8c2cc6b27812882ce1b172",
+      "model_source_sha256": "754f6b14a84a1713ccf0c3a4a76ac1dc768bb6c85cbf65fed95583658e58eb2d"
+    },
+    "design": {
+      "bounded_real_residual": 9.569191673187519e-17,
+      "bounded_real_stabilizing_abscissa": -0.039450284799507164,
+      "closed_loop_spectral_abscissa": -0.04,
+      "coupling_ratio": 0.05785795173232297,
+      "coupling_spectral_radius": 0.1325228073835732,
+      "entropy_definition": "I_gamma(T) = -gamma^2/(2*pi) integral_R log det(I - T(iw)* T(iw)/gamma^2) dw; equals trace(Bcl^T Pgamma Bcl) for the published strictly proper stable map",
+      "entropy_frequency_coarse_integral": 17.506451049830236,
+      "entropy_frequency_integral": 17.50504728767901,
+      "entropy_value": 17.50463937788955,
+      "frequency_integral_maximum_rad_s": 1000000,
+      "frequency_integral_scope": "2001-point log-spaced trapezoidal diagnostic, compared with its 1001-point subset. Conservative resolvent high-frequency tail bound; low-frequency truncation remains a diagnostic. This quadrature is not a norm certificate.",
+      "gamma": 1.5134350452572107,
+      "h2_norm": 3.6366916223114205,
+      "h2_squared_frequency_coarse_integral": 13.226883186394906,
+      "h2_squared_frequency_integral": 13.225822585281055,
+      "high_frequency_entropy_tail_bound": 0.00005128408851088757,
+      "high_frequency_h2_squared_tail_bound": 0.000051284088507280226,
+      "hinf_norm_bisection_lower_endpoint": 1.3388880564624894,
+      "hinf_norm_method": "Continuous-time bounded-real stabilizing Riccati bisection; frequency grid is diagnostic only",
+      "hinf_norm_sampled": 1.3388873666271506,
+      "hinf_norm_upper_bound": 1.3388880578719857,
+      "large_gamma_entropy": 13.225761699637156,
+      "large_gamma_multiplier": 100,
+      "riccati_min_eigenvalue_x": 0.00009232664556337891,
+      "riccati_min_eigenvalue_y": -3.1985993821001713e-18,
+      "riccati_residual_x": 1.5140353200553217e-17,
+      "riccati_residual_y": 4.2935397821546006e-14,
+      "riccati_stabilizing_abscissa_x": -0.4074409553834129,
+      "riccati_stabilizing_abscissa_y": -0.039450284799761905,
+      "sampled_closed_loop_spectral_radius": 0.9996000799893344,
+      "stable": true
+    },
+    "trial_count": 15,
+    "comparison_count": 7,
+    "overall_evaluation_passed": true,
+    "design_passed": true,
+    "hinf_trials_passed": true,
+    "pid_trials_passed": true,
+    "pid_failure_count": 0
+  },
+  "controller_charts": [
+    {
+      "title": "Reconstructed weighted output",
+      "legend": "Reconstructed ‖z‖",
+      "readout": "t = 40.89 s · Reconstructed ‖z‖ 1.13",
+      "paths": 1
+    },
+    {
+      "title": "Position measurement noise",
+      "legend": "XYZ",
+      "readout": "t = 40.89 s · X -3.3e-3 · Y 3.6e-3 · Z -4.8e-4",
+      "paths": 3
+    },
+    {
+      "title": "Dynamic controller timing",
+      "legend": "UpdateControl interval",
+      "readout": "t = 40.89 s · Update 0.02 · Control interval 10.00",
+      "paths": 2
+    },
+    {
+      "title": "Command saturation",
+      "legend": "Saturated",
+      "readout": "t = 40.89 s · Saturated 0.00",
+      "paths": 1
+    },
+    {
+      "title": "Local operating region",
+      "legend": "Inside declared region",
+      "readout": "t = 40.89 s · Inside declared region 1.00",
+      "paths": 1
+    },
+    {
+      "title": "Applied controller",
+      "legend": "H∞PID landingPIDTrim hold",
+      "readout": "t = 40.89 s · H∞ 1.00 · PID landing 0.00 · PID 0.00 · Trim hold 0.00",
+      "paths": 4
+    }
+  ],
+  "sensor_charts": [
+    {
+      "title": "X position measurement",
+      "legend": "MeasuredAligned simulation reference",
+      "readout": "t = 41.69 s · Measured 2.85 · Aligned simulation reference 2.85",
+      "paths": 2
+    },
+    {
+      "title": "Y position measurement",
+      "legend": "MeasuredAligned simulation reference",
+      "readout": "t = 41.69 s · Measured 3.10 · Aligned simulation reference 3.09",
+      "paths": 2
+    },
+    {
+      "title": "Z position measurement",
+      "legend": "MeasuredAligned simulation reference",
+      "readout": "t = 41.69 s · Measured 2.80 · Aligned simulation reference 2.80",
+      "paths": 2
+    },
+    {
+      "title": "X velocity measurement",
+      "legend": "MeasuredAligned simulation reference",
+      "readout": "t = 41.69 s · Measured -0.03 · Aligned simulation reference -0.04",
+      "paths": 2
+    },
+    {
+      "title": "Y velocity measurement",
+      "legend": "MeasuredAligned simulation reference",
+      "readout": "t = 41.69 s · Measured 0.01 · Aligned simulation reference 0.03",
+      "paths": 2
+    },
+    {
+      "title": "Z velocity measurement",
+      "legend": "MeasuredAligned simulation reference",
+      "readout": "t = 41.69 s · Measured -0.02 · Aligned simulation reference -9.8e-3",
+      "paths": 2
+    }
+  ],
+  "reconstruction_charts": [
+    {
+      "title": "Controller input · position error x",
+      "legend": "Measured errorController reconstruction",
+      "paths": 2
+    },
+    {
+      "title": "Controller input · position error y",
+      "legend": "Measured errorController reconstruction",
+      "paths": 2
+    },
+    {
+      "title": "Controller input · position error z",
+      "legend": "Measured errorController reconstruction",
+      "paths": 2
+    },
+    {
+      "title": "Controller input · velocity error x",
+      "legend": "Measured errorController reconstruction",
+      "paths": 2
+    },
+    {
+      "title": "Controller input · velocity error y",
+      "legend": "Measured errorController reconstruction",
+      "paths": 2
+    },
+    {
+      "title": "Controller input · velocity error z",
+      "legend": "Measured errorController reconstruction",
+      "paths": 2
+    }
+  ],
+  "thermal_charts": [
+    {
+      "title": "Physical entropy generation",
+      "legend": "TotalWakeDragMotorHeat transfer",
+      "readout": "Total 0.55 · Wake 0.49 · Drag 2.2e-4 · Motor 0.06 · Heat transfer 4.3e-4",
+      "paths": 5
+    },
+    {
+      "title": "Physical entropy accounting",
+      "legend": "GeneratedTerminal commitmentRun + net commitment",
+      "readout": "Generated 22.96 · Terminal commitment 0.02 · Run + net commitment 22.98",
+      "paths": 3
+    },
+    {
+      "title": "Power and dissipation",
+      "legend": "ElectricalAir lossMotor lossHeat rejected",
+      "readout": "Electrical 163 · Air loss 144 · Motor loss 18.74 · Heat rejected 8.69",
+      "paths": 4
+    },
+    {
+      "title": "Motor temperature",
+      "legend": "Main motorTail motor",
+      "readout": "Main motor 298 · Tail motor 294",
+      "paths": 2
+    },
+    {
+      "title": "Energy accounting",
+      "legend": "Electrical inputThermal storageWake storage",
+      "readout": "Electrical input 6.77 · Thermal storage 0.58 · Wake storage 2.6e-3",
+      "paths": 3
+    },
+    {
+      "title": "Energy balance residual",
+      "legend": "Residual",
+      "readout": "Residual 0.00",
+      "paths": 1
+    }
+  ],
+  "flight_charts": [
+    {
+      "title": "X position",
+      "legend": "ActualReference",
+      "readout": "Actual 2.86 · Reference 3.00",
+      "paths": 2
+    },
+    {
+      "title": "Y position",
+      "legend": "ActualReference",
+      "readout": "Actual 3.09 · Reference 3.00",
+      "paths": 2
+    },
+    {
+      "title": "Z position",
+      "legend": "ActualReference",
+      "readout": "Actual 2.80 · Reference 2.80",
+      "paths": 2
+    },
+    {
+      "title": "Position error",
+      "legend": "NormXYZ",
+      "readout": "Norm 0.17 · X 0.14 · Y -0.09 · Z -3.5e-3",
+      "paths": 4
+    },
+    {
+      "title": "Attitude",
+      "legend": "RollPitchYaw",
+      "readout": "Roll -2.58 · Pitch 0.10 · Yaw 0.20",
+      "paths": 3
+    },
+    {
+      "title": "Collective response",
+      "legend": "CommandActuator",
+      "readout": "Command 0.38 · Actuator 0.38",
+      "paths": 2
+    }
+  ],
+  "final_native": {
+    "run_id": 7,
+    "time": 43.32999999999995,
+    "controller_mode": "minimum_entropy_hinf",
+    "running": true
+  }
+}

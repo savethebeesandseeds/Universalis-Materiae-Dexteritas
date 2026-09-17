@@ -1,0 +1,107 @@
+\input{ieee-preamble}
+\hypersetup{
+  pdftitle={Entropy-Minimizing Control of a Simulated Helicopter},
+  pdfauthor={Santiago Restrepo},
+  pdfsubject={Native C++ nonlinear predictive control with explicit thermodynamic accounting},
+  pdfkeywords={helicopter, physical entropy generation, nonlinear MPC, simulation}
+}
+\title{Entropy-Minimizing Control of a Helicopter}
+\author{\IEEEauthorblockN{Santiago Restrepo}
+\IEEEauthorblockA{\href{mailto:contact@waajacu.com}{contact@waajacu.com}\quad
+\url{https://waajacu.com/}\\[3pt]
+\textit{An explicitly parameterized simulation study}}}
+\date{}
+\begin{document}
+\maketitle
+\begin{abstract}
+Native C++ predictive control minimizes physical entropy generation in a
+simulated electric helicopter with rotor and thermal dynamics. Airborne
+optimization, PID fallback, and PID landing support are reported separately.
+Parameters are assumed; a matched PID baseline supports evaluation.
+\end{abstract}
+\begin{IEEEkeywords}
+Helicopter, entropy, NMPC.
+\end{IEEEkeywords}
+\balance
+\section{Fix the Vehicle and Mission}
+The 2\,kg aircraft has main/tail rotor radii 0.55/0.11\,m and governed
+speeds 180/650\,rad/s. Its 23 states contain
+position, velocity, quaternion, body rates, actual pitches, induced velocities,
+flapping angles, and motor temperatures. Inputs are physical pitch commands:
+\begin{equation}
+\dot x=f(x,u,w),\qquad
+u=[\theta_0,\theta_{1c},\theta_{1s},\theta_t]^{\mathsf T}.
+\end{equation}
+Both controllers share a 70\,s takeoff--waypoint--landing mission
+and exact simulated state/wind. The simulator supplies a spooled trim for each
+actual mass; controllers do not discover that trim. MuJoCo advances rigid-body/contact dynamics
+at 0.01\,s; rotor and thermal states use RK4. Both controllers share a causal
+force/velocity mass estimate, assuming inertia scales with mass. The initial
+0.1\,s trim observation hold is included in mission accounting.
+
+\section{Close the Physical Balances}
+The boundary includes motor heating, drivetrain loss, aerodynamic
+dissipation, and wake relaxation at ambient $T_0=293.15$\,K. For rotor $r$,
+near-hover blade-element and inflow relations give~\cite{johnson2015}
+\begin{equation}
+P_{a,r}=F_r V_{a,r}+\kappa_r F_r v_{i,r}
+       +P_{\mathrm{profile},r}+\dot E_{i,r}.
+\end{equation}
+Near-wake storage is $E_{i,r}=M_{i,r}v_{i,r}^2/2$.
+Shaft power includes body rotation. Copper, iron, drivetrain, and braking losses
+contribute to motor heat $L_r$. With heat rejection $H_r=h_r(T_r-T_0)$,
+\begin{equation}
+\begin{aligned}
+C_r\dot T_r&=L_r-H_r,\\
+\sigma&=\sum_r\left[\frac{L_r}{T_r}
+ +H_r\left(\frac1{T_0}-\frac1{T_r}\right)\right]
+ +\frac{D_a}{T_0}.
+\end{aligned}
+\end{equation}
+$D_a$ comprises modeled wake, profile, translational-drag and angular-damping
+dissipation. Wind and contact work are separate mechanical ports. Electrical
+input, storage, heat rejection, and entropy are independently audited.
+
+\section{Optimize the Physical Objective}
+Native CasADi/IPOPT~\cite{casadi} seeks local solutions by multiple shooting with 20
+intervals of 0.1\,s and a 2\,s prediction horizon:
+\begin{equation}
+\begin{aligned}
+\min_U\ J&=\int_0^{2\,\mathrm{s}}\!\sigma(x,u,w)\,dt+\Phi(x_N),\\
+\Phi&=\frac1{T_0}\sum_r\left[E_{i,r}
++C_r\left(T_r-T_0-T_0\ln\frac{T_r}{T_0}\right)\right].
+\end{aligned}
+\end{equation}
+$\Phi$ accounts for wake relaxation and passive motor cooling.
+Tracking is constrained, with no tracking-error cost. Bounds cover commands,
+flight, electrical and thermal states, and terminal settling; they do not
+prove stability or recursive feasibility.
+Independently reintegrated feasible solutions drive airborne flight; rejected
+solves use PID fallback. Before skid contact, geometry triggers explicit PID
+landing support. This is not contact-optimal control. Playback may be
+slower than wall time; optimization runs on CPU.
+
+\section{Evidence, Limits, and Project}
+Five matched 70\,s wind/mass cases and a disabled-control test pass, with no
+audited physical-limit violations. NMPC supplies 90.57--93.29\% of all mission
+decisions; trim observation, fallback, and PID landing remain counted.
+Committed entropy is 0.12--0.20\% lower than PID, exceeding audited accounting
+and endpoint uncertainty. NMPC tracks less closely within the shared corridor.
+Four handovers miss the tighter settling target but pass final landing checks.
+Balance, cooldown, identification, numerical and rejection tests also pass.
+
+The model omits servo electrical losses, rotor-speed transients, stall,
+vortex-ring flow, and detailed ground aerodynamics. All solves miss the
+0.1\,s deadline; no hardware efficiency is established. Exergy destruction rate is $T_0\sigma$~\cite{philipp2024};
+matched endpoints can equate entropy and dissipated-energy savings.
+
+\begingroup\raggedright
+Code, assumed parameters, setup, viewer, and evaluation evidence:\\
+\url{https://github.com/savethebeesandseeds/Universalis-Materiae-Dexteritas}\\
+Directory: \texttt{projects/helicopter}.\par
+\endgroup
+\begingroup\raggedright
+\bibliographystyle{IEEEtran}
+\bibliography{references}
+\endgroup
+\end{document}

@@ -1,0 +1,90 @@
+{
+  "verified_at_utc": "2026-09-16T14:21:46.6704549Z",
+  "container_id": "fbde3ff28fe4bfdbad01f3858dc8a01dd5170d77c50c5b4fea56072bc36fd984",
+  "image_id": "sha256:deb22836ff460f4fd7567bd8dd581013ab9bc66954d16db2a4dbd8dec8902ef2",
+  "native_provenance": {
+    "evaluator_source_sha256": "5d9cae18b35357723f0b3eb9b948faf4d1a1f924f88c79c943fd1d3babdf54c6",
+    "model_source_sha256": "21ff06bbeaf4460b6241f4ba3636d079126b78bcc13e7d7d8af7035dbfae9d6b"
+  },
+  "sources": [
+    {
+      "path": "Dockerfile",
+      "sha256": "fddd307faa560ffaf347dfcf876180cd5976ae11baaabbed17c0f9f5f0bafb92"
+    },
+    {
+      "path": "setup.sh",
+      "sha256": "c5d6db3802bd7bb1564e4f8415b40bd209d17859f6d09a258ffbf17426be8b40"
+    },
+    {
+      "path": "run.sh",
+      "sha256": "988f07b8a42d961dbcbf7781c32b7ea48b08f04cbc90ee74f91c51bf3412daee"
+    },
+    {
+      "path": "helicopter.ps1",
+      "sha256": "44f14630847de1e500f98689c0e5d0dbd7d543adc2adfa83ae76c5707be05f2d"
+    },
+    {
+      "path": "CMakeLists.txt",
+      "sha256": "bf665e58c360815a40e2f93e1982ecfc61758d71fe29740936a2a90ba9721750"
+    },
+    {
+      "path": "include/helicopter.hpp",
+      "sha256": "d4c340e3b5f6c0784b3c399f80666b63931df9cf0e5adabd307c647dd0c8c099"
+    },
+    {
+      "path": "src/simulation.cpp",
+      "sha256": "b841a61d0c7dd1ddcc0d9f59659572ee42e8a223fab40407066a077291af0f9b"
+    },
+    {
+      "path": "src/server.cpp",
+      "sha256": "a0fa601f8db9c6c7025be567e0d2cdbca332fdf3e526f298364ba4428b6c53ef"
+    },
+    {
+      "path": "src/gpu_check.cpp",
+      "sha256": "180d932aad73583e577aa4f7b9b963ff94eb07174e15c79fc25e2d81f632d777"
+    },
+    {
+      "path": "tests/evaluate.cpp",
+      "sha256": "5d9cae18b35357723f0b3eb9b948faf4d1a1f924f88c79c943fd1d3babdf54c6"
+    },
+    {
+      "path": "tests/check-service.ps1",
+      "sha256": "ca15c8e28355a90afb43f9a6c533fbc7696b5b30facd2911cfe81e5c756f6324"
+    },
+    {
+      "path": "web/index.html",
+      "sha256": "12b92b4d9616adad53b1e9fd1618ed6a7fd560d5c45487f66c6a09c6ab8b4f77"
+    },
+    {
+      "path": "web/app.js",
+      "sha256": "68d781a01d36a434cddebd2533e080ab58d06bfbd029a8329efad82cbc86a0c5"
+    },
+    {
+      "path": "web/charts.js",
+      "sha256": "8802091e94400f862dcebb635d0075bc40006311e7cf16ef21e670cd0d75e8cd"
+    },
+    {
+      "path": "web/flight-view.js",
+      "sha256": "f8e4ef41cbde5a0afa0d5c7102b625e42699492cf58393ff108297ccd7287813"
+    },
+    {
+      "path": "web/styles.css",
+      "sha256": "19906ee4d7c13dba07b25a1db92761137ad8ac28b67b3034fda5bdddc5df6840"
+    },
+    {
+      "path": "README.md",
+      "sha256": "b25223645af6a8f7b9550cf14c6bd2fd01c90d45624c14598d4e68d1338295f5"
+    }
+  ],
+  "validation": [
+    "five controlled flights and disabled-controller baseline passed",
+    "native telemetry and initial force/mass dynamics checks passed",
+    "reset/replay identical",
+    "CUDA addition executed on NVIDIA RTX A2000",
+    "no Python or pip executables in Debian runtime",
+    "HTTP pause/reset/history and report provenance checks passed",
+    "complete mission history contains 701 ordered samples from 0 to 70 seconds",
+    "JavaScript syntax checks passed",
+    "browser 3D playback, pause, thrust chart, native model panel and saved validation visually verified at 660-pixel width"
+  ]
+}

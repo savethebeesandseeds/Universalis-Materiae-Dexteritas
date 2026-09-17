@@ -1,0 +1,100 @@
+\input{ieee-preamble}
+\hypersetup{
+  pdftitle={Minimum-Entropy H-infinity Control of a Simulated Helicopter},
+  pdfauthor={Santiago Restrepo},
+  pdfsubject={Central output-feedback synthesis and nonlinear simulation validation},
+  pdfkeywords={helicopter, minimum entropy, H-infinity, robust control, DGKF}
+}
+\title{Minimum-Entropy $\mathcal{H}_\infty$ Control of a Helicopter}
+\author{\IEEEauthorblockN{Santiago Restrepo}
+\IEEEauthorblockA{\href{mailto:contact@waajacu.com}{contact@waajacu.com}\quad
+\url{https://waajacu.com/}\\[3pt]
+\textit{An explicitly parameterized simulation study}}}
+\date{}
+\begin{document}
+\maketitle
+\begin{abstract}
+This study implements minimum-entropy $\mathcal H_\infty$ control of a
+simulated helicopter. Its objective describes closed-loop disturbance response,
+not thermodynamic entropy. Numerical synthesis checks and seven paired
+nonlinear flight cases pass, with explicit PID landing support.
+\end{abstract}
+\begin{IEEEkeywords}
+Helicopter, minimum entropy, robust control.
+\end{IEEEkeywords}
+\balance
+\section{Define the Control Objective}
+For a stable, strictly proper closed-loop map $T:w\mapsto z$, disturbance
+and noise inputs $w$ and regulated outputs $z$ have declared weights.
+The Mustafa--Glover problem requires internal stability,
+$\|T\|_\infty<\gamma$, and minimizes~\cite{mustafa1990,lessard2014}
+\begin{equation}
+\begin{aligned}
+\mathcal I_\gamma(T)&=-\frac{\gamma^2}{2\pi}
+ \int_{-\infty}^{\infty}\ln\det W(\omega)\,d\omega,\\
+W(\omega)&=I-\gamma^{-2}T(j\omega)^*T(j\omega).
+\end{aligned}
+\end{equation}
+The star denotes conjugate transpose. This frequency-domain criterion approaches
+$\|T\|_2^2$ as $\gamma\to\infty$. It is not heat generation in J/K and does not
+promise lower electrical consumption. Robustness to model uncertainty requires
+a specified uncertainty interconnection and bound.
+
+\section{Synthesize the Central Controller}
+A nominal hover linearization and weighting filters define
+\begin{equation}
+\begin{aligned}
+\dot x_\ell&=Ax_\ell+B_1w+B_2u,\\
+z&=C_1x_\ell+D_{12}u,\\
+y&=C_2x_\ell+D_{21}w .
+\end{aligned}
+\end{equation}
+The design uses 20 local mechanical states, with three attitude-error coordinates;
+thermal states remain in the nonlinear plant. Three stable position filters, $\dot\eta=e_p-0.04\eta$, extend the design to 23 states. Twelve kinematic sensors, six acceleration disturbances and twelve noise inputs define the normalized channels. All weights and matrices are published.
+
+The normalized DGKF construction requires stabilizability, detectability, channel
+normalization, stabilizing nonnegative Riccati solutions $X,Y$, and
+$\rho(XY)<\gamma^2$~\cite{dgkf1989}. Setting the free controller parameter to zero
+gives the minimum-entropy realization at the chosen feasible $\gamma$.
+
+The online law updates a dynamic state,
+$\dot x_K=A_Kx_K+B_Ky$, $u_\delta=C_Kx_K$;
+the Riccati problems are solved before flight. A zero-order-hold realization updates at 100 Hz; sampled stability is checked separately.
+
+\section{Declare the Nonlinear Boundary}
+The 2\,kg uncalibrated plant retains nonlinear rotor, thermal and contact
+dynamics. MuJoCo advances the rigid body at 0.01\,s; rotor states use RK4
+with governed rotor speeds.
+Both controllers receive matching sensor noise and no true wind or mass in
+feedback. The simulator supplies a spooled, mass-specific initial trim;
+discovering it is not demonstrated. Pitch/slew limits, reference feedforward,
+anti-windup and PID landing support lie outside the linear theorem.
+Every hold and support step counts in the 70\,s mission.
+\section{Validation and Project}
+The nominal design has $\gamma=1.5134$ and a numerical bounded-real gain
+upper bound of $1.3389$. The closed loop is stable; its sampled spectral radius
+is $0.99960008$. The entropy is $17.5046$ and the H2 norm is $3.6367$;
+independent Riccati checks, Lyapunov calculation, refined frequency integration,
+and a large-$\gamma$ limit check agree. 
+
+All 15 trials pass: seven 70\,s cases for each controller, plus a disabled-control
+check. Cases cover wind/gusts, $\pm20\%$ mass and threefold sensor noise.
+No audited physical or landing limits are violated. $\mathcal H_\infty$ RMS error is
+$0.082$--$0.143$\,m, versus $0.139$--$0.239$\,m for the retuned PID.
+$\mathcal H_\infty$ supplies $93.04$--$93.16\%$ of all commands; the rest are trim hold and
+PID landing support. No failure fallback occurs.
+
+Limiters do intervene, especially under increased sensor noise. The linear
+certificate therefore does not prove the complete nonlinear flights robust.
+These paired results establish neither universal superiority nor hardware
+performance. Energy and thermal entropy are separate measurements.\par
+\begingroup\raggedright
+Code, assumed parameters, setup, viewer, contract, and evidence:\\
+\url{https://github.com/savethebeesandseeds/Universalis-Materiae-Dexteritas}\\
+Directory: \texttt{projects/helicopter}.\par
+\endgroup
+\begingroup\raggedright
+\bibliographystyle{IEEEtran}
+\bibliography{references}
+\endgroup
+\end{document}

@@ -1,0 +1,418 @@
+{
+  "checked_at_utc": "2026-09-17T11:49:46.597Z",
+  "read_only": true,
+  "passed": true,
+  "screenshots": [
+    "C:\\Work\\Universalis-Materiae-Dexteritas\\projects\\helicopter\\build\\ui\\desktop.png",
+    "C:\\Work\\Universalis-Materiae-Dexteritas\\projects\\helicopter\\build\\ui\\energy.png",
+    "C:\\Work\\Universalis-Materiae-Dexteritas\\projects\\helicopter\\build\\ui\\optimizer.png",
+    "C:\\Work\\Universalis-Materiae-Dexteritas\\projects\\helicopter\\build\\ui\\optimizer-details.png",
+    "C:\\Work\\Universalis-Materiae-Dexteritas\\projects\\helicopter\\build\\ui\\model.png",
+    "C:\\Work\\Universalis-Materiae-Dexteritas\\projects\\helicopter\\build\\ui\\mass-inspector.png",
+    "C:\\Work\\Universalis-Materiae-Dexteritas\\projects\\helicopter\\build\\ui\\mass-graph.png",
+    "C:\\Work\\Universalis-Materiae-Dexteritas\\projects\\helicopter\\build\\ui\\flight.png",
+    "C:\\Work\\Universalis-Materiae-Dexteritas\\projects\\helicopter\\build\\ui\\mobile.png"
+  ],
+  "checks": [
+    "/api/model returns successful HTTP",
+    "/healthz returns successful HTTP",
+    "/api/state returns successful HTTP",
+    "/api/telemetry returns successful HTTP",
+    "/api/evaluation returns successful HTTP",
+    "Native service reports healthy",
+    "Saved validation is source verified and distinct from live state",
+    "Complete native evaluation passes",
+    "All eleven declared full-flight trials pass",
+    "Five NMPC-mode full-flight trials are present",
+    "Five enabled PID comparisons and disabled baseline are present",
+    "Five paired comparisons are available",
+    "model_source_sha256 agrees with the live executable",
+    "evaluator_source_sha256 agrees with the live executable",
+    "CPU control and browser WebGL execution are explicit",
+    "Native history is complete for the inspected run",
+    "History timestamps are finite and ordered",
+    "Estimated and true simulated mass are separately available",
+    "History contains both mass-estimate and simulated-plant series",
+    "Native metadata declares the common estimator used by both controllers",
+    "Inertia scaling is stated as an assumption",
+    "Native controller scope distinguishes airborne NMPC from PID contact support",
+    "Estimator scope identifies simulated observations",
+    "At least eighteen history charts are constructed",
+    "All six energy and entropy charts contain native data",
+    "All six optimizer/decision charts are available",
+    "Decision graph distinguishes the initial trim hold",
+    "Decision graph distinguishes planned PID landing",
+    "Optimizer timing chart compares measured solve duration with the control interval",
+    "Constraint chart does not show rounded negative zero",
+    "Tiny nonzero constraint readout uses scientific notation",
+    "Tiny constraint axis retains a scientific scale",
+    "Current complete validation is shown without a stale-report warning",
+    "WebGL flight view renders without a visible error",
+    "Desktop page has no horizontal document overflow",
+    "Full estimator metadata is inspectable",
+    "Mass inspector distinguishes an estimate from the simulated plant reference",
+    "UI identifies shared estimator use",
+    "UI discloses PID contact support in the model explanation",
+    "Savings comparison explicitly covers the entire hybrid mission",
+    "UI retains the simulated-vehicle calibration limitation",
+    "All six flight plots are available",
+    "Mass graph has separately named estimated and true plant series",
+    "Mobile page has no horizontal document overflow",
+    "Wide validation tables scroll inside their own containers",
+    "/api/state returns successful HTTP",
+    "Read-only browser QA preserved run identity and selected controller",
+    "No simulation mutation was attempted",
+    "No JavaScript or browser console errors",
+    "No failed browser network responses or requests"
+  ],
+  "page_errors": [],
+  "console_errors": [],
+  "bad_responses": [],
+  "failed_requests": [],
+  "blocked_mutations": [],
+  "native": {
+    "run_id": 7,
+    "time": 69.9999999999989,
+    "controller_mode": "entropy_nmpc",
+    "applied_controller": "pid_landing_support",
+    "running": false,
+    "gpu": {
+      "available": true,
+      "count": 1,
+      "detail": "CUDA driver access verified; flight physics and controller use CPU",
+      "devices": [
+        "NVIDIA RTX A2000 8GB Laptop GPU"
+      ],
+      "name": "NVIDIA RTX A2000 8GB Laptop GPU"
+    },
+    "history_samples": 701,
+    "source_verified": true,
+    "complete_evaluation": true,
+    "evaluation_passed": true,
+    "trial_count": 11,
+    "comparison_count": 5,
+    "savings_demonstrated": [
+      {
+        "scenario": "nominal",
+        "demonstrated": true
+      },
+      {
+        "scenario": "alternate wind phase",
+        "demonstrated": true
+      },
+      {
+        "scenario": "extra gusts",
+        "demonstrated": true
+      },
+      {
+        "scenario": "mass minus 20 percent",
+        "demonstrated": true
+      },
+      {
+        "scenario": "mass plus 20 percent with gust",
+        "demonstrated": true
+      }
+    ],
+    "provenance": {
+      "evaluator_source_sha256": "759fda0aa1c2a6f1c6967f88dd46e55c06361c4ab440d61b86e9028aad54e162",
+      "model_source_sha256": "076fba9b8d055319bac2e8679e8bdad80547a45cd54298ad6cdd38a4ed8bc7f4"
+    },
+    "parameter_estimation": {
+      "accepted_samples": 6718,
+      "admissible_mass_scale": [
+        0.5,
+        1.5
+      ],
+      "estimate_available": true,
+      "inertia_assumption": "Inertia uses the identified mass scale times nominal inertia; common scaling is assumed, not independently identified",
+      "information": 686914.1930556627,
+      "information_units": "(m/s^2)^2",
+      "last_rejection": "contact_interval",
+      "mass_kg": 2,
+      "mass_scale": 1,
+      "method": "Accumulated least squares: F = m * (dv/dt + g e_z); m = sum(q dot F) / sum(q dot q)",
+      "minimum_sample_information": 1e-8,
+      "nominal_prior_mass_kg": 2,
+      "rejected_samples": 282,
+      "using_nominal_prior": false
+    },
+    "simulated_plant_mass_kg": 2
+  },
+  "energy_charts": [
+    {
+      "title": "Entropy generation rate",
+      "series": [
+        "Total",
+        "Wake",
+        "Drag",
+        "Motor",
+        "Heat transfer"
+      ],
+      "populated_paths": 5,
+      "readout": "Total 0.52 · Wake 0.46 · Drag 1.4e-4 · Motor 0.06 · Heat transfer 8.2e-4",
+      "empty_message": null
+    },
+    {
+      "title": "Entropy accounting",
+      "series": [
+        "Generated",
+        "Terminal commitment",
+        "Run + net commitment"
+      ],
+      "populated_paths": 3,
+      "readout": "Generated 38.45 · Terminal commitment 0.04 · Run + net commitment 38.48",
+      "empty_message": null
+    },
+    {
+      "title": "Power and dissipation",
+      "series": [
+        "Electrical",
+        "Air loss",
+        "Motor loss",
+        "Heat rejected"
+      ],
+      "populated_paths": 4,
+      "readout": "Electrical 152 · Air loss 134 · Motor loss 17.18 · Heat rejected 12.08",
+      "empty_message": null
+    },
+    {
+      "title": "Motor temperature",
+      "series": [
+        "Main motor",
+        "Tail motor"
+      ],
+      "populated_paths": 2,
+      "readout": "Main motor 299 · Tail motor 295",
+      "empty_message": null
+    },
+    {
+      "title": "Energy accounting",
+      "series": [
+        "Electrical input",
+        "Thermal storage",
+        "Wake storage"
+      ],
+      "populated_paths": 3,
+      "readout": "Electrical input 11.26 · Thermal storage 0.80 · Wake storage 2.3e-3",
+      "empty_message": null
+    },
+    {
+      "title": "Energy balance residual",
+      "series": [
+        "Residual"
+      ],
+      "populated_paths": 1,
+      "readout": "Residual 0.00",
+      "empty_message": null
+    }
+  ],
+  "optimizer_charts": [
+    {
+      "title": "Horizon entropy objective",
+      "series": [
+        "Candidate",
+        "Seed"
+      ],
+      "populated_paths": 2,
+      "readout": "Candidate — · Seed —",
+      "empty_message": null
+    },
+    {
+      "title": "Solver duration",
+      "series": [
+        "Solve time",
+        "Control interval"
+      ],
+      "populated_paths": 2,
+      "readout": "Solve time — · Control interval —",
+      "empty_message": null
+    },
+    {
+      "title": "Maximum constraint violation",
+      "series": [
+        "Violation"
+      ],
+      "populated_paths": 1,
+      "readout": "Violation —",
+      "empty_message": null
+    },
+    {
+      "title": "Solver iterations",
+      "series": [
+        "Iterations"
+      ],
+      "populated_paths": 1,
+      "readout": "Iterations —",
+      "empty_message": null
+    },
+    {
+      "title": "Action change from PID seed",
+      "series": [
+        "Command difference norm"
+      ],
+      "populated_paths": 1,
+      "readout": "Command difference norm —",
+      "empty_message": null
+    },
+    {
+      "title": "Control decisions",
+      "series": [
+        "NMPC accepted",
+        "Rejected → PID",
+        "Planned PID landing",
+        "Trim observation"
+      ],
+      "populated_paths": 4,
+      "readout": "NMPC accepted 0.00 · Rejected → PID 0.00 · Planned PID landing 1.00 · Trim observation 0.00",
+      "empty_message": null
+    }
+  ],
+  "constraint_axis": [
+    "-5.0e-7",
+    "1.7e-7",
+    "8.3e-7",
+    "1.5e-6"
+  ],
+  "constraint_inspection": {
+    "time": 61.1,
+    "native_value": 0.000001,
+    "readout": "Violation 1.0e-6"
+  },
+  "model_ui": {
+    "explanation": "One counted prepared-trim observation interval, then airborne entropy optimization with explicitly counted PID fallback and landing support. The predictor does not model skid contact. Integral of modeled physical entropy generation plus terminal motor-cooldown entropy and stored-wake relaxation; no tracking-error cost The clearance guard selects the landing handover; the measured settling state at that instant is reported separately.",
+    "model_status": "Thermodynamic electric reference helicopter · Simulated plant mass 2.000 kg · Simulated plant inertia [0.0600, 0.0950, 0.0900] kg·m². State at state.time; applied solution is preceding integration step; optimizer diagnostics timestamp the last 10 Hz control decision. Power/entropy in thermodynamics are instantaneous at the current state.",
+    "limitations": "Explicitly parameterized simulated vehicle; no measured calibration or hardware validation. Near-hover governed-speed rotors; no detailed stall, ground effect, governor transient or battery electrochemistry. Privileged simulator state and current-wind persistence forecast; no state estimator. NMPC optimizes airborne free flight. Ground approach/contact uses explicit PID landing support; this is not contact-optimal control. Solver rejection also causes counted PID fallback. Finite-budget local optimization; feasibility, convergence, and demonstrated savings are separate claims.",
+    "estimated_mass": "2.000 kg",
+    "plant_mass": "2.000 kg",
+    "accepted_samples": "6718",
+    "estimator_status": "Online estimate from accepted causal samples. Simulated plant mass is displayed separately as a diagnostic reference.",
+    "method": "Accumulated least squares: F = m * (dv/dt + g e_z); m = sum(q dot F) / sum(q dot q)",
+    "signals": "Previous airborne velocity increments and rotor/drag force evaluated from observed state; no true plant mass input",
+    "inertia_assumption": "Inertia uses the identified mass scale times nominal inertia; common scaling is assumed, not independently identified",
+    "sharing": "The same estimate is supplied to the PID baseline, PID fallback/landing support, and NMPC predictor/seeds",
+    "parameter_groups": [
+      "Physics",
+      "Online parameter estimation",
+      "Initial trim observation hold",
+      "Constrained entropy NMPC",
+      "Reference plant: initialization",
+      "Reference plant: state",
+      "Reference plant: airframe",
+      "Reference plant: environment",
+      "Reference plant: rotors",
+      "Reference plant: motors",
+      "Reference plant: limits",
+      "Reference plant: baseline",
+      "Reference plant: smoothing"
+    ],
+    "controller": "PID landing support · hybrid mission",
+    "optimizer_status": "No optimization was attempted in this planned PID landing interval. Ground contact is outside the free-flight NMPC predictor. NMPC participation uses all control intervals, including initial observation, planned landing support and rejected-solve fallback.",
+    "optimizer_badge": "Planned PID landing · no NMPC solve",
+    "fallback_banner": "PID controls this declared landing interval. The NMPC predictor models free flight and does not optimize ground contact. This interval is counted as PID support, not an accepted optimizer solution or a failed solve. The measured handover at 65.40 s met the declared settling thresholds.",
+    "validation_badge": "Current build · full suite passed",
+    "validation_banner_visible": false,
+    "comparison_scope": "Paired comparison · PID vs hybrid entropy controllerBoth controllers include the initial trim observation hold. The hybrid mission also includes free-flight NMPC, any rejected-solve PID fallback and declared PID landing support. Savings are reported only when both flights satisfy the same declared criteria. Raw totals remain visible for ineligible pairs. A local horizon improvement does not establish whole-flight savings.ScenarioComparisonPID entropy (J/K)Hybrid entropy (J/K)Entropy saving (%)PID energy (kJ)Hybrid energy (kJ)Energy saving (%)Savings evidencenominalComparable38.54138.4810.1611.28511.2620.20DemonstratedBoth controllers satisfy the same mission, constraint, accounting, and participation criteriaalternate wind phaseComparable38.54038.4780.1611.28411.2600.21DemonstratedBoth controllers satisfy the same mission, constraint, accounting, and participation criteriaextra gustsComparable38.66838.6180.1311.30411.2830.18DemonstratedBoth controllers satisfy the same mission, constraint, accounting, and participation criteriamass minus 20 percentComparable33.15933.0910.209.7109.6840.27DemonstratedBoth controllers satisfy the same mission, constraint, accounting, and participation criteriamass plus 20 percent with gustComparable44.68844.6340.1213.07413.0550.15DemonstratedBoth controllers satisfy the same mission, constraint, accounting, and participation criteria",
+    "render_error": null,
+    "webgl_canvases": 1,
+    "horizontal_overflow": false
+  },
+  "flight_charts": [
+    {
+      "title": "X position",
+      "series": [
+        "Actual",
+        "Reference"
+      ],
+      "populated_paths": 2,
+      "readout": "Actual -0.01 · Reference 0.00",
+      "empty_message": null
+    },
+    {
+      "title": "Y position",
+      "series": [
+        "Actual",
+        "Reference"
+      ],
+      "populated_paths": 2,
+      "readout": "Actual -1.9e-3 · Reference 0.00",
+      "empty_message": null
+    },
+    {
+      "title": "Z position",
+      "series": [
+        "Actual",
+        "Reference"
+      ],
+      "populated_paths": 2,
+      "readout": "Actual 0.20 · Reference 0.20",
+      "empty_message": null
+    },
+    {
+      "title": "Position error",
+      "series": [
+        "Norm",
+        "X",
+        "Y",
+        "Z"
+      ],
+      "populated_paths": 4,
+      "readout": "Norm 0.01 · X 0.01 · Y 1.9e-3 · Z 3.0e-6",
+      "empty_message": null
+    },
+    {
+      "title": "Attitude",
+      "series": [
+        "Roll",
+        "Pitch",
+        "Yaw"
+      ],
+      "populated_paths": 3,
+      "readout": "Roll 6.0e-5 · Pitch 3.6e-5 · Yaw 0.45",
+      "empty_message": null
+    },
+    {
+      "title": "Collective response",
+      "series": [
+        "Command",
+        "Actuator"
+      ],
+      "populated_paths": 2,
+      "readout": "Command 0.36 · Actuator 0.36",
+      "empty_message": null
+    }
+  ],
+  "mass_graph": {
+    "title": "Online mass estimation",
+    "legend": "EstimatedSimulated plant",
+    "paths": 2,
+    "readout": "Estimated 2.00 · Simulated plant 2.00"
+  },
+  "mobile": {
+    "width": 390,
+    "document_width": 390,
+    "viewport_width": 364,
+    "validation_scroll_container": [
+      {
+        "visible_width": 332,
+        "content_width": 332,
+        "overflow_x": "auto"
+      },
+      {
+        "visible_width": 332,
+        "content_width": 1784,
+        "overflow_x": "auto"
+      },
+      {
+        "visible_width": 332,
+        "content_width": 895,
+        "overflow_x": "auto"
+      }
+    ]
+  },
+  "final_native": {
+    "run_id": 7,
+    "time": 69.9999999999989,
+    "controller_mode": "entropy_nmpc",
+    "running": false
+  }
+}

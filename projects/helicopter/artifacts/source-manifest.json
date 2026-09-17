@@ -1,0 +1,324 @@
+{
+  "verified_at_utc": "2026-09-17T13:03:49.0371759Z",
+  "objective_kind": "minimum_entropy_hinf",
+  "controller_family": "central_dgkf",
+  "source_root": "projects/helicopter; paths relative to this project",
+  "native_provenance": {
+    "evaluator_source_sha256": "6e137e04adcbb9be605347e3ac7e96f05cec38378c8c2cc6b27812882ce1b172",
+    "model_source_sha256": "754f6b14a84a1713ccf0c3a4a76ac1dc768bb6c85cbf65fed95583658e58eb2d"
+  },
+  "source_fingerprint_independently_recomputed": true,
+  "sources": [
+    {
+      "path": "../../README.md",
+      "sha256": "2462a79104aca5a6106103a558e9076eb73ee21e5ad01fbcb5ea4e31560fdba0"
+    },
+    {
+      "path": ".dockerignore",
+      "sha256": "2e68dadd58656231b85ed32ed7912e4745959f544b39ba9395ba49a24ae10e2f"
+    },
+    {
+      "path": ".gitattributes",
+      "sha256": "efe94b73f0116e23335042969a84bfd9d72836e2fba28c95e6e449ce634e11df"
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "2c9bc6dfd7c7fb0db023e99bbe3d0680e8e42e58d0ed0d007c9964a96a8a53b7"
+    },
+    {
+      "path": "CMakeLists.txt",
+      "sha256": "f97e16133cc801b1fa86ff090beddfbb0c01622291692e85a6403061599950b8"
+    },
+    {
+      "path": "doc/build-record.json",
+      "sha256": "c2b969e03cdf8d116b22e1f7aa2824f2de71bc36677ec13b32dbc303d940d9e4"
+    },
+    {
+      "path": "doc/build.ps1",
+      "sha256": "72b454c4fb3398d9a4a9c7329117151e9a940a7b38bf8510729501b9719438d6"
+    },
+    {
+      "path": "doc/build.sh",
+      "sha256": "711e387829791e35250c2817546078aa8c98aee710cd1e0704fc7395da5f4a51"
+    },
+    {
+      "path": "doc/helicopter-entropy-optimal-control.pdf",
+      "sha256": "ffdf92b9a82a9e3f499db89c830b0dbdff6fdf2c6e4968983f0201c25748af7a"
+    },
+    {
+      "path": "doc/helicopter-entropy-optimal-control.tex",
+      "sha256": "c1e4de82907a593e3a7731fd30d3a9128f09e00184a6baeef8f204d80c351c7d"
+    },
+    {
+      "path": "doc/ieee-preamble.tex",
+      "sha256": "b689c665e241847c0cbcc3c36225a2a8b11c254b75c978ac3a185a0131100973"
+    },
+    {
+      "path": "doc/README.md",
+      "sha256": "7350b985194dba4ce7255ff556db31c3eed55afc5f2f3a4f5b67fb5f04c8036e"
+    },
+    {
+      "path": "doc/references.bib",
+      "sha256": "b0493fee89aa5a25e1b1a2cf91edc58a993399f82b36932b9882eb26914eabd0"
+    },
+    {
+      "path": "doc/vendor/IEEEtran/bibtex/IEEEtran.bst",
+      "sha256": "314f0ece704568faf827011bac498650691b2b5ee06320720830e782416d5a5f"
+    },
+    {
+      "path": "doc/vendor/IEEEtran/IEEEtran.cls",
+      "sha256": "da751920a317ed318b7b5cd7fa585a6cc7d28502d457856382e9be24b10a3bd7"
+    },
+    {
+      "path": "Dockerfile",
+      "sha256": "fddd307faa560ffaf347dfcf876180cd5976ae11baaabbed17c0f9f5f0bafb92"
+    },
+    {
+      "path": "docs/ENTROPY_CONTROL_CONTRACT.md",
+      "sha256": "099f7f0462dafa187cccfc7988b801096e3e1441221da48744b2f81ef13f0887"
+    },
+    {
+      "path": "helicopter.ps1",
+      "sha256": "b6d76f4de3bf48a3ba1bc974758a69b144649d5249d07f07d6264a638225f775"
+    },
+    {
+      "path": "include/flight_constraints.hpp",
+      "sha256": "a1efcaab6dc151e24aa315dd4cff4454429e02ad2bb029a4c18a37c6d3596285"
+    },
+    {
+      "path": "include/helicopter.hpp",
+      "sha256": "37bdc95c3a1a2f15390db8920325901127f9fd69f685c03135737de6e8f1cf4c"
+    },
+    {
+      "path": "include/hinf_controller.hpp",
+      "sha256": "5758141df45a7927cc956cebe169846fa62912dcff889da2222f163d555cdd62"
+    },
+    {
+      "path": "include/mass_estimator.hpp",
+      "sha256": "601bc1d7de5bc8648bb21edd18d7608c4022278b9b74b7c5bf0f1462b0e1272d"
+    },
+    {
+      "path": "include/mass_scaled_dynamics.hpp",
+      "sha256": "3966f2029741a8efa3418a1877c2bd6f32131cff4745bff6976510683a28e9fd"
+    },
+    {
+      "path": "include/rotor_model.hpp",
+      "sha256": "a09f4ed5d6d8c17e7e2a143481962791b0fc8d1f92decc02941e82afd170111c"
+    },
+    {
+      "path": "README.md",
+      "sha256": "d8995e267d8ee6daa5bcb2fe1511fc6c2432a7d481512b61241ecf517f82d095"
+    },
+    {
+      "path": "run.sh",
+      "sha256": "1eea033b8add54205aac20ef44e291e9f129d37ee375e653297e070f6dc561d6"
+    },
+    {
+      "path": "setup.sh",
+      "sha256": "9329d23664ba9ab5ad37faadb51112243d54c13f833593e9f976bb711a1fa191"
+    },
+    {
+      "path": "src/gpu_check.cpp",
+      "sha256": "180d932aad73583e577aa4f7b9b963ff94eb07174e15c79fc25e2d81f632d777"
+    },
+    {
+      "path": "src/hinf_controller.cpp",
+      "sha256": "072f9160f85d7f14f3b02a0066f4f11de1350c352789289d225b037b1a6eb53d"
+    },
+    {
+      "path": "src/rotor_model.cpp",
+      "sha256": "a7e80648a657dde5d85f6cb46add770669f8c8528109a8aebfedfdd4b042b3da"
+    },
+    {
+      "path": "src/server.cpp",
+      "sha256": "3315b9cda375045d3fcd195f86f576bc9b30fdf33779cecfc3700e89852f71b0"
+    },
+    {
+      "path": "src/simulation.cpp",
+      "sha256": "7b5057868a2281fec685b44e738b203d09a0c2ea86965f0ecff5b636513c81c1"
+    },
+    {
+      "path": "tests/check-service.ps1",
+      "sha256": "23fbf5bad298eb45e5a90f52b9a92c75334ddc1ef5ea1b843762d4ab6ac0e7fc"
+    },
+    {
+      "path": "tests/evaluate.cpp",
+      "sha256": "6e137e04adcbb9be605347e3ac7e96f05cec38378c8c2cc6b27812882ce1b172"
+    },
+    {
+      "path": "tests/hinf_controller.cpp",
+      "sha256": "5b571856b64b17a9ef44aedb967aab0290a4e0f807b78d67d76848b06b896461"
+    },
+    {
+      "path": "tests/mass_estimator.cpp",
+      "sha256": "45aa3a3e22757dfbeb73a639ea3e3e340e4d776184ed2de66f0649d9e169bc63"
+    },
+    {
+      "path": "tests/thermodynamics.cpp",
+      "sha256": "a5b941e401fed1501b0d8665fa6171a5ee8a4036b70b6cdd074d691a8006f05c"
+    },
+    {
+      "path": "web/app.js",
+      "sha256": "0892f9f6ac2443d26963ee310297715b3625dcd8bd2560d936b7e2d51a9997b0"
+    },
+    {
+      "path": "web/charts.js",
+      "sha256": "ac34fc23c393cc1daa83067615c00cf27b73b99ff3f8ca3e985687b9c4eb4535"
+    },
+    {
+      "path": "web/control-evidence.js",
+      "sha256": "d50557a16181d09dc4341cf8d28e34605ba7b75df64b29c6d36c5d8d839001d2"
+    },
+    {
+      "path": "web/design.js",
+      "sha256": "0263da756852f50c4cb198cc3d9b069986053b450b8181c5c192987b380e95d0"
+    },
+    {
+      "path": "web/flight-view.js",
+      "sha256": "f8e4ef41cbde5a0afa0d5c7102b625e42699492cf58393ff108297ccd7287813"
+    },
+    {
+      "path": "web/format.js",
+      "sha256": "20f76b7ebebc5d72ef8c6182a80617c1bfa4058ec14f391776ba0cc11d5ab8eb"
+    },
+    {
+      "path": "web/hinf-inspector.js",
+      "sha256": "018de3f20627c0e58e38c0c27eb802ab1b3fe6f397d8f72bc51d8a2f1fe8a8cc"
+    },
+    {
+      "path": "web/index.html",
+      "sha256": "306e10f00ff3772fafb5affc8e8f9de33da8703e0f4e1de6b2125fbb06161b4e"
+    },
+    {
+      "path": "web/parameters.js",
+      "sha256": "238c48463580dcd934e60a6fad32bc9eae0f0aad8a4a2f6bbc1d025e7a9577d7"
+    },
+    {
+      "path": "web/styles.css",
+      "sha256": "d66f39ebdafce31a91a7e3a8a41a0348383bb988240d254bc2f94e4dac464e12"
+    },
+    {
+      "path": "web/validation.js",
+      "sha256": "a7517692bfbeb2fafe921078ab757c185d74fd1d4a88eb9683e464ddbe7701dd"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "artifacts/debian-packages.tsv",
+      "sha256": "a3be93af869bb541ed7f0f808d32fa5d995166a9bb3e872c146ce5a32aae5631"
+    },
+    {
+      "path": "artifacts/evaluation.json",
+      "sha256": "3bf658ba273fe2358b07c74493e2d8365df800e2daa598439d9c7b762cbbedaf"
+    },
+    {
+      "path": "artifacts/gpu-check.json",
+      "sha256": "4bc8f08cc3f84ddc263b713e81ac93b6dd548c43470e71f766a4f0ec6753a78a"
+    },
+    {
+      "path": "artifacts/hinf-synthesis.json",
+      "sha256": "bb9fea5799e6375593d4859004ba008dd814f80b2e9e454b34d2b38d3c63d4de"
+    },
+    {
+      "path": "artifacts/http-check.json",
+      "sha256": "40d37caea7a06e0cdee251c52765e360d967377803b1c31dc403b1a39e41caab"
+    },
+    {
+      "path": "artifacts/mass-estimator-check.json",
+      "sha256": "c1936791fd94f1616704420eb48916fe6858a63164711b6e82a084fa172fb0c0"
+    },
+    {
+      "path": "artifacts/runtime-inspection.json",
+      "sha256": "8781e0edffcb4ff156ccc847b4020baeebf7f630bd138e1d31796f969f259c50"
+    },
+    {
+      "path": "artifacts/synthesis-design.json",
+      "sha256": "307ecae5994ddffe9f1554cc05fba540d469f6984d573a2f50d7c59776f47610"
+    },
+    {
+      "path": "artifacts/thermodynamics-check.json",
+      "sha256": "74db6591011c43f381bdc6d92fc5c17115e18aaac808624ec67dde9eef5f299a"
+    },
+    {
+      "path": "artifacts/thermodynamics-check.txt",
+      "sha256": "3b2aad5f7c5b2430282488e430aa474dcead6cec74f2390889ceb3df5a348637"
+    },
+    {
+      "path": "artifacts/ui-check.json",
+      "sha256": "9bdc725d3deab03943d06d99976682927ab1646cc589d541fa8b36a7cf5ce380"
+    }
+  ],
+  "preliminary_tuning_evidence": [
+    {
+      "path": "build/hinf-full-first.json",
+      "passed": false,
+      "complete": true,
+      "failed_cases": [
+        "nominal/pid",
+        "alternate-wind/pid",
+        "alternate-wind/hinf",
+        "extra-gusts/pid",
+        "mass-minus-20/pid",
+        "mass-minus-20/hinf",
+        "mass-plus-20/pid",
+        "noise-times-three/pid",
+        "noise-and-gust/pid"
+      ],
+      "sha256": "a5015d375d2a3d54664b5f2e6dfd8c0b7d86a8894c14c9db3ddd4d1a7c9637ef"
+    },
+    {
+      "path": "build/hinf-pid-v1.json",
+      "passed": false,
+      "complete": false,
+      "failed_cases": [
+        "nominal/pid",
+        "alternate-wind/pid",
+        "extra-gusts/pid",
+        "mass-minus-20/pid",
+        "mass-plus-20/pid",
+        "noise-times-three/pid",
+        "noise-and-gust/pid"
+      ],
+      "sha256": "04107909ad13837761f1de1a1e93dc49927dcb3da9a77ac303b88a222c8a8bf5"
+    },
+    {
+      "path": "build/hinf-landing-v1.json",
+      "passed": true,
+      "complete": false,
+      "failed_cases": [],
+      "sha256": "d4d8e173b7903b3aa3d2150f8e65d130004629addb7c3133008a8305fe24b22f"
+    },
+    {
+      "path": "build/hinf-full-v2.json",
+      "passed": false,
+      "complete": true,
+      "failed_cases": [
+        "mass-minus-20/pid"
+      ],
+      "sha256": "ebe7060b691b28874ef9ff7f0b83f4b14c009fa7caf8e611aef39c619e5a5d8e"
+    },
+    {
+      "path": "build/hinf-full-v3.json",
+      "passed": true,
+      "complete": true,
+      "failed_cases": [],
+      "sha256": "112ad761ceafb9711f43516f4d792bcdd775ec8e3d9e021158065a82a11640bf"
+    }
+  ],
+  "validation": {
+    "native_synthesis_passed": true,
+    "complete_evaluation": true,
+    "all_trials_passed": true,
+    "trial_count": 15,
+    "hinf_trials_passed": true,
+    "pid_trials_passed": true,
+    "independent_physical_violations": 0,
+    "http_passed": true,
+    "browser_passed": true,
+    "browser_check_count": 58,
+    "pdf_pages": 1,
+    "pdf_visual_review_passed": true,
+    "gpu_arithmetic_passed": true
+  },
+  "scope": "Nominal numerical LTI minimum-entropy H-infinity certificate plus empirical nonlinear noisy simulation. Limiting, PID landing, reference feedforward and supplied initial trim are explicit; no global nonlinear/hardware guarantee."
+}

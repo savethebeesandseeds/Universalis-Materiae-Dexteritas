@@ -1,0 +1,27 @@
+# Native dependencies for Linux amd64. Sourced by setup.sh.
+# SHA256 values were calculated from the official versioned downloads.
+ALE_VERSION='0.12.1'
+ALE_ARCHIVE='ale-v0.12.1.tar.gz'
+ALE_URL='https://codeload.github.com/Farama-Foundation/Arcade-Learning-Environment/tar.gz/refs/tags/v0.12.1'
+ALE_SHA256='ade05f76416b4a49e8d6e5cc9bebb0745ae69f813aaeabe5813043f288db8ab3'
+
+LIBTORCH_VERSION='2.7.1+cu128'
+LIBTORCH_ARCHIVE='libtorch-2.7.1-cu128.zip'
+LIBTORCH_URL='https://download.pytorch.org/libtorch/cu128/libtorch-cxx11-abi-shared-with-deps-2.7.1%2Bcu128.zip'
+LIBTORCH_SHA256='ae513b437ae99150744ef1d06b02a4ecbbb9275c9ffe540c88909623e3293041'
+
+JSON_VERSION='3.12.0'
+JSON_ARCHIVE='json-v3.12.0.hpp'
+JSON_URL='https://raw.githubusercontent.com/nlohmann/json/v3.12.0/single_include/nlohmann/json.hpp'
+JSON_SHA256='aaf127c04cb31c406e5b04a63f1ae89369fccde6d8fa7cdda1ed4f32dfc5de63'
+
+HTTPLIB_VERSION='0.20.1'
+HTTPLIB_ARCHIVE='httplib-v0.20.1.h'
+HTTPLIB_URL='https://raw.githubusercontent.com/yhirose/cpp-httplib/v0.20.1/httplib.h'
+HTTPLIB_SHA256='7d3f813d05dad23b9c66eb6d9c1ff3d66f6acfaf6e5900ce960f7990e78079ea'
+
+# Official ALE v0.12.1 scripts/download_unpack_roms.sh pins this bundle.
+ROMS_ARCHIVE='Roms.tar.gz.b64'
+ROMS_URL='https://gist.githubusercontent.com/jjshoots/61b22aefce4456920ba99f2c36906eda/raw/00046ac3403768bfe45857610a3d333b8e35e026/Roms.tar.gz.b64'
+ROMS_SHA256='02ca777c16476a72fa36680a2ba78f24c3ac31b2155033549a5f37a0653117de'
+PONG_ROM_SHA256='41623e3c26148f96cbe77d56512845d224a63c8fe5bf90e38527155e39ec96d3'

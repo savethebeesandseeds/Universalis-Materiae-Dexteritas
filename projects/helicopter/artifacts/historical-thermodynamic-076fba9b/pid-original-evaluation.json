@@ -1,0 +1,420 @@
+{
+  "controller": "Privileged-state feedback PID; no training, perception, or real-aircraft validation",
+  "model": {
+    "controller": {
+      "attitude": {
+        "axes": [
+          "body roll",
+          "body pitch",
+          "body yaw"
+        ],
+        "gain_units": {
+          "kd": "N m s / rad",
+          "kp": "N m per unit rotation error"
+        },
+        "kd": [
+          0.4,
+          0.58,
+          0.4
+        ],
+        "kp": [
+          1.3,
+          1.8,
+          0.95
+        ]
+      },
+      "limits": {
+        "collective": [
+          0,
+          1
+        ],
+        "cyclic_lat": [
+          -1,
+          1
+        ],
+        "cyclic_long": [
+          -1,
+          1
+        ],
+        "horizontal_acceleration_m_s2": 3.5,
+        "position_integral_m_s": 2.0,
+        "tail": [
+          -1,
+          1
+        ],
+        "vertical_acceleration_m_s2": [
+          -4.0,
+          5.0
+        ]
+      },
+      "name": "Cascaded position PID and attitude PD with reference acceleration feedforward",
+      "position": {
+        "axes": [
+          "world x",
+          "world y",
+          "world z"
+        ],
+        "gain_units": {
+          "kd": "s^-1",
+          "ki": "s^-3",
+          "kp": "s^-2"
+        },
+        "kd": [
+          2.35,
+          2.35,
+          3.2
+        ],
+        "ki": [
+          0.3,
+          0.3,
+          1.25
+        ],
+        "kp": [
+          1.45,
+          1.45,
+          3.6
+        ]
+      },
+      "state_source": "Exact simulator state; no perception, learning, or state estimator"
+    },
+    "coordinates": {
+      "attitude": "[roll,pitch,yaw] degrees, intrinsic ZYX / Rz(yaw) Ry(pitch) Rx(roll)",
+      "body": "Right-handed, x forward, y left, z up; centre of mass origin",
+      "body_rates": "[p,q,r] angular velocity about body x/y/z in rad/s; not Euler-angle derivatives",
+      "quaternion": "[w,x,y,z], rotation from body to world",
+      "world": "Right-handed, z up; x/y horizontal; metres"
+    },
+    "equations": [
+      {
+        "expression": "e_p = p_ref - p; e_v = v_ref - v",
+        "name": "Position error",
+        "note": "World-frame vectors evaluated at solution.time."
+      },
+      {
+        "expression": "I = clamp(I + e_p dt); a_des = bound(a_ref + Kp e_p + Kd e_v + Ki I)",
+        "name": "Position controller",
+        "note": "Per-axis integral clamp, horizontal vector-norm bound, vertical scalar bounds; gains multiply per axis."
+      },
+      {
+        "expression": "F_des = m_nominal (a_des - g_world)",
+        "name": "Desired rotor force",
+        "note": "Desired body z follows normalized F_des; body x is aligned with projected world +x heading."
+      },
+      {
+        "expression": "e_R = 0.5 R^T sum_i (R_column_i cross R_des_column_i)",
+        "name": "Attitude error",
+        "note": "Body-frame rotation error; a sine-like error, not Euler-angle subtraction."
+      },
+      {
+        "expression": "tau_des = Kp_att e_R - Kd_att omega_body",
+        "name": "Attitude controller",
+        "note": "Desired body moment before cyclic saturation and tail reaction compensation."
+      },
+      {
+        "expression": "T_projected=max(0,F_des dot body_z); u_c=clip(T_projected/T_max); u_long=clip(tau_y/P_max); u_lat=clip(tau_x/R_max); u_tail=clip((tau_z+k_Q T_projected)/Q_tail_max)",
+        "name": "Control allocation",
+        "note": "Collective is [0,1]; three other channels are [-1,1]. Tail compensation uses projected thrust before collective saturation."
+      },
+      {
+        "expression": "u_actual += (1-exp(-dt/tau_act)) (u_command-u_actual)",
+        "name": "Actuator response",
+        "note": "All four channels have the same first-order lag; applied forces use the updated actual values."
+      },
+      {
+        "expression": "T=T_max u_c_actual; Q_tail=Q_tail_max u_tail_actual; F_body=[0,-Q_tail/l_tail,T]",
+        "name": "Rotor forces",
+        "note": "Main thrust follows body z; a tail rotor at negative body x produces lateral force and yaw torque."
+      },
+      {
+        "expression": "F_world = R F_body + c_drag (wind_world-v_world)",
+        "name": "Applied force",
+        "note": "This reported applied force excludes gravity and ground-contact forces, which MuJoCo adds."
+      },
+      {
+        "expression": "tau_body=[R_max u_lat_actual,P_max u_long_actual,Q_tail-k_Q T]; tau_world=R tau_body-c_damp omega_world",
+        "name": "Applied moment",
+        "note": "Reported torque_body excludes damping; torque_world includes damping and excludes contact moments."
+      },
+      {
+        "expression": "m dv/dt = F_world + m g_world + F_contact",
+        "name": "Rigid-body motion",
+        "note": "MuJoCo also integrates rotational rigid-body dynamics and quaternion attitude. No pose or velocity is assigned by the controller."
+      }
+    ],
+    "limitations": [
+      "Reduced force/moment model: collective is linear thrust and cyclic is body moment, not a blade-element rotor calculation.",
+      "No rotor inflow, speed/governor dynamics, structural flex, sensor noise/delay or actuator failure model.",
+      "Only skids collide with the ground; no full fuselage or blade collision geometry.",
+      "Controller reads exact state and fixed nominal mass; this is simulated feedback control, not learned control or real-aircraft validation."
+    ],
+    "name": "Reduced 6DoF main/tail-rotor helicopter",
+    "physics": {
+      "actuator_lag_s": 0.08,
+      "angular_damping_nm_per_rad_s": 0.035,
+      "cyclic_lat_torque_max_nm": 1.0,
+      "cyclic_long_torque_max_nm": 1.25,
+      "gravity_world_m_s2": [
+        0.0,
+        0.0,
+        -9.81
+      ],
+      "integrator": "implicitfast",
+      "linear_drag_n_per_m_s": 0.65,
+      "main_thrust_max_n": 49.050000000000004,
+      "mass_scaling": "mass_scale multiplies all three inertias and mass; controller retains nominal mass",
+      "nominal_inertia_body_kg_m2": [
+        0.06,
+        0.095,
+        0.09
+      ],
+      "nominal_mass_kg": 2.0,
+      "rotor_reaction_nm_per_n": 0.018,
+      "tail_lever_m": 0.62,
+      "tail_torque_max_nm": 1.1,
+      "timestep_s": 0.01
+    },
+    "provenance": {
+      "evaluator_source_sha256": "5d9cae18b35357723f0b3eb9b948faf4d1a1f924f88c79c943fd1d3babdf54c6",
+      "model_source_sha256": "21ff06bbeaf4460b6241f4ba3636d079126b78bcc13e7d7d8af7035dbfae9d6b"
+    },
+    "schema_version": 2,
+    "simulator": "MuJoCo native C++ rigid-body dynamics",
+    "simulator_version": "3.12.0",
+    "telemetry": {
+      "meanings": {
+        "active": "False when the controller is disabled or touchdown has cut the commands; desired quantities are then zero, while residual actuator forces and drag remain truthful.",
+        "actual_thrust_n": "Main rotor thrust actually applied after actuator lag.",
+        "commanded_thrust_n": "Bounded collective command multiplied by maximum main thrust, before actuator lag.",
+        "desired_acceleration": "Position-controller output after acceleration bounds, before gravity compensation.",
+        "desired_force_world": "Nominal mass times gravity-compensated desired acceleration, before projection onto current rotor axis.",
+        "desired_torque_body": "Attitude-controller moment before allocation and actuator limits.",
+        "force_body": "Actual main and tail rotor forces; excludes aerodynamic drag, gravity and contact.",
+        "force_world": "Actual rotated rotor force plus wind-relative drag; excludes gravity and contact.",
+        "position_integral": "The stored, clamped position-error integral; updated before active control and retained, but not used, while inactive.",
+        "projected_thrust_n": "Nonnegative desired-force projection before collective saturation.",
+        "torque_body": "Actual cyclic, tail and main reaction moments; excludes damping and contact.",
+        "torque_world": "Actual rotated rotor moment plus angular damping; excludes contact."
+      },
+      "timing": "Position, quaternion, velocity, attitude_deg, body_rates and reference are at state.time. solution contains values actually used immediately before the last integration, at solution.time = state.time - timestep_s. solution.available is false before the first step.",
+      "units": {
+        "actual_thrust_n": "N",
+        "attitude_error_body": "dimensionless; approximately radians for small rotations",
+        "commanded_thrust_n": "N",
+        "damping_torque_world": "N m",
+        "desired_acceleration": "m/s^2",
+        "desired_force_world": "N",
+        "desired_torque_body": "N m",
+        "drag_force_world": "N",
+        "force_body": "N",
+        "force_world": "N",
+        "position_error": "m",
+        "position_integral": "m s",
+        "projected_thrust_n": "N",
+        "torque_body": "N m",
+        "torque_world": "N m",
+        "velocity_error": "m/s"
+      }
+    }
+  },
+  "passed": true,
+  "reset_replay_identical": true,
+  "scenarios": [
+    {
+      "autopilot": true,
+      "completed": true,
+      "controls_bounded": true,
+      "crashed": false,
+      "extra_gusts_seconds": [],
+      "final_position": [
+        0.06892539360277486,
+        -0.06816917899959857,
+        0.19995997800131732
+      ],
+      "finite": true,
+      "initial_dynamics_consistent": true,
+      "mass_scale": 1.0,
+      "metrics": {
+        "endpoint_error": 0.09694198497316386,
+        "final_speed": 1.949729937003691e-05,
+        "max_altitude": 2.827368187232538,
+        "max_error": 0.699575621833495,
+        "max_speed": 0.6750484655399538,
+        "max_tilt_deg": 10.365847883823081,
+        "rms_error": 0.1573012358858105,
+        "saturation_fraction": 0.0
+      },
+      "name": "nominal",
+      "passed": true,
+      "seed": 0,
+      "steps": 7000,
+      "telemetry_consistent": true
+    },
+    {
+      "autopilot": true,
+      "completed": true,
+      "controls_bounded": true,
+      "crashed": false,
+      "extra_gusts_seconds": [],
+      "final_position": [
+        -0.09332551101427414,
+        0.036716793531970014,
+        0.19995997800674184
+      ],
+      "finite": true,
+      "initial_dynamics_consistent": true,
+      "mass_scale": 1.0,
+      "metrics": {
+        "endpoint_error": 0.1002884616249779,
+        "final_speed": 2.340694762630684e-05,
+        "max_altitude": 2.826677324238648,
+        "max_error": 0.6752675787148441,
+        "max_speed": 0.7034531947929756,
+        "max_tilt_deg": 10.514049930787245,
+        "rms_error": 0.16652414420141953,
+        "saturation_fraction": 0.0
+      },
+      "name": "alternate wind phase",
+      "passed": true,
+      "seed": 71,
+      "steps": 7000,
+      "telemetry_consistent": true
+    },
+    {
+      "autopilot": true,
+      "completed": true,
+      "controls_bounded": true,
+      "crashed": false,
+      "extra_gusts_seconds": [
+        18.0,
+        44.0
+      ],
+      "final_position": [
+        0.019637479086965778,
+        -0.048590179425134904,
+        0.1999599779864102
+      ],
+      "finite": true,
+      "initial_dynamics_consistent": true,
+      "mass_scale": 1.0,
+      "metrics": {
+        "endpoint_error": 0.05240837455234987,
+        "final_speed": 1.4736982805982648e-05,
+        "max_altitude": 2.8274754433336766,
+        "max_error": 0.7360952936356924,
+        "max_speed": 0.888105212540205,
+        "max_tilt_deg": 10.843270440929217,
+        "rms_error": 0.23390409110955715,
+        "saturation_fraction": 0.0
+      },
+      "name": "extra gusts",
+      "passed": true,
+      "seed": 19,
+      "steps": 7000,
+      "telemetry_consistent": true
+    },
+    {
+      "autopilot": true,
+      "completed": true,
+      "controls_bounded": true,
+      "crashed": false,
+      "extra_gusts_seconds": [],
+      "final_position": [
+        0.06157615508717445,
+        -0.07231164728451718,
+        0.19995996849010425
+      ],
+      "finite": true,
+      "initial_dynamics_consistent": true,
+      "mass_scale": 0.8,
+      "metrics": {
+        "endpoint_error": 0.09497683302175307,
+        "final_speed": 2.178240620530185e-05,
+        "max_altitude": 2.8277421367798303,
+        "max_error": 0.7041107309843478,
+        "max_speed": 0.6663210029877683,
+        "max_tilt_deg": 12.484599071491516,
+        "rms_error": 0.17620524358999198,
+        "saturation_fraction": 0.0
+      },
+      "name": "mass minus 20 percent",
+      "passed": true,
+      "seed": 3,
+      "steps": 7000,
+      "telemetry_consistent": true
+    },
+    {
+      "autopilot": true,
+      "completed": true,
+      "controls_bounded": true,
+      "crashed": false,
+      "extra_gusts_seconds": [
+        20.0
+      ],
+      "final_position": [
+        -0.019718280081038868,
+        -0.024402053866692093,
+        0.19995998433247641
+      ],
+      "finite": true,
+      "initial_dynamics_consistent": true,
+      "mass_scale": 1.2,
+      "metrics": {
+        "endpoint_error": 0.031373115935795795,
+        "final_speed": 1.8824562519433125e-05,
+        "max_altitude": 2.827016865198605,
+        "max_error": 0.7431742941592486,
+        "max_speed": 0.7109452008886685,
+        "max_tilt_deg": 10.000797219737176,
+        "rms_error": 0.23790880663038072,
+        "saturation_fraction": 0.0
+      },
+      "name": "mass plus 20 percent with gust",
+      "passed": true,
+      "seed": 31,
+      "steps": 7000,
+      "telemetry_consistent": true
+    },
+    {
+      "autopilot": false,
+      "completed": false,
+      "controls_bounded": true,
+      "crashed": false,
+      "extra_gusts_seconds": [],
+      "final_position": [
+        0.000850375875401146,
+        -0.0003497549881508993,
+        0.1999599780013454
+      ],
+      "finite": true,
+      "initial_dynamics_consistent": true,
+      "mass_scale": 1.0,
+      "metrics": {
+        "endpoint_error": 0.0009203637550322211,
+        "final_speed": 1.9496991820965656e-05,
+        "max_altitude": 0.22,
+        "max_error": 4.975753308645217,
+        "max_speed": 0.5838481325319269,
+        "max_tilt_deg": 0.0016864808912629098,
+        "rms_error": 3.2695320627698075,
+        "saturation_fraction": 0.0
+      },
+      "name": "controller disabled baseline",
+      "passed": true,
+      "seed": 0,
+      "steps": 7000,
+      "telemetry_consistent": true
+    }
+  ],
+  "schema_version": 2,
+  "simulator": "MuJoCo rigid body with reduced main/tail rotor force and moment model",
+  "thresholds": {
+    "baseline_max_altitude_m_max": 0.3,
+    "baseline_rms_error_m_min": 2.0,
+    "endpoint_error_m_max": 0.25,
+    "final_speed_m_s_max": 0.25,
+    "max_error_m_max": 1.4,
+    "max_tilt_deg_max": 35,
+    "rms_error_m_max": 0.55,
+    "saturation_fraction_max": 0.08
+  }
+}

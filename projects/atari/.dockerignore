@@ -1,0 +1,23 @@
+# The image contains dependencies; the launcher mounts project code at runtime.
+**
+!Dockerfile
+!.dockerignore
+!setup.sh
+!dependencies.lock
+!CMakeLists.txt
+!games.json
+!include/
+!include/**
+!src/
+!src/**
+!tests/
+!tests/**
+!.runtime/
+.runtime/*
+!.runtime/dependencies/
+.runtime/dependencies/*
+!.runtime/dependencies/ale-v0.12.1.tar.gz
+!.runtime/dependencies/libtorch-2.7.1-cu128.zip
+!.runtime/dependencies/json-v3.12.0.hpp
+!.runtime/dependencies/httplib-v0.20.1.h
+!.runtime/dependencies/Roms.tar.gz.b64

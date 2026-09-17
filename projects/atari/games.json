@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "games": [
+    {
+      "id": "pong",
+      "title": "Pong",
+      "rom_filename": "pong.bin",
+      "rom_sha256": "41623e3c26148f96cbe77d56512845d224a63c8fe5bf90e38527155e39ec96d3",
+      "expected_actions": 6,
+      "training_decisions": 5000000,
+      "final_eval_seed": 1000100,
+      "criterion": {
+        "episodes": 20,
+        "min_positive_games": 16,
+        "mean_raw_return_threshold": 0,
+        "mean_strict": true,
+        "max_truncated_episodes": 0,
+        "description": "Win at least 16 of 20 full Pong games, with positive mean raw return and no truncations."
+      }
+    },
+    {
+      "id": "breakout",
+      "title": "Breakout",
+      "rom_filename": "breakout.bin",
+      "rom_sha256": "376323f051c3c373c887fd83abead39d87d844ff283d435f4addbfc1710c6fd5",
+      "expected_actions": 4,
+      "training_decisions": 5000000,
+      "final_eval_seed": 1100100,
+      "criterion": {
+        "episodes": 20,
+        "min_positive_games": 0,
+        "mean_raw_return_threshold": 100,
+        "mean_strict": false,
+        "max_truncated_episodes": 0,
+        "description": "Engineering milestone: mean raw return of at least 100 across 20 full games without truncation; not a human baseline or literal game completion."
+      }
+    },
+    {
+      "id": "space_invaders",
+      "title": "Space Invaders",
+      "rom_filename": "space_invaders.bin",
+      "rom_sha256": "7224b17462b992d67f4e06a3c85f269c9822b06df6015bf038b55f384ced0301",
+      "expected_actions": 6,
+      "training_decisions": 5000000,
+      "final_eval_seed": 1200100,
+      "criterion": {
+        "episodes": 20,
+        "min_positive_games": 0,
+        "mean_raw_return_threshold": 1000,
+        "mean_strict": false,
+        "max_truncated_episodes": 0,
+        "description": "Engineering milestone: mean raw return of at least 1000 across 20 full games without truncation; not a human baseline or literal game completion."
+      }
+    }
+  ]
+}

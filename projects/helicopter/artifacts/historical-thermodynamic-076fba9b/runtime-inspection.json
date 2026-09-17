@@ -1,0 +1,108 @@
+{
+  "inspected_at_utc": "2026-09-17T11:44:22.7596926Z",
+  "container_id": "fbde3ff28fe4bfdbad01f3858dc8a01dd5170d77c50c5b4fea56072bc36fd984",
+  "image": "helicopter:dev",
+  "image_id": "sha256:deb22836ff460f4fd7567bd8dd581013ab9bc66954d16db2a4dbd8dec8902ef2",
+  "command": [
+    "/bin/bash",
+    "/workspace/run.sh"
+  ],
+  "working_directory": "/workspace",
+  "labels": {
+    "io.waajacu.configuration": "1",
+    "io.waajacu.managed": "true",
+    "io.waajacu.project": "helicopter"
+  },
+  "state": {
+    "Status": "running",
+    "Running": true,
+    "Paused": false,
+    "Restarting": false,
+    "OOMKilled": false,
+    "Dead": false,
+    "Pid": 90094,
+    "ExitCode": 0,
+    "Error": "",
+    "StartedAt": "2026-09-17T11:39:22.098814611Z",
+    "FinishedAt": "2026-09-17T11:39:21.174215634Z",
+    "Health": {
+      "Status": "healthy",
+      "FailingStreak": 0,
+      "Log": [
+        {
+          "Start": "2026-09-17T11:43:34.570279799Z",
+          "End": "2026-09-17T11:43:34.654985344Z",
+          "ExitCode": 0,
+          "Output": "{\"controller\":\"CPU\",\"gpu\":{\"available\":true,\"count\":1,\"detail\":\"CUDA driver access verified; flight physics and controller use CPU\",\"devices\":[\"NVIDIA RTX A2000 8GB Laptop GPU\"],\"name\":\"NVIDIA RTX A2000 8GB Laptop GPU\"},\"physics\":\"CPU\",\"renderer\":\"Browser WebGL\",\"running\":true,\"status\":\"ok\"}"
+        },
+        {
+          "Start": "2026-09-17T11:43:44.656268898Z",
+          "End": "2026-09-17T11:43:44.758292658Z",
+          "ExitCode": 0,
+          "Output": "{\"controller\":\"CPU\",\"gpu\":{\"available\":true,\"count\":1,\"detail\":\"CUDA driver access verified; flight physics and controller use CPU\",\"devices\":[\"NVIDIA RTX A2000 8GB Laptop GPU\"],\"name\":\"NVIDIA RTX A2000 8GB Laptop GPU\"},\"physics\":\"CPU\",\"renderer\":\"Browser WebGL\",\"running\":true,\"status\":\"ok\"}"
+        },
+        {
+          "Start": "2026-09-17T11:43:54.756109808Z",
+          "End": "2026-09-17T11:43:55.343379443Z",
+          "ExitCode": 0,
+          "Output": "{\"controller\":\"CPU\",\"gpu\":{\"available\":true,\"count\":1,\"detail\":\"CUDA driver access verified; flight physics and controller use CPU\",\"devices\":[\"NVIDIA RTX A2000 8GB Laptop GPU\"],\"name\":\"NVIDIA RTX A2000 8GB Laptop GPU\"},\"physics\":\"CPU\",\"renderer\":\"Browser WebGL\",\"running\":true,\"status\":\"ok\"}"
+        },
+        {
+          "Start": "2026-09-17T11:44:05.343772668Z",
+          "End": "2026-09-17T11:44:05.588536105Z",
+          "ExitCode": 0,
+          "Output": "{\"controller\":\"CPU\",\"gpu\":{\"available\":true,\"count\":1,\"detail\":\"CUDA driver access verified; flight physics and controller use CPU\",\"devices\":[\"NVIDIA RTX A2000 8GB Laptop GPU\"],\"name\":\"NVIDIA RTX A2000 8GB Laptop GPU\"},\"physics\":\"CPU\",\"renderer\":\"Browser WebGL\",\"running\":true,\"status\":\"ok\"}"
+        },
+        {
+          "Start": "2026-09-17T11:44:15.589839352Z",
+          "End": "2026-09-17T11:44:16.073913135Z",
+          "ExitCode": 0,
+          "Output": "{\"controller\":\"CPU\",\"gpu\":{\"available\":true,\"count\":1,\"detail\":\"CUDA driver access verified; flight physics and controller use CPU\",\"devices\":[\"NVIDIA RTX A2000 8GB Laptop GPU\"],\"name\":\"NVIDIA RTX A2000 8GB Laptop GPU\"},\"physics\":\"CPU\",\"renderer\":\"Browser WebGL\",\"running\":true,\"status\":\"ok\"}"
+        }
+      ]
+    }
+  },
+  "mounts": [
+    {
+      "Type": "bind",
+      "Source": "C:\\Work\\Universalis-Materiae-Dexteritas\\projects\\helicopter",
+      "Destination": "/workspace",
+      "Mode": "",
+      "RW": true,
+      "Propagation": "rprivate"
+    }
+  ],
+  "port_bindings": {
+    "8080/tcp": [
+      {
+        "HostIp": "127.0.0.1",
+        "HostPort": "43118"
+      }
+    ]
+  },
+  "restart_policy": {
+    "Name": "no",
+    "MaximumRetryCount": 0
+  },
+  "device_requests": [
+    {
+      "Driver": "",
+      "Count": -1,
+      "DeviceIDs": null,
+      "Capabilities": [
+        [
+          "gpu"
+        ]
+      ],
+      "Options": {}
+    }
+  ],
+  "devices": [],
+  "privileged": false,
+  "init": true,
+  "environment": [
+    "NVIDIA_DRIVER_CAPABILITIES=compute,utility",
+    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+    "LD_LIBRARY_PATH=/opt/mujoco/lib"
+  ]
+}

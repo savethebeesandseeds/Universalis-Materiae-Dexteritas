@@ -1,0 +1,10 @@
+{
+  "checked_at_utc": "2026-09-17T12:57:13.2096459Z",
+  "passed": true,
+  "test": "helicopter-thermodynamics",
+  "output": "PASS energy, entropy, wind, and terminal balances\nPASS analytic passive cooling and terminal storage\nPASS hover, spinning rotors, and cyclic mechanical work\nPASS independent finite-difference energy derivative\nPASS non-regenerative braking and resistance feedback\n5/5 thermodynamic checks passed",
+  "provenance": {
+    "evaluator_source_sha256": "6e137e04adcbb9be605347e3ac7e96f05cec38378c8c2cc6b27812882ce1b172",
+    "model_source_sha256": "754f6b14a84a1713ccf0c3a4a76ac1dc768bb6c85cbf65fed95583658e58eb2d"
+  }
+}
