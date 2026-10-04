@@ -1,0 +1,16 @@
+{
+  "schema": "light_headroom_publication_recovery_v1",
+  "reason": "Linux renameat2(RENAME_NOREPLACE) rejected by the existing Docker Desktop Windows shared mount after full export staging.",
+  "native_export_exit_code": 2,
+  "method": "System.IO.File.Move, two arguments, same-directory native Windows no-overwrite rename",
+  "source": "C:\\Work\\Universalis-Materiae-Dexteritas\\projects\\droid-blocks\\web\\headroom-data.next.json",
+  "destination": "C:\\Work\\Universalis-Materiae-Dexteritas\\projects\\droid-blocks\\web\\headroom-data.json",
+  "index_sha256": "90c3b080396e8417762799a93404cb77b604603c627256eb5fb351f7a691def1",
+  "playback_hashes_checked": 216,
+  "report_sha256": "60e03c8fe9d6c80bb6b91757b7054759e2a9d36152d372481564c3ed90755569",
+  "audit_sha256": "40c90a9e66897c5b6bd93d363cd8c11f62b63e6bac3930aeeaff9873f506edab",
+  "staged_copy": "verification/unpublished-index.json",
+  "script_sha256": "930a82fe028dc3c6ad6354e32c4f52a284f945d5b33d3c0517d924dc54c7e530",
+  "host_scope": "File inspection and OS filesystem integration only; no project build or runtime.",
+  "passed": true
+}

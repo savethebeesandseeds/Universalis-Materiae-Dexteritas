@@ -1,0 +1,20 @@
+{
+  "schema": "light_headroom_audit_correction_v1",
+  "collection_completed_before_correction": true,
+  "report_sha256": "60e03c8fe9d6c80bb6b91757b7054759e2a9d36152d372481564c3ed90755569",
+  "archived_original_source": "source/tools/audit-light-headroom.cpp",
+  "original_source_sha256": "3ae1ca6e1e521f0364cabbe3103551028c31b469c45cbe329cdd818d867d1394",
+  "corrected_source": "verification/audit-light-headroom.cpp",
+  "corrected_source_sha256": "bc6fb497c182d5ef8903007d34ecedc7418823cdd78b37776e7d2490717e214f",
+  "corrections": [
+    "Require construction_observation_v2 for light-enabled construction observations.",
+    "Count all failed checks independently of the first-1000-message display cap; use that count for per-trial consistency and exit integrity."
+  ],
+  "original_receipt": "verification/independent-audit-original.json",
+  "original_receipt_sha256": "ec4881ad42fd2a50e55278a8d66852b45486eecea0aa6e722ada2cd5b13cdf85",
+  "original_receipt_usable_for_behavioral_conclusions": false,
+  "corrected_receipt": "verification/independent-audit.json",
+  "simulation_controller_protocol_or_trial_changes": false,
+  "regression_test": "verification/audit-cap-test.cpp",
+  "regression_receipt": "verification/audit-cap-test.log"
+}

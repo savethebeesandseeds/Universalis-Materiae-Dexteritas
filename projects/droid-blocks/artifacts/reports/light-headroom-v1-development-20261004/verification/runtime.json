@@ -1,0 +1,16 @@
+{
+  "captured_client_date": "2026-10-04",
+  "container_id": "a3eabc3183e054aafd42304857b6a10b2c3a7cf15787fcf177149335e6aeaaaf",
+  "image_id": "sha256:eabe48053a78bcb334a947e7a5c0c009d6ff174a3b5e57e2493593d423b91068",
+  "image": "droid-blocks:dev",
+  "base": "documented pinned Debian 12 slim",
+  "command": "/workspace/run.sh",
+  "bind_mount": "C:\\Work\\Universalis-Materiae-Dexteritas\\projects\\droid-blocks -> /workspace rw",
+  "ports": "127.0.0.1:43117 -> 8080",
+  "restart": "no",
+  "named_volumes": [],
+  "gpu_request": "all NVIDIA GPUs; existing configuration preserved",
+  "development_build": "/tmp/droid-headroom-native",
+  "host_toolchains_used": false,
+  "prior_artifact_count": 1000
+}

@@ -1,0 +1,60 @@
+{
+  "schema": "light_headroom_verification_summary_v1",
+  "report_sha256": "60e03c8fe9d6c80bb6b91757b7054759e2a9d36152d372481564c3ed90755569",
+  "published_index_sha256": "90c3b080396e8417762799a93404cb77b604603c627256eb5fb351f7a691def1",
+  "native_replay_verified": true,
+  "retained_trials": 216,
+  "complete_safe_trials": 205,
+  "retained_feedback_stops": 11,
+  "native_ctest_suites_passed": 19,
+  "independent_audit_passed": true,
+  "independent_failed_checks": 0,
+  "headroom_gate": {
+    "passed": true,
+    "passing_fixed_schedule_cases": 12,
+    "passing_primary_cases": 12,
+    "passing_search_hold_cases": 6
+  },
+  "learner_gate": {
+    "passed": true,
+    "seeds": [
+      {
+        "passed": true,
+        "passing_primary_cases": 12,
+        "seed": 101
+      },
+      {
+        "passed": true,
+        "passing_primary_cases": 12,
+        "seed": 202
+      },
+      {
+        "passed": true,
+        "passing_primary_cases": 12,
+        "seed": 303
+      }
+    ]
+  },
+  "post_collection_source_changes": [
+    {
+      "path": "tools/audit-light-headroom.cpp",
+      "collection_sha256": "3ae1ca6e1e521f0364cabbe3103551028c31b469c45cbe329cdd818d867d1394",
+      "current_sha256": "bc6fb497c182d5ef8903007d34ecedc7418823cdd78b37776e7d2490717e214f"
+    }
+  ],
+  "repeat_export_refused_existing_destination": true,
+  "receipts_sha256": {
+    "collection-preservation.json": "66b50135258501fed7703173f4a9275aea3d6d5b752c2175a5e02b63fac87b01",
+    "native-ctest.log": "3765db9941d7197a083224738823899456863eb1ef07be570d54c002ca0e99cf",
+    "native-verify.log": "6f41e54b9c95730899fdc223ee7f7300e1af354a0c100aa7bef4e6c3c0b7396d",
+    "audit-correction.json": "99a710ee83934d8116151ff62d2749ada2f226f523879d68a487b42954744662",
+    "independent-audit-original.json": "ec4881ad42fd2a50e55278a8d66852b45486eecea0aa6e722ada2cd5b13cdf85",
+    "independent-audit.json": "40c90a9e66897c5b6bd93d363cd8c11f62b63e6bac3930aeeaff9873f506edab",
+    "audit-cap-test.log": "d970fed78ad61f3a8194d2e76a670b3fa4fe20f210b28a00d32d8d07e84d0413",
+    "publication-recovery.json": "d341143d4c98e9c0a8b54b798a6acd75e1c5f8fbb56d96b57241ac4bd7336e5e",
+    "export-check.json": "cc3bde5562fc14df3295bf8273bbef86f39c68dc592499281bb60ce2c9440eb8",
+    "export-repeat-refusal.log": "6d385e75abf33e9e67831f3f0869fa8678254c2a12583b3ad0a9e2aae5bd0f9a",
+    "browser-qa.json": "eef5406718fe92105fe70cbfbfc4de95060bee9a7dc468e8e9124a5c42b7b561"
+  },
+  "passed": true
+}

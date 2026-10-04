@@ -58,6 +58,9 @@ including a stopped one. Conflicts are preserved and rejected. It has no
 prune, delete, replacement, or volume-reset operation. `build` refuses to
 retag the image while a matching container exists.
 
+The container uses restart policy `no`: starting Docker does not start Atari.
+Run `.\atari.ps1 start` when needed and `.\atari.ps1 stop` when finished.
+
 The browser watches a separate native ALE instance running the active run's
 latest saved checkpoint on CPU, selecting that run's registered game. Training
 is not paced by the viewer. Random/untrained play is labeled. Read-only endpoints:

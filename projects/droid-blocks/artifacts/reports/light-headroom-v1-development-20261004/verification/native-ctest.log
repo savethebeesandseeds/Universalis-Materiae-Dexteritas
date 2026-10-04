@@ -1,0 +1,44 @@
+Internal ctest changing into directory: /tmp/droid-headroom-native
+Test project /tmp/droid-headroom-native
+      Start  1: native-light-headroom
+ 1/19 Test  #1: native-light-headroom ............   Passed    0.38 sec
+      Start  2: native-construction-actuation
+ 2/19 Test  #2: native-construction-actuation ....   Passed    0.34 sec
+      Start  3: native-light-prediction
+ 3/19 Test  #3: native-light-prediction ..........   Passed    0.01 sec
+      Start  4: native-light-context
+ 4/19 Test  #4: native-light-context .............   Passed    0.00 sec
+      Start  5: native-contract
+ 5/19 Test  #5: native-contract ..................   Passed    0.01 sec
+      Start  6: native-simulation-parity
+ 6/19 Test  #6: native-simulation-parity .........   Passed    0.04 sec
+      Start  7: native-environment
+ 7/19 Test  #7: native-environment ...............   Passed    0.31 sec
+      Start  8: native-baseline
+ 8/19 Test  #8: native-baseline ..................   Passed    0.17 sec
+      Start  9: native-policy
+ 9/19 Test  #9: native-policy ....................   Passed    0.01 sec
+      Start 10: native-training
+10/19 Test #10: native-training ..................   Passed    1.99 sec
+      Start 11: native-playground
+11/19 Test #11: native-playground ................   Passed    3.02 sec
+      Start 12: native-body
+12/19 Test #12: native-body ......................   Passed    0.54 sec
+      Start 13: native-body-controller
+13/19 Test #13: native-body-controller ...........   Passed    0.25 sec
+      Start 14: native-construction
+14/19 Test #14: native-construction ..............   Passed    0.08 sec
+      Start 15: native-motion-explorer
+15/19 Test #15: native-motion-explorer ...........   Passed    0.08 sec
+      Start 16: native-construction-session
+16/19 Test #16: native-construction-session ......   Passed    0.22 sec
+      Start 17: native-construction-light
+17/19 Test #17: native-construction-light ........   Passed    0.07 sec
+      Start 18: native-light-learner
+18/19 Test #18: native-light-learner .............   Passed    0.97 sec
+      Start 19: native-light-session
+19/19 Test #19: native-light-session .............   Passed    2.02 sec
+
+100% tests passed, 0 tests failed out of 19
+
+Total Test time (real) =  10.56 sec

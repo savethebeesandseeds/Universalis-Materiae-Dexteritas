@@ -5,3 +5,12 @@ cmake-build-*/
 CMakeFiles/
 CMakeCache.txt
 compile_commands.json
+
+# High-volume experiment streams remain local. Track compact reports, source
+# snapshots, and verification receipts instead of full transition/frame dumps.
+/artifacts/reports/*/traces/
+/artifacts/reports/*/snapshots/
+/web/headroom-traces/
+# Historical traces were deliberately published with their studies.
+!/artifacts/reports/light-context-v1-development-20260906/traces/
+!/artifacts/reports/light-prediction-v1-development-20260906/traces/

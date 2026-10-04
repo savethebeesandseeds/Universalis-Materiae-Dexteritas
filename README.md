@@ -2,6 +2,18 @@
 
 Project experiments live under [`projects/`](projects/).
 
+Temporary files, previews, builds, and dependency caches are ignored. Remove
+disposable task output when finished; ignoring it does not reclaim disk space.
+See [repository hygiene](AGENTS.md) for the cleanup and staging rules.
+
+Droid Blocks commits compact experiment reports, source snapshots, verification
+records, and the headroom viewer index. Full transition streams, physical frame
+snapshots, and generated `web/headroom-traces/` playback files stay local. A fresh
+checkout can inspect the recorded summaries; full replay and animation require
+the original local recordings. Restore those files from the retained experiment
+batch and check their hashes before using them. The existing local service keeps
+its complete data. Do not rerun a study to substitute for its original evidence.
+
 ## Helicopter environment
 
 The [helicopter laboratory](projects/helicopter/README.md) implements the central

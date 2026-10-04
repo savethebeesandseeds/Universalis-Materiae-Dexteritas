@@ -1,0 +1,14 @@
+{
+  "schema": "light_headroom_export_check_v1",
+  "index_sha256": "90c3b080396e8417762799a93404cb77b604603c627256eb5fb351f7a691def1",
+  "report_sha256": "60e03c8fe9d6c80bb6b91757b7054759e2a9d36152d372481564c3ed90755569",
+  "audit_sha256": "40c90a9e66897c5b6bd93d363cd8c11f62b63e6bac3930aeeaff9873f506edab",
+  "cases_checked": 24,
+  "controllers_checked": 9,
+  "playback_files_checked": 216,
+  "total_saved_frames": 66568,
+  "complete_safe_playbacks_checked": 205,
+  "scope": "Read-only file inspection: published hashes, all frame counts, first/last physical snapshot equality, complete/stopped exposure and native endpoint reward. Exporter separately validates every snapshot clock and scene before copying.",
+  "passed": true,
+  "issues": []
+}

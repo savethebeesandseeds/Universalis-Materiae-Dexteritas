@@ -1,0 +1,46 @@
+{
+  "schema": "light_headroom_browser_qa_v1",
+  "url": "http://127.0.0.1:43117/headroom.html",
+  "initial_state": [
+    "First declared historical upper-left case",
+    "Constant negative effort",
+    "Paused at 0 seconds"
+  ],
+  "observed_case_rows": 24,
+  "observed_trial_cells": 216,
+  "controls_checked": [
+    "All three bodies",
+    "Base and elbow",
+    "All four lamp options available",
+    "Every learner seed",
+    "Sensor search and hold",
+    "Quiet matched pair",
+    "Table-cell case/controller selection",
+    "Shared seeking to 32 and 64 seconds",
+    "Play, pause and stable paused time",
+    "Restart and replay speed"
+  ],
+  "checked_endpoint_examples": [
+    "Long upper/elbow/below-left search: quiet -0.02, chosen 48.67, gain +48.69, 439 lux",
+    "Long lower/base/below-right learners: gains +5.28/+3.66/+3.54",
+    "Weighted/elbow/below-right learner303 table selection: gain +26.49",
+    "Weighted/base/above-left learner202: 16.34-second stop, last snapshot16.2seconds, voltage_limited, unequal-exposure prefix note"
+  ],
+  "mobile": {
+    "study_scroll_content_width_px": 1200,
+    "study_scroll_container_width_px": 311,
+    "observed_page_scroll_width_px": 360,
+    "requested_width_px": 375,
+    "viewport_override_reset": true,
+    "panels": "single column"
+  },
+  "notebook": {
+    "records": 8,
+    "primary_route": "/headroom.html",
+    "current_question": "Is there room for useful movement?"
+  },
+  "post_reload_error_or_warning_logs": 0,
+  "final_view": "Declared default, paused at0",
+  "live_control_api_writes": 0,
+  "passed": true
+}

@@ -1,0 +1,47 @@
+# Disposable scratch output, including document previews.
+tmp/
+temp/
+.tmp/
+*.tmp
+*.temp
+*.bak
+*~
+*.swp
+*.swo
+*.next.json
+
+# Build output and dependency/tool caches belong outside Git.
+build/
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+compile_commands.json
+node_modules/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.cache/
+.venv/
+venv/
+.runtime/
+
+# LaTeX intermediate files; keep source documents and final PDFs.
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.out
+*.synctex.gz
+*.toc
+*.log
+# These small logs are deliberate, hash-bound experiment verification records.
+!/projects/**/artifacts/reports/**/verification/*.log
+
+# Operating-system metadata.
+.DS_Store
+Thumbs.db
+Desktop.ini

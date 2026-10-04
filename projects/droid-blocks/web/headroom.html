@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#173e32">
+  <meta name="description" content="Compare recorded Droid Blocks motion against a quiet motor across every declared body, powered hinge, lamp position and controller in the native headroom experiment.">
+  <title>Droid Blocks — Room to do better</title>
+  <link rel="icon" href="/favicon.ico">
+  <link rel="stylesheet" href="/construction.css">
+  <link rel="stylesheet" href="/transfer.css">
+  <link rel="stylesheet" href="/headroom.css">
+  <script src="/headroom.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#replay-bench">Skip to the recorded creatures</a>
+  <main class="workshop headroom-page">
+    <header class="masthead"><a class="home-link" href="/discoveries.html">← The research notebook</a><span class="record-badge">Recorded native simulations</span></header>
+    <div class="introduction"><div><p class="eyebrow">Droid Blocks · Establish useful behavior</p><h1>Room to do better.</h1><p>Gravity already moves a quiet creature.<br>Can its motor earn a dependable improvement?</p></div><div class="kit-stamp" aria-hidden="true"><span>two beams</span><b>↔</b><span>one motor</span></div></div>
+    <p class="scope-line">An anchored two-link mechanism. Three bodies, two powered hinge positions, four lamps. Every declared controller and learning seed stays in the record.</p>
+    <section class="evidence-status" data-load-state role="status"><span class="status-dot" aria-hidden="true"></span><div><strong data-load-title>Reading the experiment record…</strong><p data-load-detail>Saved movements and the complete comparison will appear when their evidence is ready.</p></div><button type="button" data-retry>Read again</button></section>
+
+    <div class="headroom-selection">
+      <label>Body<select data-body disabled><option>Evidence preparing</option></select></label>
+      <label>Powered hinge<select data-hinge disabled><option>Evidence preparing</option></select></label>
+      <label>Lamp<select data-lamp disabled><option>Evidence preparing</option></select></label>
+      <label>Compare with quiet<select data-controller disabled><option>Evidence preparing</option></select></label>
+    </div>
+    <p class="selected-description" data-case-description>Controls choose a recorded case. The first case and controller follow the declared order, independently of their results.</p>
+    <p class="selection-order-note">The initial view uses the first declared case and the first controller after quiet: constant negative effort. Its selection does not depend on the result.</p>
+
+    <section id="replay-bench" class="replay-bench" aria-label="Quiet and selected controller on one shared replay clock">
+      <div class="creature-panels">
+        <article class="creature-panel arm-quiet" data-panel="quiet" aria-labelledby="quiet-title"><header><span class="arm-number">01</span><div><h2 id="quiet-title">A quiet motor</h2><p>Gravity and passive movement</p></div></header><div class="creature-stage"><svg data-motion viewBox="0 0 360 340" role="img" aria-label="Quiet simulation is preparing"></svg><span class="stage-status" data-stage-status>Evidence preparing</span></div><div class="creature-readouts"><div><span>Reward so far</span><strong data-reward>—</strong></div><div><span>Light at its eye</span><strong data-light>— lx</strong></div></div><p class="panel-footnote" data-panel-note>The motor requests no effort. This is the matched quiet control.</p></article>
+        <article class="creature-panel arm-chosen" data-panel="chosen" aria-labelledby="chosen-title"><header><span class="arm-number">02</span><div><h2 id="chosen-title" data-chosen-title>Selected controller</h2><p data-chosen-subtitle>Same body, lamp and opportunity</p></div></header><div class="creature-stage"><svg data-motion viewBox="0 0 360 340" role="img" aria-label="Selected simulation is preparing"></svg><span class="stage-status" data-stage-status>Evidence preparing</span></div><div class="creature-readouts"><div><span>Reward so far</span><strong data-reward>—</strong></div><div><span>Light at its eye</span><strong data-light>— lx</strong></div></div><p class="panel-footnote" data-panel-note>Choose any declared controller, including every learner seed.</p></article>
+      </div>
+      <div class="shared-playback">
+        <div class="playback-actions"><button type="button" class="play-button" data-play disabled aria-label="Play both saved simulations">Play together ▶</button><button type="button" data-restart disabled>Restart</button><label class="speed-control">Speed<select data-speed aria-label="Replay speed"><option value="0.5">½×</option><option value="1" selected>1×</option><option value="2">2×</option><option value="4">4×</option></select></label><output data-time for="replay-time">0.0 / 64.0 s</output></div>
+        <label class="timeline-label" for="replay-time">Shared time <span>Both creatures start in the same native state</span></label><input id="replay-time" data-timeline type="range" min="0" max="64" step="0.1" value="0" disabled aria-valuetext="0 seconds of 64 seconds">
+        <div class="timeline-labels"><span>First saved moment</span><span data-duration-label>64 seconds of opportunity</span></div><p class="playback-note">The replay holds each saved native snapshot until the next one. A run that ended early remains at its last recorded position.</p>
+      </div>
+    </section>
+
+    <section class="reward-panel" aria-labelledby="reward-title"><div class="reward-heading"><div><p class="eyebrow">The selected case</p><h2 id="reward-title">Earned sensor reward</h2></div><div class="comparison-delta"><span>Selected controller − quiet · full run</span><strong data-delta>—</strong><small data-delta-note>Waiting for a complete matched pair</small></div></div><div class="reward-legend"><span class="arm-quiet">Quiet motor</span><span class="arm-chosen" data-chosen-legend>Selected controller</span></div><svg data-reward-chart viewBox="0 0 1000 220" role="img" aria-label="Cumulative native reward curves are preparing"></svg><p class="reward-note">Reward combines the light sensor’s preference with the IMU’s motion penalty. Positive gain means more reward than quiet; the declared useful gain must exceed 3.2 over the full 64 seconds.</p></section>
+
+    <section class="experiment-outcome" aria-labelledby="outcome-title"><div class="outcome-heading"><div><p class="eyebrow">Across the whole declared experiment</p><h2 id="outcome-title">Two separate questions</h2></div><span class="outcome-verdict">Development evidence</span></div><p class="outcome-conclusion" data-conclusion>The completed study will report both gates, including any failures.</p><div class="headroom-gates"><article data-gate="headroom"><h3>Is useful behavior available?</h3><strong data-gate-result>Awaiting evidence</strong><p data-gate-detail>Each of the 12 lower-lamp cases needs a complete, safe handwritten controller with reward gain above 3.2 versus quiet.</p></article><article data-gate="learner"><h3>Does the unchanged learner find it?</h3><strong data-gate-result>Awaiting evidence</strong><p data-gate-detail>All three native learner seeds must beat quiet by more than 3.2 in every lower-lamp case, with complete, safe runs.</p></article></div><p class="outcome-integrity" data-integrity>Upper-lamp cases remain visible as context. These gates establish neither transfer after rebuilding nor hardware performance.</p></section>
+
+    <section class="whole-study" aria-labelledby="study-title"><div class="section-title"><div><p class="eyebrow">All cases · all trials · declared order</p><h2 id="study-title">Every comparison stays visible.</h2></div><p>Choose a case or gain below to watch that recording. Scroll horizontally to inspect every controller.</p></div><p class="study-key">Quiet shows absolute reward. Every other cell shows gain versus that case’s quiet run. <span class="gain-pass">●</span> Exceeds 3.2 with a complete safe pair · <span class="gain-miss">○</span> Criterion not met · ? Incomplete or missing evidence</p><div class="metrics-scroll whole-study-scroll" tabindex="0" aria-label="Scrollable table of all headroom trials"><table><caption data-study-caption>Declared cases and their native reward gains</caption><thead data-study-head></thead><tbody data-study-body><tr><td>Evidence preparing</td></tr></tbody></table></div><p class="sample-note" data-study-note>Case order and initial selection do not depend on measured performance.</p></section>
+
+    <details class="inside-notes transfer-details"><summary>Measurements for this case <span aria-hidden="true">+</span></summary><div><p>The nine declared trials share one body, motor position, lamp and duration. A stopped trial keeps its measured prefix reward and fails the complete-run criterion.</p><div class="metrics-scroll" tabindex="0" aria-label="Scrollable measurements for the selected case"><table><caption class="screen-reader-status">All trial measurements for the selected case</caption><thead><tr><th scope="col">Controller</th><th scope="col">Duration</th><th scope="col">Reward</th><th scope="col">Gain vs quiet</th><th scope="col">Energy</th><th scope="col">Safety / completeness</th></tr></thead><tbody data-measures></tbody></table></div><p class="sample-note" data-sample-note>Snapshots are display samples of a native record. Playback does not calculate new physics or run a controller.</p><p><a href="/headroom-data.json" download>Download the experiment index</a> · <a href="/transfer.html">Read the earlier motor-transfer experiment</a></p></div></details>
+    <details class="inside-notes transfer-details"><summary>What do these controllers know? <span aria-hidden="true">+</span></summary><div><p>Quiet, constant effort and square waves provide reference actions. The sensor search-and-hold controller is a handwritten baseline using local motor feedback and sensor reward. It is a witness that a useful behavior may be attainable, not evidence that learning discovered it.</p><p>The native learner is measured separately for seeds 101, 202 and 303. This experiment checks control headroom before a new transfer claim. Body geometry, lamp position and case labels describe the experiment; the declared controller-input limits are recorded below.</p><details class="raw-record"><summary>Declared protocol, gates and provenance</summary><pre data-protocol>Evidence preparing</pre></details></div></details>
+    <p class="screen-reader-status" data-live aria-live="polite"></p>
+  </main>
+</body>
+</html>

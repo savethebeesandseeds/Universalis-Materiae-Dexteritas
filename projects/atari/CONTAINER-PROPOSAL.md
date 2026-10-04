@@ -20,7 +20,7 @@ see [VALIDATION.md](VALIDATION.md) for the original inspection and recovery reco
 | Bind | `C:\Work\Universalis-Materiae-Dexteritas\projects\atari` to `/workspace`, read-write |
 | Named volumes | None |
 | Port | `127.0.0.1:43260` to `8080/tcp` |
-| Restart | `unless-stopped` |
+| Restart | `no` (manual start only) |
 | GPU | `--gpus all`, NVIDIA compute and utility capabilities |
 | Other devices | None |
 | Init/shared memory/stop timeout | Enabled / 1 GiB / 30 seconds |
@@ -35,3 +35,7 @@ learn, evaluate, or serve the application.
 and reuses an exact matching container, starting a stopped one by immutable ID.
 A conflict is preserved. No command deletes containers, images, volumes,
 caches, or experiments. Runs and checkpoints stay on the host bind mount.
+
+Automatic startup was disabled at the user's request on 2026-09-20 by updating
+the existing container's restart policy in place. Start it when needed with
+`atari.ps1 start`; starting Docker does not start this container.

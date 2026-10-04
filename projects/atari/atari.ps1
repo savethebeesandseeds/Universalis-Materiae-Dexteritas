@@ -22,6 +22,7 @@ $ContainerName = 'atari-dev'
 $ImageName = 'atari:dev'
 $ProjectPath = [IO.Path]::GetFullPath($PSScriptRoot)
 $ExpectedCommand = @('sh', '/workspace/run.sh')
+$ExpectedRestartPolicy = 'no'
 $GameWasSpecified = $PSBoundParameters.ContainsKey('Game')
 $script:GameRegistry = $null
 
@@ -107,7 +108,7 @@ function Assert-Contract($Container) {
     $ports = @($Container.HostConfig.PortBindings.PSObject.Properties)
     $binding = @($Container.HostConfig.PortBindings.'8080/tcp')
     if ($ports.Count -ne 1 -or $binding.Count -ne 1 -or $binding[0].HostIp -ne '127.0.0.1' -or $binding[0].HostPort -ne '43260') { $differences.Add('published ports') }
-    if ($Container.HostConfig.RestartPolicy.Name -ne 'unless-stopped') { $differences.Add('restart policy') }
+    if ($Container.HostConfig.RestartPolicy.Name -ne $ExpectedRestartPolicy) { $differences.Add('restart policy') }
     if (!$Container.HostConfig.Init -or $Container.HostConfig.ShmSize -ne 1073741824 -or $Container.Config.StopTimeout -ne 30) { $differences.Add('init/shared memory/stop timeout') }
     $gpu = @($Container.HostConfig.DeviceRequests)
     if ($gpu.Count -ne 1 -or $gpu[0].Count -ne -1 -or (@($gpu[0].Capabilities[0]) -notcontains 'gpu')) { $differences.Add('GPU request') }
@@ -165,7 +166,7 @@ switch ($Action) {
                 '--mount', "type=bind,source=$ProjectPath,target=/workspace",
                 '--publish', '127.0.0.1:43260:8080', '--gpus', 'all',
                 '--env', 'NVIDIA_DRIVER_CAPABILITIES=compute,utility',
-                '--init', '--shm-size', '1g', '--stop-timeout', '30', '--restart', 'unless-stopped', $ImageName)
+                '--init', '--shm-size', '1g', '--stop-timeout', '30', '--restart', $ExpectedRestartPolicy, $ImageName)
             $container = Read-Container
             Assert-Contract $container
         }

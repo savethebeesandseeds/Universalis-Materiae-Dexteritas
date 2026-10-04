@@ -2,8 +2,8 @@
 
 Droid Blocks is a Python-free C++20 MuJoCo development service for exploring modular robots. The project directory is bind-mounted into its Debian container, and `run.sh` incrementally configures, builds, tests, and starts the native server.
 
-The separate [neural transfer experiment](docs/ACTUATION_TRANSFER_RESULTS.md)
-uses an isolated host Python environment with Stable-Baselines3 PPO; the native
+The September 7 [neural transfer experiment](docs/ACTUATION_TRANSFER_RESULTS.md)
+used an isolated host Python environment with Stable-Baselines3 PPO; the native
 service and live learner remain separate. Open the
 [recorded motor-move comparison](http://127.0.0.1:43117/transfer.html) to watch
 frozen transfer, continued learning and scratch share the same timeline.
@@ -12,6 +12,29 @@ New collaborators should begin with the living
 [`open project brief and handoff`](docs/OPEN_HANDOFF.md). It separates the
 current evidence and preserved contracts from the questions we actively invite
 others to challenge.
+
+## Is there room for useful movement?
+
+The [new native development study](docs/LIGHT_HEADROOM_EXPERIMENT.md) separates
+two questions raised by the failed motor-transfer experiment: whether movement
+can improve sensor reward over a quiet motor, and whether the unchanged learner
+finds that improvement within 64 simulated seconds. Three bodies, two motor
+positions and four lamps are compared under a protocol locked before collection.
+Every fixed control, sensor-feedback witness and learner seed remains in the
+record. The study uses the existing Debian container and requires no new
+dependencies.
+
+The [completed results](docs/LIGHT_HEADROOM_RESULTS.md) pass both declared
+lower-lamp criteria: all 12 cases have a safe fixed witness, and all 36 native
+learner runs beat quiet by more than +3.2 integrated reward. Historical upper
+lamps remain difficult, and all 11 feedback-stopped trials are retained. This
+demonstrates learning from fresh memory on known conditions; transfer remains
+open.
+
+The [recorded comparison](http://127.0.0.1:43117/headroom.html) shows quiet and
+any declared controller together, with all 216 trials in the complete case
+table. Results retain native replay, independent accounting and preservation
+receipts. Builds and experiment execution use the managed Debian container.
 
 ## Try the sun-seeker
 
@@ -314,7 +337,8 @@ pre-held-out evidence that motivated v3.
 
 ## Build and dependency contract
 
-CMake separates two native libraries and builds twelve executables:
+CMake separates two native libraries and builds the service, experiment runners
+and validation executables. The foundational targets are:
 
 | Target | Purpose |
 | --- | --- |
@@ -344,7 +368,7 @@ The image uses the immutable Debian 12 digest in `Dockerfile`. `setup.sh` only i
 `docker build` copies CMake/native sources, configuration, model, native
 fixtures, and the one preserved v3 policy artifact into an isolated validation
 stage. It builds the single `droid-native-validation` aggregate target, then
-passes all twelve CTest suites
+passes every registered CTest suite
 before the development image is produced. The final image retains the
 toolchain for fast incremental builds from the bind mount. Both `python` and
 `python3` are explicitly checked to be absent.

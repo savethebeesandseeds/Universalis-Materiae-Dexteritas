@@ -1,0 +1,30 @@
+{
+  "schema": "light_headroom_preservation_v1",
+  "report_sha256": "60e03c8fe9d6c80bb6b91757b7054759e2a9d36152d372481564c3ed90755569",
+  "preexisting_artifacts_checked": 1000,
+  "archived_and_live_sources_checked": 74,
+  "raw_transition_tapes_checked": 216,
+  "snapshot_files_checked": 216,
+  "frozen_rover_inputs_checked": [
+    "config/learning_experiment_v3.json",
+    "artifacts/light-search-policy-v3-seed0.json",
+    "models/droid.xml"
+  ],
+  "live_sessions": [
+    {
+      "session": "light",
+      "before_sha256": "fffbc7279207705004c3a65cce413cfa523e41e5009316fcf1634a2a7809e4fc",
+      "after_sha256": "fffbc7279207705004c3a65cce413cfa523e41e5009316fcf1634a2a7809e4fc",
+      "identical": true
+    },
+    {
+      "session": "construction",
+      "before_sha256": "8d7f00f7023e54456645bfb40a66b0d54c5543a8161ee85eb33e6bfc31822542",
+      "after_sha256": "8d7f00f7023e54456645bfb40a66b0d54c5543a8161ee85eb33e6bfc31822542",
+      "identical": true
+    }
+  ],
+  "scope": "Read-only host file hashing and byte-for-byte API GET comparison after native container collection, before verification-tool correction. No host build, project runtime or learning.",
+  "passed": true,
+  "issues": []
+}

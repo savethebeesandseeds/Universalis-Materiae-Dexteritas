@@ -1,15 +1,31 @@
 # Droid Blocks: open project brief and handoff
 
-**State captured:** 2026-09-05  
+**Historical brief captured:** 2026-09-05; latest study: 2026-10-04
+
 **Status:** active research project; this document is intentionally open to revision  
 **Start here:** the simulation is normally visible at <http://127.0.0.1:43117/>
 
-**Latest adopted question, 2026-09-07:** the owner authorized the bounded
-[actuation-transfer experiment](ACTUATION_TRANSFER_EXPERIMENT.md). Read its
-[results](ACTUATION_TRANSFER_RESULTS.md) before treating an older proposed
-next step as the current roadmap. Plain neural weight transfer followed by
-64 seconds of adaptation failed its improvement gate. The
-[recorded comparison](http://127.0.0.1:43117/transfer.html) shows all cases/seeds.
+**Latest adopted question, 2026-10-04:** the owner authorized continuing work
+after reviewing the failed [actuation-transfer result](ACTUATION_TRANSFER_RESULTS.md).
+The [locked native headroom study](LIGHT_HEADROOM_EXPERIMENT.md) now asks whether
+the existing bodies have a useful advantage over quiet control, separately from
+whether the unchanged learner finds it within 64 simulated seconds. The full
+24-case matrix includes historical above-body lighting and new below-body
+lighting. No earlier result or frozen rover-v3 input is replaced.
+
+The [completed result](LIGHT_HEADROOM_RESULTS.md) passes both lower-lamp
+criteria: fixed witnesses clear the margin in all 12 cases, and all 36 fresh
+native learner runs also pass. The 216-trial record includes 11 feedback stops
+and weak historical upper-lamp outcomes. The
+[new recorded comparison](http://127.0.0.1:43117/headroom.html) exposes every
+case, controller and seed. The
+[earlier motor-move comparison](http://127.0.0.1:43117/transfer.html) remains
+available, including its failed improvement gate.
+
+The next justified research comparison is frozen reuse, adaptation and scratch
+under equal budgets on this now-exposed lower-light curriculum, with source
+competence checked first. Learning separately from fresh memory is established;
+reuse after rebuilding and success on unseen conditions remain open.
 
 ## An invitation
 
